@@ -1,0 +1,41 @@
+name: trump_cards
+description: A super trump card game.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  easy_localization: ^3.0.3
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  indexed: ^0.0.8
+  intl: any
+  pie_chart: ^5.3.2
+  shared_preferences: ^2.2.0
+  url_launcher: ^6.1.12
+  web_socket_channel: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: false
+
+  assets:
+    - assets/translations/
+    - assets/images/
+    - assets/images/Cars/
+    - assets/images/Airplanes/
+    - assets/images/Rockets/
