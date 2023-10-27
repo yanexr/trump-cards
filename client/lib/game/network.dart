@@ -7,7 +7,7 @@ class NetworkHandler {
 
   NetworkHandler() {
     webSocketChannel =
-        WebSocketChannel.connect(Uri.parse(const String.fromEnvironment("WS_URL", defaultValue: 'wss://trump-cards-l5uoqynpia-ey.a.run.app')));
+        WebSocketChannel.connect(Uri.parse(const String.fromEnvironment("WS_URL", defaultValue: 'ws://localhost:8000')));
   }
 
   void close() {
