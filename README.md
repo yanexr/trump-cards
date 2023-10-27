@@ -1,10 +1,10 @@
 <div align="center">
   <img src="./images/app-logo-rounded.png" alt="logo" width="150" height="auto" />
   <h1>TRUMP Cards</h1>
-  <span>
+  <h4>
     <a href="https://play.google.com/store/apps/details?id=com.yedesign.card_game" target="_blank">Get it on Google Play</a> • 
     <a href="https://yanexr.github.io/trump-cards" target="_blank">Play on the Web</a>
-  </span>
+  </h4>
 </div>
 
 **TRUMP Cards** is a a _super-trump_ or _trump-quartet_ card game like _Top Trumps_, where players compare numerical values of various attributes (e.g., speed, power) on their cards. Players take turns selecting a category and comparing the chosen attribute. The player with the highest value wins the round and collects the opponents' cards. The player who has all the cards at the end of the game wins.
