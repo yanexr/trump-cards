@@ -1,10 +1,10 @@
 name: trump_cards
-description: A super trump card game.
+description: A super-trump card game.
 
 # Prevent accidental publishing to pub.dev.
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.2.0+1
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
