@@ -6,6 +6,9 @@
 **TRUMP Cards** is a a *super-trump* or *trump-quartet* card game like *Top Trumps*, where players compare numerical values of various attributes (e.g., speed, power) on their cards. Players take turns selecting a category and comparing the chosen attribute. The player with the highest value wins the round and collects the opponents' cards. The player who has all the cards at the end of the game wins.
 
 ## Screenshots
+<div align="center">
+  <img src="./images/screenshots.png" alt="screenshots" />
+</div>
 
 ## Features
 - 3 different card decks (cars, airplanes and rockets)
