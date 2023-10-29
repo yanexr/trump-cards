@@ -150,12 +150,12 @@
     "topSpeed": "Velocidade Máxima",
     "price": "Preço",
     "wingspan": "Envergadura",
-    "maxTakeoffWeight": "Peso Máximo de Decolagem",
+    "maxTakeoffWeight": "Peso Decolagem",
     "maxAltitude": "Altitude Máxima",
     "seats": "Assentos",
     "height": "Altura",
     "liftOffThrust": "Empuxo de Decolagem",
-    "payloadToLEO": "Carga Útil para Órbita Terrestre Baixa",
+    "payloadToLEO": "Carga Útil para LEO",
     "stages": "Estágios",
     "launchesUntil2023": "Lançamentos até 2023"
   }
