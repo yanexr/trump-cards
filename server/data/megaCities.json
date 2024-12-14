@@ -1,0 +1,580 @@
+{
+  "id": 8,
+  "name": "Mega Cities",
+  "thumbnailPath": "mega-cities/mega-cities_thumbnail.png",
+  "backgroundPath": "mega-cities/mega-cities_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Population"
+    },
+    {
+      "measurementType": "density",
+      "isHigherBetter": true,
+      "label": "Pop. Density"
+    },
+    {
+      "measurementType": "distance",
+      "isHigherBetter": true,
+      "label": "Tallest Building"
+    },
+    {
+      "measurementType": "currency",
+      "isHigherBetter": true,
+      "label": "GDP"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Tourists/Year"
+    },
+    {
+      "measurementType": "percentage",
+      "isHigherBetter": true,
+      "label": "Pop. Growth"
+    }
+  ],
+  "cards": [  
+    {
+      "id": 1,
+      "name": "Tokyo",
+      "subtitle": "Founded in 1603, Japan",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Minato_City%2C_Tokyo%2C_Japan.jpg/640px-Minato_City%2C_Tokyo%2C_Japan.jpg",
+      "imageAttr": "David Kernan, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [13515000, 6168.7, 634, 1500000000000, 19540000, -0.21]
+    },
+    {
+      "id": 2,
+      "name": "Delhi",
+      "subtitle": "Founded in 736 CE, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jama_Masjid%2C_Domes_and_minarets%2C_Old_Delhi%2C_India.jpg/640px-Jama_Masjid%2C_Domes_and_minarets%2C_Old_Delhi%2C_India.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [18980000, 11297, 193, 130000000000, 2700000, 2.63]
+    },
+    {
+      "id": 3,
+      "name": "Shanghai",
+      "subtitle": "Founded in 1291, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/20045-Shanghai-Pano_%28cropped%29.jpg/640px-20045-Shanghai-Pano_%28cropped%29.jpg",
+      "imageAttr": "xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [24870000, 4200, 632, 666000000000, 9530000, 2.25]
+    },
+    {
+      "id": 4,
+      "name": "São Paulo",
+      "subtitle": "Founded in 1554, Brazil",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/S%C3%A3o_Paulo_2008-03-20.jpg/640px-S%C3%A3o_Paulo_2008-03-20.jpg",
+      "imageAttr": "AHLN, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [12400000, 7216, 168, 220000000000, 12500000, 0.83]
+    },
+    {
+      "id": 5,
+      "name": "Mexico City",
+      "subtitle": "Founded in 1325, Mexico",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ciudad.de.Mexico.City.-_Paseo.Reforma.Skyline_CDMX_2016.jpg/640px-Ciudad.de.Mexico.City.-_Paseo.Reforma.Skyline_CDMX_2016.jpg",
+      "imageAttr": "Eneas De Troya from Mexico City, México, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9209944, 6000, 246, 170000000000, 14300000, 1.0]
+    },
+    {
+      "id": 6,
+      "name": "Cairo",
+      "subtitle": "Founded in 969 CE, Egypt",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Egypt%2C_Cairo%2C_Panorama_of_Islamic_Cairo%2C_also_Medieval_Cairo_or_Fatimid_Cairo.jpg/640px-Egypt%2C_Cairo%2C_Panorama_of_Islamic_Cairo%2C_also_Medieval_Cairo_or_Fatimid_Cairo.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [10000000, 19376, 187, 140000000000, 11700000, 1.99]
+    },
+    {
+      "id": 7,
+      "name": "Mumbai",
+      "subtitle": "Founded in 1507, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BackBay_skyline.jpg/640px-BackBay_skyline.jpg",
+      "imageAttr": "Shaunak Modi, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [21673100, 73000, 320, 277980000000, 6000000, 1.77]
+    },
+    {
+      "id": 8,
+      "name": "Beijing",
+      "subtitle": "Founded in 1045 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Downtown_Beijing_China_%282013%29_-_Flickr.jpg/640px-Downtown_Beijing_China_%282013%29_-_Flickr.jpg",
+      "imageAttr": "edward stojakovic from Portland, OR, United States, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [22189100, 6000, 528, 609000000000, 1170000, 1.94]
+    },
+    {
+      "id": 9,
+      "name": "Dhaka",
+      "subtitle": "Founded in 1608, Bangladesh",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Dhaka_April_%2833244268934%29.jpg/640px-Dhaka_April_%2833244268934%29.jpg",
+      "imageAttr": "ASaber91, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [10278882, 34000, 250, 126600000000, 303000, 3.13]
+    },
+    {
+      "id": 10,
+      "name": "Osaka",
+      "subtitle": "Founded in 1889, Japan",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/640px-Osaka_Castle_02bs3200.jpg",
+      "imageAttr": "663highland, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [2750000, 12200, 300, 375000000000, 12200000, -0.24]
+    },
+    {
+      "id": 11,
+      "name": "New York City",
+      "subtitle": "Founded in 1624, United States",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/View_from_Empire_State_Building%2C_New_York_City%2C_20231001_1512_1371.jpg/640px-View_from_Empire_State_Building%2C_New_York_City%2C_20231001_1512_1371.jpg",
+      "imageAttr": "Jakub Hałun, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [8804190, 11316, 541, 1200000000000, 56400000, 0.4]
+    },
+    {
+      "id": 12,
+      "name": "Tehran",
+      "subtitle": "Founded in 1786, Iran",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/South_Tehran_Skyline_from_Laleh_International_Hotel.jpg/640px-South_Tehran_Skyline_from_Laleh_International_Hotel.jpg",
+      "imageAttr": "A.Davey from Portland, Oregon, EE UU, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9616000, 11730, 162, 120000000000, 2930000, 1.22]
+    },
+    {
+      "id": 13,
+      "name": "Karachi",
+      "subtitle": "Founded in 1729, Pakistan",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Karachi_sky_line.jpg/640px-Karachi_sky_line.jpg",
+      "imageAttr": "Kashiff, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [17648600, 5771.9, 210, 200000000000, 1160000, 2.39]
+    },
+    {
+      "id": 14,
+      "name": "Kolkata",
+      "subtitle": "Founded in 1690, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/General_Post_Office_and_Reserve_Bank_of_India%2C_Kolkata%2C_India.jpg/640px-General_Post_Office_and_Reserve_Bank_of_India%2C_Kolkata%2C_India.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [15570800, 24000, 167.6, 220000000000, 1600000, 1.55]
+    },
+    {
+      "id": 15,
+      "name": "Buenos Aires",
+      "subtitle": "Founded in 1536, Argentina",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Buenos_Aires_Skyline_%2814979951%29.jpg/640px-Buenos_Aires_Skyline_%2814979951%29.jpg",
+      "imageAttr": "Diego Torres Silvestre from Sao Paulo, Brazil, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [15618300, 14450, 239, 83600000000, 5500000, 0.83]
+    },
+    {
+      "id": 16,
+      "name": "Chongqing",
+      "subtitle": "Founded in 316 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Chongqing_Night_Yuzhong.jpg/640px-Chongqing_Night_Yuzhong.jpg",
+      "imageAttr": "Jonipoon, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [17773900, 3000, 470, 419080000000, 300000000, 2.5]
+    },
+    {
+      "id": 17,
+      "name": "Istanbul",
+      "subtitle": "Founded in 660 BCE, Turkey",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg/640px-Historical_peninsula_and_modern_skyline_of_Istanbul.jpg",
+      "imageAttr": "Hunanuk, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [16047400, 3013, 369, 256500000000, 14700000, 1.26]
+    },
+    {
+      "id": 18,
+      "name": "Manila",
+      "subtitle": "Founded in 1571, Philippines",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Manila_skyline%2C_Philippines.jpg/640px-Manila_skyline%2C_Philippines.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [14942000, 73920, 318, 298300000000, 1700000, 1.87]
+    },
+    {
+      "id": 19,
+      "name": "Lagos",
+      "subtitle": "Founded in 1472, Nigeria",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2014_Victoria_Island_Lagos_Nigeria_15006436297.jpg/640px-2014_Victoria_Island_Lagos_Nigeria_15006436297.jpg",
+      "imageAttr": "OpenUpEd, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [16536000, 6871, 160, 136000000000, 1470000, 3.54]
+    },
+    {
+      "id": 20,
+      "name": "Rio de Janeiro",
+      "subtitle": "Founded in 1565, Brazil",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Rio_de_Janeiro_Helicoptero_47_Feb_2006.jpg/640px-Rio_de_Janeiro_Helicoptero_47_Feb_2006.jpg",
+      "imageAttr": "Mariordo (Mario Roberto Durán Ortiz), CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [13824300, 5377, 260, 242000000000, 1700000, 0.7]
+    },
+    {
+      "id": 21,
+      "name": "Tianjin",
+      "subtitle": "Founded in 1404, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bei%27an_Bridge_21192-Tianjin_%2849063212683%29.jpg/640px-Bei%27an_Bridge_21192-Tianjin_%2849063212683%29.jpg",
+      "imageAttr": "xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [14471000, 1202.6, 530, 236800000000, 4100000, 1.63]
+    },
+    {
+      "id": 22,
+      "name": "Kinshasa",
+      "subtitle": "Founded in 1881, Democratic Republic of the Congo",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kinshasa_Congo.jpg/640px-Kinshasa_Congo.jpg",
+      "imageAttr": "Irene2005 from Cary, North Carolina, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [17032300, 27000, 210, 43800000000, 191000, 4.39]
+    },
+    {
+      "id": 23,
+      "name": "Guangzhou",
+      "subtitle": "Founded in 214 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Guangzhou_skyline.jpg/640px-Guangzhou_skyline.jpg",
+      "imageAttr": "jo.sau, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [14590100, 1963, 530, 473000000000, 8900000, 2.14]
+    },
+    {
+      "id": 24,
+      "name": "Los Angeles",
+      "subtitle": "Founded in 1781, United States",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Los_Angeles_Skyline_telephoto.jpg/640px-Los_Angeles_Skyline_telephoto.jpg",
+      "imageAttr": "BDS2006 (talk), CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [3795936, 2886.6, 335, 1227000000000, 50000000, -0.65]
+    },
+    {
+      "id": 25,
+      "name": "Moscow",
+      "subtitle": "Founded in 1147, Russia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RedSquare2019.jpg/640px-RedSquare2019.jpg",
+      "imageAttr": "Phuketian.S, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [13010000, 4944, 462, 314000000000, 22700000, 0.58]
+    },
+    {
+      "id": 26,
+      "name": "Shenzhen",
+      "subtitle": "Founded in 331, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Shenzhen_Skyline_from_Futian_District1.jpg/640px-Shenzhen_Skyline_from_Futian_District1.jpg",
+      "imageAttr": "Huangdan2060, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [17560000, 8800, 599, 482000000000, 14250000, 1.0]
+    },
+    {
+      "id": 27,
+      "name": "Lahore",
+      "subtitle": "Founded in 1040, Pakistan",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Lahore_from_the_Wazir_Khan_Mosque_%287865447%29.jpg/640px-Lahore_from_the_Wazir_Khan_Mosque_%287865447%29.jpg",
+      "imageAttr": "Guilhem Vellut from Annecy, France, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [13004135, 7339, 137, 84000000000, 5000000, 4.07]
+    },
+    {
+      "id": 28,
+      "name": "Bangalore",
+      "subtitle": "Founded in 1537, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jama_Masjid_Bangalore_03.jpg/640px-Jama_Masjid_Bangalore_03.jpg",
+      "imageAttr": "Harvinder Chandigarh, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [8443675, 11000, 153, 359900000000, 1500000, 3.02]
+    },
+    {
+      "id": 29,
+      "name": "Paris",
+      "subtitle": "Founded in 3rd century BC, France",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Eiffel_Tower_from_the_Tour_Montparnasse%2C_1_May_2012_N2.jpg/640px-Eiffel_Tower_from_the_Tour_Montparnasse%2C_1_May_2012_N2.jpg",
+      "imageAttr": "Getfunky, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [2102650, 20000, 300, 1064000000000, 30000000, 0.5]
+    },
+    {
+      "id": 30,
+      "name": "Bogotá",
+      "subtitle": "Founded in 1538, Colombia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bogot%C3%A1%2C_Colombia.jpg/640px-Bogot%C3%A1%2C_Colombia.jpg",
+      "imageAttr": "Costa Mavroleon, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [8034649, 25000, 240, 252800000000, 1200000, 1.5]
+    },
+    {
+      "id": 31,
+      "name": "Jakarta",
+      "subtitle": "Founded in 1527, Indonesia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Jakarta_skyline_2.jpg/640px-Jakarta_skyline_2.jpg",
+      "imageAttr": "Stenly Lam, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [11350328, 17000, 318, 225880000000, 2100000, 1.15]
+    },
+    {
+      "id": 32,
+      "name": "Chennai",
+      "subtitle": "Founded in 1639, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chennai_train_station.jpg/640px-Chennai_train_station.jpg",
+      "imageAttr": "Arian Zwegers, derivative work: MrPanyGoff, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [6748026, 16000, 165, 128300000000, 3900000, 2.44]
+    },
+    {
+      "id": 33,
+      "name": "Lima",
+      "subtitle": "Founded in 1535, Peru",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/City_of_Lima%2C_Peru.jpg/640px-City_of_Lima%2C_Peru.jpg",
+      "imageAttr": "Federico, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [10092000, 12000, 132, 210400000000, 2500000, 1.55]
+    },
+    {
+      "id": 34,
+      "name": "Bangkok",
+      "subtitle": "Founded in 1782, Thailand",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bangkok%2C_Thailand%2C_High_angle_aerial_view.jpg/640px-Bangkok%2C_Thailand%2C_High_angle_aerial_view.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [9034000, 5300, 314, 232000000000, 22700000, 0.87]
+    },
+    {
+      "id": 35,
+      "name": "Seoul",
+      "subtitle": "Founded in 18 BCE, South Korea",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Korea-Seoul-Airscape-01.jpg/640px-Korea-Seoul-Airscape-01.jpg",
+      "imageAttr": "The original uploader was Ta183ta at Korean Wikipedia., CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9659322, 16000, 555, 389000000000, 17500000, -0.42]
+    },
+    {
+      "id": 36,
+      "name": "Nagoya",
+      "subtitle": "Founded in 199 AD, Japan",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg/640px-Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg",
+      "imageAttr": "Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [2331078, 7140.6, 247, 216000000000, 2600000, 0.36]
+    },
+    {
+      "id": 37,
+      "name": "Hyderabad",
+      "subtitle": "Founded in 1591, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Meet_the_evil_side_of_Hitech_skyline_%284281610065%29.jpg/640px-Meet_the_evil_side_of_Hitech_skyline_%284281610065%29.jpg",
+      "imageAttr": "Nitin Jadon from Hyderabad, India, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [6809970, 10477, 122, 95000000000, 3200000, 2.87]
+    },
+    {
+      "id": 38,
+      "name": "London",
+      "subtitle": "Founded in AD 47, United Kingdom",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/London_Skyline_%2814142929431%29.jpg/640px-London_Skyline_%2814142929431%29.jpg",
+      "imageAttr": "Tony Hisgett from Birmingham, UK, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [8866180, 5598, 310, 730000000000, 21700000, 0.63]
+    },
+    {
+      "id": 39,
+      "name": "Chicago",
+      "subtitle": "Founded in 1833, United States",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chicago_skyline_from_16th_Street_bridge.jpg/640px-Chicago_skyline_from_16th_Street_bridge.jpg",
+      "imageAttr": "John Picken, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [2665039, 4656, 442, 833000000000, 48600000, -0.1]
+    },
+    {
+      "id": 40,
+      "name": "Chengdu",
+      "subtitle": "Founded in 4th century BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Chengdu_skyline_June_2017.jpg/640px-Chengdu_skyline_June_2017.jpg",
+      "imageAttr": "George N, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [20937800, 1400, 489, 290000000000, 33700000, 1.95]
+    },
+    {
+      "id": 41,
+      "name": "Nanjing",
+      "subtitle": "Founded in 495 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Nanjing_skyline_from_Jiming_Temple.jpg/640px-Nanjing_skyline_from_Jiming_Temple.jpg",
+      "imageAttr": "Radosław Botev, CC BY 3.0 pl, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/pl/",
+      "values": [9423400, 1400, 450, 253600000000, 96000000, 0.84]
+    },
+    {
+      "id": 42,
+      "name": "Wuhan",
+      "subtitle": "Founded in 221, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Wuhan_University_Sakura_Castle.jpg/640px-Wuhan_University_Sakura_Castle.jpg",
+      "imageAttr": "Howchou, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [12325000, 1694, 476, 274000000000, 25800000, 2.47]
+    },
+    {
+      "id": 43,
+      "name": "Ho Chi Minh City",
+      "subtitle": "Founded in 1698, Vietnam",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Ho_Chi_Minh_City%2C_Vietnam%2C_City_square.jpg/640px-Ho_Chi_Minh_City%2C_Vietnam%2C_City_square.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [9456700, 4513, 469.5, 68100000000, 4330000, 2.15]
+    },
+    {
+      "id": 44,
+      "name": "Luanda",
+      "subtitle": "Founded in 1576, Angola",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Luanda_Skyline_-_Angola_2015.jpg/640px-Luanda_Skyline_-_Angola_2015.jpg",
+      "imageAttr": "David Stanley from Nanaimo, Canada, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [2831280, 4800, 325, 59720000000, 800000, 2.57]
+    },
+    {
+      "id": 45,
+      "name": "Ahmedabad",
+      "subtitle": "Founded in 1411, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Street_of_Ahmedabad%2C_Central_Gujarat%2C_India_%282008%29.jpg/640px-Street_of_Ahmedabad%2C_Central_Gujarat%2C_India_%282008%29.jpg",
+      "imageAttr": "Honzasoukup, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [8854444, 4600, 122, 68000000000, 1200000, 2.03]
+    },
+    {
+      "id": 46,
+      "name": "Kuala Lumpur",
+      "subtitle": "Founded in 1857, Malaysia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/The_Twins_SE_Asia_2019_%2849171985716%29.jpg/640px-The_Twins_SE_Asia_2019_%2849171985716%29.jpg",
+      "imageAttr": "James Kerwin from Tbilisi, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [2075600, 8500, 679, 60390000000, 13790000, 1.13]
+    },
+    {
+      "id": 47,
+      "name": "Xi'an",
+      "subtitle": "Founded in 202 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Xi%27an_City_Wall_%2811523740325%29.jpg/640px-Xi%27an_City_Wall_%2811523740325%29.jpg",
+      "imageAttr": "edward stojakovic from Portland, OR, United States, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [12952907, 1200, 380, 154200000000, 310000000, 1.02]
+    },
+    {
+      "id": 48,
+      "name": "Hong Kong",
+      "subtitle": "Founded in 1841, China (as a colony)",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/13-08-08-hongkong-by-RalfR-098.jpg/640px-13-08-08-hongkong-by-RalfR-098.jpg",
+      "imageAttr": "Ralf Roletschek, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [7498100, 6801, 484, 406780000000, 56000000, 0.3]
+    },
+    {
+      "id": 49,
+      "name": "Dongguan",
+      "subtitle": "Founded in 331, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Dongguan_Mosque_2024_%282%29.jpg/640px-Dongguan_Mosque_2024_%282%29.jpg",
+      "imageAttr": "STW932, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [10466625, 4200, 393, 168300000000, 3360000, 3.2]
+    },
+    {
+      "id": 50,
+      "name": "Hangzhou",
+      "subtitle": "Founded in 222 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hangzhou_CBD_%28Cropped%29.jpg/640px-Hangzhou_CBD_%28Cropped%29.jpg",
+      "imageAttr": "Baycrest, cropped by Foxy1219, CC BY-SA 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "values": [11936010, 710, 400, 590000000000, 201000000, 2.1]
+    },
+    {
+      "id": 51,
+      "name": "Foshan",
+      "subtitle": "Founded in 628 CE, China",
+      "imagePath": "",
+      "imageAttr": "xiquinhosilva from Cacau, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9498863, 2500, 393, 166800000000, 21000000, 2.4]
+    },
+    {
+      "id": 52,
+      "name": "Shenyang",
+      "subtitle": "Founded in 300 BCE, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/24168-Shenyang_%2849052447292%29.jpg/640px-24168-Shenyang_%2849052447292%29.jpg",
+      "imageAttr": "xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9070093, 700, 219, 87000000000, 6600000, 1.32]
+    },
+    {
+      "id": 53,
+      "name": "Riyadh",
+      "subtitle": "Founded in 1746, Saudi Arabia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Riyadh_%2825271943233%29.jpg/640px-Riyadh_%2825271943233%29.jpg",
+      "imageAttr": "April Sarol from Valenzuela City, Philippines, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [7009100, 3600, 385, 428700000000, 5000000, 1.62]
+    },
+    {
+      "id": 54,
+      "name": "Baghdad",
+      "subtitle": "Founded in 762 CE, Iraq",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Baghdad_Red_zone.jpg/640px-Baghdad_Red_zone.jpg",
+      "imageAttr": "Robert Smith, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [7921134, 12000, 105, 85000000000, 1000000, 2.42]
+    },
+    {
+      "id": 55,
+      "name": "Santiago",
+      "subtitle": "Founded in 1541, Chile",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Santiago_de_Chile.jpg/640px-Santiago_de_Chile.jpg",
+      "imageAttr": "Metaforico at Portuguese Wikipedia., Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [6269384, 9821, 300, 192300000000, 2400000, 1.02]
+    },
+    {
+      "id": 56,
+      "name": "Surat",
+      "subtitle": "Founded in 331, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cable_Bridge_Surat_India.jpg/640px-Cable_Bridge_Surat_India.jpg",
+      "imageAttr": "Pravega, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [6936534, 15000, 222, 60000000000, 5000000, 4.07]
+    },
+    {
+      "id": 57,
+      "name": "Madrid",
+      "subtitle": "Founded in the 9th century, Spain",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Madrid_%2838624991251%29.jpg/640px-Madrid_%2838624991251%29.jpg",
+      "imageAttr": "Dmitry Dzhus from London, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [3223334, 5300, 250, 234600000000, 7000000, 0.2]
+    },
+    {
+      "id": 58,
+      "name": "Suzhou",
+      "subtitle": "Founded in 514 BC, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Suzhou%2C_China_%2837877809762%29.jpg/640px-Suzhou%2C_China_%2837877809762%29.jpg",
+      "imageAttr": "Andrey Filippov 安德烈 from Moscow, Russia, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [12748252, 1500, 450, 352200000000, 12000000, 6.5]
+    },
+    {
+      "id": 59,
+      "name": "Pune",
+      "subtitle": "Founded in AD 758, India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Skyline_of_Pune_city_as_seen_from_The_Westin_Koregaon_Park.jpg/640px-Skyline_of_Pune_city_as_seen_from_The_Westin_Koregaon_Park.jpg",
+      "imageAttr": "Randy Breese, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [6200000, 13000, 162, 69000000000, 8000000, 2.5]
+    },
+    {
+      "id": 60,
+      "name": "Harbin",
+      "subtitle": "Founded in 1898, China",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/The_view_from_my_room%2C_Harbin%2C_China_%288739958299%29.jpg/640px-The_view_from_my_room%2C_Harbin%2C_China_%288739958299%29.jpg",
+      "imageAttr": "Sharon Hahn Darlin, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [10009854, 190, 468, 92300000000, 8000000, 1.5]
+    }
+  ]
+}

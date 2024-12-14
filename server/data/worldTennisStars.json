@@ -1,0 +1,305 @@
+{
+  "id": 6,
+  "name": "World Tennis Stars",
+  "thumbnailPath": "world-tennis-stars/world-tennis-stars_thumbnail.png",
+  "backgroundPath": "world-tennis-stars/world-tennis-stars_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Grand Slams"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Career Titles"
+    },
+    {
+      "measurementType": "velocity",
+      "isHigherBetter": true,
+      "label": "Fastest Serve"
+    },
+    {
+      "measurementType": "percentage",
+      "isHigherBetter": true,
+      "label": "Win Percentage"
+    },
+    {
+      "measurementType": "currency",
+      "isHigherBetter": true,
+      "label": "Prize Money"
+    }
+  ],
+  "cards": [    
+    {
+      "id": 1,
+      "name": "Novak Djokovic",
+      "subtitle": "1987, Serbian Legend",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Novak_Djokovic_%2835283650283%29.jpg/640px-Novak_Djokovic_%2835283650283%29.jpg",
+      "imageAttr": "Charles Ng, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [24, 99, 219, 83.5, 166250000]
+    },
+    {
+      "id": 2,
+      "name": "Rafael Nadal",
+      "subtitle": "1986, King of Clay",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Rafael_Nadal_-_Madrid_2013_-_001.jpg/640px-Rafael_Nadal_-_Madrid_2013_-_001.jpg",
+      "imageAttr": "Alberto Carrasco Casado, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [22, 92, 217, 82.6, 121788855]
+    },
+    {
+      "id": 3,
+      "name": "Roger Federer",
+      "subtitle": "1981, Swiss Maestro",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Roger_Federer_%289614138869%29.jpg/640px-Roger_Federer_%289614138869%29.jpg",
+      "imageAttr": "slgckgc, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [20, 103, 230, 82.0, 117861391]
+    },
+    {
+      "id": 4,
+      "name": "Andy Murray",
+      "subtitle": "1987, Two Olympic Golds",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Andy_Murray_%28US_Open_2012%29.jpeg/640px-Andy_Murray_%28US_Open_2012%29.jpeg",
+      "imageAttr": "Francisco Diez, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [3, 46, 232, 73.8, 58425000]
+    },
+    {
+      "id": 5,
+      "name": "Stan Wawrinka",
+      "subtitle": "1985, Olympic Gold 2008",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Australian_Open_2020_%2849837300036%29.jpg/640px-Australian_Open_2020_%2849837300036%29.jpg",
+      "imageAttr": "Rob Keating from Canberra, Australia, Australia, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [3, 16, 232, 61.4, 33630000]
+    },
+    {
+      "id": 6,
+      "name": "Juan Martín del Potro",
+      "subtitle": "1988, Tower of Tandil",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Juan_Martin_del_Potro_%288366843111%29.jpg/640px-Juan_Martin_del_Potro_%288366843111%29.jpg",
+      "imageAttr": "Tigre Municipio from Tigre, Argentina, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1, 22, 240, 68.7, 23370000]
+    },
+    {
+      "id": 7,
+      "name": "Marin Čilić",
+      "subtitle": "1988, Croatian Champion",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Marin_Cilic_Rotterdam_2014.jpg/640px-Marin_Cilic_Rotterdam_2014.jpg",
+      "imageAttr": "Roman Boed, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1, 21, 251, 63.6, 28500000]
+    },
+    {
+      "id": 8,
+      "name": "Dominic Thiem",
+      "subtitle": "1993, US Open 2020",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Dominic_Thiem_-_Wimbledon_2017_%2834974389604%29.jpg/640px-Dominic_Thiem_-_Wimbledon_2017_%2834974389604%29.jpg",
+      "imageAttr": "Gregg Gorman, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1, 17, 233, 61.8, 27265000]
+    },
+    {
+      "id": 9,
+      "name": "Daniil Medvedev",
+      "subtitle": "1996, Russian Ace",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Australian_Open_2020_%2849836756233%29.jpg/640px-Australian_Open_2020_%2849836756233%29.jpg",
+      "imageAttr": "Rob Keating from Canberra, Australia, Australia, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1, 20, 232, 68.7, 39520000]
+    },
+    {
+      "id": 10,
+      "name": "Carlos Alcaraz",
+      "subtitle": "2003, Spanish Prodigy",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wimbledon_Day_1_-_2022_DSC05676_%2852179763334%29.jpg/640px-Wimbledon_Day_1_-_2022_DSC05676_%2852179763334%29.jpg",
+      "imageAttr": "Neil Tilbrook, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [4, 16, 226, 78.5, 33250000]
+    },
+    {
+      "id": 11,
+      "name": "Jannik Sinner",
+      "subtitle": "2001, Italian Prodigy",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Jannik_Sinner_%28cropped2%29.jpg/640px-Jannik_Sinner_%28cropped2%29.jpg",
+      "imageAttr": "Beireke1, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [2, 18, 232, 74.6, 32290005]
+    },
+    {
+      "id": 12,
+      "name": "Alexander Zverev",
+      "subtitle": "1997, Olympic Gold 2020",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/2015_US_Open_Tennis_-_Qualies_-Alexander_Zverev_%28GER%29_%282%29_def._Nils_Langer_%28GER%29_%2821126112239%29.jpg/640px-2015_US_Open_Tennis_-_Qualies_-Alexander_Zverev_%28GER%29_%282%29_def._Nils_Langer_%28GER%29_%2821126112239%29.jpg",
+      "imageAttr": "Steven Pisano from Brooklyn, NY, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 23, 230, 70.5, 42940000]
+    },
+    {
+      "id": 13,
+      "name": "Stefanos Tsitsipas",
+      "subtitle": "1998, Greek Trailblazer",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Stefanos_Tsitsipas_%282%29_%2843079345114%29.jpg/640px-Stefanos_Tsitsipas_%282%29_%2843079345114%29.jpg",
+      "imageAttr": "JC, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 11, 218, 68.0, 22610000]
+    },
+    {
+      "id": 14,
+      "name": "Casper Ruud",
+      "subtitle": "1998, Norwegian Trailblazer",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/2017_Roland_Garros_Qualifying_Tournament_-_51.jpg/640px-2017_Roland_Garros_Qualifying_Tournament_-_51.jpg",
+      "imageAttr": "Shev123, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0, 12, 193, 66.2, 17765000]
+    },
+    {
+      "id": 15,
+      "name": "Andrey Rublev",
+      "subtitle": "1997, Russian Powerhouse",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Andrey_Rublev_%282023_Wimbledon%29_%2853031604017%29.jpg/640px-Andrey_Rublev_%282023_Wimbledon%29_%2853031604017%29.jpg",
+      "imageAttr": "aarublevnews from UK, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 16, 200, 65.1, 23180000]
+    },
+    {
+      "id": 16,
+      "name": "David Ferrer",
+      "subtitle": "1982, Spanish Warrior",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/David_Ferrer_%289642335916%29.jpg/640px-David_Ferrer_%289642335916%29.jpg",
+      "imageAttr": "Edwin Martinez from The Bronx, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 27, 200, 66.1, 28405000]
+    },
+    {
+      "id": 17,
+      "name": "Jo-Wilfried Tsonga",
+      "subtitle": "1985, French Powerhouse",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/J-W_Tsonga_-_Roland-Garros_2012-J.W._Tsonga-IMG_3541.jpg/640px-J-W_Tsonga_-_Roland-Garros_2012-J.W._Tsonga-IMG_3541.jpg",
+      "imageAttr": "Poudou99, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [0, 18, 232, 66.2, 20235000]
+    },
+    {
+      "id": 18,
+      "name": "Tomáš Berdych",
+      "subtitle": "1985, Czech Powerhouse",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tom%C3%A1%C5%A1_Berdych_at_the_2011_Australian_Open1.jpg/640px-Tom%C3%A1%C5%A1_Berdych_at_the_2011_Australian_Open1.jpg",
+      "imageAttr": "n.hewson, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 13, 230, 65.2, 26600000]
+    },
+    {
+      "id": 19,
+      "name": "Kei Nishikori",
+      "subtitle": "1989, Japanese Trailblazer",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kei_Nishikori_%284%29_%2843079355604%29.jpg/640px-Kei_Nishikori_%284%29_%2843079355604%29.jpg",
+      "imageAttr": "JC, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 12, 207, 66.6, 23085000]
+    },
+    {
+      "id": 20,
+      "name": "Grigor Dimitrov",
+      "subtitle": "1991, Bulgarian Maestro",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Grigor_Dimitrov_3%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff.jpg/640px-Grigor_Dimitrov_3%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff.jpg",
+      "imageAttr": "Diliff, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [0, 9, 230, 61.2, 25555000]
+    },
+    {
+      "id": 21,
+      "name": "Gaël Monfils",
+      "subtitle": "1986, French Showman",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ga%C3%ABl_Monfils_%288972868914%29.jpg/640px-Ga%C3%ABl_Monfils_%288972868914%29.jpg",
+      "imageAttr": "Charlie Cowins from Belmont, NC, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 12, 230, 62.2, 20710000]
+    },
+    {
+      "id": 22,
+      "name": "Milos Raonic",
+      "subtitle": "1990, Canadian Trailblazer",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Milos_Raonic_2013_RG.jpg/640px-Milos_Raonic_2013_RG.jpg",
+      "imageAttr": "Roman Boed, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 8, 251, 67.5, 18715000]
+    },
+    {
+      "id": 23,
+      "name": "Kevin Anderson",
+      "subtitle": "1986, South African Ace",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2013_US_Open_%28Tennis%29_-_Kevin_Anderson_%289648677544%29.jpg/640px-2013_US_Open_%28Tennis%29_-_Kevin_Anderson_%289648677544%29.jpg",
+      "imageAttr": "Steven Pisano from Brooklyn, NY, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 7, 230, 58.3, 16055000]
+    },
+    {
+      "id": 24,
+      "name": "John Isner",
+      "subtitle": "1985, Marathon Man",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/John_Isner_%289660955884%29.jpg/640px-John_Isner_%289660955884%29.jpg",
+      "imageAttr": "Edwin Martinez from The Bronx, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 16, 253, 60.7, 20235000]
+    },
+    {
+      "id": 25,
+      "name": "Roberto Bautista Agut",
+      "subtitle": "1988, Spanish Consistency",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/2014_US_Open_%28Tennis%29_-_Tournament_-_Roberto_Bautista_Agut_%2814914449990%29.jpg/640px-2014_US_Open_%28Tennis%29_-_Tournament_-_Roberto_Bautista_Agut_%2814914449990%29.jpg",
+      "imageAttr": "Steven Pisano from Brooklyn, NY, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 12, 210, 60.9, 16815000]
+    },
+    {
+      "id": 26,
+      "name": "Karen Khachanov",
+      "subtitle": "1996, Olympic Silver 2020",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Australian_Open_2020_%2849837600507%29.jpg/640px-Australian_Open_2020_%2849837600507%29.jpg",
+      "imageAttr": "Rob Keating from Canberra, Australia, Australia, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 7, 230, 58.3, 15960000]
+    },
+    {
+      "id": 27,
+      "name": "Matteo Berrettini",
+      "subtitle": "1996, Wimbledon Finalist",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Matteo_Berrettini_and_Domenico_Berardi%2C_Palazzo_Chigi%2C_2021.jpg/640px-Matteo_Berrettini_and_Domenico_Berardi%2C_Palazzo_Chigi%2C_2021.jpg",
+      "imageAttr": "Palazzo Chigi, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [0, 10, 230, 65.7, 11210000]
+    },
+    {
+      "id": 28,
+      "name": "Pablo Carreño Busta",
+      "subtitle": "1991, Olympic Bronze 2020",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pablo_Carre%C3%B1o-Busta_-_Roland-Garros_-_28.05.2024.jpg/640px-Pablo_Carre%C3%B1o-Busta_-_Roland-Garros_-_28.05.2024.jpg",
+      "imageAttr": "Kuberzog, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [0, 7, 210, 55.6, 14155000]
+    },
+    {
+      "id": 29,
+      "name": "Diego Schwartzman",
+      "subtitle": "1992, Argentine Fighter",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Tennis_at_the_2020_Summer_Olympics_-_Argentina.jpg/640px-Tennis_at_the_2020_Summer_Olympics_-_Argentina.jpg",
+      "imageAttr": "Secretaría de Deportes, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [0, 4, 207, 52.6, 12730000]
+    },
+    {
+      "id": 30,
+      "name": "Nick Kyrgios",
+      "subtitle": "1995, Australian Showman",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Australian_Open_2020_%2849836759673%29.jpg/640px-Australian_Open_2020_%2849836759673%29.jpg",
+      "imageAttr": "Rob Keating from Canberra, Australia, Australia, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0, 7, 230, 64.3, 11210000]
+    }
+  ]
+}

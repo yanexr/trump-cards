@@ -1,0 +1,305 @@
+{
+  "id": 7,
+  "name": "Extreme Sports",
+  "thumbnailPath": "extreme-sports/extreme-sports_thumbnail.png",
+  "backgroundPath": "extreme-sports/extreme-sports_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Adrenaline Rush"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Danger Level"
+    },
+    {
+      "measurementType": "currency",
+      "isHigherBetter": false,
+      "label": "Gear Price"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Learning Curve"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Body Strain"
+    }
+  ],
+  "cards": [    
+    {
+      "id": 1,
+      "name": "Wingsuit Flying",
+      "subtitle": "Aerial gliding in a wingsuit, mimicking a flying squirrel with human wings.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Dubai_Wingsuit_Flying_Trip_%287623578306%29.jpg/640px-Dubai_Wingsuit_Flying_Trip_%287623578306%29.jpg",
+      "imageAttr": "Richard Schneider from Los Angeles, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9.3, 9.0, 1500, 4.7, 4.0]
+    },
+    {
+      "id": 2,
+      "name": "BASE Jumping",
+      "subtitle": "Jumping from fixed objects such as cliffs or buildings with just one parachute.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BASE_jumping_-_Perrine_Bridge.jpg/800px-BASE_jumping_-_Perrine_Bridge.jpg?20081219220834",
+      "imageAttr": "Chris McNaught from Twin Falls, Idaho, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [10.0, 10.0, 2500, 8.3, 6.7]
+    },
+    {
+      "id": 3,
+      "name": "High-Altitude Military Parachuting (HALO)",
+      "subtitle": "High-altitude skydiving with low-opening parachutes for stealth and precision landings.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Honduran_American_Halo_Jump_%2810018977176%29.jpg/640px-Honduran_American_Halo_Jump_%2810018977176%29.jpg",
+      "imageAttr": "USASOC News Service, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [8.0, 6.3, 4000, 6.0, 3.3]
+    },
+    {
+      "id": 4,
+      "name": "Paragliding",
+      "subtitle": "Foot-launched gliding sport, with acrobatic stunts in the sky.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Paragliding_in_Arambol_sky%2C_Goa.jpg/640px-Paragliding_in_Arambol_sky%2C_Goa.jpg",
+      "imageAttr": "Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [3.3, 3.0, 2000, 1.7, 2.7]
+    },
+    {
+      "id": 5,
+      "name": "Speed Flying",
+      "subtitle": "Fast-paced aerial descent using a small glider, close to mountainous terrain.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/2/26/Speedflying.jpg",
+      "imageAttr": "Pastelitodepapa, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [9.0, 8.7, 1800, 5.0, 6.0]
+    },
+    {
+      "id": 6,
+      "name": "BASE Wingsuit Proximity Flying",
+      "subtitle": "High-speed gliding close to terrain after leaping from cliffs, blending wingsuit flying with BASE jumping.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Dubai_Wingsuit_Flying_Trip_%287623578306%29.jpg/640px-Dubai_Wingsuit_Flying_Trip_%287623578306%29.jpg",
+      "imageAttr": "Richard Schneider from Los Angeles, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [10.0, 9.7, 3500, 9.3, 7.0]
+    },
+    {
+      "id": 7,
+      "name": "Heli-skiing",
+      "subtitle": "Off-trail skiing, where skiers are dropped by helicopter into remote and untouched powder snow.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/My_Public_Lands_Magazine%2C_Spring_2015_%2816421393467%29.jpg/640px-My_Public_Lands_Magazine%2C_Spring_2015_%2816421393467%29.jpg",
+      "imageAttr": "Bureau of Land Management, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [6.3, 4.7, 10000, 3.3, 5.3]
+    },
+    {
+      "id": 8,
+      "name": "Big Wave Surfing",
+      "subtitle": "Surfing giant waves over 20 feet, with some waves reaching 50+ feet, requiring extreme skill and courage.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Riding_the_North_Beach_waves_%28Unsplash%29.jpg/640px-Riding_the_North_Beach_waves_%28Unsplash%29.jpg",
+      "imageAttr": "Julie Macey jules144, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [8.3, 8.0, 1200, 6.3, 7.3]
+    },
+    {
+      "id": 9,
+      "name": "Tow-in Surfing",
+      "subtitle": "A method of catching massive waves with the help of a watercraft, invented to break the 30 ft barrier.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Praia_do_Norte_beach_-_High_waves_-_Nazar%C3%A9_-_Portugal_%2839615885300%29.jpg/800px-Praia_do_Norte_beach_-_High_waves_-_Nazar%C3%A9_-_Portugal_%2839615885300%29.jpg?20231030144917",
+      "imageAttr": "Luis Ascenso from Lisbon, Portugal, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [9.7, 7.7, 8000, 5.3, 5.0]
+    },
+    {
+      "id": 10,
+      "name": "Cave Diving",
+      "subtitle": "Exploring water-filled caves with no direct access to the surface, requiring advanced diving skills and equipment.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jacopo_Busdraghi_Grotta_dei_Cervi_adventurediving.it.jpg/640px-Jacopo_Busdraghi_Grotta_dei_Cervi_adventurediving.it.jpg",
+      "imageAttr": "Marco Busdraghi, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [6.0, 10.0, 3000, 10.0, 8.3]
+    },
+    {
+      "id": 11,
+      "name": "Freediving",
+      "subtitle": "A deep-diving competition where athletes descend to extreme depths on a single breath, without breathing apparatus.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/The_Descent_%281010739120%29.jpg/640px-The_Descent_%281010739120%29.jpg",
+      "imageAttr": "jayhem from Antibes, France, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1.7, 2.0, 500, 6.7, 3.0]
+    },
+    {
+      "id": 12,
+      "name": "Whitewater Kayaking",
+      "subtitle": "Navigating highly technical, dangerous rapids with powerful currents, large waves, and substantial drops.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Nicky_and_David_Ogilvie%2C_Ardeche_River%2C_France.jpg/640px-Nicky_and_David_Ogilvie%2C_Ardeche_River%2C_France.jpg",
+      "imageAttr": "User:Duncanogi, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [7.3, 9.3, 1800, 5.3, 8.7]
+    },
+    {
+      "id": 13,
+      "name": "Jetboard",
+      "subtitle": "A motorized surfboard allowing riders to surf without needing waves, controlled by a handheld remote.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Jetboard_in_Action_-_Radinn_Carve.jpg/480px-Jetboard_in_Action_-_Radinn_Carve.jpg?20230808085803",
+      "imageAttr": "Watersloth, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [4.0, 3.7, 6000, 2.3, 1.7]
+    },
+    {
+      "id": 14,
+      "name": "Shark Diving (without a cage)",
+      "subtitle": "Free-diving with some of the ocean’s top predators, including great white sharks, without the protection of a cage.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PMNM_-_Galapagos_shark_approaches_NOAA_scientists_at_Pioneer_Bank_%2831892939680%29.jpg/640px-PMNM_-_Galapagos_shark_approaches_NOAA_scientists_at_Pioneer_Bank_%2831892939680%29.jpg",
+      "imageAttr": "National Marine Sanctuaries, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [10.0, 10.0, 2000, 8.0, 6.3]
+    },
+    {
+      "id": 15,
+      "name": "Extreme Cliff Diving",
+      "subtitle": "Plunging from heights of 30 meters or more into water, a daring mix of precision and thrill.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/La_Quebrada%2C_Acapulco_Mx.jpg/640px-La_Quebrada%2C_Acapulco_Mx.jpg",
+      "imageAttr": "prayitno from Los Angeles, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [8.7, 7.3, 300, 4.3, 5.7]
+    },
+    {
+      "id": 16,
+      "name": "Downhill Mountain Biking",
+      "subtitle": "Racing downhill on steep, rough terrain with jumps, rock gardens, and high-speed descents.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Downhill-Racer.jpg/640px-Downhill-Racer.jpg",
+      "imageAttr": "Ingo Kappherr, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [9.0, 8.3, 4000, 4.7, 6.0]
+    },
+    {
+      "id": 17,
+      "name": "Freestyle Motocross (FMX)",
+      "subtitle": "A thrilling offshoot of motocross where riders perform aerial stunts, jumps, and flips.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Fmx-1450084.jpg/640px-Fmx-1450084.jpg",
+      "imageAttr": "https://pixabay.com/ru/users/Mistery08-2680981/, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [10.0, 9.7, 8000, 8.7, 9.0]
+    },
+    {
+      "id": 18,
+      "name": "Street Luge",
+      "subtitle": "A high-speed, gravity-powered sport where racers ride supine on boards down paved hills.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/c/c6/2001gga08.jpg?20100124164321",
+      "imageAttr": "The original uploader was Dave.ca at English Wikipedia., CC BY-SA 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "values": [7.7, 7.3, 2000, 3.7, 3.0]
+    },
+    {
+      "id": 19,
+      "name": "Ultra-Trail Running (100+ km)",
+      "subtitle": "Long-distance endurance running on rugged terrain, often covering over 100 kilometers in mountainous regions.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/100-mile_Badger_Mountain_Challenge%2C_A_Testimony_of_human_spirit_120331-A-WN224-035.jpg/640px-100-mile_Badger_Mountain_Challenge%2C_A_Testimony_of_human_spirit_120331-A-WN224-035.jpg",
+      "imageAttr": "Sgt. Jacqueline Fennell, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [6.7, 7.0, 500, 9.7, 10.0]
+    },
+    {
+      "id": 20,
+      "name": "Ski Mountaineering",
+      "subtitle": "A challenging alpine sport combining skiing and mountaineering, often involving both ascents and descents on skis.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ski_dans_le_Queyras.jpg/640px-Ski_dans_le_Queyras.jpg",
+      "imageAttr": "Nicolas Vigier, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [7.0, 6.3, 3500, 4.0, 7.3]
+    },
+    {
+      "id": 21,
+      "name": "Ice Climbing",
+      "subtitle": "A winter sport involving scaling frozen waterfalls or ice-covered cliffs using specialized tools.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Custer_Gallatin_National_Forest%2C_Hyalite_Canyon-_Ice_climber_on_Genesis_Wall_%287%29.jpg/640px-Custer_Gallatin_National_Forest%2C_Hyalite_Canyon-_Ice_climber_on_Genesis_Wall_%287%29.jpg",
+      "imageAttr": "Forest Service Northern Region, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [6.3, 9.0, 1500, 6.7, 9.3]
+    },
+    {
+      "id": 22,
+      "name": "Free Solo Climbing",
+      "subtitle": "Climbing without ropes or safety equipment, where any fall can be fatal.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Alex_Honnold_El_Capitan_Free_Solo_3.png/640px-Alex_Honnold_El_Capitan_Free_Solo_3.png",
+      "imageAttr": "Fox Sports, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [10.0, 10.0, 150, 8.3, 5.0]
+    },
+    {
+      "id": 23,
+      "name": "Sandboarding",
+      "subtitle": "A thrilling boardsport similar to snowboarding, but on sand dunes, practiced worldwide in deserts and beaches.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Sandboarding_in_Dubai.jpg/640px-Sandboarding_in_Dubai.jpg",
+      "imageAttr": "Steven J. Weber, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [2.7, 1.7, 300, 2.3, 1.3]
+    },
+    {
+      "id": 24,
+      "name": "Volcano Boarding",
+      "subtitle": "A thrilling adventure where riders descend active or dormant volcanoes, reaching speeds up to 87 km/h.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Volcano_Boarding_Cerro_Negro.jpg/640px-Volcano_Boarding_Cerro_Negro.jpg",
+      "imageAttr": "NicaPlease, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [8.0, 7.7, 500, 4.0, 5.7]
+    },
+    {
+      "id": 25,
+      "name": "Ice Cross Downhill",
+      "subtitle": "A high-speed race on ice skates down a walled track with sharp turns and steep drops.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Crashed_Ice_Qu%C3%A9bec_2011.jpg/640px-Crashed_Ice_Qu%C3%A9bec_2011.jpg",
+      "imageAttr": "Letartean, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [9.7, 9.3, 1200, 5.7, 7.3]
+    },
+    {
+      "id": 26,
+      "name": "Snowkiting",
+      "subtitle": "A thrilling winter sport where athletes use kites to glide on snow or ice, even uphill.",
+      "imagePath": "",
+      "imageAttr": "",
+      "imageLic": "",
+      "values": [5.0, 4.0, 1500, 3.3, 4.3]
+    },
+    {
+      "id": 27,
+      "name": "Parkour",
+      "subtitle": "A discipline focusing on efficient movement through urban and natural obstacles using running, jumping, and climbing techniques.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Snowkite_%28246959237%29.jpeg/640px-Snowkite_%28246959237%29.jpeg",
+      "imageAttr": "Noel Demulier, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [3.3, 2.7, 100, 1.7, 2.0]
+    },
+    {
+      "id": 28,
+      "name": "Mountain Unicycling (MUni)",
+      "subtitle": "An adventurous off-road sport requiring balance, stamina, and agility to traverse challenging terrain on a single wheel.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Einrad_mit_Scheibenbremse.jpg/790px-Einrad_mit_Scheibenbremse.jpg?20140410163152",
+      "imageAttr": "Lord van Tasm, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [6.7, 4.7, 600, 5.0, 6.0]
+    },
+    {
+      "id": 29,
+      "name": "Canyoning",
+      "subtitle": "A thrilling adventure combining climbing, swimming, rappelling, and jumping to traverse canyons.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Canyoning_NP.jpg/800px-Canyoning_NP.jpg?20130322043952",
+      "imageAttr": "Krish Dulal, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [5.7, 6.7, 1500, 4.3, 6.3]
+    },
+    {
+      "id": 30,
+      "name": "Highlining",
+      "subtitle": "Walking across a slackline set at extreme heights between cliffs, buildings, or other elevated points.",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Bdg_Slackline_Games5_18-06-2017.jpg/640px-Bdg_Slackline_Games5_18-06-2017.jpg",
+      "imageAttr": "Pit1233, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [10.0, 9.7, 700, 6.7, 4.0]
+    } 
+  ]
+}

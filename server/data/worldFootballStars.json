@@ -1,0 +1,305 @@
+{
+  "id": 5,
+  "name": "World Football Stars",
+  "thumbnailPath": "world-football-stars/world-football-stars_thumbnail.png",
+  "backgroundPath": "world-football-stars/world-football-stars_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Career Goals"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Matches Played"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "UCL Titles"
+    },
+    {
+      "measurementType": "percentage",
+      "isHigherBetter": true,
+      "label": "Passing Accuracy"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Cards/Season"
+    }
+  ],
+  "cards": [    
+    {
+      "id": 1,
+      "name": "Lionel Messi",
+      "subtitle": "1987, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lionel_Messi_%28L%29%2C_Bruno_Alves_%28R%29_%E2%80%93_Portugal_vs._Argentina%2C_9th_February_2011.jpg/640px-Lionel_Messi_%28L%29%2C_Bruno_Alves_%28R%29_%E2%80%93_Portugal_vs._Argentina%2C_9th_February_2011.jpg",
+      "imageAttr": "Fanny Schertzer, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [850, 1076, 4, 80.5, 2]
+    },
+    {
+      "id": 2,
+      "name": "Cristiano Ronaldo",
+      "subtitle": "1985, Forward",
+      "imagePath": "",
+      "imageAttr": "Fanny Schertzer, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [904, 1150, 5, 82.3, 3.1]
+    },
+    {
+      "id": 3,
+      "name": "Robert Lewandowski",
+      "subtitle": "1988, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Robert_Lewandowski_2011_%283%29.jpg/640px-Robert_Lewandowski_2011_%283%29.jpg",
+      "imageAttr": "Roger Gorączniak, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [585, 800, 1, 73.99, 2.5]
+    },
+    {
+      "id": 4,
+      "name": "Luka Modrić",
+      "subtitle": "1985, Midfielder",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Brazil_and_Croatia_match_at_the_FIFA_World_Cup_2014-06-12_%2846%29.jpg/640px-Brazil_and_Croatia_match_at_the_FIFA_World_Cup_2014-06-12_%2846%29.jpg",
+      "imageAttr": "copa2014.gov.br, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [70, 767, 6, 90.0, 2.0]
+    },
+    {
+      "id": 5,
+      "name": "Sergio Ramos",
+      "subtitle": "1986, Defender",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Carmena_recibe_al_Real_Madrid_C.F.%2C_campe%C3%B3n_de_la_Copa_de_Europa_2017_%2806%29.jpg/640px-Carmena_recibe_al_Real_Madrid_C.F.%2C_campe%C3%B3n_de_la_Copa_de_Europa_2017_%2806%29.jpg",
+      "imageAttr": "Diario de Madrid, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [107, 800, 4, 89.4, 8.5]
+    },
+    {
+      "id": 6,
+      "name": "Neymar Jr.",
+      "subtitle": "1992, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brasil_estreia_contra_a_%C3%81frica_do_Sul_no_Man%C3%A9_Garrincha_%2828484667890%29.jpg/640px-Brasil_estreia_contra_a_%C3%81frica_do_Sul_no_Man%C3%A9_Garrincha_%2828484667890%29.jpg",
+      "imageAttr": "Agência Brasil Fotografias, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [257, 415, 1, 77.7, 5.7]
+    },
+    {
+      "id": 7,
+      "name": "Kylian Mbappé",
+      "subtitle": "1998, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kylian_Mbapp%C3%A9_2024.jpg/640px-Kylian_Mbapp%C3%A9_2024.jpg",
+      "imageAttr": "Manu Fernandez, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [256, 308, 0, 77.0, 2.0]
+    },
+    {
+      "id": 8,
+      "name": "Manuel Neuer",
+      "subtitle": "1986, Goalkeeper",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_%2836%29.jpg/640px-Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_%2836%29.jpg",
+      "imageAttr": "Danilo Borges/copa2014.gov.br, CC BY 3.0 BR, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/br/",
+      "values": [0, 788, 2, 88.15, 0.5]
+    },
+    {
+      "id": 9,
+      "name": "Karim Benzema",
+      "subtitle": "1987, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Karim_Benzema_in_2020.jpg/640px-Karim_Benzema_in_2020.jpg",
+      "imageAttr": "Real Madrid, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [430, 700, 5, 82.0, 1.5]
+    },
+    {
+      "id": 10,
+      "name": "Andrés Iniesta",
+      "subtitle": "1984, Midfielder",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Prime_Minister_Shinzo_Abe_received_a_courtesy_call_from_Andr%C3%A9s_Iniesta_2.jpg/640px-Prime_Minister_Shinzo_Abe_received_a_courtesy_call_from_Andr%C3%A9s_Iniesta_2.jpg",
+      "imageAttr": "内閣官房内閣広報室, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [93, 885, 4, 86.6, 1.5]
+    },
+    {
+      "id": 11,
+      "name": "Xavi Hernández",
+      "subtitle": "1980, Midfielder",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Xavi_Hernandez_-_30827264903.jpg/640px-Xavi_Hernandez_-_30827264903.jpg",
+      "imageAttr": "Doha Stadium Plus Qatar, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [112, 932, 4, 90.0, 2.0]
+    },
+    {
+      "id": 12,
+      "name": "Thomas Müller",
+      "subtitle": "1989, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Brazil_vs_Germany%2C_in_Belo_Horizonte_09.jpg/640px-Brazil_vs_Germany%2C_in_Belo_Horizonte_09.jpg",
+      "imageAttr": "Agência Brasil, CC BY 3.0 BR, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/br/",
+      "values": [261, 761, 2, 83.76, 1.0]
+    },
+    {
+      "id": 13,
+      "name": "Virgil van Dijk",
+      "subtitle": "1991, Defender",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/20160604_AUT_NED_8876.jpg/640px-20160604_AUT_NED_8876.jpg",
+      "imageAttr": "Ailura, CC BY-SA 3.0 AT, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/at/",
+      "values": [55, 587, 1, 91.6, 1.5]
+    },
+    {
+      "id": 14,
+      "name": "Eden Hazard",
+      "subtitle": "1991, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hazard_taking_on_Howson.jpg/640px-Hazard_taking_on_Howson.jpg",
+      "imageAttr": "Ben Sutherland, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [167, 623, 1, 89.62, 2.0]
+    },
+    {
+      "id": 15,
+      "name": "Kevin De Bruyne",
+      "subtitle": "1991, Midfielder",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Emirates_Cup_-_Arsenal_v_Wolfsburg_%2820011199918%29.jpg/640px-Emirates_Cup_-_Arsenal_v_Wolfsburg_%2820011199918%29.jpg",
+      "imageAttr": "Anish Morarji from St Albans, England, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [150, 621, 1, 84.0, 2.0]
+    },
+    {
+      "id": 16,
+      "name": "Toni Kroos",
+      "subtitle": "1990, Midfielder",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_%2820%29.jpg/640px-Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_%2820%29.jpg",
+      "imageAttr": "Danilo Borges/copa2014.gov.br, CC BY 3.0 BR, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/br/",
+      "values": [49, 492, 5, 89.5, 1.5]
+    },
+    {
+      "id": 17,
+      "name": "Arjen Robben",
+      "subtitle": "1984, Winger",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/RobbenFinale12.jpg/640px-RobbenFinale12.jpg",
+      "imageAttr": "rayand, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [150, 426, 1, 75.7, 1.5]
+    },
+    {
+      "id": 18,
+      "name": "Franck Ribéry",
+      "subtitle": "1983, Winger",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Franck_Ribery_%2810560725555%29.jpg/640px-Franck_Ribery_%2810560725555%29.jpg",
+      "imageAttr": "Dirk Vorderstraße, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [151, 632, 1, 75.7, 1.5]
+    },
+    {
+      "id": 19,
+      "name": "Luis Suárez",
+      "subtitle": "1987, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Luis_Suarez_-_CA2011_mvp_award.jpg/640px-Luis_Suarez_-_CA2011_mvp_award.jpg",
+      "imageAttr": "LGEPR, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [496, 805, 1, 76.61, 2.0]
+    },
+    {
+      "id": 20,
+      "name": "Gareth Bale",
+      "subtitle": "1989, Right Winger",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Gareth_Bale_Brighton_v_Spurs_Amex_Opening_30711.jpg/640px-Gareth_Bale_Brighton_v_Spurs_Amex_Opening_30711.jpg",
+      "imageAttr": "James Boyes, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [185, 554, 5, 75.0, 1.5]
+    },
+    {
+      "id": 21,
+      "name": "Mohamed Salah",
+      "subtitle": "1992, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/LFC_Parade_2019_03.jpg/640px-LFC_Parade_2019_03.jpg",
+      "imageAttr": "Eric The Fish from UK, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [309, 613, 1, 74.64, 1.5]
+    },
+    {
+      "id": 22,
+      "name": "Sadio Mané",
+      "subtitle": "1992, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0_%D0%A4%D0%9A_%C2%AB%D0%9B%D1%96%D0%B2%D0%B5%D1%80%D0%BF%D1%83%D0%BB%D1%8C%C2%BB_%D0%BF%D1%80%D0%B8%D0%B1%D1%83%D0%BB%D0%B0_%D0%B4%D0%BE_%D0%9A%D0%B8%D1%94%D0%B2%D0%B0%2C_2018%2C_5.jpg/640px-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0_%D0%A4%D0%9A_%C2%AB%D0%9B%D1%96%D0%B2%D0%B5%D1%80%D0%BF%D1%83%D0%BB%D1%8C%C2%BB_%D0%BF%D1%80%D0%B8%D0%B1%D1%83%D0%BB%D0%B0_%D0%B4%D0%BE_%D0%9A%D0%B8%D1%94%D0%B2%D0%B0%2C_2018%2C_5.jpg",
+      "imageAttr": "kyivcity.gov.ua, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [226, 560, 1, 74.0, 1.5]
+    },
+    {
+      "id": 23,
+      "name": "N'Golo Kanté",
+      "subtitle": "1991, Midfielder",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Southampton_2_Chelsea_3_%2826647779637%29.jpg/640px-Southampton_2_Chelsea_3_%2826647779637%29.jpg",
+      "imageAttr": "@cfcunofficial (Chelsea Debs) London from London, UK, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "values": [26, 487, 1, 87.0, 3.0]
+    },
+    {
+      "id": 24,
+      "name": "Sergio Agüero",
+      "subtitle": "1988, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_02.jpg/640px-Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_02.jpg",
+      "imageAttr": "Agência Brasil, CC BY 3.0 BR, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/br/",
+      "values": [385, 685, 0, 75.0, 1.5]
+    },
+    {
+      "id": 25,
+      "name": "Marcelo Vieira da Silva Júnior",
+      "subtitle": "1988, Left-Back",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ofrenda_de_la_Liga_y_la_Champions-55-L.Mill%C3%A1n_%2852109278836%29.jpg/640px-Ofrenda_de_la_Liga_y_la_Champions-55-L.Mill%C3%A1n_%2852109278836%29.jpg",
+      "imageAttr": "Fotografías Archimadrid.es, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [52, 663, 5, 81.66, 0.26]
+    },
+    {
+      "id": 26,
+      "name": "Thiago Silva",
+      "subtitle": "1984, Centre-Back",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Dilma_Rousseff_Confederations_Cup_2013_%283%29.jpg/640px-Dilma_Rousseff_Confederations_Cup_2013_%283%29.jpg",
+      "imageAttr": "Fabio Rodrigues Pozzebom/ABr, CC BY 3.0 BR, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/br/",
+      "values": [33, 635, 1, 88.0, 2.0]
+    },
+    {
+      "id": 27,
+      "name": "Gianluigi Buffon",
+      "subtitle": "1978, Goalkeeper",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Gianluigi_Buffon_%2831784615942%29.jpg/640px-Gianluigi_Buffon_%2831784615942%29.jpg",
+      "imageAttr": "Doha Stadium Plus Qatar from Doha, Qatar, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1, 1110, 0, 85.0, 0.5]
+    },
+    {
+      "id": 28,
+      "name": "Zlatan Ibrahimović",
+      "subtitle": "1981, Centre-Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/CINvLAG_2019-06-22_-_Zlatan_Ibrahimovi%C4%87_%2851167871716%29.jpg/640px-CINvLAG_2019-06-22_-_Zlatan_Ibrahimovi%C4%87_%2851167871716%29.jpg",
+      "imageAttr": "Hayden Schiff from Cincinnati, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [405, 637, 0, 75.0, 2.0]
+    },
+    {
+      "id": 29,
+      "name": "Antoine Griezmann",
+      "subtitle": "1991, Forward",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Antoine_Griezmann_-_CdR_-_RM_v_ATL.jpg/640px-Antoine_Griezmann_-_CdR_-_RM_v_ATL.jpg",
+      "imageAttr": "DSanchez17 from Hertfordshire, England, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [297, 782, 0, 77.7, 2.5]
+    },
+    {
+      "id": 30,
+      "name": "Philipp Lahm",
+      "subtitle": "1983, Right-Back",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/First_Minister_and_Philipp_Lahm_%2853791060431%29.jpg/640px-First_Minister_and_Philipp_Lahm_%2853791060431%29.jpg",
+      "imageAttr": "Scottish Government, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [17, 660, 1, 85.0, 1.0]
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "id": 3,
+  "name": "Animals",
+  "thumbnailPath": "animals/animals_thumbnail.png",
+  "backgroundPath": "animals/animals_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "velocity",
+      "isHigherBetter": true,
+      "label": "Top Speed"
+    },
+    {
+      "measurementType": "mass",
+      "isHigherBetter": true,
+      "label": "Weight"
+    },
+    {
+      "measurementType": "distance",
+      "isHigherBetter": true,
+      "label": "Size"
+    },
+    {
+      "measurementType": "calendarTime",
+      "isHigherBetter": true,
+      "label": "Lifespan"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Neurons"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Population"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "name": "Sponge",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Sponge_04a_Molasses_Reef_20230714.jpg/640px-Sponge_04a_Molasses_Reef_20230714.jpg",
+      "imageAttr": "Jstuby, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.001, 1, 0.1, 200, 0, 1000000000000]
+    },
+    {
+      "id": 2,
+      "name": "Tardigrade",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Tardigrade_%2850594150046%29.jpg/640px-Tardigrade_%2850594150046%29.jpg",
+      "imageAttr": "Philippe Garcelon, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0.0003, 0.000002, 0.0005, 1, 20000, 1000000000000000000]
+    },
+    {
+      "id": 3,
+      "name": "Ciona intestinalis",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Cionaintestinalis.jpg/614px-Cionaintestinalis.jpg?20070311092353",
+      "imageAttr": "perezoso, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [0.0, 0.002, 0.036, 1, 231, 1000000000000]
+    },
+    {
+      "id": 4,
+      "name": "Starfish",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Brown_common_starfish_clinging_to_a_cliff.jpg/640px-Brown_common_starfish_clinging_to_a_cliff.jpg",
+      "imageAttr": "W.carter, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.012, 0.02, 0.3, 35, 500, 2000000000]
+    },
+    {
+      "id": 5,
+      "name": "Jellyfish",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Lion%27s_mane_jellyfish_in_Gullmarn_fjord_at_S%C3%A4mstad_3.jpg/640px-Lion%27s_mane_jellyfish_in_Gullmarn_fjord_at_S%C3%A4mstad_3.jpg",
+      "imageAttr": "W.carter, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [8, 2, 2, 1, 5600, 1000000000000000000]
+    },
+    {
+      "id": 6,
+      "name": "Pond Snail",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Water_snail_Rex_2.jpg/800px-Water_snail_Rex_2.jpg?20050710202932",
+      "imageAttr": "Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [0.007, 0.002, 0.05, 2, 11000, 1000000000000000]
+    },
+    {
+      "id": 7,
+      "name": "Larval Zebrafish",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/CSIRO_ScienceImage_7598_larval_zebra.jpg/640px-CSIRO_ScienceImage_7598_larval_zebra.jpg",
+      "imageAttr": "CSIRO, CSIRO, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [0.5, 0.0005, 0.005, 0.1, 100000, 1000000000000000]
+    },
+    {
+      "id": 8,
+      "name": "Wandering Spider",
+      "subtitle": "Central America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wandering_Spider_-_family_Ctenidae%2C_Gorongosa_National_Park%2C_Mozambique_%2842844847991%29.jpg/640px-Wandering_Spider_-_family_Ctenidae%2C_Gorongosa_National_Park%2C_Mozambique_%2842844847991%29.jpg",
+      "imageAttr": "Judy Gallagher, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1.08, 0.001, 0.1, 1.5, 100000, 1000000000]
+    },
+    {
+      "id": 9,
+      "name": "Fruit Fly",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Drosophila-melanogaster-Nauener-Stadtwald-03-VII-2007-10.jpg/640px-Drosophila-melanogaster-Nauener-Stadtwald-03-VII-2007-10.jpg",
+      "imageAttr": "Botaurus, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [8, 0.001, 0.003, 0.14, 150000, 1000000000000000000]
+    },
+    {
+      "id": 10,
+      "name": "Ant",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Maricopa_harvester_ant_%28Formicidae-_Pogonomyrmex_maricopa%3B_31538269553%3B_cropped%29.jpg/640px-Maricopa_harvester_ant_%28Formicidae-_Pogonomyrmex_maricopa%3B_31538269553%3B_cropped%29.jpg",
+      "imageAttr": "Insects Unlocked, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.36, 0.003, 0.005, 0.1, 250000, 20000000000000]
+    },
+    {
+      "id": 11,
+      "name": "Honey Bee",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/European_honey_bee_extracts_nectar.jpg/640px-European_honey_bee_extracts_nectar.jpg",
+      "imageAttr": "John Severns (Severnjc), Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [24, 0.1, 0.012, 0.1, 960000, 2000000000000]
+    },
+    {
+      "id": 12,
+      "name": "Steudner's Dwarf Gecko",
+      "subtitle": "North Africa and the Middle East",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Tropiocolotes_steudneri_1.jpeg/640px-Tropiocolotes_steudneri_1.jpeg",
+      "imageAttr": "Barbod Safaei, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.1, 0.001, 0.07, 4, 1771000, 1000000000]
+    },
+    {
+      "id": 13,
+      "name": "Ocelot Gecko",
+      "subtitle": "Madagascar",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Paroedura_picta_64504574.jpg/640px-Paroedura_picta_64504574.jpg",
+      "imageAttr": "Lennart Hudel, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [0.1, 0.015, 0.15, 8, 4420000, 1000000000]
+    },
+    {
+      "id": 14,
+      "name": "Cerastes cerastes",
+      "subtitle": "North Africa and Middle East",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Cerastes_gasperettii_321816565.jpg/640px-Cerastes_gasperettii_321816565.jpg",
+      "imageAttr": "Marius Burger, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [8, 0.3, 0.5, 16, 4996000, 1000000]
+    },
+    {
+      "id": 15,
+      "name": "Lacerta strigata",
+      "subtitle": "Caucasus and surrounding regions",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lacerta_strigata_304239190.jpg/640px-Lacerta_strigata_304239190.jpg",
+      "imageAttr": "Kseniia Marianna Prondzynska, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [8, 0.05, 0.25, 6, 5529000, 1000000]
+    },
+    {
+      "id": 16,
+      "name": "Cylindrophis ruffus",
+      "subtitle": "Southeast Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cylind_ruffa_080406-6798_tdp.JPG/640px-Cylind_ruffa_080406-6798_tdp.JPG",
+      "imageAttr": "Wibowo Djatmiko (Wie146), CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [0.1, 0.2, 1, 10, 5779000, 1000000]
+    },
+    {
+      "id": 17,
+      "name": "Scincus scincus",
+      "subtitle": "Sahara Desert and Arabian Peninsula",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Scincus_conirostris.jpg/640px-Scincus_conirostris.jpg",
+      "imageAttr": "Marius Burger, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.05, 0.02, 0.2, 6, 6284000, 1000000]
+    },
+    {
+      "id": 18,
+      "name": "Gekko kuhli",
+      "subtitle": "Southeast Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ptychozoon_kuhli_%28Kuala_Lumpur%29.jpg/640px-Ptychozoon_kuhli_%28Kuala_Lumpur%29.jpg",
+      "imageAttr": "Sundar, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [0.1, 0.01, 0.2, 6, 7659000, 1000000]
+    },
+    {
+      "id": 19,
+      "name": "Greek Tortoise",
+      "subtitle": "Southern Europe, North Africa, and Southwest Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Zoopark_Zajezd_CZ_Testudo_graeca_terrestris_093_%28cropped%29.jpg/640px-Zoopark_Zajezd_CZ_Testudo_graeca_terrestris_093_%28cropped%29.jpg",
+      "imageAttr": "User:Miaow Miaow, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [0.2, 1.5, 0.2, 125, 8520000, 1000000]
+    },
+    {
+      "id": 20,
+      "name": "Malagasy Giant Chameleon",
+      "subtitle": "Madagascar",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Furcifer_oustaleti_186573454.jpg/640px-Furcifer_oustaleti_186573454.jpg",
+      "imageAttr": "Marius Burger, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.05, 0.5, 0.68, 8, 9751000, 500000]
+    },
+    {
+      "id": 21,
+      "name": "Corn Snake",
+      "subtitle": "Southeastern United States",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Kornnatter.jpg/640px-Kornnatter.jpg",
+      "imageAttr": "Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [0.5, 0.9, 1.5, 15, 10629000, 1000000]
+    },
+    {
+      "id": 22,
+      "name": "Indochinese Spitting Cobra",
+      "subtitle": "Southeast Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Naja-siamensis-indochinese-spitting-cobra-southwest-thailand.jpg/640px-Naja-siamensis-indochinese-spitting-cobra-southwest-thailand.jpg",
+      "imageAttr": "Tontanthailand, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [8, 1.6, 1.2, 15, 11306000, 1000000]
+    },
+    {
+      "id": 23,
+      "name": "Meller's Chameleon",
+      "subtitle": "East Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Trioceros_melleri_79314942.jpg/640px-Trioceros_melleri_79314942.jpg",
+      "imageAttr": "William Stephens, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [0.05, 0.5, 0.61, 12, 12035000, 1000000]
+    },
+    {
+      "id": 24,
+      "name": "Frog",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Green_and_Golden_Bell_Frog.jpg/640px-The_Green_and_Golden_Bell_Frog.jpg",
+      "imageAttr": "Bernard Spragg. NZ, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [16, 0.0227, 0.1, 5, 16000000, 1000000000000]
+    },
+    {
+      "id": 25,
+      "name": "Boa Constrictor",
+      "subtitle": "Central and South America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Boa_constrictor_closeup.jpg/640px-Boa_constrictor_closeup.jpg",
+      "imageAttr": "marcodede, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [1, 15, 3, 25, 19781000, 5000000]
+    },
+    {
+      "id": 26,
+      "name": "Green Iguana",
+      "subtitle": "Central and South America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Green_iguana_in_Costa_Rica_04.jpg/640px-Green_iguana_in_Costa_Rica_04.jpg",
+      "imageAttr": "Bernard Gagnon, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [21, 4, 1.7, 20, 29098000, 10000000]
+    },
+    {
+      "id": 27,
+      "name": "Cyclura nubila",
+      "subtitle": "Cuba",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cuban_Iguana_%2843819943560%29.jpg/640px-Cuban_Iguana_%2843819943560%29.jpg",
+      "imageAttr": "kuhnmi, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [0.1, 7, 1.6, 40, 30820000, 50000]
+    },
+    {
+      "id": 28,
+      "name": "House Mouse",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/%D0%94%D0%BE%D0%BC%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D1%8B%D1%88%D1%8C_%28Mus_musculus%29%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.jpg/640px-%D0%94%D0%BE%D0%BC%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D1%8B%D1%88%D1%8C_%28Mus_musculus%29%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.jpg",
+      "imageAttr": "Dion Art, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [13, 0.02, 0.1, 1, 71000000, 5000000000]
+    },
+    {
+      "id": 29,
+      "name": "Asian Water Monitor",
+      "subtitle": "South and Southeast Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Water_Monitor_-_%28Varanus_salvator%29_%285025408560%29.jpg/640px-Water_Monitor_-_%28Varanus_salvator%29_%285025408560%29.jpg",
+      "imageAttr": "Hafiz Issadeen from Dharga Town, Sri Lanka, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [19.3, 20, 2, 15, 78231000, 1000000]
+    },
+    {
+      "id": 30,
+      "name": "King Quail",
+      "subtitle": "Southern China to Southeast Australia & Oceania",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Quail_%288454285953%29.jpg/640px-Quail_%288454285953%29.jpg",
+      "imageAttr": "shankar s. from Dubai, united arab emirates, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [35, 0.04, 0.14, 1.5, 80478000, 1000000]
+    },
+    {
+      "id": 31,
+      "name": "Nile Crocodile",
+      "subtitle": "Sub-Saharan Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/WikiConvFr23_%C3%A0_Abidjan_en_cote_d%27Ivoire_Crocodile_de_Yamoussoukro%2C_lac_aux_ca%C3%AFmans_08.jpg/640px-WikiConvFr23_%C3%A0_Abidjan_en_cote_d%27Ivoire_Crocodile_de_Yamoussoukro%2C_lac_aux_ca%C3%AFmans_08.jpg",
+      "imageAttr": "Adoscam, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [35, 410, 4.5, 70, 80500000, 375000]
+    },
+    {
+      "id": 32,
+      "name": "Brown Rat",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Rattus_norvegicus%2C_Hatchpond%2C_Poole%2C_Dorset_%288395418976%29.jpg/640px-Rattus_norvegicus%2C_Hatchpond%2C_Poole%2C_Dorset_%288395418976%29.jpg",
+      "imageAttr": "Ian Kirk from Broadstone, Dorset, UK, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [13, 0.3, 0.4, 1, 200000000, 7000000]
+    },
+    {
+      "id": 33,
+      "name": "Eastern Mole",
+      "subtitle": "Eastern United States, Canada, and Mexico",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Scalopus_aquaticus_261282911.jpg/640px-Scalopus_aquaticus_261282911.jpg",
+      "imageAttr": "L. K. Holt, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [5, 0.075, 0.17, 3, 204000000, 10000000]
+    },
+    {
+      "id": 34,
+      "name": "Green-rumped Parrotlet",
+      "subtitle": "Northeastern South America and Trinidad",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Forpus_passerinus-Venezuela-8a.jpg/640px-Forpus_passerinus-Venezuela-8a.jpg",
+      "imageAttr": "kulyka on flickr, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [40, 0.023, 0.13, 15, 227000000, 1000000]
+    },
+    {
+      "id": 35,
+      "name": "Guinea Pig",
+      "subtitle": "Domesticated Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Guinea_Pig_2283119096.jpg/640px-Guinea_Pig_2283119096.jpg",
+      "imageAttr": "Jean, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [3, 1, 0.25, 6, 240000000, 25000000]
+    },
+    {
+      "id": 36,
+      "name": "Pigeon",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Feral_pigeon_2022_03_18_02.jpg/640px-Feral_pigeon_2022_03_18_02.jpg",
+      "imageAttr": "Alexis Lours, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [120, 0.3, 0.33, 6, 310000000, 400000000]
+    },
+    {
+      "id": 37,
+      "name": "Mallard",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Anas_platyrhynchos_%D0%9A%D1%80%D1%8F%D0%BA%D0%B2%D0%B0_%D0%A1%D0%B5%D0%BB%D0%B5%D0%B7%D0%B5%D0%BD%D1%8C_%D0%B1%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D1%8B%D0%B9_09.jpg/640px-Anas_platyrhynchos_%D0%9A%D1%80%D1%8F%D0%BA%D0%B2%D0%B0_%D0%A1%D0%B5%D0%BB%D0%B5%D0%B7%D0%B5%D0%BD%D1%8C_%D0%B1%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D1%8B%D0%B9_09.jpg",
+      "imageAttr": "Tsyganov Sergey, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [105, 1.1, 0.6, 3, 367000000, 19000000]
+    },
+    {
+      "id": 38,
+      "name": "Prairie Dog",
+      "subtitle": "North America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Cynomys_ludovicianus.jpg/640px-Cynomys_ludovicianus.jpg",
+      "imageAttr": "Ron Singer, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [56, 1.4, 0.4, 5, 473940000, 18420000]
+    },
+    {
+      "id": 49,
+      "name": "Wild Turkey",
+      "subtitle": "North America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Wild_turkey_eastern_us.jpg/640px-Wild_turkey_eastern_us.jpg",
+      "imageAttr": "Dimus, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [40, 7.6, 1.2, 3, 492873000, 6900000]
+    },
+    {
+      "id": 40,
+      "name": "European Rabbit",
+      "subtitle": "Europe, North Africa, introduced worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Rabbit_-_wild_rabbit_leaping.jpg/640px-Rabbit_-_wild_rabbit_leaping.jpg",
+      "imageAttr": "Yu-Chan Chen, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [40, 1.6, 0.4, 9, 494200000, 200000000]
+    },
+    {
+      "id": 41,
+      "name": "Octopus",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gew%C3%B6hnlicher_Krake_Octopus_vulgaris_2.jpg/640px-Gew%C3%B6hnlicher_Krake_Octopus_vulgaris_2.jpg",
+      "imageAttr": "Holger Krisp, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [40, 9, 1.25, 2, 500000000, 1000000000]
+    },
+    {
+      "id": 42,
+      "name": "Cat",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Golden_tabby_and_white_kitten_n01.jpg/640px-Golden_tabby_and_white_kitten_n01.jpg",
+      "imageAttr": "Marie-Lan Nguyen, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [48, 4.5, 0.46, 15, 760000000, 600000000]
+    },
+    {
+      "id": 43,
+      "name": "Mute Swan",
+      "subtitle": "Europe and Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Mute_swan_flying.jpg/640px-Mute_swan_flying.jpg",
+      "imageAttr": "Alexis Lours, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [88.5, 11, 1.5, 19, 1001000000, 500000]
+    },
+    {
+      "id": 44,
+      "name": "Common Buzzard",
+      "subtitle": "Europe and Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Common_buzzard_2024-01-20.jpg/640px-Common_buzzard_2024-01-20.jpg",
+      "imageAttr": "Alexis Lours, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [40, 0.5, 0.5, 25, 1001000000, 3000000]
+    },
+    {
+      "id": 45,
+      "name": "Emu",
+      "subtitle": "Australia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/640px-Emu_1_-_Tidbinbilla.jpg",
+      "imageAttr": "JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [50, 45, 1.9, 20, 1335000000, 700000]
+    },
+    {
+      "id": 46,
+      "name": "Grey Parrot",
+      "subtitle": "Equatorial Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Psittacus_erithacus_-upper_body-8c.jpg/640px-Psittacus_erithacus_-upper_body-8c.jpg",
+      "imageAttr": "L.Miguel Bugallo Sánchez (http://commons.wikimedia.org/wiki/User:Lmbuga), CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [64, 0.45, 0.33, 23, 1566000000, 630000]
+    },
+    {
+      "id": 47,
+      "name": "Eurasian Eagle-Owl",
+      "subtitle": "Europe and Asia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bubo_September_2014-5a.jpg/640px-Bubo_September_2014-5a.jpg",
+      "imageAttr": "Alvesgaspar, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [64, 3.5, 0.7, 20, 1897000000, 300000]
+    },
+    {
+      "id": 48,
+      "name": "Fox",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Renard_roux_Ichkeul.jpg/640px-Renard_roux_Ichkeul.jpg",
+      "imageAttr": "El Golli Mohamed, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [50, 6.6, 0.9, 5, 2110000000, 7200000]
+    },
+    {
+      "id": 49,
+      "name": "Sulphur-crested Cockatoo",
+      "subtitle": "Australia and New Guinea",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sulphur-crested_cockatoo_%28Cacatua_galerita_galerita%29_Sydney.jpg/640px-Sulphur-crested_cockatoo_%28Cacatua_galerita_galerita%29_Sydney.jpg",
+      "imageAttr": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [70, 0.8, 0.5, 40, 2122000000, 1000000]
+    },
+    {
+      "id": 50,
+      "name": "Raccoon",
+      "subtitle": "North America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Racoon_portrait_from_Hugh_Taylor_Birch_State_Park.JPG/640px-Racoon_portrait_from_Hugh_Taylor_Birch_State_Park.JPG",
+      "imageAttr": "Korall, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [24, 9, 0.8, 3, 2148000000, 150000000]
+    },
+    {
+      "id": 51,
+      "name": "Raven",
+      "subtitle": "Northern Hemisphere",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Corvus_corax_in_puddle_at_Bonny_Doon_Beach.jpg/640px-Corvus_corax_in_puddle_at_Bonny_Doon_Beach.jpg",
+      "imageAttr": "Grendelkhan, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [40, 1.2, 0.6, 13, 2171000000, 16000000]
+    },
+    {
+      "id": 52,
+      "name": "Domestic Pig",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Pig_farm_Vampula_6.jpg/640px-Pig_farm_Vampula_6.jpg",
+      "imageAttr": "kallerna, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [17.7, 140, 1.2, 15, 2220000000, 784830000]
+    },
+    {
+      "id": 53,
+      "name": "Chihuahua",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Standard_razza_chihuahua.jpg/800px-Standard_razza_chihuahua.jpg?20140613150247",
+      "imageAttr": "Caterinarufo, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [24, 2.5, 0.2, 15, 2510000000, 20000000]
+    },
+    {
+      "id": 54,
+      "name": "Springbok",
+      "subtitle": "Southern and Southwestern Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Antidorcas_marsupialis%2C_male_%28Etosha%2C_2012%29.jpg/640px-Antidorcas_marsupialis%2C_male_%28Etosha%2C_2012%29.jpg",
+      "imageAttr": "Yathin S Krishnappa, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [88, 35, 1.2, 10, 2720000000, 2250000]
+    },
+    {
+      "id": 55,
+      "name": "Common Squirrel Monkey",
+      "subtitle": "South America",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Micos_IMG_2130a.jpg/640px-Micos_IMG_2130a.jpg",
+      "imageAttr": "Christof46, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [35, 0.75, 0.32, 21, 3246000000, 1000000]
+    },
+    {
+      "id": 56,
+      "name": "German Shepherd",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/German_shepherd_enjoying_the_sun.jpg/640px-German_shepherd_enjoying_the_sun.jpg",
+      "imageAttr": "PROPOLI87, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [48, 35, 0.6, 11, 3530000000, 10000000]
+    },
+    {
+      "id": 57,
+      "name": "Striped Hyena",
+      "subtitle": "North Africa to Central Asia & Indian Subcontinent",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/T%C3%AAte_hy%C3%A8ne_ray%C3%A9e_-_Tozeur.jpg/640px-T%C3%AAte_hy%C3%A8ne_ray%C3%A9e_-_Tozeur.jpg",
+      "imageAttr": "Amélie Tsaag Valren, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [50, 38.5, 1.075, 12, 3885000000, 9500]
+    },
+    {
+      "id": 58,
+      "name": "Lion",
+      "subtitle": "Sub-Saharan Africa and India",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Young_Lion_Mara.JPG/640px-Young_Lion_Mara.JPG",
+      "imageAttr": "Wwelles14, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [59, 190, 2.5, 14, 4667000000, 25000]
+    },
+    {
+      "id": 59,
+      "name": "Greater Kudu",
+      "subtitle": "Eastern and Southern Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Greater_kudu_%28Tragelaphus_strepsiceros%29_male_Kruger.jpg/640px-Greater_kudu_%28Tragelaphus_strepsiceros%29_male_Kruger.jpg",
+      "imageAttr": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [96, 190, 2.15, 14, 4910000000, 482000]
+    },
+    {
+      "id": 60,
+      "name": "Brown Bear",
+      "subtitle": "Northern Hemisphere",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ursus_arctos%2C_Kuterevo_%28HR%29_--_2022_--_0379.jpg/640px-Ursus_arctos%2C_Kuterevo_%28HR%29_--_2022_--_0379.jpg",
+      "imageAttr": "Anil Öztas, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [56, 318, 2.4, 25, 9586000000, 200000]
+    },
+    {
+      "id": 61,
+      "name": "Giraffe",
+      "subtitle": "Sub-Saharan Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Giraffe.JPG/640px-Giraffe.JPG",
+      "imageAttr": "Sergio Cambelo, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [56, 1900, 5.5, 25, 10750000000, 117000]
+    },
+    {
+      "id": 62,
+      "name": "Chimpanzee",
+      "subtitle": "Sub-Saharan Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/013_Alpha_male_chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/640px-013_Alpha_male_chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+      "imageAttr": "Giles Laurent, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [40, 60, 1.5, 40, 28000000000, 300000]
+    },
+    {
+      "id": 63,
+      "name": "Orangutan",
+      "subtitle": "Sumatra and Borneo, Indonesia and Malaysia",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Orangutan_in_S%C3%A3o_Paulo_Zoo_56.jpg/640px-Orangutan_in_S%C3%A3o_Paulo_Zoo_56.jpg",
+      "imageAttr": "Wilfredor, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [6, 90, 1.3, 30, 28000000000, 110000]
+    },
+    {
+      "id": 64,
+      "name": "Gorilla",
+      "subtitle": "Central and West Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/N%27Tami%2C_Western_Gorilla.jpg/640px-N%27Tami%2C_Western_Gorilla.jpg",
+      "imageAttr": "Clément Bardot, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [40, 160, 1.7, 35, 28000000000, 100000]
+    },
+    {
+      "id": 65,
+      "name": "Common Minke Whale",
+      "subtitle": "Northern Hemisphere",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Minke_whale_near_Tadoussac.jpg/640px-Minke_whale_near_Tadoussac.jpg",
+      "imageAttr": "Maksim Sokolov (maxergon.com), CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [35, 4, 8, 50, 50000000, 200000]
+    },
+    {
+      "id": 66,
+      "name": "Short-finned Pilot Whale",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Globicephala_macrorhynchus_Tenerife_2012.jpg/640px-Globicephala_macrorhynchus_Tenerife_2012.jpg",
+      "imageAttr": "Cayambe, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [32, 4000, 7.2, 60, 700000000, 700000]
+    },
+    {
+      "id": 67,
+      "name": "African Elephant",
+      "subtitle": "Sub-Saharan Africa",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg/640px-African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg",
+      "imageAttr": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "values": [40, 6000, 3.3, 60, 257000000000, 450000]
+    },
+    {
+      "id": 68,
+      "name": "Human",
+      "subtitle": "Worldwide",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Gary_Plant_Tubular_Steel_Corporation.jpg/640px-Gary_Plant_Tubular_Steel_Corporation.jpg",
+      "imageAttr": "M. Marshall, Public Domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [45, 70, 1.7, 72, 86000000000, 8000000000]
+    }
+  ]
+}

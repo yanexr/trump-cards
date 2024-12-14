@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Animals",
+      "path": "animals.json",
+      "numberOfCards": "68",
+      "thumbnailPath": "animals_thumbnail.png"
+    },
+    {
+      "name": "Dinosaurs",
+      "path": "dinosaurs.json",
+      "numberOfCards": "40",
+      "thumbnailPath": "dinosaurs_thumbnail.png"
+    },
+    {
+      "name": "World Football Stars",
+      "path": "worldFootballStars.json",
+      "numberOfCards": "30",
+      "thumbnailPath": "world-football-stars_thumbnail.png"
+    },
+    {
+      "name": "World Tennis Stars",
+      "path": "worldTennisStars.json",
+      "numberOfCards": "30",
+      "thumbnailPath": "world-tennis-stars_thumbnail.png"
+    },
+    {
+      "name": "Extreme Sports",
+      "path": "extremeSports.json",
+      "numberOfCards": "30",
+      "thumbnailPath": "extreme-sports_thumbnail.png"
+    },
+    {
+      "name": "Mega Cities",
+      "path": "megaCities.json",
+      "numberOfCards": "60",
+      "thumbnailPath": "mega-cities_thumbnail.png"
+    }
+  ]
+  

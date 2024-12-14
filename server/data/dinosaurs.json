@@ -1,0 +1,400 @@
+{
+  "id": 4,
+  "name": "Dinosaurs",
+  "thumbnailPath": "dinosaurs/dinosaurs_thumbnail.png",
+  "backgroundPath": "dinosaurs/dinosaurs_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "distance",
+      "isHigherBetter": true,
+      "label": "Height"
+    },
+    {
+      "measurementType": "distance",
+      "isHigherBetter": true,
+      "label": "Length"
+    },
+    {
+      "measurementType": "mass",
+      "isHigherBetter": true,
+      "label": "Weight"
+    },
+    {
+      "measurementType": "velocity",
+      "isHigherBetter": true,
+      "label": "Speed"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Attack"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Defense"
+    }
+  ],
+  "cards": [    
+    {
+      "id": 1,
+      "name": "Tyrannosaurus",
+      "subtitle": "About 66 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tyrannosaurus_Rex_colored.png/640px-Tyrannosaurus_Rex_colored.png",
+      "imageAttr": "myfavoritedinosaur.com and LadyofHats, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [3.66, 12.3, 8400, 27, 9.5, 8.5]
+    },
+    {
+      "id": 2,
+      "name": "Triceratops",
+      "subtitle": "About 66 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Triceratops_Dinopark_Denkendorf.jpg/640px-Triceratops_Dinopark_Denkendorf.jpg",
+      "imageAttr": "Christian-wittmann-1964, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [2.3, 8.5, 8000, 25, 7.5, 8.0]
+    },
+    {
+      "id": 3,
+      "name": "Velociraptor",
+      "subtitle": "About 75 to 71 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Velociraptor_mongoliensis.jpg",
+      "imageAttr": "I, ArthurWeasley, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [0.5, 2.0, 15, 40, 6.5, 4.5]
+    },
+    {
+      "id": 4,
+      "name": "Stegosaurus",
+      "subtitle": "About 150 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stegosaurus_Anava_Park.jpg/640px-Stegosaurus_Anava_Park.jpg",
+      "imageAttr": "McKaby, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [3.4, 8.2, 5000, 6, 5.0, 7.5]
+    },
+    {
+      "id": 5,
+      "name": "Apatosaurus",
+      "subtitle": "About 152 to 151 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pasta-Brontosaurus.jpg/640px-Pasta-Brontosaurus.jpg",
+      "imageAttr": "Charles Robert Knight, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [5.2, 22, 18000, 20, 4.0, 7.0]
+    },
+    {
+      "id": 6,
+      "name": "Diplodocus",
+      "subtitle": "About 154 to 150 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Diplodocus_longus_Senckenberg_081810.JPG/640px-Diplodocus_longus_Senckenberg_081810.JPG",
+      "imageAttr": "Wilson44691, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [5.0, 27.0, 12000, 15, 3.5, 6.5]
+    },
+    {
+      "id": 7,
+      "name": "Brachiosaurus",
+      "subtitle": "About 154 to 150 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Brachiosaurus_DB_flipped.jpg/640px-Brachiosaurus_DB_flipped.jpg",
+      "imageAttr": "Богданов dmitrchel@mail.ru, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [13, 22, 46000, 19, 4.0, 7.0]
+    },
+    {
+      "id": 8,
+      "name": "Allosaurus",
+      "subtitle": "About 155 to 145 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Allosaurus_fragilis_skeleton_in_Bergamo_2.jpg/640px-Allosaurus_fragilis_skeleton_in_Bergamo_2.jpg",
+      "imageAttr": "Giorces, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [4.5, 9.7, 3500, 34, 8.0, 6.5]
+    },
+    {
+      "id": 9,
+      "name": "Spinosaurus",
+      "subtitle": "About 99 to 94 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Spinosaurus_in_Progress_-_Dinosaurs_Alive_Exhibition_-_Science_City_-_Calcutta_1995-June-July_397.JPG/640px-Spinosaurus_in_Progress_-_Dinosaurs_Alive_Exhibition_-_Science_City_-_Calcutta_1995-June-July_397.JPG",
+      "imageAttr": "Biswarup Ganguly, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+      "values": [6.9, 15.0, 7400, 24, 8.5, 7.5]
+    },
+    {
+      "id": 10,
+      "name": "Ankylosaurus",
+      "subtitle": "About 68 to 66 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ankylosaurus_Dinopark_Denkendorf.jpg/640px-Ankylosaurus_Dinopark_Denkendorf.jpg",
+      "imageAttr": "Christian-wittmann-1964, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [1.7, 6.25, 5900, 9.7, 6.0, 8.5]
+    },
+    {
+      "id": 11,
+      "name": "Parasaurolophus",
+      "subtitle": "About 76.9 to 73.5 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dinopark_Plze%C5%88.JPG/640px-Dinopark_Plze%C5%88.JPG",
+      "imageAttr": "Czeva, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [4.0, 9.5, 5000, 40, 4.5, 6.0]
+    },
+    {
+      "id": 12,
+      "name": "Pachycephalosaurus",
+      "subtitle": "About 76 to 65 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pachycephalosaurus_Reconstruction.jpg/640px-Pachycephalosaurus_Reconstruction.jpg",
+      "imageAttr": "Fred Wierum, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [1.5, 4.5, 450, 24, 5.5, 6.5]
+    },
+    {
+      "id": 13,
+      "name": "Gallimimus",
+      "subtitle": "About 70 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Solec_JuraPark05.JPG/640px-Solec_JuraPark05.JPG",
+      "imageAttr": "Przemysław Jahr, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [1.9, 6.0, 440, 50, 4.0, 5.0]
+    },
+    {
+      "id": 14,
+      "name": "Iguanodon",
+      "subtitle": "About 126 to 122 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Iguanodon_bernissartensis_%282%29.jpg/640px-Iguanodon_bernissartensis_%282%29.jpg",
+      "imageAttr": "Biodiversity Heritage Library, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [3.5, 10.0, 4500, 24, 5.0, 6.5]
+    },
+    {
+      "id": 15,
+      "name": "Archaeopteryx",
+      "subtitle": "About 150 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Archaeopteryx_in_flight_at_AMNH.jpg/640px-Archaeopteryx_in_flight_at_AMNH.jpg",
+      "imageAttr": "Ryan Schwark, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [0.3, 0.5, 0.5, 17, 3.5, 4.0]
+    },
+    {
+      "id": 16,
+      "name": "Carnotaurus",
+      "subtitle": "About 72 to 69 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Carnotaurus_sastrei_FW.jpg/640px-Carnotaurus_sastrei_FW.jpg",
+      "imageAttr": "Fred Wierum, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [3.0, 7.5, 1350, 56, 7.5, 6.5]
+    },
+    {
+      "id": 17,
+      "name": "Argentinosaurus",
+      "subtitle": "About 97 to 93.5 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Argentinosaurus_skeleton%2C_PLoS_ONE.png/640px-Argentinosaurus_skeleton%2C_PLoS_ONE.png",
+      "imageAttr": "William Irvin Sellers, Lee Margetts, Rodolfo Aníbal Coria, Phillip Lars Manning, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [7.5, 32.5, 72000, 8, 3.0, 7.5]
+    },
+    {
+      "id": 18,
+      "name": "Giganotosaurus",
+      "subtitle": "About 99.6 to 97 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/GONDWANA_-_Das_Praehistorium%2C_Tyrannosaurus-2.jpg/640px-GONDWANA_-_Das_Praehistorium%2C_Tyrannosaurus-2.jpg",
+      "imageAttr": "Dguendel, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [3.5, 13.2, 13800, 50, 9.0, 8.0]
+    },
+    {
+      "id": 19,
+      "name": "Compsognathus",
+      "subtitle": "About 150 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Compsognathus%2C_Senckenberg%2C_2017-10-12.jpg/640px-Compsognathus%2C_Senckenberg%2C_2017-10-12.jpg",
+      "imageAttr": "Own work, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [0.29, 1.25, 3500, 64, 4.5, 3.5]
+    },
+    {
+      "id": 20,
+      "name": "Deinonychus",
+      "subtitle": "About 115 to 108 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Deinonychus_im_NHM_Wien.JPG/640px-Deinonychus_im_NHM_Wien.JPG",
+      "imageAttr": "Domser, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [1.2, 3.4, 80, 40, 7.0, 5.5]
+    },
+    {
+      "id": 21,
+      "name": "Hadrosaurus",
+      "subtitle": "About 80 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/HADROSAURUS.jpg/640px-HADROSAURUS.jpg",
+      "imageAttr": "User:Ghedo, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [3.0, 8.0, 3000, 40, 4.0, 5.5]
+    },
+    {
+      "id": 22,
+      "name": "Corythosaurus",
+      "subtitle": "About 77 to 75.7 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Corythosaurus_casuarius%2C_Dinosaur_Provincial_Park%2C_Alberta%2C_Canada%2C_Late_Cretaceous_-_Royal_Ontario_Museum_-_DSC00023.JPG/640px-Corythosaurus_casuarius%2C_Dinosaur_Provincial_Park%2C_Alberta%2C_Canada%2C_Late_Cretaceous_-_Royal_Ontario_Museum_-_DSC00023.JPG",
+      "imageAttr": "Daderot, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [4.6, 9.0, 3800, 30, 4.5, 6.0]
+    },
+    {
+      "id": 23,
+      "name": "Edmontosaurus",
+      "subtitle": "About 76 to 66 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WLA_hmns_Edmontosaurus_annectens.jpg/640px-WLA_hmns_Edmontosaurus_annectens.jpg",
+      "imageAttr": "Wikipedia Loves Art participant 'The_Wookies', CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [3.0, 12.0, 5600, 45, 4.0, 6.0]
+    },
+    {
+      "id": 24,
+      "name": "Maiasaura",
+      "subtitle": "About 76.7 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Maiasaura_FMNH.jpg/640px-Maiasaura_FMNH.jpg",
+      "imageAttr": "T-Rex Taylor, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [2.5, 9.0, 4000, 40, 4.5, 6.5]
+    },
+    {
+      "id": 25,
+      "name": "Utahraptor",
+      "subtitle": "About 139 to 134 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Utahraptor_Early_K_MAL.jpg/640px-Utahraptor_Early_K_MAL.jpg",
+      "imageAttr": "Wilson44691, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [1.5, 6.5, 500, 40, 7.5, 6.5]
+    },
+    {
+      "id": 26,
+      "name": "Megalosaurus",
+      "subtitle": "About 166 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Megalosaurus_dinosaur.png/640px-Megalosaurus_dinosaur.png",
+      "imageAttr": "LadyofHats Mariana Ruiz Altered by FunkMonk and Steveoc 86, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [3.0, 9.0, 1000, 32, 7.5, 6.5]
+    },
+    {
+      "id": 27,
+      "name": "Therizinosaurus",
+      "subtitle": "About 70 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Therizinosaurus_Restoration.png/640px-Therizinosaurus_Restoration.png",
+      "imageAttr": "PaleoNeolitic, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [4.5, 10.0, 5000, 8, 8.5, 7.5]
+    },
+    {
+      "id": 28,
+      "name": "Troodon",
+      "subtitle": "About 77 to 76 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Prehist._04_Troodon%28dinopark_vy%C5%A1kov_cz.%29.jpg/640px-Prehist._04_Troodon%28dinopark_vy%C5%A1kov_cz.%29.jpg",
+      "imageAttr": "cs:User:Pernak, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [0.9, 2.4, 50, 64, 6.0, 4.0]
+    },
+    {
+      "id": 29,
+      "name": "Plateosaurus",
+      "subtitle": "About 214 to 204 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Plateosaurus_trossingensis_-_AMNH_-_DSC06290.JPG/640px-Plateosaurus_trossingensis_-_AMNH_-_DSC06290.JPG",
+      "imageAttr": "Daderot, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [3.0, 8.0, 1500, 19, 4.0, 5.0]
+    },
+    {
+      "id": 30,
+      "name": "Camarasaurus",
+      "subtitle": "About 155 to 145 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Camarasaurus_lentus_%28sauropod_dinosaur%29_%28Morrison_Formation%2C_Upper_Jurassic%3B_Carnegie_Quarry%2C_Dinosaur_National_Monument%2C_Utah%2C_USA%29_7_%2848696262481%29.jpg/640px-Camarasaurus_lentus_%28sauropod_dinosaur%29_%28Morrison_Formation%2C_Upper_Jurassic%3B_Carnegie_Quarry%2C_Dinosaur_National_Monument%2C_Utah%2C_USA%29_7_%2848696262481%29.jpg",
+      "imageAttr": "James St. John, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [6.0, 18.0, 20000, 20, 3.0, 7.0]
+    },
+    {
+      "id": 31,
+      "name": "Oviraptor",
+      "subtitle": "About 75 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Oviraptor_UDL.png/640px-Oviraptor_UDL.png",
+      "imageAttr": "UnexpectedDinoLesson, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [1.0, 1.8, 25, 43, 5.0, 4.0]
+    },
+    {
+      "id": 32,
+      "name": "Ornithomimus",
+      "subtitle": "About 76 to 66 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ornithomimus_RTMP.jpg/640px-Ornithomimus_RTMP.jpg",
+      "imageAttr": "IJReid, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "values": [2.1, 3.8, 170, 64, 5.0, 5.5]
+    },
+    {
+      "id": 33,
+      "name": "Pachyrhinosaurus",
+      "subtitle": "About 71 to 67 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pachyrhinosaurus_fight.png/640px-Pachyrhinosaurus_fight.png",
+      "imageAttr": "Karen Carr, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [3.0, 6.5, 3500, 32, 6.0, 7.0]
+    },
+    {
+      "id": 34,
+      "name": "Styracosaurus",
+      "subtitle": "About 76 to 75 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Styracosaurus_UDL.png/640px-Styracosaurus_UDL.png",
+      "imageAttr": "UnexpectedDinoLesson, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [1.8, 5.5, 2700, 20, 6.5, 7.0]
+    },
+    {
+      "id": 35,
+      "name": "Dilophosaurus",
+      "subtitle": "About 186 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dilophosaurus_model_Rogowo.jpg/640px-Dilophosaurus_model_Rogowo.jpg",
+      "imageAttr": "Ania_alf, CC BY 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.5/",
+      "values": [1.75, 7.0, 400, 48, 6.5, 5.5]
+    },
+    {
+      "id": 36,
+      "name": "Mamenchisaurus",
+      "subtitle": "About 160 to 145 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mamenchisaurus_Skeleton_%2833259332350%29.jpg/640px-Mamenchisaurus_Skeleton_%2833259332350%29.jpg",
+      "imageAttr": "Gary Todd from Xinzheng, China, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "values": [11.4, 26.0, 79832, 13, 3.0, 7.0]
+    },
+    {
+      "id": 37,
+      "name": "Brontosaurus",
+      "subtitle": "About 156 to 146 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pasta-Brontosaurus.jpg/640px-Pasta-Brontosaurus.jpg",
+      "imageAttr": "Charles Robert Knight, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [8.5, 22.0, 15000, 20, 3.0, 7.0]
+    },
+    {
+      "id": 38,
+      "name": "Ceratosaurus",
+      "subtitle": "About 153 to 148 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ceratosaurus_in_Utah_Field_House_of_Natural_History.jpg/640px-Ceratosaurus_in_Utah_Field_House_of_Natural_History.jpg",
+      "imageAttr": "Larry Lamsa, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0/",
+      "values": [2.5, 6.0, 970, 48, 7.0, 6.0]
+    },
+    {
+      "id": 39,
+      "name": "Microraptor",
+      "subtitle": "About 125 to 120 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Microraptor_updated_version.JPG/640px-Microraptor_updated_version.JPG",
+      "imageAttr": "Conty, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [0.3, 0.8, 1, 38, 4.0, 3.0]
+    },
+    {
+      "id": 40,
+      "name": "Euoplocephalus",
+      "subtitle": "About 76 to 70 million years ago",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Pla%C5%BCa_w_Or%C5%82owie_%28dzielnica_Gdyni%29_-_033.JPG/640px-Pla%C5%BCa_w_Or%C5%82owie_%28dzielnica_Gdyni%29_-_033.JPG",
+      "imageAttr": "Plaża w Gdynia-Orłowie, Public domain, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "values": [2.2, 6.0, 2000, 10, 5.0, 8.0]
+    }
+  ]
+}
