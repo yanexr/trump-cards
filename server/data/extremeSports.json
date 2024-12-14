@@ -1,8 +1,8 @@
 {
   "id": 7,
   "name": "Extreme Sports",
-  "thumbnailPath": "extreme-sports/extreme-sports_thumbnail.png",
-  "backgroundPath": "extreme-sports/extreme-sports_background.jpg",
+  "thumbnailPath": "extremeSports/extremeSports_thumbnail.png",
+  "backgroundPath": "extremeSports/extremeSports_background.jpg",
   "characteristics": [
     {
       "measurementType": "count",

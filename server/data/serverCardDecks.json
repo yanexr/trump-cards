@@ -15,25 +15,25 @@
       "name": "World Football Stars",
       "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/worldFootballStars.json",
       "numberOfCards": "30",
-      "thumbnailPath": "worldFootballStars/world-football-stars_thumbnail.png"
+      "thumbnailPath": "worldFootballStars/worldFootballStars_thumbnail.png"
     },
     {
       "name": "World Tennis Stars",
       "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/worldTennisStars.json",
       "numberOfCards": "30",
-      "thumbnailPath": "worldTennisStars/world-tennis-stars_thumbnail.png"
+      "thumbnailPath": "worldTennisStars/worldTennisStars_thumbnail.png"
     },
     {
       "name": "Extreme Sports",
       "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/extremeSports.json",
       "numberOfCards": "30",
-      "thumbnailPath": "extremeSports/extreme-sports_thumbnail.png"
+      "thumbnailPath": "extremeSports/extremeSports_thumbnail.png"
     },
     {
       "name": "Mega Cities",
       "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/megaCities.json",
       "numberOfCards": "60",
-      "thumbnailPath": "megaCities/mega-cities_thumbnail.png"
+      "thumbnailPath": "megaCities/megaCities_thumbnail.png"
     }
   ]
   

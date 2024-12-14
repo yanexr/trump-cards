@@ -1,8 +1,8 @@
 {
   "id": 6,
   "name": "World Tennis Stars",
-  "thumbnailPath": "world-tennis-stars/world-tennis-stars_thumbnail.png",
-  "backgroundPath": "world-tennis-stars/world-tennis-stars_background.jpg",
+  "thumbnailPath": "worldTennisStars/worldTennisStars_thumbnail.png",
+  "backgroundPath": "worldTennisStars/worldTennisStars_background.jpg",
   "characteristics": [
     {
       "measurementType": "count",

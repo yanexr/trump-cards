@@ -1,8 +1,8 @@
 {
   "id": 5,
   "name": "World Football Stars",
-  "thumbnailPath": "world-football-stars/world-football-stars_thumbnail.png",
-  "backgroundPath": "world-football-stars/world-football-stars_background.jpg",
+  "thumbnailPath": "worldFootballStars/worldFootballStars_thumbnail.png",
+  "backgroundPath": "worldFootballStars/worldFootballStars_background.jpg",
   "characteristics": [
     {
       "measurementType": "count",
