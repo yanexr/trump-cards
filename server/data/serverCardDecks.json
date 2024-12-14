@@ -1,39 +1,39 @@
 [
     {
       "name": "Animals",
-      "path": "animals.json",
+      "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/animals.json",
       "numberOfCards": "68",
-      "thumbnailPath": "animals_thumbnail.png"
+      "thumbnailPath": "animals/animals_thumbnail.png"
     },
     {
       "name": "Dinosaurs",
-      "path": "dinosaurs.json",
+      "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/dinosaurs.json",
       "numberOfCards": "40",
-      "thumbnailPath": "dinosaurs_thumbnail.png"
+      "thumbnailPath": "dinosaurs/dinosaurs_thumbnail.png"
     },
     {
       "name": "World Football Stars",
-      "path": "worldFootballStars.json",
+      "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/worldFootballStars.json",
       "numberOfCards": "30",
-      "thumbnailPath": "world-football-stars_thumbnail.png"
+      "thumbnailPath": "worldFootballStars/world-football-stars_thumbnail.png"
     },
     {
       "name": "World Tennis Stars",
-      "path": "worldTennisStars.json",
+      "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/worldTennisStars.json",
       "numberOfCards": "30",
-      "thumbnailPath": "world-tennis-stars_thumbnail.png"
+      "thumbnailPath": "worldTennisStars/world-tennis-stars_thumbnail.png"
     },
     {
       "name": "Extreme Sports",
-      "path": "extremeSports.json",
+      "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/extremeSports.json",
       "numberOfCards": "30",
-      "thumbnailPath": "extreme-sports_thumbnail.png"
+      "thumbnailPath": "extremeSports/extreme-sports_thumbnail.png"
     },
     {
       "name": "Mega Cities",
-      "path": "megaCities.json",
+      "path": "https://raw.githubusercontent.com/yanexr/trump-cards/refs/heads/main/server/data/megaCities.json",
       "numberOfCards": "60",
-      "thumbnailPath": "mega-cities_thumbnail.png"
+      "thumbnailPath": "megaCities/mega-cities_thumbnail.png"
     }
   ]
   
