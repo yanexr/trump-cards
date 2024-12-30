@@ -26,7 +26,7 @@
     },
     {
       "measurementType": "count",
-      "isHigherBetter": true,
+      "isHigherBetter": false,
       "label": "Cards/Season"
     }
   ],
@@ -44,7 +44,7 @@
       "id": 2,
       "name": "Cristiano Ronaldo",
       "subtitle": "1985, Forward",
-      "imagePath": "",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Cristiano_Ronaldo_%E2%80%93_Portugal_vs._Argentina%2C_9th_February_2011_%281%29.jpg/640px-Cristiano_Ronaldo_%E2%80%93_Portugal_vs._Argentina%2C_9th_February_2011_%281%29.jpg",
       "imageAttr": "Fanny Schertzer, CC BY 3.0, via Wikimedia Commons",
       "imageLic": "https://creativecommons.org/licenses/by/3.0/",
       "values": [904, 1150, 5, 82.3, 3.1]

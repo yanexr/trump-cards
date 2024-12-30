@@ -1,0 +1,476 @@
+{
+  "id": 2,
+  "name": "Rockets",
+  "thumbnailPath": "Rockets/rockets_thumbnail.png",
+  "backgroundPath": "Rockets/rockets_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "dimension",
+      "isHigherBetter": true,
+      "label": "Height"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Stages"
+    },
+    {
+      "measurementType": "mass",
+      "isHigherBetter": true,
+      "label": "Payload to LEO"
+    },
+    {
+      "measurementType": "force",
+      "isHigherBetter": true,
+      "label": "Lift-off thrust"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Launches until 2024"
+    }
+  ],
+  "cards": [  
+    {
+      "id": 1,
+      "name": "Saturn V",
+      "subtitle": "1967, NASA",
+      "imagePath": "Saturn_V.jpg",
+      "imageAttr": "Project Apollo Archive, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [110.6, 3, 140000, 35100, 13]
+    },
+    {
+      "id": 2,
+      "name": "N1 (rocket)",
+      "subtitle": "1969, Soviet Union",
+      "imagePath": "N1.jpg",
+      "imageAttr": "National Reconnaissance Office, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [105.3, 5, 95000, 45300, 4]
+    },
+    {
+      "id": 3,
+      "name": "SpaceX Falcon Heavy",
+      "subtitle": "2018, SpaceX",
+      "imagePath": "Falcon_Heavy.jpg",
+      "imageAttr": "SpaceX, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [70, 2.5, 63800, 22820, 7]
+    },
+    {
+      "id": 4,
+      "name": "SpaceX Falcon 9 Block 5",
+      "subtitle": "2018, SpaceX",
+      "imagePath": "Falcon_9_Block_5.jpg",
+      "imageAttr": "Charles Boyer, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [70, 2, 22800, 7600, 358]
+    },
+    {
+      "id": 5,
+      "name": "SpaceX Falcon 9 v1.0",
+      "subtitle": "2010, SpaceX",
+      "imagePath": "Falcon_9_1.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [47.8, 2, 10450, 4940, 5]
+    },
+    {
+      "id": 6,
+      "name": "SpaceX Falcon 1",
+      "subtitle": "2006, SpaceX",
+      "imagePath": "Falcon_1.jpg",
+      "imageAttr": "SpaceX, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [21, 2, 470, 450, 5]
+    },
+    {
+      "id": 7,
+      "name": "SpaceX Starship",
+      "subtitle": "2023, SpaceX",
+      "imagePath": "starship.jpg",
+      "imageAttr": "SpaceX, CC BY-NC 2.0, via www.flickr.com",
+      "imageLic": "https://creativecommons.org/licenses/by-nc/2.0/",
+      "values": [121, 2, 200000, 74500, 6]
+    },
+    {
+      "id": 8,
+      "name": "Saturn IB",
+      "subtitle": "1966, NASA",
+      "imagePath": "Saturn_IB.jpg",
+      "imageAttr": "Daderot, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [43.2, 2, 21000, 7100, 9]
+    },
+    {
+      "id": 9,
+      "name": "SLS Block 1",
+      "subtitle": "2022, NASA",
+      "imagePath": "SLS_Block_1.jpg",
+      "imageAttr": "Joel Kowsky, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [98, 2.5, 95000, 39000, 1]
+    },
+    {
+      "id": 10,
+      "name": "Delta IV Heavy",
+      "subtitle": "2004, ULA",
+      "imagePath": "Delta_IV_Heavy.jpg",
+      "imageAttr": "Bill Ingalls, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [72, 2, 28790, 9411, 15]
+    },
+    {
+      "id": 11,
+      "name": "Angara A5",
+      "subtitle": "2014, Russia",
+      "imagePath": "Angara-A5.jpg",
+      "imageAttr": "ИА Военинформ, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [64, 2, 25000, 9610, 3]
+    },
+    {
+      "id": 12,
+      "name": "Atlas V",
+      "subtitle": "2002, ULA",
+      "imagePath": "Atlas_V.jpg",
+      "imageAttr": "U.S. Air Force, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [62.2, 2, 18850, 12140, 97]
+    },
+    {
+      "id": 13,
+      "name": "Atlas III",
+      "subtitle": "2000, ULA",
+      "imagePath": "Atlas_III.jpg",
+      "imageAttr": "U.S. Air Force, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [52.8, 2, 8640, 3826, 6]
+    },
+    {
+      "id": 14,
+      "name": "Long March 8",
+      "subtitle": "2020, China",
+      "imagePath": "Long_March.jpg",
+      "imageAttr": "Kirill Borisenko, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [50.34, 2, 8100, 4750, 3]
+    },
+    {
+      "id": 15,
+      "name": "Zenit-2 (rocket)",
+      "subtitle": "1985, Soviet Union",
+      "imagePath": "Zenit-2.jpg",
+      "imageAttr": "Public domain",
+      "imageLic": "",
+      "values": [57, 2, 13740, 8180, 36]
+    },
+    {
+      "id": 16,
+      "name": "Ariane 5",
+      "subtitle": "1996, ESA",
+      "imagePath": "Ariane_5.jpg",
+      "imageAttr": "Bill Ingalls, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [52, 2, 20000, 15120, 117]
+    },
+    {
+      "id": 17,
+      "name": "Ariane 1",
+      "subtitle": "1979, ESA",
+      "imagePath": "Ariane_1.jpg",
+      "imageAttr": "ignis, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [50, 3, 4850, 2771, 11]
+    },
+    {
+      "id": 18,
+      "name": "Space Shuttle",
+      "subtitle": "1981, NASA",
+      "imagePath": "Space_Shuttle.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [56.1, 1.5, 27500, 30250, 135]
+    },
+    {
+      "id": 19,
+      "name": "Energia (rocket)",
+      "subtitle": "1987, Soviet Union",
+      "imagePath": "energia.JPEG",
+      "imageAttr": "Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [58.76, 2, 100000, 29000, 2]
+    },
+    {
+      "id": 20,
+      "name": "Soyuz-U",
+      "subtitle": "1973, Soviet Union",
+      "imagePath": "Soyuz.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [51.32, 2, 6860, 4456, 786]
+    },
+    {
+      "id": 21,
+      "name": "Sputnik (rocket) 8K71PS",
+      "subtitle": "1957, Soviet Union",
+      "imagePath": "Sputnik.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [30.2, 2, 510, 4457, 2]
+    },
+    {
+      "id": 22,
+      "name": "Diamant",
+      "subtitle": "1965, France",
+      "imagePath": "Diamant.jpg",
+      "imageAttr": "I, Captainm, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [18.95, 3, 80, 274, 12]
+    },
+    {
+      "id": 23,
+      "name": "Black Arrow",
+      "subtitle": "1969, United Kingdom",
+      "imagePath": "black_arrow.JPG",
+      "imageAttr": "Хомелка, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [13, 3, 135, 256, 4]
+    },
+    {
+      "id": 24,
+      "name": "H-IIA",
+      "subtitle": "2001, Japan",
+      "imagePath": "H-IIA.jpg",
+      "imageAttr": "NORIHIDE SAITOU, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [53, 2, 15000, 9040, 49]
+    },
+    {
+      "id": 25,
+      "name": "Blue Origin New Shepard",
+      "subtitle": "2015, Blue Origin",
+      "imagePath": "New_Shepard.jpg",
+      "imageAttr": "NASA Flight Opportunities, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [18, 1, 0, 490, 23]
+    },
+    {
+      "id": 26,
+      "name": "LGM-25C Titan II",
+      "subtitle": "1962, USAF",
+      "imagePath": "Titan_2.JPG",
+      "imageAttr": "NASA/William Hartenstein, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [31.4, 2, 3600, 1900, 106]
+    },
+    {
+      "id": 27,
+      "name": "Firefly Alpha",
+      "subtitle": "2021, Firefly Aerospace",
+      "imagePath": "Firefly_Alpha.jpg",
+      "imageAttr": "JacobRendon, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [29, 2, 1170, 736.1, 5]
+    },
+    {
+      "id": 28,
+      "name": "Rocket Lab Electron",
+      "subtitle": "2017, Rocket Lab",
+      "imagePath": "electron.jpg",
+      "imageAttr": "Scott Andrews, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [18, 3, 300, 224, 54]
+    },
+    {
+      "id": 29,
+      "name": "Vostok (rocket)",
+      "subtitle": "1960, Soviet Union",
+      "imagePath": "vostok.jpg",
+      "imageAttr": "FOTO:FORTEPAN / Kristek Pál, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [38.4, 3, 4730, 4570, 26]
+    },
+    {
+      "id": 30,
+      "name": "Long March 1",
+      "subtitle": "1970, China",
+      "imagePath": "Changzheng-1.jpg",
+      "imageAttr": "Ceeseven, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [29.9, 3, 300, 1101, 2]
+    },
+    {
+      "id": 31,
+      "name": "LVM3 (Launch Vehicle Mark-3)",
+      "subtitle": "2014, ISRO",
+      "imagePath": "LVM3.jpg",
+      "imageAttr": "Indian Space Research Organisation (GODL-India), GODL-India, via Wikimedia Commons",
+      "imageLic": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "values": [43.43, 3, 10000, 5150, 7]
+    },
+    {
+      "id": 32,
+      "name": "V-2 rocket",
+      "subtitle": "1944, Germany",
+      "imagePath": "The_V2_Rocket.jpg",
+      "imageAttr": "No 5 Army Film & Photographic Unit, Morris (Sgt), Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [14, 1, 0, 250, 3000]
+    },
+    {
+      "id": 33,
+      "name": "Long March 5",
+      "subtitle": "2016, China",
+      "imagePath": "Long_March_5.jpg",
+      "imageAttr": "Gmandian, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [57, 3, 25000, 10565, 13]
+    },
+    {
+      "id": 34,
+      "name": "Proton-K",
+      "subtitle": "1965, Soviet Union",
+      "imagePath": "Proton-K.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [50, 3, 22776, 10470, 310]
+    },
+    {
+      "id": 35,
+      "name": "Northrop Grumman Pegasus XL",
+      "subtitle": "1990, Northrop Grumman",
+      "imagePath": "Pegasus.jpg",
+      "imageAttr": "NASA/Lori Losey, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [17.6, 4, 443, 561, 45]
+    },
+    {
+      "id": 36,
+      "name": "Antares (rocket)",
+      "subtitle": "2013, Northrop Grumman",
+      "imagePath": "Antares.jpg",
+      "imageAttr": "Bill Ingalls, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [42.5, 2, 8000, 3844, 18]
+    },
+    {
+      "id": 37,
+      "name": "Vega (rocket)",
+      "subtitle": "2012, ESA",
+      "imagePath": "Vega.jpg",
+      "imageAttr": "https://www.flickr.com/photos/esa_events/, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [30, 4, 1436, 2261, 25]
+    },
+    {
+      "id": 38,
+      "name": "GSLV Mk II (Geosynchronous Satellite Launch Vehicle)",
+      "subtitle": "2010, ISRO",
+      "imagePath": "GSLV-F10.jpg",
+      "imageAttr": "Indian Space Research Organisation (GODL-India), GODL-India, via Wikimedia Commons",
+      "imageLic": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "values": [51.7, 3, 5000, 7887, 16]
+    },
+    {
+      "id": 39,
+      "name": "Tsyklon-3 (rocket)",
+      "subtitle": "1977, Soviet Union",
+      "imagePath": "Cyclone-3.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [39.27, 3, 4100, 3000, 122]
+    },
+    {
+      "id": 40,
+      "name": "Thor-Agena D",
+      "subtitle": "1962, USAF",
+      "imagePath": "Thor-Agena_D.jpg",
+      "imageAttr": "USAF, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [31, 2, 250, 1571, 83]
+    },
+    {
+      "id": 41,
+      "name": "Long March 2D",
+      "subtitle": "1992, China",
+      "imagePath": "Long_March_2D.jpg",
+      "imageAttr": "Cristóbal Alvarado Minic, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [41, 2, 3500, 2962, 80]
+    },
+    {
+      "id": 42,
+      "name": "Long March 3B/E",
+      "subtitle": "2007, China",
+      "imagePath": "Long_March_3B.jpg",
+      "imageAttr": "AAxanderr, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [56.3, 3, 11500, 5986, 79]
+    },
+    {
+      "id": 43,
+      "name": "Molniya-M (rocket)",
+      "subtitle": "1964, Soviet Union",
+      "imagePath": "Molniya.jpg",
+      "imageAttr": "Matveev Michail, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0",
+      "values": [34.2, 4, 6200, 4391, 297]
+    },
+    {
+      "id": 44,
+      "name": "PSLV (Polar Satellite Launch Vehicle)",
+      "subtitle": "1993, ISRO",
+      "imagePath": "PSLV_C45_EMISAT_campaign_22.jpg",
+      "imageAttr": "Indian Space Research Organisation (GODL-India), GODL-India, via Wikimedia Commons",
+      "imageLic": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "values": [44, 4, 3800, 7661, 61]
+    },
+    {
+      "id": 45,
+      "name": "Saturn I (rocket)",
+      "subtitle": "1961, NASA",
+      "imagePath": "Saturn_SA5.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [55, 2, 9700, 6700, 10]
+    },
+    {
+      "id": 46,
+      "name": "Ariane 6",
+      "subtitle": "2024, ESA",
+      "imagePath": "Ariane_6.jpg",
+      "imageAttr": "ESA - S. Corvaja, ESA Standard Licence",
+      "imageLic": "https://www.esa.int/ESA_Multimedia/Terms_and_conditions_of_use_of_images_and_videos_available_on_the_esa_website",
+      "values": [62, 2, 10350, 8370, 1]
+    },
+    {
+      "id": 47,
+      "name": "Juno 1",
+      "subtitle": "1958, USAF",
+      "imagePath": "Juno_I.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [21.2, 4, 11, 416, 6]
+    },
+    {
+      "id": 48,
+      "name": "SpaceShipTwo",
+      "subtitle": "2018, Virgin Galactic",
+      "imagePath": "SpaceShipTwo.jpg",
+      "imageAttr": "Virgin Galactic/Mark Greenberg, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [18.3, 1, 0, 310, 12]
+    },
+    {
+      "id": 49,
+      "name": "Delta II",
+      "subtitle": "1989, ULA",
+      "imagePath": "Delta_II.jpg",
+      "imageAttr": "NASA/Regina Mitchell-Ryall & Jerry Cannon, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [38.1, 2, 6097, 4398, 155]
+    }
+  ]
+}

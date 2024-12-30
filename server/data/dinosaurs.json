@@ -5,12 +5,12 @@
   "backgroundPath": "dinosaurs/dinosaurs_background.jpg",
   "characteristics": [
     {
-      "measurementType": "distance",
+      "measurementType": "dimension",
       "isHigherBetter": true,
       "label": "Height"
     },
     {
-      "measurementType": "distance",
+      "measurementType": "dimension",
       "isHigherBetter": true,
       "label": "Length"
     },

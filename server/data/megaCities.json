@@ -15,7 +15,7 @@
       "label": "Pop. Density"
     },
     {
-      "measurementType": "distance",
+      "measurementType": "dimension",
       "isHigherBetter": true,
       "label": "Tallest Building"
     },
@@ -490,7 +490,7 @@
       "id": 51,
       "name": "Foshan",
       "subtitle": "Founded in 628 CE, China",
-      "imagePath": "",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/39459-Foshan.jpg/640px-39459-Foshan.jpg",
       "imageAttr": "xiquinhosilva from Cacau, CC BY 2.0, via Wikimedia Commons",
       "imageLic": "https://creativecommons.org/licenses/by/2.0/",
       "values": [9498863, 2500, 393, 166800000000, 21000000, 2.4]

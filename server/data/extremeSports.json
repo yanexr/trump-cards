@@ -155,7 +155,7 @@
       "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PMNM_-_Galapagos_shark_approaches_NOAA_scientists_at_Pioneer_Bank_%2831892939680%29.jpg/640px-PMNM_-_Galapagos_shark_approaches_NOAA_scientists_at_Pioneer_Bank_%2831892939680%29.jpg",
       "imageAttr": "National Marine Sanctuaries, Public domain, via Wikimedia Commons",
       "imageLic": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "values": [10.0, 10.0, 2000, 8.0, 6.3]
+      "values": [10.0, 9.9, 2000, 8.0, 6.3]
     },
     {
       "id": 15,
@@ -260,17 +260,17 @@
       "id": 26,
       "name": "Snowkiting",
       "subtitle": "A thrilling winter sport where athletes use kites to glide on snow or ice, even uphill.",
-      "imagePath": "",
-      "imageAttr": "",
-      "imageLic": "",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Snowkite_%28246959237%29.jpeg/640px-Snowkite_%28246959237%29.jpeg",
+      "imageAttr": "Noel Demulier, CC0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
       "values": [5.0, 4.0, 1500, 3.3, 4.3]
     },
     {
       "id": 27,
       "name": "Parkour",
       "subtitle": "A discipline focusing on efficient movement through urban and natural obstacles using running, jumping, and climbing techniques.",
-      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Snowkite_%28246959237%29.jpeg/640px-Snowkite_%28246959237%29.jpeg",
-      "imageAttr": "Noel Demulier, CC0, via Wikimedia Commons",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Parkour_%E2%80%93_Archway.jpg/640px-Parkour_%E2%80%93_Archway.jpg",
+      "imageAttr": "RuthieGledhill, CC0, via Wikimedia Commons",
       "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
       "values": [3.3, 2.7, 100, 1.7, 2.0]
     },

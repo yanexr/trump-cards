@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Cars",
+      "path": "assets/carddecks/cars.json",
+      "numberOfCards": "116",
+      "thumbnailPath": "Cars/cars_thumbnail.png"
+    },
+    {
+      "name": "Airplanes",
+      "path": "assets/carddecks/airplanes.json",
+      "numberOfCards": "83",
+      "thumbnailPath": "Airplanes/airplanes_thumbnail.png"
+    },
+    {
+      "name": "Rockets",
+      "path": "assets/carddecks/rockets.json",
+      "numberOfCards": "49",
+      "thumbnailPath": "Rockets/rockets_thumbnail.png"
+    }
+  ]
+  
