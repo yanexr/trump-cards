@@ -1,62 +1,131 @@
-# TRUMP Cards - Server
-This is the server for the *TRUMP Cards* game. The following describes the network protocol that defines how client and server communicate over a network. The exchanged data are UTF-8 encoded strings. A string encodes a sequence of data with `:` as an separator. 
+# Trump Cards – Server
 
+This document describes the protocol for the Trump Cards game. Each message is a JSON object (UTF-8 encoded) with a `type` field indicating the message type. Below are the message types, their structures, and brief explanations.
 
-## Create game
-Client -> Server:
-| Value 0 | Value 1 | Value 2
-| ----- | ----- | ----- |
-| CREATE_GAME | \<username> | \<carddeck id> |
+---
 
-Server -> Client:
-| Value 0 | Value 1 |
-| ----- | ----- |
-| CREATE_GAME_SUCCESS | \<unique game code> |
+## 1. Create Game
+**Direction**: Client → Server  
+```json
+{  
+  "type": "createGame",  
+  "username": "<string>"  
+}
+```
+**Purpose**: Request server to create a new game.  
 
+---
 
-## Join game
-Client -> Server:
-| Value 0 | Value 1 | Value 2 |
-| ----- | ----- | ----- |
-| JOIN_GAME | \<game code> | \<username> |
+## 2. Create Game Success
+**Direction**: Server → Client  
+```json
+{  
+  "type": "createGameSuccess",  
+  "gameCode": "<string>"  
+}
+```
+**Purpose**: Confirms the game was created, providing the unique `gameCode`.
 
-Server -> Client:
-| Value 0 | Value 1 | Value 2 (optional) | Value 3 (optional) |
-| ----- | ----- | ----- | ----- |
-| JOIN_GAME_SUCCESS | \<username> | \<username> | \<username> |
+---
 
-Server -> Broadcast:
-| Value 0 | Value 1 |
-| ----- | ----- |
-| NEW_USER_JOINED | \<username> |
+## 3. Join Game
+**Direction**: Client → Server  
+```json
+{  
+  "type": "joinGame",  
+  "gameCode": "<string>",  
+  "username": "<string>"  
+}
+```
+**Purpose**: Join an existing game with a valid `gameCode`.  
 
+---
 
-## Start game
-Client -> Server:
-| Value 0 | Value 1 | Value 2 | Value 3 (optional) | Value 4 (optional) |
-| ----- | ----- | ----- | ----- | ----- |
-| START_GAME | \<list of card IDs> | \<list of card IDs> | \<list of card IDs> | \<list of card IDs> |
+## 4. Join Game Success
+**Direction**: Server → Client  
+```json
+{  
+  "type": "joinGameSuccess",  
+  "usernames": [ "<string>", ... ]  
+}
+```
+**Purpose**: Informs a client that joining was successful, listing all current players.
 
-Server -> Client:
-| Value 0 | Value 1 |
-| ----- | ----- |
-| START_GAME_SUCCESS | \<list of card IDs> |
+---
 
+## 5. New User Joined
+**Direction**: Server → Broadcast  
+```json
+{  
+  "type": "newUserJoined",  
+  "username": "<string>"  
+}
+```
+**Purpose**: Notifies all players that a new user has joined the game.
 
-## Send a card
-Client -> Server:
-| Value 0 | Value 1 | Value 2 |
-| ----- | ----- | ----- |
-| SEND_CARD | \<card ID> | \<from username> | \<to username> |
+---
 
-Server -> Broadcast:
-| Value 0 | Value 1 | Value 2 |
-| ----- | ----- | ----- |
-| SEND_CARD_SUCCESS | \<card ID> | \<from username> | \<to username> |
+## 6. Start Game
+**Direction**: Client → Server  
+```json
+{  
+  "type": "startGame",  
+  "cardIds": [ [ <int>, <int>, ... ], ... ],  
+  "cardDeckJson": "<string>"  
+}
+```
+**Purpose**: Sent by the game creator to start the game. The message includes a list of card IDs per player and the card deck as JSON string.
 
+---
 
-## Error message
-Server -> Client:
-| Value 0 | Value 1 |
-| ----- | ----- |
-| ERROR  | \<failure reason> |
+## 7. Start Game Success
+**Direction**: Server → Client (to all players)
+```json
+{  
+  "type": "startGameSuccess",  
+  "cardIds": [ <int>, <int>, ... ],  
+  "cardDeckJson": "<string>"  
+}
+```
+**Purpose**: Confirms the game has started, providing the players specific card ID list and the card deck to each player.
+
+---
+
+## 8. Send Card
+**Direction**: Client → Server  
+```json
+{  
+  "type": "sendCard",  
+  "cardId": <int>,  
+  "fromUsername": "<string>",  
+  "toUsername": "<string>"  
+}
+```
+**Purpose**: Sends or passes a card from one player to another.
+
+---
+
+## 9. Send Card Success
+**Direction**: Server → Broadcast  
+```json
+{  
+  "type": "sendCardSuccess",  
+  "cardId": <int>,  
+  "fromUsername": "<string>",  
+  "toUsername": "<string>"  
+}
+```
+**Purpose**: Notifies all players that a card was successfully sent.
+
+---
+
+## 10. Error
+**Direction**: Server → Client  
+```json
+{  
+  "type": "error",  
+  "failureReason": "<string>"  
+}
+```
+**Purpose**: Informs a client of an error (e.g., invalid request).
+

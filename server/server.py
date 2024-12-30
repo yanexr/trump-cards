@@ -1,4 +1,6 @@
 import asyncio
+import os
+import json
 import websockets
 
 games = {}
@@ -20,7 +22,7 @@ def generate_new_id():
 
 def get_game_code(websocket):
     """
-    Returns the game code for the game that the user is in
+    Returns the game code for the game that the user is in.
     """
     for game_code, game in games.items():
         for _, socket in game['users']:
@@ -31,7 +33,7 @@ def get_game_code(websocket):
 
 def remove_user(websocket):
     """
-    Removes the user from the game that they are in and closes the 
+    Removes the user from the game that they are in and closes the
     game if there are no more users.
     """
     game_code = get_game_code(websocket)
@@ -48,114 +50,198 @@ def remove_user(websocket):
 
 async def create_game(websocket, message):
     """
-    Creates a new game and adds the user to it.
+    Handles the "createGame" message:
+    {
+      "type": "createGame",
+      "username": "<string>"
+    }
     """
-    values = message.split(":")
-    username = values[1]
-    new_game_id = values[2] + generate_new_id()
+    username = message.get("username")
+    if not username:
+        raise ValueError("Username is required.")
+
+    new_game_id = generate_new_id()
+
     games[new_game_id] = {
-        'users': [(username, websocket)], 'has_started': False}
-    await websocket.send('CREATE_GAME_SUCCESS:' + new_game_id)
+        'users': [(username, websocket)],
+        'has_started': False
+    }
+
+    response = {
+        "type": "createGameSuccess",
+        "gameCode": new_game_id
+    }
+    await websocket.send(json.dumps(response))
 
 
 async def join_game(websocket, message):
     """
-    Lets a user with a valid game code join the game.
+    Handles the "joinGame" message:
+    {
+      "type": "joinGame",
+      "gameCode": "<string>",
+      "username": "<string>"
+    }
     """
-    values = message.split(":")
-    game_code = values[1]
-    username = values[2]
+    game_code = message.get("gameCode")
+    username = message.get("username")
+
+    if not game_code or not username:
+        raise ValueError("Game code and username are required.")
 
     if game_code not in games:
-        raise ValueError('Game does not exist')
+        raise ValueError("Game does not exist.")
 
     if len(games[game_code]['users']) >= 4:
-        raise ValueError('Game is already full')
+        raise ValueError("Game is already full.")
 
     if games[game_code]['has_started']:
-        raise ValueError('Game has already started')
+        raise ValueError("Game has already started.")
 
     if username in [name for name, _ in games[game_code]['users']]:
-        raise ValueError('Username is already taken')
+        raise ValueError("Username is already taken.")
 
-    # Add the user to the game and send a list of users back to the client
+    # Add the user
     games[game_code]['users'].append((username, websocket))
-    usernames = [name for name, _ in games[game_code]['users']]
-    await websocket.send('JOIN_GAME_SUCCESS:' + ':'.join(usernames))
 
-    # Notify all users in the room that a new user has joined
-    for _, socket in games[game_code]['users']:
-        if socket != websocket:
-            await socket.send('NEW_USER_JOINED:' + username)
+    # Send back a success message listing all current usernames
+    usernames = [name for name, _ in games[game_code]['users']]
+    join_success = {
+        "type": "joinGameSuccess",
+        "usernames": usernames
+    }
+    await websocket.send(json.dumps(join_success))
+
+    # Notify others in the game that a new user joined
+    broadcast = {
+        "type": "newUserJoined",
+        "username": username
+    }
+    for _, sock in games[game_code]['users']:
+        if sock != websocket:
+            await sock.send(json.dumps(broadcast))
 
 
 async def start_game(websocket, message):
     """
-    Starts the game by sending a list of card ids to each user.
+    Handles the "startGame" message:
+    {
+      "type": "startGame",
+      "cardIds": [ [<int>, <int>, ...], [<int>, <int>, ...], ... ],
+      "cardDeckJson": "<string>"
+    }
     """
-    values = message.split(":")
     game_code = get_game_code(websocket)
-
     if game_code is None:
-        raise ValueError('Game code not found')
+        raise ValueError("Game code not found.")
 
-    if len(values) - 1 < len(games[game_code]['users']):
-        raise ValueError('Client sent not cards for all users')
+    card_ids_per_player = message.get("cardIds")
+    card_deck_json = message.get("cardDeckJson", "")
 
+    if not card_ids_per_player:
+        raise ValueError("Missing cardIds field.")
+
+    if len(card_ids_per_player) < len(games[game_code]['users']):
+        raise ValueError("Not enough card ID lists for all users.")
+
+    # Mark the game as started
     games[game_code]['has_started'] = True
 
-    for index, user in enumerate(games[game_code]['users']):
-        cardIDs = values[index + 1]
-        await user[1].send('START_GAME_SUCCESS:' + cardIDs)
+    # Send each user their subset of card IDs (plus the deck JSON)
+    for idx, (username, sock) in enumerate(games[game_code]['users']):
+        start_game_success = {
+            "type": "startGameSuccess",
+            "cardIds": card_ids_per_player[idx],
+            "cardDeckJson": card_deck_json
+        }
+        await sock.send(json.dumps(start_game_success))
 
 
 async def send_card(websocket, message):
     """
-    Notifies all users in the game that a card has been sent.
+    Handles the "sendCard" message:
+    {
+      "type": "sendCard",
+      "cardId": <int>,
+      "fromUsername": "<string>",
+      "toUsername": "<string>"
+    }
     """
-    values = message.split(":")
     game_code = get_game_code(websocket)
-
     if game_code is None:
-        raise ValueError('Game code not found')
+        raise ValueError("Game code not found.")
 
-    if len(values) < 4:
-        raise ValueError('Invalid message format')
+    card_id = message.get("cardId")
+    from_username = message.get("fromUsername")
+    to_username = message.get("toUsername")
 
-    for _, socket in games[game_code]['users']:
-        await socket.send('SEND_CARD_SUCCESS:' + ':'.join(values[1:]))
+    if card_id is None or not from_username or not to_username:
+        raise ValueError("Invalid sendCard parameters.")
+
+    # Broadcast "sendCardSuccess" to all players
+    broadcast = {
+        "type": "sendCardSuccess",
+        "cardId": card_id,
+        "fromUsername": from_username,
+        "toUsername": to_username
+    }
+    for _, sock in games[game_code]['users']:
+        await sock.send(json.dumps(broadcast))
 
 
-async def handle_connection(websocket, path):
-    '''
-    Handles a connection from a client.
-    '''
-    # Handle the initial message from the client
+async def handle_connection(websocket):
+    """
+    Handles incoming messages from a client via WebSocket.
+    """
+    # First message should be either createGame or joinGame
     try:
-        message = await websocket.recv()
-        if message.startswith('CREATE_GAME:'):
-            await create_game(websocket, message)
-        elif message.startswith('JOIN_GAME:'):
-            await join_game(websocket, message)
+        data_text = await websocket.recv()
+        data = json.loads(data_text)
+
+        msg_type = data.get("type")
+        if msg_type == "createGame":
+            await create_game(websocket, data)
+        elif msg_type == "joinGame":
+            await join_game(websocket, data)
         else:
-            await ValueError('Invalid command')
-    except ValueError as e:
-        await websocket.send('ERROR:' + str(e))
+            raise ValueError("Invalid command for first message.")
+    except (ValueError, KeyError, json.JSONDecodeError) as e:
+        error_resp = {
+            "type": "error",
+            "failureReason": str(e)
+        }
+        await websocket.send(json.dumps(error_resp))
         return
 
-    # Handle all other messages from the client in a loop
+    # Once in a game, keep listening for further commands
     while True:
         try:
-            message = await websocket.recv()
-            if message.startswith('START_GAME:'):
-                await start_game(websocket, message)
-            elif message.startswith('SEND_CARD:'):
-                await send_card(websocket, message)
-            else:
-                await ValueError('Invalid command')
+            data_text = await websocket.recv()
+            data = json.loads(data_text)
 
-        except ValueError as e:
-            await websocket.send('ERROR:' + str(e))
+            msg_type = data.get("type")
+            if msg_type == "startGame":
+                await start_game(websocket, data)
+            elif msg_type == "sendCard":
+                await send_card(websocket, data)
+            else:
+                raise ValueError("Invalid command.")
+
+        except (ValueError, KeyError, json.JSONDecodeError) as e:
+            # Send error back
+            error_resp = {
+                "type": "error",
+                "failureReason": str(e)
+            }
+            await websocket.send(json.dumps(error_resp))
+            break
+
+        except websockets.exceptions.ConnectionClosedOK:
+            remove_user(websocket)
+            break
+
+        except websockets.exceptions.ConnectionClosedError:
+            remove_user(websocket)
             break
 
         except websockets.exceptions.ConnectionClosed:
@@ -164,8 +250,13 @@ async def handle_connection(websocket, path):
 
 
 async def main():
-    async with websockets.serve(handle_connection, "localhost", 8000):
-        print("Server started...")
+    # Use PORT from environment if present, or default to 8000
+    port = int(os.environ.get("PORT", "8000"))
+
+    async with websockets.serve(handle_connection, "localhost", port):
+        print(f"Server started on port {port}...")
         await asyncio.Future()  # run forever
 
-asyncio.run(main())
+
+if __name__ == "__main__":
+    asyncio.run(main())

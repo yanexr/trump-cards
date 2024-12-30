@@ -63,9 +63,7 @@ class _MultiPlayerDialogOnline extends State<MultiPlayerDialogOnline> {
                   )
                 ],
               ),
-              const SizedBox(height: 10),
-              const Divider(),
-              const SizedBox(height: 10),
+              const Divider(height: 50),
               Text(
                 tr('enterGameCode'),
               ),
@@ -79,7 +77,7 @@ class _MultiPlayerDialogOnline extends State<MultiPlayerDialogOnline> {
                       inputFormatters: [
                         FilteringTextInputFormatter.digitsOnly,
                       ],
-                      maxLength: 5,
+                      maxLength: 4,
                       decoration: InputDecoration(
                         border: const OutlineInputBorder(),
                         labelText: tr('gameCode'),
@@ -101,7 +99,7 @@ class _MultiPlayerDialogOnline extends State<MultiPlayerDialogOnline> {
                     child: Text(tr('join').toUpperCase(),
                         style: const TextStyle(color: Colors.white)),
                     onPressed: () {
-                      if (App.gameCode.length == 5) {
+                      if (App.gameCode.length == 4) {
                         Navigator.of(context).pop();
                         showDialog(
                             context: context,
@@ -122,9 +120,9 @@ class _MultiPlayerDialogOnline extends State<MultiPlayerDialogOnline> {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const Divider(),
-              const SizedBox(height: 10),
+              const Divider(
+                height: 50,
+              ),
               Text(
                 tr('createNewGameDescription'),
               ),

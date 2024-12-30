@@ -1,8 +1,10 @@
+import 'dart:convert';
+import 'dart:math';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../data/cardDecks.dart';
 import '../game/multiplayerOnline.dart';
 import '../game/network.dart';
 import '../game/playerInfo.dart';
@@ -23,94 +25,105 @@ class _ConnectDialog extends State<ConnectDialog> {
   String errorMessage = '';
   List<Player> players = [];
   bool isStartButtonEnabled = false;
+  GameCardDeck? cardDeck;
 
   @override
   void initState() {
     super.initState();
-    if (!App.gameCode.startsWith('${App.selectedCardDeck}') &&
-        App.gameCode.isNotEmpty) {
-      errorMessage = tr('wrongCardDeck');
-      return;
-    }
 
-    networkHandler.listenForMessages((message) {
-      if (message.startsWith('CREATE_GAME_SUCCESS:')) {
+    networkHandler.listenForMessages((msg) {
+      NetworkMessage message = NetworkMessage.fromJson(jsonDecode(msg));
+      if (message is CreateGameSuccessMessage) {
         setState(() {
-          App.gameCode = message.split(':')[1];
+          App.gameCode = message.gameCode;
           statusMessage = tr('waitingForPlayers');
           players.add(Player(name: App.username));
         });
-      } else if (message.startsWith('JOIN_GAME_SUCCESS')) {
-        List<String> usernames = message.split(':').sublist(1);
+      } else if (message is JoinGameSuccessMessage) {
+        List<String> usernames = message.usernames;
         setState(() {
           statusMessage = tr('waitingForName', args: [usernames[0]]);
           for (String username in usernames) {
             players.add(Player(name: username));
           }
         });
-      } else if (message.startsWith('NEW_USER_JOINED:')) {
+      } else if (message is NewUserJoinedMessage) {
         setState(() {
-          players.add(Player(name: message.split(':')[1]));
+          players.add(Player(name: message.username));
         });
-      } else if (message.startsWith('START_GAME_SUCCESS:')) {
-        List<int> cardIDs =
-            message.split(':')[1].split(',').map(int.parse).toList();
+      } else if (message is StartGameSuccessMessage) {
+        cardDeck = GameCardDeck.fromJson(jsonDecode(message.cardDeckJson));
+        List<int> cardIDs = message.cardIds;
         for (Player player in players) {
           player.numberOfCards = cardIDs.length;
         }
         List<GameCard> gameCardList = cardIDs.map((id) {
-          return cardDecks[App.selectedCardDeck]
-              .cards
-              .firstWhere((gameCard) => gameCard.id == id);
+          return cardDeck!.cards.firstWhere((gameCard) => gameCard.id == id);
         }).toList();
 
         return Navigator.push(
             context,
             MaterialPageRoute(
                 builder: (context) => MultiPlayerOnline(
+                    cardDeck: cardDeck!,
                     players: players,
                     stackUser: gameCardList,
                     networkHandler: networkHandler)));
-      } else if (message.startsWith('ERROR:')) {
+      } else if (message is ErrorMessage) {
         setState(() {
-          errorMessage = message.split(':')[1];
+          errorMessage = message.failureReason;
         });
       }
     });
 
     if (App.gameCode == '') {
       isStartButtonEnabled = true;
-      networkHandler.webSocketChannel!.sink
-          .add('CREATE_GAME:${App.username}:${App.selectedCardDeck}');
+      NetworkMessage createGameMessage = CreateGameMessage(App.username);
+      networkHandler.webSocketChannel!.sink.add(jsonEncode(createGameMessage));
     } else {
       isStartButtonEnabled = false;
-      networkHandler.webSocketChannel!.sink
-          .add('JOIN_GAME:${App.gameCode}:${App.username}');
+      NetworkMessage joinGameMessage =
+          JoinGameMessage(App.gameCode, App.username);
+      networkHandler.webSocketChannel!.sink.add(jsonEncode(joinGameMessage));
     }
   }
 
   void _startGame() {
-    List<int> cardIDs = List<int>.generate(
-        cardDecks[App.selectedCardDeck].cards.length, (index) => index + 1);
+    List<int> cardIDs =
+        App.selectedCardDeck!.cards.map((card) => card.id).toList();
     cardIDs.shuffle();
-    int numberOfCards;
-    if (players.length == 2) {
-      numberOfCards = 15;
-    } else if (players.length == 3) {
-      numberOfCards = 10;
-    } else {
-      numberOfCards = 7;
-    }
-    String message = 'START_GAME';
 
+    // Each player gets the same number of cards
+    int numberOfCards = cardIDs.length ~/ players.length;
+    // Limit the number of cards per player
+    if (players.length == 2) {
+      numberOfCards = min(numberOfCards, 15);
+    }
+    if (players.length == 3) {
+      numberOfCards = min(numberOfCards, 11);
+    }
+    if (players.length == 4) {
+      numberOfCards = min(numberOfCards, 11);
+    }
+
+    List<List<int>> cardDeckIds = [];
     for (int i = 0; i < players.length; i++) {
-      message += ':';
       int startIndex = i * numberOfCards;
       int endIndex = startIndex + numberOfCards;
-      message += cardIDs.sublist(startIndex, endIndex).join(',');
+      cardDeckIds.add(cardIDs.sublist(startIndex, endIndex));
     }
 
-    networkHandler.webSocketChannel!.sink.add(message);
+    // Copy the card deck to avoid modifying the original deck
+    cardDeck =
+        GameCardDeck.fromJson(jsonDecode(jsonEncode(App.selectedCardDeck)));
+
+    // Remove unused cards from the card deck
+    cardDeck!.cards.retainWhere(
+        (card) => cardDeckIds.any((deck) => deck.contains(card.id)));
+
+    NetworkMessage startGameMessage =
+        StartGameMessage(cardDeckIds, jsonEncode(cardDeck));
+    networkHandler.webSocketChannel!.sink.add(jsonEncode(startGameMessage));
   }
 
   @override
@@ -144,7 +157,7 @@ class _ConnectDialog extends State<ConnectDialog> {
                           margin: const EdgeInsets.only(top: 20),
                           padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                           decoration: BoxDecoration(
-                              color: Colors.black12,
+                              color: Theme.of(context).scaffoldBackgroundColor,
                               borderRadius: BorderRadius.circular(10)),
                           child: Column(
                             children: [

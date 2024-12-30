@@ -1,6 +1,7 @@
+import 'dart:convert';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:trump_cards/data/cardDecks.dart';
 import 'package:trump_cards/game/network.dart';
 import 'package:trump_cards/game/messageList.dart';
 
@@ -15,9 +16,11 @@ class MultiPlayerOnline extends StatefulWidget {
   final NetworkHandler networkHandler;
   final List<GameCard> stackUser;
   final List<Player> players;
+  final GameCardDeck cardDeck;
 
   const MultiPlayerOnline(
       {super.key,
+      required this.cardDeck,
       required this.players,
       required this.stackUser,
       required this.networkHandler});
@@ -29,7 +32,7 @@ class MultiPlayerOnline extends StatefulWidget {
 class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
   late Player thisPlayer;
   bool isSendingInProgress = false;
-  int points = 30;
+  late int points;
 
   final GlobalKey<AnimatedCardStackState> _animatedCardStackKey =
       GlobalKey<AnimatedCardStackState>();
@@ -40,20 +43,20 @@ class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
   @override
   void initState() {
     super.initState();
+    points = widget.cardDeck.cards.length * 2;
     thisPlayer =
         widget.players.firstWhere((player) => player.name == App.username);
 
-    widget.networkHandler.listenForMessages((message) {
-      if (message.startsWith('SEND_CARD_SUCCESS:')) {
-        List<String> messageParts = message.split(':');
-        int cardId = int.parse(messageParts[1]);
-        GameCard card = cardDecks[App.selectedCardDeck]
-            .cards
-            .firstWhere((card) => card.id == cardId);
+    widget.networkHandler.listenForMessages((msg) {
+      NetworkMessage message = NetworkMessage.fromJson(jsonDecode(msg));
+      if (message is SendCardSuccessMessage) {
+        int cardId = message.cardId;
+        GameCard card =
+            widget.cardDeck.cards.firstWhere((card) => card.id == cardId);
         Player sendFrom = widget.players
-            .firstWhere((player) => player.name == messageParts[2]);
+            .firstWhere((player) => player.name == message.fromUsername);
         Player sendTo = widget.players
-            .firstWhere((player) => player.name == messageParts[3]);
+            .firstWhere((player) => player.name == message.toUsername);
 
         setState(() {
           if (sendFrom == thisPlayer && sendTo == thisPlayer) {
@@ -63,7 +66,7 @@ class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
               isSendingInProgress = false;
             });
             _messageList.currentState!.addMessage(Message(
-                tr('nameKeptCard', args: [sendTo.name, card.title]),
+                tr('nameKeptCard', args: [sendTo.name, card.name]),
                 Colors.green));
           } else if (sendFrom == thisPlayer) {
             // User sent card to opponent
@@ -83,31 +86,30 @@ class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
             });
             _messageList.currentState!.addMessage(Message(
                 tr('nameReceivedCardFromName',
-                    args: [sendTo.name, card.title, sendFrom.name]),
+                    args: [sendTo.name, card.name, sendFrom.name]),
                 Colors.red));
           } else if (sendTo == thisPlayer) {
             // User received card from opponent
             widget.stackUser.add(card);
             _messageList.currentState!.addMessage(Message(
                 tr('nameReceivedCardFromName',
-                    args: [sendTo.name, card.title, sendFrom.name]),
+                    args: [sendTo.name, card.name, sendFrom.name]),
                 Colors.green));
           } else {
             // Other player sent card to other player
             if (sendFrom == sendTo) {
               _messageList.currentState!.addMessage(Message(
-                  tr('nameKeptCard', args: [sendTo.name, card.title]),
+                  tr('nameKeptCard', args: [sendTo.name, card.name]),
                   Theme.of(context).textTheme.bodyMedium?.color ??
                       Colors.black));
             } else {
               _messageList.currentState!.addMessage(Message(
                   tr('nameReceivedCardFromName',
-                      args: [sendTo.name, card.title, sendFrom.name]),
+                      args: [sendTo.name, card.name, sendFrom.name]),
                   Theme.of(context).textTheme.bodyMedium?.color ??
                       Colors.black));
             }
           }
-
           sendTo.numberOfCards++;
           sendFrom.numberOfCards--;
         });
@@ -130,8 +132,9 @@ class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
 
   void send(String sendTo) {
     if (isSendingInProgress) return;
-    widget.networkHandler.webSocketChannel!.sink
-        .add('SEND_CARD:${widget.stackUser[0].id}:${thisPlayer.name}:$sendTo');
+    NetworkMessage message =
+        SendCardMessage(widget.stackUser[0].id, thisPlayer.name, sendTo);
+    widget.networkHandler.webSocketChannel!.sink.add(jsonEncode(message));
     isSendingInProgress = true;
   }
 
@@ -186,6 +189,7 @@ class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
                 AnimatedCardStack(
                   key: _animatedCardStackKey,
                   cardStack: widget.stackUser,
+                  deck: widget.cardDeck,
                 ),
                 const SizedBox(height: 10),
               ]),
