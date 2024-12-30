@@ -281,7 +281,7 @@ class _GameCardFrontState extends State<GameCardFront> {
           boxShadow: (widget.elevation && GameCardStyle.style.hasShadow)
               ? [
                   const BoxShadow(
-                      color: Colors.black,
+                      color: Colors.black87,
                       offset: Offset(0, 0),
                       blurRadius: 15.0,
                       spreadRadius: -5.0)

@@ -43,7 +43,7 @@ class _MultiPlayerOnlineState extends State<MultiPlayerOnline> {
   @override
   void initState() {
     super.initState();
-    points = widget.cardDeck.cards.length * 2;
+    points = widget.cardDeck.cards.length;
     thisPlayer =
         widget.players.firstWhere((player) => player.name == App.username);
 

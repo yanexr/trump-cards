@@ -439,7 +439,7 @@ class GameCardStyle {
       frontValueColor: const Color.fromARGB(255, 163, 88, 170),
       borderRadius: 40,
       isSlanted: false,
-      hasShadow: true,
+      hasShadow: false,
       borderContainerGradient: null,
       borderContainerImage: const DecorationImage(
         image: AssetImage('assets/images/colored.jpg'),
