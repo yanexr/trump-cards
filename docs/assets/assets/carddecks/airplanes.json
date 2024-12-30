@@ -1,0 +1,782 @@
+{
+  "id": 1,
+  "name": "Airplanes",
+  "thumbnailPath": "Airplanes/airplanes_thumbnail.png",
+  "backgroundPath": "Airplanes/airplanes_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "velocity",
+      "isHigherBetter": true,
+      "label": "Top Speed"
+    },
+    {
+      "measurementType": "dimension",
+      "isHigherBetter": true,
+      "label": "Wingspan"
+    },
+    {
+      "measurementType": "mass",
+      "isHigherBetter": true,
+      "label": "Max. takeoff weight"
+    },
+    {
+      "measurementType": "dimension",
+      "isHigherBetter": true,
+      "label": "Max. altitude"
+    },
+    {
+      "measurementType": "count",
+      "isHigherBetter": true,
+      "label": "Seats"
+    }
+  ],
+  "cards": [  
+    {
+      "id": 1,
+      "name": "Wright Flyer",
+      "subtitle": "1903",
+      "imagePath": "wright-flyer.jpg",
+      "imageAttr": "John T. Daniels, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [48, 12.29, 338, 3, 1]
+    },
+    {
+      "id": 2,
+      "name": "Airbus A319neo",
+      "subtitle": "2019",
+      "imagePath": "Airbus_A319neo.jpg",
+      "imageAttr": "Pedro Aragão, CC BY-SA 3.0 GFDL, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [876, 35.8, 75500, 12100, 160]
+    },
+    {
+      "id": 3,
+      "name": "Airbus A320neo",
+      "subtitle": "2016",
+      "imagePath": "Airbus_A320neo.jpg",
+      "imageAttr": "AndrewDawes, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [876, 35.8, 79000, 12100, 195]
+    },
+    {
+      "id": 4,
+      "name": "Airbus A321neo",
+      "subtitle": "2017",
+      "imagePath": "Airbus_A321neo.jpg",
+      "imageAttr": "Olivier CABARET, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [876, 35.8, 97000, 12100, 244]
+    },
+    {
+      "id": 5,
+      "name": "Airbus A300 B1",
+      "subtitle": "1972",
+      "imagePath": "Airbus_A300B1.jpg",
+      "imageAttr": "Pedro Aragão, CC BY-SA 3.0 GFDL, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "values": [828, 44.83, 137000, 12190, 323]
+    },
+    {
+      "id": 6,
+      "name": "Airbus A310-200",
+      "subtitle": "1982",
+      "imagePath": "Airbus_A310-200.jpg",
+      "imageAttr": "Laurent ERRERA from LUnion, France, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [897, 43.9, 132000, 12530, 240]
+    },
+    {
+      "id": 7,
+      "name": "Airbus A340-600",
+      "subtitle": "2001",
+      "imagePath": "Airbus_A340-600.jpg",
+      "imageAttr": "Myself (Adrian Pingstone)., Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [890, 63.45, 365000, 12630, 380]
+    },
+    {
+      "id": 8,
+      "name": "Airbus A318",
+      "subtitle": "2002",
+      "imagePath": "Airbus_A318.jpg",
+      "imageAttr": "Arpingstone, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [871, 34.1, 59000, 12130, 132]
+    },
+    {
+      "id": 9,
+      "name": "Airbus A380",
+      "subtitle": "2005",
+      "imagePath": "Airbus_A380.jpg",
+      "imageAttr": "Bernard Spragg. NZ from Christchurch, New Zealand, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [961, 79.75, 560000, 13110, 853]
+    },
+    {
+      "id": 10,
+      "name": "Airbus A330-900",
+      "subtitle": "2017",
+      "imagePath": "Airbus_A330-900.jpg",
+      "imageAttr": "Steve Lynes from Sandshurst, United Kingdom, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [913, 64, 242000, 12630, 440]
+    },
+    {
+      "id": 11,
+      "name": "Airbus A350-1000",
+      "subtitle": "2016",
+      "imagePath": "Airbus_A350-1000.jpg",
+      "imageAttr": "Dylan Agbagni (CC0) from Bordeaux, France, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [945, 64.75, 308000, 12630, 440]
+    },
+    {
+      "id": 12,
+      "name": "Airbus A300-600ST Beluga",
+      "subtitle": "1994",
+      "imagePath": "Airbus_Beluga.jpg",
+      "imageAttr": "Patrick Ludolph from Hamburg, Deutschland, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [750, 44.84, 155000, 10668, 2]
+    },
+    {
+      "id": 13,
+      "name": "Airbus A400M Atlas",
+      "subtitle": "2009",
+      "imagePath": "Airbus_A400M.jpg",
+      "imageAttr": "Myself (Adrian Pingstone)., Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [781, 42.4, 137500, 11300, 160]
+    },
+    {
+      "id": 14,
+      "name": "Eurofighter Typhoon",
+      "subtitle": "1994",
+      "imagePath": "Eurofighter_Typhoon.jpg",
+      "imageAttr": "Dmitry A. Mottl, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [2495, 10.95, 23400, 16000, 1]
+    },
+    {
+      "id": 15,
+      "name": "Aérospatiale-BAC Concorde",
+      "subtitle": "1969",
+      "imagePath": "Aerospatiale-BAC_Concorde.jpg",
+      "imageAttr": "SDASM, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [2170, 25.6, 185070, 18300, 128]
+    },
+    {
+      "id": 16,
+      "name": "Boeing 707",
+      "subtitle": "1957",
+      "imagePath": "Boeing_707.jpg",
+      "imageAttr": "Boeing_707-138B_Qantas_Jett_Clipper_Johnny_N707JT.jpg: Phinalanjiderivative work: Altair78, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [977, 39.88, 116120, 12800, 137]
+    },
+    {
+      "id": 17,
+      "name": "Boeing 727-100",
+      "subtitle": "1963",
+      "imagePath": "Boeing_727.jpg",
+      "imageAttr": "Iberia Airlines, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [926, 40.59, 73275, 12800, 131]
+    },
+    {
+      "id": 18,
+      "name": "Boeing 737 MAX 9",
+      "subtitle": "2017",
+      "imagePath": "Boeing_737-9_MAX.jpg",
+      "imageAttr": "Jeff Hitchcock, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [839, 35.92, 88314, 12500, 193]
+    },
+    {
+      "id": 19,
+      "name": "Boeing 747-8",
+      "subtitle": "2010",
+      "imagePath": "Boeing_747-8.jpg",
+      "imageAttr": "RayAdvait, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [920, 68.5, 447696, 13140, 605]
+    },
+    {
+      "id": 20,
+      "name": "Boeing 757-200",
+      "subtitle": "1982",
+      "imagePath": "Boeing_757.jpg",
+      "imageAttr": "Dylan Ashe from San Jose, USA, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [876, 38.05, 108862, 12800, 200]
+    },
+    {
+      "id": 21,
+      "name": "Boeing 777-300",
+      "subtitle": "1997",
+      "imagePath": "Boeing_77-300.jpg",
+      "imageAttr": "Amayagan, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [950, 60.9, 299370, 13140, 550]
+    },
+    {
+      "id": 22,
+      "name": "Boeing 767-200",
+      "subtitle": "1981",
+      "imagePath": "Boeing_767-200.jpg",
+      "imageAttr": "Amayagan, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [914, 47.57, 179169, 13140, 216]
+    },
+    {
+      "id": 23,
+      "name": "Boeing 787-10",
+      "subtitle": "2017",
+      "imagePath": "Boeing_787.jpg",
+      "imageAttr": "Adam Moreira (AEMoreira042281), CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [954, 60.12, 254011, 12530, 336]
+    },
+    {
+      "id": 24,
+      "name": "Boeing B-29 Superfortress",
+      "subtitle": "1942",
+      "imagePath": "Boeing_B-29.jpg",
+      "imageAttr": "Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [575, 43.05, 61000, 9710, 11]
+    },
+    {
+      "id": 25,
+      "name": "Boeing B-52 Stratofortress",
+      "subtitle": "1952",
+      "imagePath": "Boeing_B-52.jpg",
+      "imageAttr": "Pseudopanax at English Wikipedia, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [1014, 56.39, 221353, 16765, 6]
+    },
+    {
+      "id": 26,
+      "name": "Boeing C-17 Globemaster III",
+      "subtitle": "1991",
+      "imagePath": "Boeing_C-17.jpg",
+      "imageAttr": "Balon Greyjoy, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [830, 51.77, 265352, 13720, 3]
+    },
+    {
+      "id": 27,
+      "name": "Lockheed Martin F-22 Raptor",
+      "subtitle": "1997",
+      "imagePath": "F-22.jpg",
+      "imageAttr": "Rob Shenk from Great Falls, VA, USA, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [2778, 13.56, 27216, 19812, 1]
+    },
+    {
+      "id": 28,
+      "name": "Messerschmitt Me 262",
+      "subtitle": "1942",
+      "imagePath": "Messerschmitt_Me-262.jpg",
+      "imageAttr": "Clemens Vasters from Viersen, Germany, Germany, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [900, 12.6, 7130, 11450, 1]
+    },
+    {
+      "id": 29,
+      "name": "Lockheed SR-71 Blackbird",
+      "subtitle": "1964",
+      "imagePath": "SR-71.jpg",
+      "imageAttr": "Tech. Sgt. Michael Haggerty, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [3529, 16.94, 77112, 26213, 2]
+    },
+    {
+      "id": 30,
+      "name": "Learjet 23",
+      "subtitle": "1963",
+      "imagePath": "Learjet_23.jpg",
+      "imageAttr": "User:my name, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [860, 13.18, 5670, 12500, 8]
+    },
+    {
+      "id": 31,
+      "name": "Douglas DC-3",
+      "subtitle": "1935",
+      "imagePath": "Douglas_DC-3.JPG",
+      "imageAttr": "MKFI, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [368, 29.98, 13190, 7315, 30]
+    },
+    {
+      "id": 32,
+      "name": "Cessna 172",
+      "subtitle": "1955",
+      "imagePath": "Cessna_172.jpg",
+      "imageAttr": "AlfvanBeem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [233, 11, 1157, 4267, 3]
+    },
+    {
+      "id": 33,
+      "name": "Cessna Citation I",
+      "subtitle": "1976",
+      "imagePath": "Cessna_Citation.jpg",
+      "imageAttr": "aeroprints.com, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [662, 14.35, 5375, 12500, 7]
+    },
+    {
+      "id": 34,
+      "name": "Gulfstream G650",
+      "subtitle": "2009",
+      "imagePath": "Gulfstream_G600.jpg",
+      "imageAttr": "Myself (Adrian Pingstone)., Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [983, 30.35, 45200, 15545, 20]
+    },
+    {
+      "id": 35,
+      "name": "Dassault Falcon 7X",
+      "subtitle": "2005",
+      "imagePath": "Dassault_Falcon_7X.jpg",
+      "imageAttr": "Dylan Agbagni (No copyrights) from Bayonne, France, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [970, 26.21, 31300, 14935, 21]
+    },
+    {
+      "id": 36,
+      "name": "Supermarine Spitfire",
+      "subtitle": "1936",
+      "imagePath": "Spitfire.jpg",
+      "imageAttr": "Airwolfhound, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [600, 11.23, 3039, 11100, 1]
+    },
+    {
+      "id": 37,
+      "name": "Antonov An-225 Mriya",
+      "subtitle": "1988",
+      "imagePath": "Antonov_An-225.jpg",
+      "imageAttr": "Boevaya mashina, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [850, 88.4, 640000, 11610, 6]
+    },
+    {
+      "id": 38,
+      "name": "Blériot XI",
+      "subtitle": "1909",
+      "imagePath": "Bleriot.jpg",
+      "imageAttr": "Bain News Service, publisher, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [75, 7.8, 320, 1000, 1]
+    },
+    {
+      "id": 39,
+      "name": "Bell X-1",
+      "subtitle": "1946",
+      "imagePath": "Bell_X-1.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [1540, 8.53, 6078, 19000, 1]
+    },
+    {
+      "id": 40,
+      "name": "Spirit of St. Louis",
+      "subtitle": "1927",
+      "imagePath": "Spirit_of_St._Louis.jpg",
+      "imageAttr": "Gary Todd from Xinzheng, China, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [214, 14.03, 2330, 5000, 1]
+    },
+    {
+      "id": 41,
+      "name": "Tupolew Tu-154",
+      "subtitle": "1968",
+      "imagePath": "Tupolev_Tu-154.jpg",
+      "imageAttr": "Dmitry A. Mottl, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [913, 37.55, 100000, 12100, 180]
+    },
+    {
+      "id": 42,
+      "name": "Tupolew Tu-144",
+      "subtitle": "1968",
+      "imagePath": "Tupolev_Tu-144.jpg",
+      "imageAttr": "SDASM, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [2587, 27.65, 180000, 20000, 120]
+    },
+    {
+      "id": 43,
+      "name": "Mikoyan-Gurevich MiG-21",
+      "subtitle": "1955",
+      "imagePath": "MiG-21.jpg",
+      "imageAttr": "Fotovlucht Vliegbasis Soesterberg, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [2175, 7.15, 8800, 17500, 1]
+    },
+    {
+      "id": 44,
+      "name": "Tupolev Tu-104",
+      "subtitle": "1955",
+      "imagePath": "Tupolev_Tu-104.jpg",
+      "imageAttr": "Lars Soderstrom, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [950, 34.54, 78100, 12000, 115]
+    },
+    {
+      "id": 45,
+      "name": "Tupolew Tu-95",
+      "subtitle": "1952",
+      "imagePath": "Tupolev_Tu-95.jpg",
+      "imageAttr": "Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [882, 50.04, 172000, 11900, 8]
+    },
+    {
+      "id": 46,
+      "name": "Iljuschin Il-62",
+      "subtitle": "1963",
+      "imagePath": "Iljuschin_Il-62.jpg",
+      "imageAttr": "Michael Laue, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [950, 43.20, 165000, 13000, 186]
+    },
+    {
+      "id": 47,
+      "name": "Iljuschin Il-96",
+      "subtitle": "1988",
+      "imagePath": "Iljuschin_Il-96.jpg",
+      "imageAttr": "Dmitry A. Mottl, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [870, 57.6, 250000, 12000, 300]
+    },
+    {
+      "id": 48,
+      "name": "Bombardier CRJ 100",
+      "subtitle": "1991",
+      "imagePath": "Bombardier_CRJ-100.jpg",
+      "imageAttr": "Arpingstone, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [860, 21.18, 24041, 12496, 50]
+    },
+    {
+      "id": 49,
+      "name": "Embraer E-Jet 195-E2",
+      "subtitle": "2019",
+      "imagePath": "Embraer_E-Jet.jpg",
+      "imageAttr": "Robbie Klinkenberg, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [876, 35.1, 61500, 12500, 146]
+    },
+    {
+      "id": 50,
+      "name": "Junkers Ju 52",
+      "subtitle": "1932",
+      "imagePath": "Ju52.JPG",
+      "imageAttr": "Markus Kress, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [290, 29.25, 10500, 6300, 20]
+    },
+    {
+      "id": 51,
+      "name": "De Havilland Comet",
+      "subtitle": "1949",
+      "imagePath": "DH_Comet.jpg",
+      "imageAttr": "Rob Hodgkins, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [740, 35, 50000, 13000, 44]
+    },
+    {
+      "id": 52,
+      "name": "McDonnell Douglas MD-11",
+      "subtitle": "1990",
+      "imagePath": "MD-11.JPG",
+      "imageAttr": "Alf van Beem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [940, 51.97, 273294, 13100, 298]
+    },
+    {
+      "id": 53,
+      "name": "Comac C919",
+      "subtitle": "2017",
+      "imagePath": "COMAC_C919.jpg",
+      "imageAttr": "Ken Chen, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [838, 35.8, 75100, 12100, 192]
+    },
+    {
+      "id": 54,
+      "name": "Dornier Do X",
+      "subtitle": "1929",
+      "imagePath": "Dornier_Do-X.jpg",
+      "imageAttr": "Chief Photographers Mate John Lee Highfill, USN; SDASM Archives, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [242, 47.8, 56000, 3200, 170]
+    },
+    {
+      "id": 55,
+      "name": "Bell Boeing V-22 Osprey",
+      "subtitle": "1989",
+      "imagePath": "Bell_Boeing_CV-22B_Osprey.jpg",
+      "imageAttr": "Alan Wilson from Stilton, Peterborough, Cambs, UK, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [565, 13.97, 27442, 7600, 28]
+    },
+    {
+      "id": 56,
+      "name": "De Havilland DHC-8 400",
+      "subtitle": "1998",
+      "imagePath": "De_Havilland_Canada_DHC-8-400.jpg",
+      "imageAttr": "Björn Strey, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [667, 28.42, 29574, 7620, 90]
+    },
+    {
+      "id": 57,
+      "name": "Dornier Do 31",
+      "subtitle": "1967",
+      "imagePath": "Dornier_Do_31.jpg",
+      "imageAttr": "Michael Dolan, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [750, 18.06, 24500, 10700, 2]
+    },
+    {
+      "id": 58,
+      "name": "Piaggio Avanti P180",
+      "subtitle": "1986",
+      "imagePath": "Piaggio_P-180_Avanti.jpg",
+      "imageAttr": "Tibboh at French Wikipedia, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [732, 14.03, 5239, 12500, 8]
+    },
+    {
+      "id": 59,
+      "name": "F4U Corsair",
+      "subtitle": "1940",
+      "imagePath": "F4U_Corsair.jpg",
+      "imageAttr": "Airwolfhound from  Hertfordshire, UK, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [717, 12.5, 6592, 12600, 1]
+    },
+    {
+      "id": 60,
+      "name": "Convair XFY Pogo",
+      "subtitle": "1954",
+      "imagePath": "Convair_XFY_Pogo.jpg",
+      "imageAttr": "USN, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [980, 8.43, 7371, 10000, 1]
+    },
+    {
+      "id": 61,
+      "name": "Heinkel He 178",
+      "subtitle": "1939",
+      "imagePath": "Heinkel_He_178.jpg",
+      "imageAttr": "Gryffindor, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [700, 7.2, 2000, 8000, 1]
+    },
+    {
+      "id": 62,
+      "name": "AV-8B Harrier jet",
+      "subtitle": "1983",
+      "imagePath": "Harrier_jump_jet.jpg",
+      "imageAttr": "Official U.S. Navy Page from United States of AmericaMC1 Gretchen Albrecht/U.S. Navy, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [1065, 9.25, 14100, 14000, 1]
+    },
+    {
+      "id": 63,
+      "name": "Northrop B-2 Spirit",
+      "subtitle": "1989",
+      "imagePath": "Northrop_B-2.jpg",
+      "imageAttr": "Senior Airman Keith James, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [1010, 52.4, 152635, 15152, 2]
+    },
+    {
+      "id": 64,
+      "name": "Cirrus SR22",
+      "subtitle": "2001",
+      "imagePath": "Cirrus_SR22.jpg",
+      "imageAttr": "James from Cheltenham, Gloucestershire, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [330, 11.68, 1542, 5300, 4]
+    },
+    {
+      "id": 65,
+      "name": "Piper J-3 Cub",
+      "subtitle": "1938",
+      "imagePath": "Piper_J-3_Cub.jpg",
+      "imageAttr": "Alan Wilson from Stilton, Peterborough, Cambs, UK, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [140, 10.74, 550, 3500, 2]
+    },
+    {
+      "id": 66,
+      "name": "Boeing 307 Stratoliner",
+      "subtitle": "1938",
+      "imagePath": "Boeing_307.jpg",
+      "imageAttr": "SDASM Archives, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [400, 32.7, 20400, 7300, 33]
+    },
+    {
+      "id": 67,
+      "name": "Rutan Voyager",
+      "subtitle": "1984",
+      "imagePath": "Rutan Voyager.jpg",
+      "imageAttr": "NASA/Thomas Harrop, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [240, 33.8, 4400, 6250, 2]
+    },
+    {
+      "id": 68,
+      "name": "General Atomics MQ-1 Predator",
+      "subtitle": "1995",
+      "imagePath": "General_Atomics_MQ-1.jpg",
+      "imageAttr": "United States Air Force, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [222, 14.84, 1020, 7620, 0]
+    },
+    {
+      "id": 69,
+      "name": "Antonov An-2",
+      "subtitle": "1947",
+      "imagePath": "Antonov_An-2.jpg",
+      "imageAttr": "Garitzko, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [258, 18.18, 5500, 4400, 12]
+    },
+    {
+      "id": 70,
+      "name": "British Aerospace 146-100",
+      "subtitle": "1981",
+      "imagePath": "British_Aerospace-146-100.jpg",
+      "imageAttr": "Julian Herzog, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0",
+      "values": [789, 26.34, 38101, 11000, 82]
+    },
+    {
+      "id": 71,
+      "name": "MacCready Gossamer Albatross",
+      "subtitle": "1979",
+      "imagePath": "MacCready_Gossamer_Albatross.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [29, 29.77, 98, 1.5, 1]
+    },
+    {
+      "id": 72,
+      "name": "Convair 880",
+      "subtitle": "1959",
+      "imagePath": "Convair_880.jpg",
+      "imageAttr": "SDASM Archives, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [990, 36.58, 87730, 12500, 110]
+    },
+    {
+      "id": 73,
+      "name": "Yakovlev Yak-40",
+      "subtitle": "1966",
+      "imagePath": "Yakovlev_Yak-40.jpg",
+      "imageAttr": "parfaits, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "values": [550, 25, 15500, 8000, 35]
+    },
+    {
+      "id": 74,
+      "name": "Dassault Mercure 100",
+      "subtitle": "1971",
+      "imagePath": "Dassault_Mercure.jpg",
+      "imageAttr": "Udo K. Haafke, GFDL 1.2, via Wikimedia Commons",
+      "imageLic": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+      "values": [925, 30.55, 56500, 12000, 162]
+    },
+    {
+      "id": 75,
+      "name": "Lockheed F-117 Nighthawk",
+      "subtitle": "1981",
+      "imagePath": "Lockheed_F-117.jpg",
+      "imageAttr": "Staff Sgt. Aaron Allmon II, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [1040, 13.21, 23814, 14000, 1]
+    },
+    {
+      "id": 76,
+      "name": "Fokker 100",
+      "subtitle": "1986",
+      "imagePath": "Fokker_100.jpg",
+      "imageAttr": "Alf van Beem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [845, 28.08, 45810, 11000, 122]
+    },
+    {
+      "id": 77,
+      "name": "Douglas DC-8",
+      "subtitle": "1958",
+      "imagePath": "Douglas_DC-8.jpg",
+      "imageAttr": "Richard Vandervord, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [895, 43.4, 123800, 12390, 177]
+    },
+    {
+      "id": 78,
+      "name": "Lockheed Constellation L-049",
+      "subtitle": "1943",
+      "imagePath": "Lockheed_Constellation.jpg",
+      "imageAttr": "Mike Lehmann, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [504, 37, 39122, 7700, 88]
+    },
+    {
+      "id": 79,
+      "name": "Sud Aviation Caravelle",
+      "subtitle": "1955",
+      "imagePath": "Sud_Aviation_Caravelle.jpg",
+      "imageAttr": "Ralf Manteufel, GFDL 1.2, via Wikimedia Commons",
+      "imageLic": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+      "values": [746, 34.30, 45000, 10700, 80]
+    },
+    {
+      "id": 80,
+      "name": "Airbus A220-300",
+      "subtitle": "2015",
+      "imagePath": "Airbus_A220-300.jpg",
+      "imageAttr": "Anna Zvereva, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [871, 35.1, 70900, 12000, 160]
+    },
+    {
+      "id": 81,
+      "name": "Focke-Wulf Fw 200 Condor",
+      "subtitle": "1937",
+      "imagePath": "Focke-Wulf_Fw_200.jpg",
+      "imageAttr": "Anders Beer Wilse (1865-1949), Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [406, 32.84, 24520, 8400, 30]
+    },
+    {
+      "id": 82,
+      "name": "Vickers VC10",
+      "subtitle": "1962",
+      "imagePath": "Vickers_VC10.jpg",
+      "imageAttr": "Airwolfhound from  Hertfordshire, UK, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [915, 44.55, 141000, 11580, 135]
+    },
+    {
+      "id": 83,
+      "name": "McDonnell Douglas DC-9",
+      "subtitle": "1965",
+      "imagePath": "McDonnell_Douglas_DC-9.jpg",
+      "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [897, 28.4, 49.940, 11000, 115]
+    }
+  ]
+}

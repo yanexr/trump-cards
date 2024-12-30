@@ -1,6 +1,6 @@
 {
-    "name": "TRUMP Cards - Vehicles",
-    "short_name": "TRUMP Cards - Vehicles",
+    "name": "Trump Cards",
+    "short_name": "Trump Cards",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
@@ -9,6 +9,21 @@
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
+        {
+            "src": "icons/favicon-16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/favicon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
         {
             "src": "icons/Icon-192.png",
             "sizes": "192x192",

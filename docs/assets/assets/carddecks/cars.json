@@ -1,0 +1,1080 @@
+{
+  "id": 0,
+  "name": "Cars",
+  "thumbnailPath": "Cars/cars_thumbnail.png",
+  "backgroundPath": "Cars/cars_background.jpg",
+  "characteristics": [
+    {
+      "measurementType": "power",
+      "isHigherBetter": true,
+      "label": "Power"
+    },
+    {
+      "measurementType": "velocity",
+      "isHigherBetter": true,
+      "label": "Top Speed"
+    },
+    {
+      "measurementType": "mass",
+      "isHigherBetter": false,
+      "label": "Weight"
+    },
+    {
+      "measurementType": "clockTime",
+      "isHigherBetter": false,
+      "label": "0-100 km/h"
+    },
+    {
+      "measurementType": "currency",
+      "isHigherBetter": false,
+      "label": "Price"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "name": "Renault Espace IV",
+      "subtitle": "2002",
+      "imagePath": "renault.jpg",
+      "imageAttr": "M 93 / CC BY-SA 3.0 DE",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "values": [177, 225, 2010, 8.1, 35800]
+    },
+    {
+      "id": 2,
+      "name": "Mercedes-AMG GT R",
+      "subtitle": "2017",
+      "imagePath": "Mercedes-AMG_GT_R.webp",
+      "imageAttr": "pixabay",
+      "imageLic": "https://pixabay.com/service/license/",
+      "values": [430, 318, 1630, 3.6, 211000]
+    },
+    {
+      "id": 3,
+      "name": "Tesla Model S Plaid",
+      "subtitle": "2021",
+      "imagePath": "tesla-plaid.jpg",
+      "imageAttr": "Dllu, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [750, 322, 2187, 2.3, 130000]
+    },
+    {
+      "id": 4,
+      "name": "Koenigsegg Jesko",
+      "subtitle": "2021",
+      "imagePath": "koenigsegg.jpg",
+      "imageAttr": "Matti Blume / CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [1176, 483, 1420, 2.6, 2800000]
+    },
+    {
+      "id": 5,
+      "name": "Volkswagen Golf 8",
+      "subtitle": "2019",
+      "imagePath": "vw-golf.jpg",
+      "imageAttr": "Alexander Migl / CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [110, 223, 1300, 8.8, 25000]
+    },
+    {
+      "id": 6,
+      "name": "Porsche 911 GT2 RS",
+      "subtitle": "2017",
+      "imagePath": "porsche911.jpg",
+      "imageAttr": "Matti Blume, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [515, 340, 1470, 2.7, 285000]
+    },
+    {
+      "id": 7,
+      "name": "Bugatti Chiron",
+      "subtitle": "2016",
+      "imagePath": "bugatti.jpg",
+      "imageAttr": "Andrew Basterfield, CC BY-SA 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [1103, 420, 1996, 2.4, 2900000]
+    },
+    {
+      "id": 8,
+      "name": "Mercedes-Benz 300 SL",
+      "subtitle": "1954",
+      "imagePath": "Mercedes_300_SL.JPG",
+      "imageAttr": "Bahnfrend / CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [158, 263, 1420, 7.2, 90000]
+    },
+    {
+      "id": 9,
+      "name": "Porsche 959",
+      "subtitle": "1986",
+      "imagePath": "porsche959.jpg",
+      "imageAttr": "M 93 / CC BY-SA 3.0 DE",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "values": [331, 339, 1558, 3.8, 220000]
+    },
+    {
+      "id": 10,
+      "name": "Land Rover Defender",
+      "subtitle": "1990",
+      "imagePath": "landrover.jpg",
+      "imageAttr": "Shelka04 / CC BY-SA 3.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [80, 129, 1840, 18.8, 23000]
+    },
+    {
+      "id": 11,
+      "name": "Mercedes-AMG G 63 6x6",
+      "subtitle": "2013",
+      "imagePath": "Mercedes_G_6x6.webp",
+      "imageAttr": "pixabay",
+      "imageLic": "https://pixabay.com/service/license/",
+      "values": [400, 161, 4105, 7.8, 450000]
+    },
+    {
+      "id": 12,
+      "name": "Audi Sport quattro",
+      "subtitle": "1983",
+      "imagePath": "audi_quattro.jpg",
+      "imageAttr": "More Cars from Berlin, Germany / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [225, 248, 1300, 4.5, 99700]
+    },
+    {
+      "id": 13,
+      "name": "Mercedes-AMG F1",
+      "subtitle": "2020",
+      "imagePath": "f1.webp",
+      "imageAttr": "pixabay",
+      "imageLic": "https://pixabay.com/service/license/",
+      "values": [750, 370, 740, 2.1, 1000000]
+    },
+    {
+      "id": 14,
+      "name": "Nissan GT-R R35",
+      "subtitle": "2007",
+      "imagePath": "nissan.jpg",
+      "imageAttr": "Vetatur Fumare, CC BY-SA 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [357, 310, 1820, 3.5, 90900]
+    },
+    {
+      "id": 15,
+      "name": "Rolls-Royce Ghost",
+      "subtitle": "2010",
+      "imagePath": "Rolls-Royce_Ghost.webp",
+      "imageAttr": "Dennis Elzinga / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [420, 250, 2490, 4.9, 265000]
+    },
+    {
+      "id": 16,
+      "name": "Lamborghini Countach",
+      "subtitle": "1974",
+      "imagePath": "Lamborghini_Countach.jpg",
+      "imageAttr": "Countachinfo.de / CC BY 3.0",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0",
+      "values": [276, 288, 1065, 5.4, 52000]
+    },
+    {
+      "id": 17,
+      "name": "McLaren P1",
+      "subtitle": "2013",
+      "imagePath": "McLaren.jpg",
+      "imageAttr": "Axion23 (original)Tony Patt (cropped) / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [673, 349, 1547, 2.8, 1350000]
+    },
+    {
+      "id": 18,
+      "name": "Ford GT",
+      "subtitle": "2004",
+      "imagePath": "Ford_GT.jpg",
+      "imageAttr": "Amit Belani / CC BY-SA 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [404, 330, 1595, 3.9, 177000]
+    },
+    {
+      "id": 19,
+      "name": "Porsche Taycan Turbo S",
+      "subtitle": "2020",
+      "imagePath": "Porsche_Taycan.webp",
+      "imageAttr": "Johannes Maximilian / CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [560, 260, 2295, 2.8, 181000]
+    },
+    {
+      "id": 20,
+      "name": "Audi Q8 e-tron",
+      "subtitle": "2018",
+      "imagePath": "audi_Q8_e-tron.jpg",
+      "imageAttr": "Johannes Maximilian / CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [300, 200, 2560, 5.7, 82000]
+    },
+    {
+      "id": 21,
+      "name": "Aston Martin One-77",
+      "subtitle": "2009",
+      "imagePath": "aston-martin-one-77.jpg",
+      "imageAttr": "OSX / Public domain",
+      "imageLic": "",
+      "values": [559, 354, 1630, 3.5, 1275000]
+    },
+    {
+      "id": 22,
+      "name": "Mazda MX-5 NA",
+      "subtitle": "1989",
+      "imagePath": "mazda.jpg",
+      "imageAttr": "IFCAR / Public domain",
+      "imageLic": "",
+      "values": [96, 203, 960, 8.3, 11800]
+    },
+    {
+      "id": 23,
+      "name": "Smart Fortwo",
+      "subtitle": "2014",
+      "imagePath": "smart.webp",
+      "imageAttr": "pixabay",
+      "imageLic": "https://pixabay.com/service/license/",
+      "values": [52, 151, 880, 14.4, 10800]
+    },
+    {
+      "id": 24,
+      "name": "BMW 2002 Turbo",
+      "subtitle": "1968",
+      "imagePath": "BMW_2002_Turbo.jpg",
+      "imageAttr": "Lothar Spurzem, CC BY-SA 2.0 DE, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "values": [125, 211, 1080, 8, 9500]
+    },
+    {
+      "id": 25,
+      "name": "Lamborghini Murciélago",
+      "subtitle": "2001",
+      "imagePath": "Lamborghini_Murcielago.webp",
+      "imageAttr": "Brian Snelson / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [426, 330, 1650, 3.8, 325000]
+    },
+    {
+      "id": 26,
+      "name": "Jaguar E-Type",
+      "subtitle": "1961",
+      "imagePath": "Jaguar_E-Type.jpg",
+      "imageAttr": "AlfvanBeem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [198, 241, 1315, 6.9, 48800]
+    },
+    {
+      "id": 27,
+      "name": "Volkswagen T6",
+      "subtitle": "2015",
+      "imagePath": "vw-t6.jpg",
+      "imageAttr": "Vauxford / CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [110, 182, 1860, 11.5, 39200]
+    },
+    {
+      "id": 28,
+      "name": "Aston Martin DB5",
+      "subtitle": "1963",
+      "imagePath": "Aston_Martin_DB5_Vantage.jpg",
+      "imageAttr": "Ed Callow, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [210, 229, 1468, 7.1, 97600]
+    },
+    {
+      "id": 29,
+      "name": "Corvette C7 Stingray",
+      "subtitle": "2013",
+      "imagePath": "corvette.webp",
+      "imageAttr": "pixabay",
+      "imageLic": "https://pixabay.com/service/license/",
+      "values": [343, 290, 1540, 4.2, 69990]
+    },
+    {
+      "id": 30,
+      "name": "Alfa Romeo 8C Competizione",
+      "subtitle": "2007",
+      "imagePath": "AR8C-Competizione.jpg",
+      "imageAttr": "Keanan from / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [332, 295, 1585, 4.2, 160000]
+    },
+    {
+      "id": 31,
+      "name": "Ford Model T",
+      "subtitle": "1908",
+      "imagePath": "Ford_Model_T.jpg",
+      "imageAttr": "Iwaov / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [15, 72, 540, 99, 23480]
+    },
+    {
+      "id": 32,
+      "name": "Volkswagen Beetle",
+      "subtitle": "1938",
+      "imagePath": "VW_Kaefer.jpg",
+      "imageAttr": "Tobias Nordhausen / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [25, 130, 800, 60, 3000]
+    },
+    {
+      "id": 33,
+      "name": "Nissan 350Z",
+      "subtitle": "2002",
+      "imagePath": "Nissan350Z.jpg",
+      "imageAttr": "rumpleproofskin / CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [214, 250, 1446, 5.9, 35000]
+    },
+    {
+      "id": 34,
+      "name": "BMW i3",
+      "subtitle": "2013",
+      "imagePath": "BMWi3.jpg",
+      "imageAttr": "Thesupermat, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [125, 150, 1195, 7.2, 35000]
+    },
+    {
+      "id": 35,
+      "name": "Rimac Nevera",
+      "subtitle": "2021",
+      "imagePath": "RimacNevera.jpg",
+      "imageAttr": "Branko Radovanović, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [1427, 412, 2150, 1.82, 2400000]
+    },
+    {
+      "id": 36,
+      "name": "Maserati Ghibli (Tipo AM115)",
+      "subtitle": "1966",
+      "imagePath": "Maserati_Ghibli.jpg",
+      "imageAttr": "Alexander Migl, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [227, 250, 1640, 6.8, 36500]
+    },
+    {
+      "id": 37,
+      "name": "Bentley Continental GT",
+      "subtitle": "2003",
+      "imagePath": "Bentley_Continental_GT.jpg",
+      "imageAttr": "The Car Spy, CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [412, 318, 2385, 4.8, 179900]
+    },
+    {
+      "id": 38,
+      "name": "Wiesmann GT MF 4",
+      "subtitle": "2003",
+      "imagePath": "Wiesmann.jpg",
+      "imageAttr": "Alexander Migl, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [270, 291, 1390, 4.6, 117000]
+    },
+    {
+      "id": 39,
+      "name": "Lexus LFA",
+      "subtitle": "2010",
+      "imagePath": "LexusLFA.jpg",
+      "imageAttr": "Matthew Lamb, CC BY-SA 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [412, 326, 1480, 3.7, 375000]
+    },
+    {
+      "id": 40,
+      "name": "Cadillac Escalade GM T1XX",
+      "subtitle": "2020",
+      "imagePath": "cadillac_escalade.jpg",
+      "imageAttr": "Mr.choppers, CC BY-SA 3.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [306, 180, 2600, 6.6, 85000]
+    },
+    {
+      "id": 41,
+      "name": "Toyota Mirai",
+      "subtitle": "2014",
+      "imagePath": "Toyota_Mirai.jpg",
+      "imageAttr": "Benespit, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [114, 178, 1850, 9.6, 78600]
+    },
+    {
+      "id": 42,
+      "name": "Porsche Cayenne S",
+      "subtitle": "2003",
+      "imagePath": "Porsche_Cayenne.jpg",
+      "imageAttr": "HLW, CC BY-SA 3.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [254, 241, 2170, 7.1, 55000]
+    },
+    {
+      "id": 43,
+      "name": "Hyundai Ioniq 5",
+      "subtitle": "2021",
+      "imagePath": "Hyundai_Ioniq_5.jpg",
+      "imageAttr": "Damian B Oh, CC BY-SA 4.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [225, 185, 1920, 5.2, 49000]
+    },
+    {
+      "id": 44,
+      "name": "BMC Mini",
+      "subtitle": "1959",
+      "imagePath": "Mini.jpg",
+      "imageAttr": "DeFacto, CC BY-SA 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.5",
+      "values": [27.5, 119, 585, 28, 11500]
+    },
+    {
+      "id": 45,
+      "name": "Tesla Roadster (first generation)",
+      "subtitle": "2007",
+      "imagePath": "Tesla_Roadster.jpg",
+      "imageAttr": "Roadster_2.5_windmills.jpg: Tesla Motors Inc.derivative work: Mariordo, Copyrighted free use",
+      "imageLic": "https://commons.wikimedia.org/wiki/File:Roadster_2.5_windmills_trimmed.jpg",
+      "values": [185, 201, 1305, 4, 85000]
+    },
+    {
+      "id": 46,
+      "name": "Chevrolet Bel Air 3. generation",
+      "subtitle": "1957",
+      "imagePath": "belAir.jpg",
+      "imageAttr": "Greg Gjerdingen from Willmar, USA, CC BY 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [126, 161, 1650, 14.2, 21300]
+    },
+    {
+      "id": 47,
+      "name": "Opel Manta GT/E",
+      "subtitle": "1974",
+      "imagePath": "opelManta.jpg",
+      "imageAttr": "KarleHorn, CC BY-SA 3.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [77, 188, 970, 10.5, 17777]
+    },
+    {
+      "id": 48,
+      "name": "Fiat 500 (2007)",
+      "subtitle": "2007",
+      "imagePath": "fiat500.jpg",
+      "imageAttr": "Hatsukari715, Public domain",
+      "imageLic": "",
+      "values": [51, 163, 940, 12.9, 10500]
+    },
+    {
+      "id": 49,
+      "name": "Ferrari LaFerrari",
+      "subtitle": "2013",
+      "imagePath": "LaFerrari.jpg",
+      "imageAttr": "Ian Leech, CC BY-SA 2.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [708, 350, 1585, 2.9, 1500000]
+    },
+    {
+      "id": 50,
+      "name": "BMW 507",
+      "subtitle": "1956",
+      "imagePath": "BMW_507.jpg",
+      "imageAttr": "Stefan Krause, Germany, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [112, 220, 1330, 11.5, 200000]
+    },
+    {
+      "id": 51,
+      "name": "Mercedes-Benz SLS AMG Electric Drive",
+      "subtitle": "2012",
+      "imagePath": "Mercedes-Benz_SLS_Electric_Drive.jpg",
+      "imageAttr": "nakhon100, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [552, 250, 2095, 3.9, 416500]
+    },
+    {
+      "id": 52,
+      "name": "Mercedes-Benz 600",
+      "subtitle": "1963",
+      "imagePath": "Mercedes-Benz_600.jpg",
+      "imageAttr": "Valder137, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [184, 205, 2475, 9.7, 186000]
+    },
+    {
+      "id": 53,
+      "name": "Fiat Multipla",
+      "subtitle": "1999",
+      "imagePath": "Fiat_Multipla.jpg",
+      "imageAttr": "Andrew Bone from Weymouth, England, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [77, 170, 1300, 12.4, 20000]
+    },
+    {
+      "id": 54,
+      "name": "Range Rover 4",
+      "subtitle": "2012",
+      "imagePath": "Range_Rover.jpg",
+      "imageAttr": "Land Rover MENA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [294, 225, 2215, 6.3, 103000]
+    },
+    {
+      "id": 55,
+      "name": "Aston Martin Vantage (2005)",
+      "subtitle": "2005",
+      "imagePath": "Aston_Martin_V8_Vantage.jpg",
+      "imageAttr": "Brian Snelson from Hockley, Essex, England, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [283, 278, 1630, 4.8, 104000]
+    },
+    {
+      "id": 56,
+      "name": "Citroën DS",
+      "subtitle": "1955",
+      "imagePath": "Citroen_DS.jpg",
+      "imageAttr": "Alf van Beem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [55, 145, 1150, 21.5, 4500]
+    },
+    {
+      "id": 57,
+      "name": "BYD Qin",
+      "subtitle": "2013",
+      "imagePath": "BYD_Qin.jpg",
+      "imageAttr": "El monty, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [226, 185, 1630, 5.9, 24000]
+    },
+    {
+      "id": 58,
+      "name": "Toyota Land Cruiser (J70)",
+      "subtitle": "1984",
+      "imagePath": "Toyota_Land_Cruiser_70.jpg",
+      "imageAttr": "Rutger van der Maar, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [72, 175, 1750, 11.4, 20000]
+    },
+    {
+      "id": 59,
+      "name": "Toyota Supra",
+      "subtitle": "1994",
+      "imagePath": "Toyota_Supra.jpg",
+      "imageAttr": "Tokumeigakarinoaoshima, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [243, 250, 1610, 5.1, 38000]
+    },
+    {
+      "id": 60,
+      "name": "BMW M3 GTS",
+      "subtitle": "2009",
+      "imagePath": "BMW_M3_GTS.jpg",
+      "imageAttr": "Alexandre Prévot from Nancy, France, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [331, 305, 1530, 4.4, 115000]
+    },
+    {
+      "id": 61,
+      "name": "Vector W8",
+      "subtitle": "1989",
+      "imagePath": "Vector_W8.jpg",
+      "imageAttr": "Craig Howell from San Carlos, CA, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [466, 389, 1506, 4.1, 800000]
+    },
+    {
+      "id": 62,
+      "name": "Benz Patent-Motorwagen",
+      "subtitle": "1886",
+      "imagePath": "Benz-Patent-Motorwagen.jpg",
+      "imageAttr": "Alf van Beem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [0.55, 16, 265, 99, 26000]
+    },
+    {
+      "id": 63,
+      "name": "DMC DeLorean",
+      "subtitle": "1981",
+      "imagePath": "DeLorean_DMC.jpg",
+      "imageAttr": "Jeremy from Sydney, Australia, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [97, 198, 1233, 11, 82000]
+    },
+    {
+      "id": 64,
+      "name": "Jeep Wrangler (YJ)",
+      "subtitle": "1987",
+      "imagePath": "Jeep_Wrangler.jpg",
+      "imageAttr": "Greg Gjerdingen from Willmar, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [87, 170, 1300, 10.9, 20000]
+    },
+    {
+      "id": 65,
+      "name": "Hummer H1",
+      "subtitle": "1992",
+      "imagePath": "hummer_h1.jpg",
+      "imageAttr": "R-E-AL (German Wikipedia), CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [110, 105, 3300, 23.8, 40000]
+    },
+    {
+      "id": 66,
+      "name": "Dodge Ram 4",
+      "subtitle": "2009",
+      "imagePath": "Dodge_Ram.jpg",
+      "imageAttr": "IFCAR, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [295, 170, 2400, 7.3, 25000]
+    },
+    {
+      "id": 67,
+      "name": "Honda NSX",
+      "subtitle": "1990",
+      "imagePath": "Honda_NSX.jpg",
+      "imageAttr": "Brian Snelson, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [201, 270, 1400, 5.9, 75000]
+    },
+    {
+      "id": 68,
+      "name": "Dacia Duster",
+      "subtitle": "2010",
+      "imagePath": "dacia_duster.jpg",
+      "imageAttr": "Mic from Reading - Berkshire, United Kingdom, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [77, 165, 1330, 11.8, 15000]
+    },
+    {
+      "id": 69,
+      "name": "Zenvo ST1",
+      "subtitle": "2009",
+      "imagePath": "Zenvo_ST1.jpg",
+      "imageAttr": "G patkar at English Wikipedia, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [810, 375, 1688, 3, 800000]
+    },
+    {
+      "id": 70,
+      "name": "Mitsubishi Lancer Evolution X",
+      "subtitle": "2007",
+      "imagePath": "Mitsubishi_Evo.jpg",
+      "imageAttr": "Grant.C, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [206, 250, 1600, 4.7, 42000]
+    },
+    {
+      "id": 71,
+      "name": "Tata Nano",
+      "subtitle": "2008",
+      "imagePath": "tata-nano.JPG",
+      "imageAttr": "Biswarup Ganguly, CC BY 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/3.0",
+      "values": [28, 105, 600, 27.5, 1300]
+    },
+    {
+      "id": 72,
+      "name": "Chevrolet Camaro (2009)",
+      "subtitle": "2009",
+      "imagePath": "Chevrolet_Camaro.jpg",
+      "imageAttr": "sv1ambo, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [298, 250, 1700, 5.2, 40000]
+    },
+    {
+      "id": 73,
+      "name": "Maybach 62 S",
+      "subtitle": "2002",
+      "imagePath": "Maybach_62_S.jpg",
+      "imageAttr": "Damian B Oh, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [450, 250, 2855, 5.2, 523800]
+    },
+    {
+      "id": 74,
+      "name": "Audi R18 e-tron quattro",
+      "subtitle": "2012",
+      "imagePath": "Audi_R18_e-tron_quattro.jpg",
+      "imageAttr": "Morio, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [360, 330, 915, 2.0, 24000000]
+    },
+    {
+      "id": 75,
+      "name": "Ford Mustang Shelby GT350",
+      "subtitle": "1964",
+      "imagePath": "Ford_Shelby_GT350.jpg",
+      "imageAttr": "Yahya S. from Livonia, United States, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [228, 216, 1265, 5.7, 45000]
+    },
+    {
+      "id": 76,
+      "name": "Ferrari F40",
+      "subtitle": "1987",
+      "imagePath": "Ferrari_F40.jpg",
+      "imageAttr": "Will ainsworth / CC BY-SA 3.0",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [352, 324, 1260, 4.1, 340000]
+    },
+    {
+      "id": 77,
+      "name": "Chrysler PT Cruiser",
+      "subtitle": "2000",
+      "imagePath": "Chrysler_PT_Cruiser.jpg",
+      "imageAttr": "Greg Gjerdingen from Willmar, USA, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [104, 190, 1441, 12, 20000]
+    },
+    {
+      "id": 78,
+      "name": "Rivian R1T",
+      "subtitle": "2021",
+      "imagePath": "Rivian_R1T.jpg",
+      "imageAttr": "Mr.choppers, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [623, 185, 3152, 3.1, 71000]
+    },
+    {
+      "id": 79,
+      "name": "Fisker Karma",
+      "subtitle": "2011",
+      "imagePath": "Fisker_Karma.jpg",
+      "imageAttr": "FaceMePLS from The Hague, The Netherlands, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [301, 201, 2400, 5.9, 103000]
+    },
+    {
+      "id": 80,
+      "name": "Porsche 911 Turbo S",
+      "subtitle": "1990",
+      "imagePath": "Porsche_964_Turbo.jpg",
+      "imageAttr": "nakhon100, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [280, 294, 1195, 4.8, 160000]
+    },
+    {
+      "id": 81,
+      "name": "Ferrari 330 P3",
+      "subtitle": "1966",
+      "imagePath": "Ferrari_330_P3.jpg",
+      "imageAttr": "asopuma from Paris, France, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [309, 310, 851, 3.9, 165000]
+    },
+    {
+      "id": 82,
+      "name": "Ferrari 250 GTO",
+      "subtitle": "1962",
+      "imagePath": "Ferrari_250_GTO.jpg",
+      "imageAttr": "Brian Snelson, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [221, 250, 880, 5.6, 18000]
+    },
+    {
+      "id": 83,
+      "name": "Audi R8 V10 plus",
+      "subtitle": "2012",
+      "imagePath": "Audi_R8.jpg",
+      "imageAttr": "nakhon100, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [404, 317, 1670, 3.5, 173200]
+    },
+    {
+      "id": 84,
+      "name": "Bugatti Veyron Super Sport",
+      "subtitle": "2010",
+      "imagePath": "Bugatti_Veyron.jpg",
+      "imageAttr": "Supermac1961 from CHAFFORD HUNDRED, England, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [882, 431.072, 2026, 2.7, 1400000]
+    },
+    {
+      "id": 85,
+      "name": "Peel P50",
+      "subtitle": "1962",
+      "imagePath": "Peel_P50.jpg",
+      "imageAttr": "Kieran White, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [2.5, 45, 59, 99, 4430]
+    },
+    {
+      "id": 86,
+      "name": "Jaguar F-Type SVR",
+      "subtitle": "2016",
+      "imagePath": "Jaguar_F_Type_SVR.jpg",
+      "imageAttr": "Norbert Aepli, Switzerland, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0",
+      "values": [423, 322, 1705, 3.7, 145400]
+    },
+    {
+      "id": 87,
+      "name": "Bugatti Royale",
+      "subtitle": "1926",
+      "imagePath": "Bugatti_Royale.jpg",
+      "imageAttr": "Johannes Maximilian, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [220, 200, 3175, 12, 3000000]
+    },
+    {
+      "id": 88,
+      "name": "De Tomaso Mangusta",
+      "subtitle": "1967",
+      "imagePath": "De_Tomaso_Mangusta.jpg",
+      "imageAttr": "Sicnag, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [228, 250, 1385, 6.9, 75000]
+    },
+    {
+      "id": 89,
+      "name": "Alfa Romeo Montreal",
+      "subtitle": "1970",
+      "imagePath": "Alfa_Romeo_Montreal.jpg",
+      "imageAttr": "Marvin Raaijmakers, CC BY-SA 2.5, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.5",
+      "values": [147, 220, 1270, 7.6, 24000]
+    },
+    {
+      "id": 90,
+      "name": "Lamborghini Miura",
+      "subtitle": "1966",
+      "imagePath": "Lamborghini_Miura.jpg",
+      "imageAttr": "Eric Manesse, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [257, 276, 1180, 6.7, 48000]
+    },
+    {
+      "id": 91,
+      "name": "McLaren F1",
+      "subtitle": "1992",
+      "imagePath": "McLaren_F1.jpg",
+      "imageAttr": "Simon Davison, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [627, 370, 1138, 3.4, 900000]
+    },
+    {
+      "id": 92,
+      "name": "Dodge Charger (first generation)",
+      "subtitle": "1966",
+      "imagePath": "Dodge_Charger.jpg",
+      "imageAttr": "dave_7 from Lethbridge, Canada, CC BY-SA 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+      "values": [171, 193, 1587, 8.8, 26000]
+    },
+    {
+      "id": 93,
+      "name": "BMW Z8",
+      "subtitle": "2000",
+      "imagePath": "BMW_Z8.jpg",
+      "imageAttr": "Spurzem - Lothar Spurzem, CC BY-SA 2.0 DE, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "values": [294, 250, 1660, 4.7, 128000]
+    },
+    {
+      "id": 94,
+      "name": "Lexus LC 500",
+      "subtitle": "2017",
+      "imagePath": "Lexus_LC500.jpg",
+      "imageAttr": "Kirakiraouji, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [351, 270, 1960, 4.7, 99800]
+    },
+    {
+      "id": 95,
+      "name": "Bugatti Type 57 SC Atlantic",
+      "subtitle": "1937",
+      "imagePath": "Bugatti_Type_57_Atlantic.jpg",
+      "imageAttr": "Y.Leclercq, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [147, 225, 1500, 12, 2500000]
+    },
+    {
+      "id": 96,
+      "name": "Shelby 427 Cobra",
+      "subtitle": "1965",
+      "imagePath": "Shelby_427_Cobra.jpg",
+      "imageAttr": "AlfvanBeem, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [220, 227, 1220, 4.9, 66600]
+    },
+    {
+      "id": 97,
+      "name": "Subaru Sambar (5. generation)",
+      "subtitle": "1990",
+      "imagePath": "Subaru_Sambar.jpg",
+      "imageAttr": "Tennen-Gas, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "values": [20.6, 90, 700, 99, 15000]
+    },
+    {
+      "id": 98,
+      "name": "Lancia Stratos HF",
+      "subtitle": "1973",
+      "imagePath": "Lancia_Stratos.jpg",
+      "imageAttr": "Mark Harkin, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [140, 232, 980, 6.8, 8200]
+    },
+    {
+      "id": 99,
+      "name": "Audi TT 8N",
+      "subtitle": "1998",
+      "imagePath": "Audi_TT_8N.jpg",
+      "imageAttr": "Lothar Spurzem, CC BY-SA 2.0 DE, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "values": [132, 228, 1240, 7.5, 31000]
+    },
+    {
+      "id": 100,
+      "name": "Dodge Viper",
+      "subtitle": "2013",
+      "imagePath": "Dodge_Viper.jpg",
+      "imageAttr": "Cjp24, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [477, 331, 1520, 3.7, 139000]
+    },
+    {
+      "id": 101,
+      "name": "Skoda Octavia III (RS)",
+      "subtitle": "2013",
+      "imagePath": "Skoda_Octavia.jpg",
+      "imageAttr": "Kahvilokki, CC0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [162, 248, 1430, 6.8, 30000]
+    },
+    {
+      "id": 102,
+      "name": "Seat Leon III",
+      "subtitle": "2012",
+      "imagePath": "Seat_Leon_2012.jpg",
+      "imageAttr": "Thesupermat, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [110, 215, 1200, 8.4, 23000]
+    },
+    {
+      "id": 103,
+      "name": "Apollo Intensa Emozione",
+      "subtitle": "2019",
+      "imagePath": "Apollo_IE.jpg",
+      "imageAttr": "Kevauto, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [574, 335, 1250, 2.7, 2300000]
+    },
+    {
+      "id": 104,
+      "name": "Tesla Cybertruck",
+      "subtitle": "2023",
+      "imagePath": "Tesla_Cybertruck.jpg",
+      "imageAttr": "Lcaa9, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [630, 210, 3104, 2.9, 97800]
+    },
+    {
+      "id": 105,
+      "name": "BMW M5 CS",
+      "subtitle": "2021",
+      "imagePath": "BMW_M5_CS.jpg",
+      "imageAttr": "Damian B Oh, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [467, 305, 1900, 2.9, 180000]
+    },
+    {
+      "id": 106,
+      "name": "Datsun 240Z",
+      "subtitle": "1969",
+      "imagePath": "Datsun_240Z.jpg",
+      "imageAttr": "An unusual eye, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [112, 201, 1042, 8.2, 29000]
+    },
+    {
+      "id": 107,
+      "name": "Plymouth Voyager",
+      "subtitle": "1984",
+      "imagePath": "Plymouth_Voyager.jpg",
+      "imageAttr": "IFCAR, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [72, 161, 1360, 18, 27500]
+    },
+    {
+      "id": 108,
+      "name": "Lucid Air Sapphire",
+      "subtitle": "2023",
+      "imagePath": "Lucid_Air.jpg",
+      "imageAttr": "Matti Blume CC BY-SA, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/2.0/deed.en",
+      "values": [920, 330, 2420, 2, 249000]
+    },
+    {
+      "id": 109,
+      "name": "Thrust SuperSonic Car",
+      "subtitle": "1997",
+      "imagePath": "ThrustSSC.jpg",
+      "imageAttr": "Cmglee, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [80800, 1228, 10600, 1.6, 4800000]
+    },
+    {
+      "id": 110,
+      "name": "Maserati A6GCS Berlinetta",
+      "subtitle": "1953",
+      "imagePath": "Maserati_A6GCS.jpg",
+      "imageAttr": "Brian Snelson, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [125, 235, 740, 6.6, 59000]
+    },
+    {
+      "id": 111,
+      "name": "BMW 3.0 CSL",
+      "subtitle": "1972",
+      "imagePath": "BMW_3.0_CSL.jpg",
+      "imageAttr": "Luc106, Public domain, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [147, 220, 1165, 6.9, 90000]
+    },
+    {
+      "id": 112,
+      "name": "Pontiac Firebird Trans Am",
+      "subtitle": "1973",
+      "imagePath": "Pontiac_Firebird.jpg",
+      "imageAttr": "Elmschrat Coaching38, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [231, 185, 1691, 7.2, 30000]
+    },
+    {
+      "id": 113,
+      "name": "McMurtry Spéirling Pure",
+      "subtitle": "2021",
+      "imagePath": "McMurtry_Speirling.jpg",
+      "imageAttr": "Michele Borioli, CC BY 2.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/2.0",
+      "values": [745, 298, 980, 1.5, 1200000]
+    },
+    {
+      "id": 114,
+      "name": "Saab 900 Turbo",
+      "subtitle": "1978",
+      "imagePath": "Saab_900_Turbo.jpg",
+      "imageAttr": "Mr.choppers, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+      "values": [106.5, 195, 1180, 8.5, 40000]
+    },
+    {
+      "id": 115,
+      "name": "LTI TX1 (London 'Black cab')",
+      "subtitle": "1997",
+      "imagePath": "London-Taxi_LTI_TX1.jpg",
+      "imageAttr": "W. Bulach, CC BY-SA 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+      "values": [60, 130, 1800, 23, 32000]
+    },
+    {
+      "id": 116,
+      "name": "Xiaomi SU7 Ultra",
+      "subtitle": "2024",
+      "imagePath": "Xiaomi_SU7_Ultra.jpg",
+      "imageAttr": "Zoerides, CC0 1.0, via Wikimedia Commons",
+      "imageLic": "",
+      "values": [1138, 350, 2360, 1.98, 107000]
+    }
+  ]
+  
+}

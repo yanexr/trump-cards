@@ -1,0 +1,1 @@
+The attribution and license information for each image can be found in 'trump-cards\client\assets\carddecks\cars.json'.
