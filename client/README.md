@@ -1,6 +1,6 @@
-# TRUMP Cards - Client
+# Trump Cards - Client
 
-This is the client for the *TRUMP Cards* game.
+This is the client for the *Trump Cards* game.
 
 ## Run the code
 To build and run the client, first make sure that you have [Flutter](https://docs.flutter.dev/) installed and set up. Then, clone the repository and run the following commands in the client directory of the project:

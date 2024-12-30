@@ -11,9 +11,16 @@ class ExitButton extends StatelessWidget {
       height: size,
       width: size,
       decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.background,
+          color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(10)),
       child: IconButton(
+        style: ButtonStyle(
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+          ),
+        ),
         icon: const Icon(Icons.exit_to_app_rounded),
         onPressed: () {
           showDialog(

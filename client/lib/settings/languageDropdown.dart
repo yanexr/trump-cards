@@ -7,7 +7,7 @@ class LanguageDropdown extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        margin: const EdgeInsets.only(top: 20),
+        margin: const EdgeInsets.only(top: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -52,6 +52,10 @@ class LanguageDropdown extends StatelessWidget {
                   DropdownMenuItem(
                     value: 'hi',
                     child: Text('Hindi'),
+                  ),
+                  DropdownMenuItem(
+                    value: 'it',
+                    child: Text('Italian'),
                   ),
                   DropdownMenuItem(
                     value: 'ja',

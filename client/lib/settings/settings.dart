@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:trump_cards/settings/cardDesignDropdown.dart';
 
 import '../settings/UnitsDropdown.dart';
 import '../settings/languageDropdown.dart';
@@ -28,6 +29,7 @@ class SettingsView extends StatelessWidget {
                     child: const  Column(
                       children: [
                         ThemeDropdown(),
+                        CardDesignDropdown(),
                         LanguageDropdown(),
                         UnitsDropdown(),
                         SizedBox(height: 20),

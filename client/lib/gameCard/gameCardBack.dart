@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:trump_cards/gameCard/gameCardWidget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../gameCard/cards.dart';
 import '../app.dart';
@@ -41,9 +42,17 @@ class _GameCardBackState extends State<GameCardBack> {
         padding: const EdgeInsets.all(15),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: const BorderRadius.all(Radius.circular(28)),
-          boxShadow: widget.elevation
+          color: (GameCardStyle.style.borderContainerGradient == null &&
+                  GameCardStyle.style.borderContainerImage == null)
+              ? Theme.of(context).colorScheme.surface
+              : null,
+          gradient: GameCardStyle.style.borderContainerGradient,
+          image: GameCardStyle.style.borderContainerImage,
+          borderRadius: BorderRadius.all(Radius.circular(
+              GameCardStyle.style.borderRadius == null
+                  ? 28
+                  : GameCardStyle.style.borderRadius! * (4 / 3))),
+          boxShadow: (widget.elevation && GameCardStyle.style.hasShadow)
               ? [
                   const BoxShadow(
                       color: Colors.black,
@@ -56,9 +65,14 @@ class _GameCardBackState extends State<GameCardBack> {
         child: Container(
             alignment: Alignment.center,
             padding: const EdgeInsets.all(20),
-            decoration: const BoxDecoration(
-              color: Colors.black12,
-              borderRadius: BorderRadius.all(Radius.circular(20)),
+            decoration: BoxDecoration(
+              color: GameCardStyle.style.innerContainerGradient == null
+                  ? Colors.black12
+                  : null,
+              gradient: GameCardStyle.style.innerContainerGradient,
+              image: GameCardStyle.style.innerContainerImage,
+              borderRadius: BorderRadius.all(
+                  Radius.circular(GameCardStyle.style.borderRadius ?? 20)),
             ),
             child: Column(
               children: [
@@ -69,9 +83,10 @@ class _GameCardBackState extends State<GameCardBack> {
                       height: 50,
                       width: 50,
                       decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(90)),
+                        color: GameCardStyle.style.title?.color ??
+                            Theme.of(context).colorScheme.primary,
+                        borderRadius: BorderRadius.all(Radius.circular(
+                            GameCardStyle.style.borderRadius == 0 ? 0 : 90)),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(0.25),
@@ -89,14 +104,15 @@ class _GameCardBackState extends State<GameCardBack> {
                         },
                       ),
                     ),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: 20),
                     Expanded(
                         child: Text(
-                      widget.gameCard.title,
+                      widget.gameCard.name,
                       softWrap: true,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 20,
-                        fontWeight: FontWeight.bold,
+                        color: GameCardStyle.style.title?.color,
+                        fontFamily: GameCardStyle.style.title?.fontFamily,
                       ),
                     ))
                   ],
@@ -111,7 +127,11 @@ class _GameCardBackState extends State<GameCardBack> {
                           child: Column(children: [
                         Text(
                           snapshot.data!.text,
-                          style: const TextStyle(fontSize: 16),
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: GameCardStyle.style.text?.color,
+                            fontFamily: GameCardStyle.style.text?.fontFamily,
+                          ),
                         ),
                         const SizedBox(height: 25),
                         snapshot.data!.url != ''
@@ -130,11 +150,16 @@ class _GameCardBackState extends State<GameCardBack> {
                                   children: [
                                     Text(
                                       tr('readMoreOnWikipedia'),
+                                      style: TextStyle(
+                                        color: GameCardStyle.style.title?.color,
+                                        fontFamily: GameCardStyle
+                                            .style.title?.fontFamily,
+                                      ),
                                     ),
-                                    const Icon(
-                                      Icons.open_in_new_rounded,
-                                      size: 14,
-                                    ),
+                                    Icon(Icons.open_in_new_rounded,
+                                        size: 14,
+                                        color:
+                                            GameCardStyle.style.title?.color),
                                   ],
                                 ))
                             : const SizedBox(height: 0),
@@ -144,7 +169,10 @@ class _GameCardBackState extends State<GameCardBack> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text('${tr('textUnder')} ',
-                                      style: const TextStyle(fontSize: 11)),
+                                      style: TextStyle(
+                                          fontSize: 11,
+                                          color:
+                                              GameCardStyle.style.text?.color)),
                                   MouseRegion(
                                       cursor: SystemMouseCursors.click,
                                       child: GestureDetector(
@@ -154,10 +182,14 @@ class _GameCardBackState extends State<GameCardBack> {
                                           },
                                           child: Text(
                                             tr('ccbysaLicense'),
-                                            style: const TextStyle(
+                                            style: TextStyle(
                                               fontSize: 11,
+                                              color: GameCardStyle
+                                                  .style.text?.color,
                                               decoration:
                                                   TextDecoration.underline,
+                                              decorationColor: GameCardStyle
+                                                  .style.text?.color,
                                             ),
                                           )))
                                 ],
@@ -190,20 +222,20 @@ class WikipediaArticle {
 Future<WikipediaArticle> getData(GameCard gameCard, String languageCode) async {
   String key = '${App.selectedCardDeck}${gameCard.id}';
   // check if data is already cached
-  if (App.apiCache.containsKey(key)) {
-    return Future.value(App.apiCache[key]);
+  if (App.wikipediaCache.containsKey(key)) {
+    return Future.value(App.wikipediaCache[key]);
   }
 
   // otherwise, search, fetch and cache wikipedia article
   try {
     SearchResult searchResult =
-        await wikipediaSearch(gameCard.title, languageCode);
+        await wikipediaSearch(gameCard.name, languageCode);
     String wikipediaText =
         await getWikipediaText(searchResult.title, languageCode);
     WikipediaArticle wikipediaArticle =
         WikipediaArticle(searchResult.title, searchResult.url, wikipediaText);
 
-    App.apiCache[key] = wikipediaArticle;
+    App.wikipediaCache[key] = wikipediaArticle;
 
     return wikipediaArticle;
   } catch (e) {

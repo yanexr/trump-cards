@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trump_cards/cardEditor/cardEditor.dart';
+import 'package:trump_cards/gameCard/cards.dart';
 import 'app.dart';
 import 'settings/settingsController.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -11,7 +11,9 @@ void main() async {
   // Load persistent data from shared preferences
   await SettingsController.instance.loadSettings();
   App.loadUserProfile();
-  CardEditor.loadUserCreatedCards();
+  
+  App.selectedCardDeck = await loadGameCardDeck('assets/carddecks/cars.json');
+  App.selectedCardDeck!.addUserCreatedCards();
 
   runApp(
     EasyLocalization(
@@ -22,6 +24,7 @@ void main() async {
           Locale('fr'), // French
           Locale('de'), // German
           Locale('hi'), // Hindi
+          Locale('it'), // Italian
           Locale('ja'), // Japanese
           Locale('ko'), // Korean
           Locale('pt'), // Portuguese

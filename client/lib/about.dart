@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'data/cardDecks.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'app.dart';
 
@@ -23,20 +22,22 @@ class About extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
-                Image.asset('assets/images/trump-cards-logo-shadow.png', height: 170),
-                Text(
-                  tr('appTitle'),
-                  style: const TextStyle(
+                Image.asset('assets/images/trump-cards-logo-shadow.png',
+                    height: 170),
+                const Text(
+                  'Trump Cards',
+                  style: TextStyle(
                     fontSize: 18,
                   ),
                 ),
                 const Text(
-                  'v1.2.0',
-                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                  'v1.3.0',
+                  style: TextStyle(
+                      fontSize: 12, color: Color.fromARGB(255, 146, 146, 146)),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -61,7 +62,7 @@ class About extends StatelessWidget {
                             ),
                           ],
                         )),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: 20),
                     OutlinedButton(
                         style: OutlinedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -87,8 +88,8 @@ class About extends StatelessWidget {
                 ),
                 Container(
                   constraints: const BoxConstraints(maxWidth: 800),
-                  margin: const EdgeInsets.fromLTRB(10, 30, 10, 20),
-                  padding: const EdgeInsets.all(20.0),
+                  margin: const EdgeInsets.fromLTRB(10, 40, 10, 20),
+                  padding: const EdgeInsets.all(30.0),
                   decoration: BoxDecoration(
                       color: Theme.of(context).colorScheme.surface,
                       borderRadius:
@@ -109,7 +110,8 @@ class About extends StatelessWidget {
                               children: [
                             Text(
                               tr('feedback'),
-                              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                              style: const TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
                             ),
                             const SizedBox(
                               height: 5,
@@ -119,7 +121,7 @@ class About extends StatelessWidget {
                               style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const SizedBox(
-                              height: 10,
+                              height: 20,
                             ),
                             MaterialButton(
                               height: 50,
@@ -156,20 +158,16 @@ class About extends StatelessWidget {
           SliverList(
             delegate:
                 SliverChildBuilderDelegate((BuildContext context, int index) {
-              String image =
-                  'assets/images/${cardDecks[App.selectedCardDeck].name}/${cardDecks[App.selectedCardDeck].cards[index].imagePath}';
-              String attribution =
-                  cardDecks[App.selectedCardDeck].cards[index].imageAttribution;
-              String license =
-                  cardDecks[App.selectedCardDeck].cards[index].imageLicenseLink;
+              String image = App.selectedCardDeck!.cards[index].imagePath;
+              String attribution = App.selectedCardDeck!.cards[index].imageAttr;
+              String license = App.selectedCardDeck!.cards[index].imageLic;
               return Column(children: [
                 Container(
                     constraints: const BoxConstraints(maxWidth: 800),
                     margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                     padding: index == 0
                         ? const EdgeInsets.only(top: 20)
-                        : index ==
-                                cardDecks[App.selectedCardDeck].cards.length - 1
+                        : index == App.selectedCardDeck!.cards.length - 1
                             ? const EdgeInsets.only(bottom: 20)
                             : null,
                     decoration: BoxDecoration(
@@ -177,20 +175,29 @@ class About extends StatelessWidget {
                       borderRadius: index == 0
                           ? const BorderRadius.vertical(
                               top: Radius.circular(20))
-                          : index ==
-                                  cardDecks[App.selectedCardDeck].cards.length -
-                                      1
+                          : index == App.selectedCardDeck!.cards.length - 1
                               ? const BorderRadius.vertical(
                                   bottom: Radius.circular(20))
                               : null,
                     ),
                     child: Column(children: [
                       ListTile(
-                        leading: Image.asset(
-                          image,
-                          width: 100,
-                          alignment: Alignment.centerRight,
-                        ),
+                        leading: image.startsWith('http')
+                            ? Image.network(image,
+                                alignment: Alignment.centerRight,
+                                width: 100, errorBuilder: (BuildContext context,
+                                    Object exception, StackTrace? stackTrace) {
+                                return Image.asset(
+                                    'assets/images/placeholder.png',
+                                    fit: BoxFit.cover,
+                                    height: 50,
+                                    width: 50);
+                              })
+                            : Image.asset(
+                                'assets/images/${App.selectedCardDeck!.name}/$image',
+                                width: 100,
+                                alignment: Alignment.centerRight,
+                              ),
                         title: Text(attribution),
                         subtitle: license != ''
                             ? MouseRegion(
@@ -216,7 +223,7 @@ class About extends StatelessWidget {
                       )
                     ]))
               ]);
-            }, childCount: cardDecks[App.selectedCardDeck].cards.length),
+            }, childCount: App.selectedCardDeck!.cards.length),
           )
         ]));
   }

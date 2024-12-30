@@ -9,7 +9,7 @@ class SingleCardView extends StatefulWidget {
   final int index;
   const SingleCardView({super.key, required this.list, required this.index});
 
-  static const routeName = '/view-cards';
+  static const routeName = '/cards';
 
   @override
   _SingleCardViewState createState() => _SingleCardViewState();
@@ -31,7 +31,7 @@ class _SingleCardViewState extends State<SingleCardView> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.primary,
-          title: Text(widget.list[currentPage].title),
+          title: Text(widget.list[currentPage].name),
         ),
         body: Container(
             padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),

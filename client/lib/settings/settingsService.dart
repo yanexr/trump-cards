@@ -8,6 +8,12 @@ class SettingsService {
     return theme;
   }
 
+  Future<int> loadCardDesign() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int cardDesign = prefs.getInt('cardDesign') ?? 0;
+    return cardDesign;
+  }
+
   Future<int> loadPowerUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int powerUnit = prefs.getInt('powerUnit') ?? 0;
@@ -20,45 +26,80 @@ class SettingsService {
     return forceUnit;
   }
 
-  Future<int> loadSpeedUnit() async {
+  Future<int> loadVelocityUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int speedUnit = prefs.getInt('speedUnit') ?? 0;
-    return speedUnit;
+    int velocityUnit = prefs.getInt('velocityUnit') ?? 0;
+    return velocityUnit;
   }
 
-  Future<int> loadWeightUnit() async {
+  Future<int> loadMassUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int weightUnit = prefs.getInt('weightUnit') ?? 0;
-    return weightUnit;
+    int massUnit = prefs.getInt('massUnit') ?? 0;
+    return massUnit;
   }
 
-  Future<int> loadTimeUnit() async {
+  Future<int> loadClockTimeUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int timeUnit = prefs.getInt('timeUnit') ?? 0;
-    return timeUnit;
+    int clockTimeUnit = prefs.getInt('clockTimeUnit') ?? 0;
+    return clockTimeUnit;
   }
 
-  Future<int> loadPriceUnit() async {
+  Future<int> loadCalendarTimeUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int priceUnit = prefs.getInt('priceUnit') ?? 0;
-    return priceUnit;
+    int calendarTimeUnit = prefs.getInt('calendarTimeUnit') ?? 0;
+    return calendarTimeUnit;
   }
 
-  Future<int> loadDistanceUnit() async {
+  Future<int> loadCurrencyUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int distanceUnit = prefs.getInt('distanceUnit') ?? 0;
-    return distanceUnit;
+    int currencyUnit = prefs.getInt('currencyUnit') ?? 0;
+    return currencyUnit;
   }
 
-  Future<int> loadAmountUnit() async {
+  Future<int> loadDimensionUnit() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int amountUnit = prefs.getInt('amountUnit') ?? 0;
-    return amountUnit;
+    int dimensionUnit = prefs.getInt('dimensionUnit') ?? 0;
+    return dimensionUnit;
+  }
+
+  Future<int> loadCountUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int countUnit = prefs.getInt('countUnit') ?? 0;
+    return countUnit;
+  }
+
+  Future <int> loadDensityUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int densityUnit = prefs.getInt('densityUnit') ?? 0;
+    return densityUnit;
+  }
+
+  Future <int> loadPercentageUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int percentageUnit = prefs.getInt('percentageUnit') ?? 0;
+    return percentageUnit;
+  }
+
+  Future <int> loadTemperatureUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int temperatureUnit = prefs.getInt('temperatureUnit') ?? 0;
+    return temperatureUnit;
+  }
+
+  Future <int> loadVolumeUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int volumeUnit = prefs.getInt('volumeUnit') ?? 0;
+    return volumeUnit;
   }
 
   Future<void> updateThemeMode(ThemeMode theme) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt('themeMode', theme.index);
+  }
+
+  Future<void> updateCardDesign(int cardDesign) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('cardDesign', cardDesign);
   }
 
   Future<void> updatePowerUnit(int powerUnit) async {
@@ -71,33 +112,58 @@ class SettingsService {
     await prefs.setInt('forceUnit', forceUnit);
   }
 
-  Future<void> updateSpeedUnit(int speedUnit) async {
+  Future<void> updateVelocityUnit(int velocityUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('speedUnit', speedUnit);
+    await prefs.setInt('velocityUnit', velocityUnit);
   }
 
-  Future<void> updateWeightUnit(int weightUnit) async {
+  Future<void> updateMassUnit(int massUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('weightUnit', weightUnit);
+    await prefs.setInt('massUnit', massUnit);
   }
 
-  Future<void> updateTimeUnit(int timeUnit) async {
+  Future<void> updateClockTimeUnit(int clockTimeUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('timeUnit', timeUnit);
+    await prefs.setInt('clockTimeUnit', clockTimeUnit);
   }
 
-  Future<void> updatePriceUnit(int priceUnit) async {
+  Future<void> updateCalendarTimeUnit(int calendarTimeUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('priceUnit', priceUnit);
+    await prefs.setInt('calendarTimeUnit', calendarTimeUnit);
   }
 
-  Future<void> updateDistanceUnit(int distanceUnit) async {
+  Future<void> updateCurrencyUnit(int currencyUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('distanceUnit', distanceUnit);
+    await prefs.setInt('currencyUnit', currencyUnit);
   }
 
-  Future<void> updateAmountUnit(int amountUnit) async {
+  Future<void> updateDimensionUnit(int dimensionUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('amountUnit', amountUnit);
+    await prefs.setInt('dimensionUnit', dimensionUnit);
+  }
+
+  Future<void> updateCountUnit(int countUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('countUnit', countUnit);
+  }
+
+  Future<void> updateDensityUnit(int densityUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('densityUnit', densityUnit);
+  }
+
+  Future<void> updatePercentageUnit(int percentageUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('percentageUnit', percentageUnit);
+  }
+
+  Future<void> updateTemperatureUnit(int temperatureUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('temperatureUnit', temperatureUnit);
+  }
+
+  Future<void> updateVolumeUnit(int volumeUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('volumeUnit', volumeUnit);
   }
 }

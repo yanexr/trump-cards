@@ -1,13 +1,13 @@
 <div align="center">
   <img src="./images/app-logo-rounded.png" alt="logo" width="150" height="auto" />
-  <h1>TRUMP Cards</h1>
+  <h1>Trump Cards</h1>
   <h4>
     <a href="https://play.google.com/store/apps/details?id=com.yedesign.card_game" target="_blank">Get it on Google Play</a> • 
     <a href="https://yanexr.github.io/trump-cards" target="_blank">Play on the Web</a>
   </h4>
 </div>
 
-**TRUMP Cards** is a a _super-trump_ or _trump-quartet_ card game like _Top Trumps_, where players compare numerical values of various attributes (e.g., speed, power) on their cards. Players take turns selecting a category and comparing the chosen attribute. The player with the highest value wins the round and collects the opponents' cards. The player who has all the cards at the end of the game wins.
+**Trump Cards** is a a _super-trump_ or _trump-quartet_ card game like _Top Trumps_, where players compare numerical values of various attributes (e.g., speed, power) on their cards. Players take turns selecting a category and comparing the chosen attribute. The player with the highest value wins the round and collects the opponents' cards. The player who has all the cards at the end of the game wins.
 
 ## Screenshots
 <div align="center">
@@ -16,13 +16,14 @@
 
 ## Features
 
-- 3 different card decks (cars, airplanes and rockets)
-- Each card shows 5 different attributes, a picture and a more detailed description on the back
+- 9 different card decks (3 on the client and 6 on the server)
+- Each card shows a number of attributes, a picture and a more detailed description on the back
+- 10 different card design themes to choose from
 - Supports different measurement systems (metric, imperial, ...)
 - Singleplayer with different difficulty levels
 - Online and offline multiplayer
-- Card editor for creating custom cards
-- Supports 11 different languages
+- Card and card deck editor for creating custom cards and card decks
+- Supports 12 different languages
 
 ## How to add or change card decks
 

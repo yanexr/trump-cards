@@ -39,7 +39,7 @@ class _MultiPlayerDialogState extends State<MultiPlayerDialog> {
             children: [
               const SizedBox(height: 10),
               TextField(
-                maxLength: 8,
+                maxLength: 15,
                 controller: _controller,
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
@@ -56,7 +56,7 @@ class _MultiPlayerDialogState extends State<MultiPlayerDialog> {
               const SizedBox(height: 10),
               MaterialButton(
                 height: 50,
-                color: Theme.of(context).colorScheme.background,
+                color: Colors.blue,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
@@ -64,13 +64,16 @@ class _MultiPlayerDialogState extends State<MultiPlayerDialog> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(children: [
-                        const Icon(Icons.wifi_off_rounded, size: 20),
+                        const Icon(Icons.wifi_off_rounded,
+                            size: 20, color: Colors.white),
                         const SizedBox(width: 10),
-                        Text(tr('offline')),
+                        Text(tr('offline'),
+                            style: const TextStyle(color: Colors.white)),
                       ]),
                       const Icon(
                         Icons.arrow_forward_ios_rounded,
                         size: 18,
+                        color: Colors.white,
                       )
                     ]),
                 onPressed: () {
@@ -85,7 +88,7 @@ class _MultiPlayerDialogState extends State<MultiPlayerDialog> {
               const SizedBox(height: 10),
               MaterialButton(
                 height: 50,
-                color: Theme.of(context).colorScheme.background,
+                color: Colors.blue,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
@@ -93,11 +96,14 @@ class _MultiPlayerDialogState extends State<MultiPlayerDialog> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(children: [
-                        const Icon(Icons.wifi_rounded, size: 20),
+                        const Icon(Icons.wifi_rounded,
+                            size: 20, color: Colors.white),
                         const SizedBox(width: 10),
-                        Text(tr('online')),
+                        Text(tr('online'),
+                            style: const TextStyle(color: Colors.white)),
                       ]),
-                      const Icon(Icons.arrow_forward_ios_rounded, size: 18)
+                      const Icon(Icons.arrow_forward_ios_rounded,
+                          size: 18, color: Colors.white)
                     ]),
                 onPressed: () {
                   Navigator.of(context).pop();

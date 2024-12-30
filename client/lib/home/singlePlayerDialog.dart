@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 import '../game/singleplayer.dart';
 import '../app.dart';
@@ -12,6 +13,23 @@ class SinglePlayerDialog extends StatefulWidget {
 }
 
 class _SinglePlayerDialogState extends State<SinglePlayerDialog> {
+  late int minCards;
+  late int maxCards;
+  late int divisions;
+
+  @override
+  void initState() {
+    super.initState();
+    int m = (App.selectedCardDeck!.cards.length / 2).floor();
+    if (App.numberofCardsSingleplayer > m) {
+      App.numberofCardsSingleplayer = min(m, 11);
+    }
+
+    minCards = 4;
+    maxCards = min(m, 16);
+    divisions = maxCards - minCards;
+  }
+
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -116,16 +134,16 @@ class _SinglePlayerDialogState extends State<SinglePlayerDialog> {
               const Divider(height: 40),
               Center(
                 child: Text(
-                  tr('numberOfCardsPerPlayer'),
+                  '${tr('numberOfCardsPerPlayer')} ${App.numberofCardsSingleplayer}',
                 ),
               ),
               const SizedBox(height: 10),
               Center(
                 child: Slider(
                     value: App.numberofCardsSingleplayer.toDouble(),
-                    min: 7,
-                    max: 15,
-                    divisions: 8,
+                    min: minCards.toDouble(),
+                    max: maxCards.toDouble(),
+                    divisions: divisions > 0 ? divisions : null,
                     label: App.numberofCardsSingleplayer.toString(),
                     onChanged: (double value) {
                       setState(() {
@@ -140,10 +158,10 @@ class _SinglePlayerDialogState extends State<SinglePlayerDialog> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text('7',
+                          Text(minCards.toString(),
                               style: Theme.of(context).textTheme.bodySmall),
                           Text(
-                            '15',
+                            maxCards.toString(),
                             style: Theme.of(context).textTheme.bodySmall,
                           )
                         ],
@@ -177,7 +195,7 @@ class _SinglePlayerDialogState extends State<SinglePlayerDialog> {
           ]),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Singleplayer()));
+                MaterialPageRoute(builder: (context) => const Singleplayer()));
           },
         ),
       ],

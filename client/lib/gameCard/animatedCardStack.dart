@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:indexed/indexed.dart';
+import 'package:trump_cards/app.dart';
 
 import 'cards.dart';
 import 'gameCardWidget.dart';
@@ -7,19 +8,21 @@ import 'gameCardWidget.dart';
 class AnimatedCardStack extends StatefulWidget {
   final List<GameCard> cardStack;
   final bool isCardSelectable;
-  final SelectedCharacteristic selectedCharacteristic;
+  final int selectedCharacteristic;
   final Color selectionColor;
-  final Function(SelectedCharacteristic) onCardClicked;
+  final Function(int) onCardClicked;
+  final GameCardDeck? deck;
 
   const AnimatedCardStack(
       {super.key,
       required this.cardStack,
       this.isCardSelectable = false,
-      this.selectedCharacteristic = SelectedCharacteristic.none,
+      this.selectedCharacteristic = -1,
       this.selectionColor = Colors.blue,
-      this.onCardClicked = _doNothing});
+      this.onCardClicked = _doNothing,
+      this.deck});
 
-  static void _doNothing(SelectedCharacteristic s) {}
+  static void _doNothing(int s) {}
 
   @override
   AnimatedCardStackState createState() => AnimatedCardStackState();
@@ -133,6 +136,7 @@ class AnimatedCardStackState extends State<AnimatedCardStack>
                                         widget.selectedCharacteristic,
                                     selectionColor: widget.selectionColor,
                                     elevation: false,
+                                    deck: widget.deck ?? App.selectedCardDeck,
                                   )
                                 : const SizedBox(height: 0)
                           ]))),
@@ -144,6 +148,7 @@ class AnimatedCardStackState extends State<AnimatedCardStack>
                 widget.cardStack.length > 1
                     ? GameCardWidget(
                         gameCard: widget.cardStack[1],
+                        deck: widget.deck ?? App.selectedCardDeck,
                       )
                     : const SizedBox(height: 0)
               ])),

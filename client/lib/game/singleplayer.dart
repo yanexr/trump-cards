@@ -1,18 +1,20 @@
 import 'dart:math';
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:trump_cards/game/cardComparisonView.dart';
 import 'package:trump_cards/gameCard/animatedCardStack.dart';
 import 'package:trump_cards/gameCard/measurementUnits.dart';
 import 'gameEndedDialog.dart';
 import 'playerInfo.dart';
 import '../game/exitButton.dart';
-import '../gameCard/gameCardWidget.dart';
 import '../app.dart';
-import '../data/cardDecks.dart';
 import '../gameCard/cards.dart';
 
 class Singleplayer extends StatefulWidget {
+  const Singleplayer({super.key});
+
   @override
   _SingleplayerState createState() => _SingleplayerState();
 }
@@ -20,7 +22,6 @@ class Singleplayer extends StatefulWidget {
 class _SingleplayerState extends State<Singleplayer>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
-  late Animation<double> _animation;
 
   late List<GameCard> stackUser = [];
   late List<GameCard> stackComputer = [];
@@ -31,14 +32,10 @@ class _SingleplayerState extends State<Singleplayer>
   int points = App.numberofCardsSingleplayer * 2;
   bool isButtonEnabled = false;
   bool isCardSelectable = true;
-  SelectedCharacteristic selectedCharacteristic = SelectedCharacteristic.none;
+  int selectedCharacteristic = -1; // -1 means none selected
   bool userWinsRound = true;
 
-  late num averageV1 = 0;
-  late num averageV2 = 0;
-  late num averageV3 = 0;
-  late num averageV4 = 0;
-  late num averageV5 = 0;
+  late List<num> averages = [];
 
   final GlobalKey<AnimatedCardStackState> _animatedCardStackKey =
       GlobalKey<AnimatedCardStackState>();
@@ -50,11 +47,9 @@ class _SingleplayerState extends State<Singleplayer>
       vsync: this,
       duration: const Duration(milliseconds: 300),
     );
-    _animation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-        parent: _animationController, curve: Curves.decelerate));
 
-    List<GameCard> list = cardDecks[App.selectedCardDeck].cards +
-        cardDecks[App.selectedCardDeck].userCreatedCards;
+    final deck = App.selectedCardDeck!;
+    List<GameCard> list = deck.cards;
     list.shuffle();
     stackUser.addAll(list.getRange(0, App.numberofCardsSingleplayer));
     stackComputer.addAll(list.getRange(
@@ -66,77 +61,42 @@ class _SingleplayerState extends State<Singleplayer>
         isTurn: false,
         numberOfCards: stackComputer.length);
 
-    for (GameCard g in stackUser + stackComputer) {
-      averageV1 += g.value1;
-      averageV2 += g.value2;
-      averageV3 += g.value3;
-      averageV4 += g.value4;
-      averageV5 += g.value5;
+    // Compute averages for each characteristic
+    int totalCards = App.numberofCardsSingleplayer * 2;
+    averages = List.filled(deck.characteristics.length, 0);
+    for (GameCard g in stackUser) {
+      for (int i = 0; i < g.values.length; i++) {
+        averages[i] += g.values[i];
+      }
     }
-    averageV1 = averageV1 / (App.numberofCardsSingleplayer * 2);
-    averageV2 = averageV2 / (App.numberofCardsSingleplayer * 2);
-    averageV3 = averageV3 / (App.numberofCardsSingleplayer * 2);
-    averageV4 = averageV4 / (App.numberofCardsSingleplayer * 2);
-    averageV5 = averageV5 / (App.numberofCardsSingleplayer * 2);
+    for (GameCard g in stackComputer) {
+      for (int i = 0; i < g.values.length; i++) {
+        averages[i] += g.values[i];
+      }
+    }
+    for (int i = 0; i < averages.length; i++) {
+      averages[i] = averages[i] / totalCards;
+    }
   }
 
-  void onCardClicked(SelectedCharacteristic characteristic) {
+  void onCardClicked(int characteristicIndex) {
     if (isCardSelectable) {
       setState(() {
         _animationController.forward();
         isCardSelectable = false;
         isButtonEnabled = true;
-        selectedCharacteristic = characteristic;
+        selectedCharacteristic = characteristicIndex;
 
-        switch (characteristic) {
-          case SelectedCharacteristic.v1:
-            if (!((stackUser[0].value1 > stackComputer[0].value1) ^
-                cardDecks[App.selectedCardDeck].c1.isHigherBetter)) {
-              userWinsRound = true;
-            } else {
-              userWinsRound = false;
-            }
-            break;
-          case SelectedCharacteristic.v2:
-            if (!((stackUser[0].value2 > stackComputer[0].value2) ^
-                cardDecks[App.selectedCardDeck].c2.isHigherBetter)) {
-              userWinsRound = true;
-            } else {
-              userWinsRound = false;
-            }
-            break;
-          case SelectedCharacteristic.v3:
-            if (!((stackUser[0].value3 > stackComputer[0].value3) ^
-                cardDecks[App.selectedCardDeck].c3.isHigherBetter)) {
-              userWinsRound = true;
-            } else {
-              userWinsRound = false;
-            }
-            break;
-          case SelectedCharacteristic.v4:
-            if (!((stackUser[0].value4 > stackComputer[0].value4) ^
-                cardDecks[App.selectedCardDeck].c4.isHigherBetter)) {
-              userWinsRound = true;
-            } else {
-              userWinsRound = false;
-            }
-            break;
-          case SelectedCharacteristic.v5:
-            if (!((stackUser[0].value5 > stackComputer[0].value5) ^
-                cardDecks[App.selectedCardDeck].c5.isHigherBetter)) {
-              userWinsRound = true;
-            } else {
-              userWinsRound = false;
-            }
-            break;
-          default:
-            userWinsRound = true;
-        }
+        final deck = App.selectedCardDeck!;
+        final isHigherBetter =
+            deck.characteristics[characteristicIndex].isHigherBetter;
+        final userVal = stackUser[0].values[characteristicIndex];
+        final compVal = stackComputer[0].values[characteristicIndex];
 
-        if (userWinsRound) {
-          selectionColor = Colors.green;
-        } else {
-          selectionColor = Colors.red;
+        userWinsRound = ((userVal > compVal) == isHigherBetter);
+
+        selectionColor = userWinsRound ? Colors.green : Colors.red;
+        if (!userWinsRound) {
           points--;
         }
       });
@@ -145,7 +105,7 @@ class _SingleplayerState extends State<Singleplayer>
 
   void keepCard() {
     setState(() {
-      selectedCharacteristic = SelectedCharacteristic.none;
+      selectedCharacteristic = -1;
       stackUser.add(stackUser.removeAt(0));
       stackUser.add(stackComputer.removeAt(0));
       thisPlayer.isTurn = true;
@@ -168,7 +128,7 @@ class _SingleplayerState extends State<Singleplayer>
 
   void loseCard() {
     setState(() {
-      selectedCharacteristic = SelectedCharacteristic.none;
+      selectedCharacteristic = -1;
       stackComputer.add(stackComputer.removeAt(0));
       stackComputer.add(stackUser.removeAt(0));
       thisPlayer.isTurn = false;
@@ -185,134 +145,96 @@ class _SingleplayerState extends State<Singleplayer>
               return const GameEndedDialog(points: 0, win: false);
             });
       } else {
-        // bot select next characteristic
+        // bot selects next characteristic
         isCardSelectable = true;
-        var random = Random();
+        int cIndex;
         switch (App.difficulty) {
           case 0:
-            selectedCharacteristic = findLosingProperty();
+            cIndex = findLosingProperty();
             break;
           case 1:
-            selectedCharacteristic = findRandomProperty();
+            cIndex = findRandomProperty();
             break;
           case 2:
-            selectedCharacteristic =
-                random.nextBool() ? findBestProperty() : findRandomProperty();
+            cIndex =
+                Random().nextBool() ? findBestProperty() : findRandomProperty();
             break;
           case 3:
-            selectedCharacteristic = findBestProperty();
+            cIndex = findBestProperty();
             break;
           case 4:
-            selectedCharacteristic = findWinningProperty();
+            cIndex = findWinningProperty();
             break;
           default:
+            cIndex = findRandomProperty();
         }
-        onCardClicked(selectedCharacteristic);
+        onCardClicked(cIndex);
       }
     });
   }
 
-  SelectedCharacteristic findBestProperty() {
-    GameCard c = stackComputer[0];
-    List<num> values = [c.value1, c.value2, c.value3, c.value4, c.value5];
-    List<num> averages = [
-      averageV1,
-      averageV2,
-      averageV3,
-      averageV4,
-      averageV5
-    ];
-    List<bool> g = [
-      cardDecks[App.selectedCardDeck].c1.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c2.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c3.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c4.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c5.isHigherBetter
-    ];
-    List<int> valueIndices = [0, 1, 2, 3, 4];
-    valueIndices.shuffle();
+  int findBestProperty() {
+    final deck = App.selectedCardDeck!;
+    final c = stackComputer[0];
+    final valuesC = c.values;
 
-    num max = 0;
-    int index = 0;
-    for (int i = 0; i < values.length; i++) {
-      num p;
-      if (g[i]) {
-        p = values[i] / averages[i];
-      } else {
-        p = averages[i] / values[i];
-      }
-      if (p > max) {
-        max = p;
-        index = i;
-      }
-    }
-    return SelectedCharacteristic.values[index];
-  }
-
-  SelectedCharacteristic findWinningProperty() {
-    GameCard c = stackComputer[0];
-    GameCard u = stackUser[0];
-    List<num> valuesC = [c.value1, c.value2, c.value3, c.value4, c.value5];
-    List<num> valuesU = [u.value1, u.value2, u.value3, u.value4, u.value5];
-    List<bool> g = [
-      cardDecks[App.selectedCardDeck].c1.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c2.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c3.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c4.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c5.isHigherBetter
-    ];
+    num maxRatio = -1;
+    int bestIndex = 0;
 
     for (int i = 0; i < valuesC.length; i++) {
-      if (g[i]) {
-        if (valuesC[i] > valuesU[i]) {
-          return SelectedCharacteristic.values[i];
-        }
-      } else {
-        if (valuesC[i] < valuesU[i]) {
-          return SelectedCharacteristic.values[i];
-        }
+      final characteristic = deck.characteristics[i];
+      final val = valuesC[i];
+      final avg = averages[i];
+      num p = characteristic.isHigherBetter ? (val / avg) : (avg / val);
+      if (p > maxRatio) {
+        maxRatio = p;
+        bestIndex = i;
+      }
+    }
+    return bestIndex;
+  }
+
+  int findWinningProperty() {
+    final deck = App.selectedCardDeck!;
+    final c = stackComputer[0];
+    final u = stackUser[0];
+    final valuesC = c.values;
+    final valuesU = u.values;
+
+    for (int i = 0; i < valuesC.length; i++) {
+      final isHigherBetter = deck.characteristics[i].isHigherBetter;
+      if (isHigherBetter && valuesC[i] > valuesU[i]) {
+        return i;
+      } else if (!isHigherBetter && valuesC[i] < valuesU[i]) {
+        return i;
       }
     }
     return findRandomProperty();
   }
 
-  SelectedCharacteristic findLosingProperty() {
-    GameCard c = stackComputer[0];
-    GameCard u = stackUser[0];
-    List<num> valuesC = [c.value1, c.value2, c.value3, c.value4, c.value5];
-    List<num> valuesU = [u.value1, u.value2, u.value3, u.value4, u.value5];
-    List<bool> g = [
-      cardDecks[App.selectedCardDeck].c1.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c2.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c3.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c4.isHigherBetter,
-      cardDecks[App.selectedCardDeck].c5.isHigherBetter
-    ];
+  int findLosingProperty() {
+    final deck = App.selectedCardDeck!;
+    final c = stackComputer[0];
+    final u = stackUser[0];
+    final valuesC = c.values;
+    final valuesU = u.values;
 
     for (int i = 0; i < valuesC.length; i++) {
-      if (g[i]) {
-        if (valuesC[i] < valuesU[i]) {
-          return SelectedCharacteristic.values[i];
-        }
-      } else {
-        if (valuesC[i] > valuesU[i]) {
-          return SelectedCharacteristic.values[i];
-        }
+      final isHigherBetter = deck.characteristics[i].isHigherBetter;
+      if (isHigherBetter && valuesC[i] < valuesU[i]) {
+        return i;
+      } else if (!isHigherBetter && valuesC[i] > valuesU[i]) {
+        return i;
       }
     }
     return findRandomProperty();
   }
 
-  SelectedCharacteristic findRandomProperty() {
-    List<SelectedCharacteristic> list = [
-      SelectedCharacteristic.v1,
-      SelectedCharacteristic.v2,
-      SelectedCharacteristic.v3,
-      SelectedCharacteristic.v4,
-      SelectedCharacteristic.v5
-    ];
-    list.shuffle();
-    return list[0];
+  int findRandomProperty() {
+    final deck = App.selectedCardDeck!;
+    List<int> indices = List.generate(deck.characteristics.length, (i) => i);
+    indices.shuffle();
+    return indices.first;
   }
 
   void nextCard() {
@@ -332,34 +254,21 @@ class _SingleplayerState extends State<Singleplayer>
   }
 
   TextSpan getSelectedCharacteristicValueOpponent() {
-    num v = 0;
-    MeasurementType m;
-    switch (selectedCharacteristic) {
-      case SelectedCharacteristic.v1:
-        v = stackComputer[0].value1;
-        m = cardDecks[App.selectedCardDeck].c1.measurementType;
-      case SelectedCharacteristic.v2:
-        v = stackComputer[0].value2;
-        m = cardDecks[App.selectedCardDeck].c2.measurementType;
-      case SelectedCharacteristic.v3:
-        v = stackComputer[0].value3;
-        m = cardDecks[App.selectedCardDeck].c3.measurementType;
-      case SelectedCharacteristic.v4:
-        v = stackComputer[0].value4;
-        m = cardDecks[App.selectedCardDeck].c4.measurementType;
-      case SelectedCharacteristic.v5:
-        v = stackComputer[0].value5;
-        m = cardDecks[App.selectedCardDeck].c5.measurementType;
-      default:
-        v = 0;
-        m = cardDecks[App.selectedCardDeck].c1.measurementType;
+    final deck = App.selectedCardDeck!;
+    if (selectedCharacteristic == -1 || stackComputer.isEmpty) {
+      return const TextSpan(text: '');
     }
+
+    final i = selectedCharacteristic;
+    final v = stackComputer[0].values[i];
+    final m = deck.characteristics[i].measurementType;
 
     return Measurements.getValueAndUnit(v, m);
   }
 
   @override
   Widget build(BuildContext context) {
+    final deck = App.selectedCardDeck!;
     return Scaffold(
         body: SafeArea(
       child: Center(
@@ -387,7 +296,6 @@ class _SingleplayerState extends State<Singleplayer>
                     )
                   ],
                 ),
-                
                 AnimatedCardStack(
                   key: _animatedCardStackKey,
                   cardStack: stackUser,
@@ -396,108 +304,186 @@ class _SingleplayerState extends State<Singleplayer>
                   selectedCharacteristic: selectedCharacteristic,
                   selectionColor: selectionColor,
                 ),
-                
-                FadeTransition(
-                  opacity: _animation,
-                  child: stackComputer.isNotEmpty
-                      ? Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: selectionColor,
-                                  width: 4,
-                                ),
-                                shape: BoxShape.circle,
-                              ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(180),
-                                child: SizedBox.fromSize(
-                                  child: stackComputer[0].id > 0
-                                      ? Image.asset(
-                                          'assets/images/${cardDecks[App.selectedCardDeck].name}/${stackComputer[0].imagePath}',
-                                          fit: BoxFit.cover,
-                                          height: 50,
-                                          width: 50,
-                                        )
-                                      : Image.network(
-                                          stackComputer[0].imagePath,
-                                          fit: BoxFit.cover,
-                                          height: 50,
-                                          width: 50, errorBuilder:
-                                              (BuildContext context,
-                                                  Object exception,
-                                                  StackTrace? stackTrace) {
-                                          return Image.asset(
-                                              'assets/images/placeholder.png',
-                                              fit: BoxFit.cover,
-                                              height: 50,
-                                              width: 50);
-                                        }),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 10),
-                            Text.rich(
-                              TextSpan(
-                                text: (userWinsRound
-                                    ? '${tr('youWonAgainst')}\n'
-                                    : '${tr('youLostAgainst')}\n'),
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                ),
-                                children: [
-                                  TextSpan(
-                                      text: stackComputer[0].title,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16,
-                                          height: 1.5),
+                stackComputer.isNotEmpty
+                    ? SizedBox(
+                        height: 80,
+                        child: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 300),
+                          transitionBuilder:
+                              (Widget child, Animation<double> animation) {
+                            return ScaleTransition(
+                                scale: animation, child: child);
+                          },
+                          child: isCardSelectable
+                              ? Padding(
+                                  key: ValueKey<String>(
+                                      'secondChild-${opponent.numberOfCards}'),
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    tr('Your turn! Select an attribute.'),
+                                    style: const TextStyle(
+                                      color: Colors.green,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              : TextButton(
+                                  key: ValueKey<String>(
+                                      'firstChild-${opponent.numberOfCards}'),
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                CardComparisonView(
+                                                    firstCard: stackComputer[0],
+                                                    secondCard: stackUser[0])));
+                                  },
+                                  style: TextButton.styleFrom(
+                                    backgroundColor:
+                                        Theme.of(context).colorScheme.surface,
+                                    padding: EdgeInsets.zero,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    foregroundColor:
+                                        Theme.of(context).colorScheme.onSurface,
+                                    overlayColor: Colors.transparent,
+                                  ),
+                                  child: Container(
+                                    constraints:
+                                        const BoxConstraints(maxWidth: 500),
+                                    padding: const EdgeInsets.all(11),
+                                    child: Row(
                                       children: [
-                                        const TextSpan(text: ' ('),
-                                        getSelectedCharacteristicValueOpponent(),
-                                        const TextSpan(text: ')'),
-                                      ]),
-                                ],
-                              ),
-                            ),
-                          ],
-                        )
-                      : const SizedBox(
-                          height: 0,
-                        ),
-                ),
-                const SizedBox(height: 10),
-                MaterialButton(
-                  color: Theme.of(context).colorScheme.primary,
-                  disabledColor: Colors.grey,
-                  height: 50,
-                  elevation: 10,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  onPressed: isButtonEnabled
-                      ? () {
-                          nextCard();
-                        }
-                      : null,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        tr('nextCard'),
-                        style: const TextStyle(
-                          color: Colors.white,
-                        ),
+                                        // Rounded image on the left
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: selectionColor,
+                                              width: 4,
+                                            ),
+                                            shape: BoxShape.circle,
+                                          ),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(180),
+                                            child: SizedBox.fromSize(
+                                              child: !stackComputer[0]
+                                                      .imagePath
+                                                      .startsWith('http')
+                                                  ? Image.asset(
+                                                      'assets/images/${deck.name}/${stackComputer[0].imagePath}',
+                                                      fit: BoxFit.cover,
+                                                      height: 50,
+                                                      width: 50,
+                                                    )
+                                                  : Image.network(
+                                                      stackComputer[0]
+                                                          .imagePath,
+                                                      fit: BoxFit.cover,
+                                                      height: 50,
+                                                      width: 50,
+                                                      errorBuilder:
+                                                          (BuildContext context,
+                                                              Object exception,
+                                                              StackTrace?
+                                                                  stackTrace) {
+                                                        return Image.asset(
+                                                            'assets/images/placeholder.png',
+                                                            fit: BoxFit.cover,
+                                                            height: 50,
+                                                            width: 50);
+                                                      },
+                                                    ),
+                                            ),
+                                          ),
+                                        ),
+                                        const SizedBox(width: 12),
+                                        // Text in the middle
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  AutoSizeText(
+                                                    userWinsRound
+                                                        ? tr('youWonAgainst')
+                                                        : tr('youLostAgainst'),
+                                                    style: const TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
+                                                    maxLines: 1,
+                                                    minFontSize: 8,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                  ),
+                                                  AutoSizeText.rich(
+                                                    TextSpan(
+                                                      text:
+                                                          stackComputer[0].name,
+                                                      style: const TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 16,
+                                                        height: 1.2,
+                                                      ),
+                                                      children: [
+                                                        const TextSpan(
+                                                            text: ' ('),
+                                                        getSelectedCharacteristicValueOpponent(),
+                                                        const TextSpan(
+                                                            text: ')'),
+                                                      ],
+                                                    ),
+                                                    maxLines: 2,
+                                                    minFontSize: 10,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(width: 8),
+                                        // continue button on the right
+                                        TextButton(
+                                          onPressed: () {
+                                            if (isButtonEnabled) {
+                                              nextCard();
+                                            }
+                                          },
+                                          style: TextButton.styleFrom(
+                                            backgroundColor: Colors.blue,
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(12),
+                                            ),
+                                            minimumSize: const Size(96, 64),
+                                          ),
+                                          child: const Icon(
+                                            Icons.arrow_forward_ios,
+                                            color: Colors.white,
+                                            size: 24,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                        ))
+                    : const SizedBox(
+                        height: 0,
                       ),
-                      const Icon(
-                        Icons.navigate_next_rounded,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
-                )
               ]),
             ))
           ],

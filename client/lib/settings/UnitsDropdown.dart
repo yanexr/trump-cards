@@ -15,7 +15,7 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
   @override
   Widget build(BuildContext context) {
     return Card(
-        margin: const EdgeInsets.only(top: 20),
+        margin: const EdgeInsets.only(top: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Padding(
             padding: const EdgeInsets.all(20),
@@ -99,19 +99,19 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                     Row(
                       children: [
                         const SizedBox(width: 20),
-                        Text(Measurements.speed().name),
+                        Text(Measurements.velocity().name),
                         const Spacer(),
                         DropdownButton<int>(
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           borderRadius: BorderRadius.circular(10),
-                          value: SettingsController.instance.speedUnit,
+                          value: SettingsController.instance.velocityUnit,
                           onChanged: (value) {
                             setState(() {
                               SettingsController.instance
-                                  .updateSpeedUnit(value);
+                                  .updateVelocityUnit(value);
                             });
                           },
-                          items: Measurements.speed()
+                          items: Measurements.velocity()
                               .units
                               .asMap()
                               .entries
@@ -129,19 +129,19 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                     Row(
                       children: [
                         const SizedBox(width: 20),
-                        Text(Measurements.weight().name),
+                        Text(Measurements.mass().name),
                         const Spacer(),
                         DropdownButton<int>(
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           borderRadius: BorderRadius.circular(10),
-                          value: SettingsController.instance.weightUnit,
+                          value: SettingsController.instance.massUnit,
                           onChanged: (value) {
                             setState(() {
                               SettingsController.instance
-                                  .updateWeightUnit(value);
+                                  .updateMassUnit(value);
                             });
                           },
-                          items: Measurements.weight()
+                          items: Measurements.mass()
                               .units
                               .asMap()
                               .entries
@@ -155,22 +155,51 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                       ],
                     ),
                     const Divider(),
-                    // Time
+                    // Clock time
                     Row(
                       children: [
                         const SizedBox(width: 20),
-                        Text(Measurements.time().name),
+                        Text(Measurements.clockTime().name),
                         const Spacer(),
                         DropdownButton<int>(
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           borderRadius: BorderRadius.circular(10),
-                          value: SettingsController.instance.timeUnit,
+                          value: SettingsController.instance.clockTimeUnit,
                           onChanged: (value) {
                             setState(() {
-                              SettingsController.instance.updateTimeUnit(value);
+                              SettingsController.instance.updateClockTimeUnit(value);
                             });
                           },
-                          items: Measurements.time()
+                          items: Measurements.clockTime()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    // Calendar time
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.calendarTime().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.calendarTimeUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance.updateCalendarTimeUnit(value);
+                            });
+                          },
+                          items: Measurements.calendarTime()
                               .units
                               .asMap()
                               .entries
@@ -188,19 +217,19 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                     Row(
                       children: [
                         const SizedBox(width: 20),
-                        Text(Measurements.money().name),
+                        Text(Measurements.currency().name),
                         const Spacer(),
                         DropdownButton<int>(
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           borderRadius: BorderRadius.circular(10),
-                          value: SettingsController.instance.priceUnit,
+                          value: SettingsController.instance.currencyUnit,
                           onChanged: (value) {
                             setState(() {
                               SettingsController.instance
-                                  .updatePriceUnit(value);
+                                  .updateCurrencyUnit(value);
                             });
                           },
-                          items: Measurements.money()
+                          items: Measurements.currency()
                               .units
                               .asMap()
                               .entries
@@ -214,23 +243,23 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                       ],
                     ),
                     const Divider(),
-                    // Distance
+                    // Dimension
                     Row(
                       children: [
                         const SizedBox(width: 20),
-                        Text(Measurements.distance().name),
+                        Text(Measurements.dimension().name),
                         const Spacer(),
                         DropdownButton<int>(
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           borderRadius: BorderRadius.circular(10),
-                          value: SettingsController.instance.distanceUnit,
+                          value: SettingsController.instance.dimensionUnit,
                           onChanged: (value) {
                             setState(() {
                               SettingsController.instance
-                                  .updateDistanceUnit(value);
+                                  .updateDimensionUnit(value);
                             });
                           },
-                          items: Measurements.distance()
+                          items: Measurements.dimension()
                               .units
                               .asMap()
                               .entries
@@ -244,23 +273,143 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                       ],
                     ),
                     const Divider(),
-                    // Amount
+                    // Count
                     Row(
                       children: [
                         const SizedBox(width: 20),
-                        Text(Measurements.amount().name),
+                        Text(Measurements.count().name),
                         const Spacer(),
                         DropdownButton<int>(
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           borderRadius: BorderRadius.circular(10),
-                          value: SettingsController.instance.amountUnit,
+                          value: SettingsController.instance.countUnit,
                           onChanged: (value) {
                             setState(() {
                               SettingsController.instance
-                                  .updateAmountUnit(value);
+                                  .updateCountUnit(value);
                             });
                           },
-                          items: Measurements.amount()
+                          items: Measurements.count()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    // Density
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.density().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.densityUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance
+                                  .updateDensityUnit(value);
+                            });
+                          },
+                          items: Measurements.density()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    // Percentage
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.percentage().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.percentageUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance
+                                  .updatePercentageUnit(value);
+                            });
+                          },
+                          items: Measurements.percentage()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    // Temperature
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.temperature().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.temperatureUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance
+                                  .updateTemperatureUnit(value);
+                            });
+                          },
+                          items: Measurements.temperature()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    // Volume
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.volume().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.volumeUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance
+                                  .updateVolumeUnit(value);
+                            });
+                          },
+                          items: Measurements.volume()
                               .units
                               .asMap()
                               .entries

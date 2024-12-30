@@ -4,10 +4,8 @@ import 'package:trump_cards/gameCard/animatedCardStack.dart';
 import '../game/exitButton.dart';
 import '../game/gameEndedDialog.dart';
 import 'playerInfo.dart';
-import '../gameCard/gameCardWidget.dart';
 
 import '../app.dart';
-import '../data/cardDecks.dart';
 import '../gameCard/cards.dart';
 
 class MultiplayerOffline extends StatefulWidget {
@@ -24,7 +22,7 @@ class _MultiplayerOfflineState extends State<MultiplayerOffline> {
   late bool isCardSelectable;
   Player thisPlayer = Player(name: App.username);
   Player opponent = Player(name: tr('opponents'));
-  SelectedCharacteristic selectedCharacteristic = SelectedCharacteristic.none;
+  int selectedCharacteristic = -1;
 
   final GlobalKey<AnimatedCardStackState> _animatedCardStackKey =
       GlobalKey<AnimatedCardStackState>();
@@ -33,8 +31,7 @@ class _MultiplayerOfflineState extends State<MultiplayerOffline> {
   void initState() {
     super.initState();
 
-    List<GameCard> list = cardDecks[App.selectedCardDeck].cards +
-        cardDecks[App.selectedCardDeck].userCreatedCards;
+    List<GameCard> list = App.selectedCardDeck!.cards;
     list.shuffle();
     thisPlayer.numberOfCards = App.numberOfCardsMultiplayer;
     opponent.numberOfCards = App.numberOfCardsMultiplayer;
@@ -45,7 +42,7 @@ class _MultiplayerOfflineState extends State<MultiplayerOffline> {
     isCardSelectable = App.isBeginning;
   }
 
-  void onCardClicked(SelectedCharacteristic characteristic) {
+  void onCardClicked(int characteristic) {
     if (isCardSelectable) {
       setState(() {
         isCardSelectable = false;
@@ -57,7 +54,7 @@ class _MultiplayerOfflineState extends State<MultiplayerOffline> {
 
   void keepCard() {
     setState(() {
-      selectedCharacteristic = SelectedCharacteristic.none;
+      selectedCharacteristic = -1;
       opponent.numberOfCards--;
       isCardSelectable = true;
       areButtonsEnabled = false;
@@ -79,7 +76,7 @@ class _MultiplayerOfflineState extends State<MultiplayerOffline> {
 
   void loseCard() {
     setState(() {
-      selectedCharacteristic = SelectedCharacteristic.none;
+      selectedCharacteristic = -1;
       stackUser.removeAt(0);
       thisPlayer.numberOfCards--;
       thisPlayer.isTurn = false;
@@ -133,75 +130,80 @@ class _MultiplayerOfflineState extends State<MultiplayerOffline> {
                   isCardSelectable: isCardSelectable,
                   selectedCharacteristic: selectedCharacteristic,
                 ),
-                const SizedBox(height: 10),
-                Row(
-                  children: [
-                    Expanded(
-                      child: MaterialButton(
-                        color: Colors.green,
-                        disabledColor: Colors.grey,
-                        height: 65,
-                        elevation: 10,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        onPressed: areButtonsEnabled
-                            ? () {
-                                _animatedCardStackKey.currentState!
-                                    .keepCardAnimation(keepCard);
-                              }
-                            : null,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              tr('keepTheCard'),
-                              style: const TextStyle(
-                                color: Colors.white,
+                const SizedBox(height: 5),
+                AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 300),
+                    transitionBuilder:
+                        (Widget child, Animation<double> animation) {
+                      return ScaleTransition(scale: animation, child: child);
+                    },
+                    child: areButtonsEnabled
+                        ? SizedBox(
+                            key: ValueKey<String>(
+                                'firstChild-$areButtonsEnabled'),
+                            height: 65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                MaterialButton(
+                                  color: Colors.green,
+                                  disabledColor: Colors.grey,
+                                  height: 65,
+                                  minWidth: 65,
+                                  elevation: 10,
+                                  shape: const CircleBorder(),
+                                  onPressed: areButtonsEnabled
+                                      ? () {
+                                          _animatedCardStackKey.currentState!
+                                              .keepCardAnimation(keepCard);
+                                        }
+                                      : null,
+                                  child: const Icon(
+                                    Icons.check,
+                                    color: Colors.white,
+                                    size: 30,
+                                  ),
+                                ),
+                                const SizedBox(width: 80),
+                                MaterialButton(
+                                  color: Colors.red,
+                                  disabledColor: Colors.grey,
+                                  height: 65,
+                                  minWidth: 65,
+                                  elevation: 10,
+                                  shape: const CircleBorder(),
+                                  onPressed: areButtonsEnabled
+                                      ? () {
+                                          _animatedCardStackKey.currentState!
+                                              .loseCardAnimation(loseCard);
+                                        }
+                                      : null,
+                                  child: const Icon(
+                                    Icons.close,
+                                    color: Colors.white,
+                                    size: 30,
+                                  ),
+                                )
+                              ],
+                            ))
+                        : SizedBox(
+                            height: 65,
+                            child: Padding(
+                              key: ValueKey<String>(
+                                  'secondChild-$areButtonsEnabled'),
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                opponent.numberOfCards == 3
+                                    ? ""
+                                    : tr('Your turn! Select an attribute.'),
+                                style: const TextStyle(
+                                  color: Colors.green,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            const Icon(
-                              Icons.navigate_next_rounded,
-                              color: Colors.white,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                        child: MaterialButton(
-                      color: Colors.red,
-                      disabledColor: Colors.grey,
-                      height: 65,
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      onPressed: areButtonsEnabled
-                          ? () {
-                              _animatedCardStackKey.currentState!
-                                  .loseCardAnimation(loseCard);
-                            }
-                          : null,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            tr('loseTheCard'),
-                            style: const TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                          const Icon(
-                            Icons.navigate_next_rounded,
-                            color: Colors.white,
-                          ),
-                        ],
-                      ),
-                    ))
-                  ],
-                ),
+                            ))),
+                const SizedBox(height: 15),
               ]),
             ))
           ],

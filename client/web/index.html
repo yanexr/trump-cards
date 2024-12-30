@@ -18,42 +18,40 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="TRUMP Cards is a a super-trump card game like Top Trumps, where players compare numerical values of various attributes on their cards.">
-  <meta name="keywords" content="super trump, card game, online, multiplayer, singleplayer, vehicles, cars, airplanes, rockets">
+  <meta name="description" content="Trump Cards is a super-trump card game like Top Trumps, where players compare numerical values of various attributes on their cards.">
+  <meta name="keywords" content="super trump, card game, free, play, online, multiplayer, singleplayer, vehicles, cars, airplanes, rockets, animals, dinosaurs, sports, cities">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_application_1">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="Trump Cards">
+  <link rel="apple-touch-icon" href="icons/Icon-180.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon-16.png"/>
+  <link rel="icon" type="image/png" href="favicon-32.png"/>
 
-  <title>TRUMP Cards - vehicles</title>
+
+  <title>Trump Cards</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
+    var serviceWorkerVersion = "{{flutter_service_worker_version}}";
   </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
 </head>
 <body>
   <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
+    {{flutter_bootstrap_js}}
+  </script>
+  <script>
+    _flutter.loader.load({
+      serviceWorker: {
+        serviceWorkerVersion: serviceWorkerVersion,
+      },
+      onEntrypointLoaded: async function(engineInitializer) {
+        const appRunner = await engineInitializer.initializeEngine();
+        await appRunner.runApp();
+      }
     });
   </script>
 </body>

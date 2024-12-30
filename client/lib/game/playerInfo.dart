@@ -36,9 +36,9 @@ class _PlayerInfoWidgetState extends State<PlayerInfoWidget> {
           AnimatedContainer(
             duration: const Duration(milliseconds: 500),
             height: widget.height,
-            padding: const EdgeInsets.only(top: 10, bottom: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
             decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.background,
+              color: Theme.of(context).colorScheme.surface,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
                 color: widget.player.isTurn
@@ -59,7 +59,11 @@ class _PlayerInfoWidgetState extends State<PlayerInfoWidget> {
                   ],
                 ),
                 const SizedBox(height: 5),
-                Text(widget.player.name),
+                Text(
+                  widget.player.name,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                ),
               ],
             ),
           ),

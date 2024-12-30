@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +16,23 @@ class MultiPlayerDialogOffline extends StatefulWidget {
 }
 
 class _MultiPlayerDialogOfflineState extends State<MultiPlayerDialogOffline> {
+  late int minCards;
+  late int maxCards;
+  late int divisions;
+
+  @override
+  void initState() {
+    super.initState();
+    int m = App.selectedCardDeck!.cards.length;
+    if (App.numberOfCardsMultiplayer > m) {
+      App.numberOfCardsMultiplayer = min(m, 15);
+    }
+
+    minCards = 8;
+    maxCards = min(m, 30);
+    divisions = maxCards - minCards;
+  }
+
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -57,19 +76,19 @@ class _MultiPlayerDialogOfflineState extends State<MultiPlayerDialogOffline> {
                   )
                 ],
               ),
-              const Divider(height: 40),
+              const Divider(height: 50),
               Center(
                 child: Text(
-                  tr('numberOfCardsPerPlayer'),
+                  '${tr('numberOfCardsPerPlayer')} ${App.numberOfCardsMultiplayer}',
                 ),
               ),
               const SizedBox(height: 10),
               Center(
                 child: Slider(
                     value: App.numberOfCardsMultiplayer.toDouble(),
-                    min: 7,
-                    max: 30,
-                    divisions: 23,
+                    min: minCards.toDouble(),
+                    max: maxCards.toDouble(),
+                    divisions: divisions > 0 ? divisions : null,
                     label: App.numberOfCardsMultiplayer.toString(),
                     onChanged: (double value) {
                       setState(() {
@@ -84,15 +103,15 @@ class _MultiPlayerDialogOfflineState extends State<MultiPlayerDialogOffline> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text('7',
+                          Text(minCards.toString(),
                               style: Theme.of(context).textTheme.bodySmall),
                           Text(
-                            '30',
+                            maxCards.toString(),
                             style: Theme.of(context).textTheme.bodySmall,
                           )
                         ],
                       ))),
-              const Divider(height: 40),
+              const Divider(height: 50),
               Center(
                 child: Text(
                   tr('selectWhoBegins'),
@@ -101,17 +120,6 @@ class _MultiPlayerDialogOfflineState extends State<MultiPlayerDialogOffline> {
               const SizedBox(height: 10),
               Center(
                 child: SegmentedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                        (Set<MaterialState> states) {
-                      if (states.contains(MaterialState.selected)) {
-                        return Theme.of(context).colorScheme.primary;
-                      }
-                      return Colors.black26;
-                    }),
-                    foregroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
                   segments: <ButtonSegment>[
                     ButtonSegment(
                       value: true,
@@ -163,8 +171,10 @@ class _MultiPlayerDialogOfflineState extends State<MultiPlayerDialogOffline> {
             )
           ]),
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const MultiplayerOffline()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const MultiplayerOffline()));
           },
         ),
       ],

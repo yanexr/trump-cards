@@ -22,12 +22,17 @@ class Measurement {
 enum MeasurementType {
   power,
   force,
-  speed,
-  weight,
-  time,
-  money,
-  distance,
-  amount,
+  velocity,
+  mass,
+  clockTime,
+  calendarTime,
+  currency,
+  dimension,
+  count,
+  density,
+  percentage,
+  temperature,
+  volume
 }
 
 class Measurements {
@@ -36,105 +41,190 @@ class Measurements {
       return power();
     } else if (m == MeasurementType.force) {
       return force();
-    } else if (m == MeasurementType.speed) {
-      return speed();
-    } else if (m == MeasurementType.weight) {
-      return weight();
-    } else if (m == MeasurementType.time) {
-      return time();
-    } else if (m == MeasurementType.money) {
-      return money();
-    } else if (m == MeasurementType.distance) {
-      return distance();
-    } else if (m == MeasurementType.amount) {
-      return amount();
+    } else if (m == MeasurementType.velocity) {
+      return velocity();
+    } else if (m == MeasurementType.mass) {
+      return mass();
+    } else if (m == MeasurementType.clockTime) {
+      return clockTime();
+    } else if (m == MeasurementType.calendarTime) {
+      return calendarTime();
+    } else if (m == MeasurementType.currency) {
+      return currency();
+    } else if (m == MeasurementType.dimension) {
+      return dimension();
+    } else if (m == MeasurementType.count) {
+      return count();
+    } else if (m == MeasurementType.density) {
+      return density();
+    } else if (m == MeasurementType.percentage) {
+      return percentage();
+    } else if (m == MeasurementType.temperature) {
+      return temperature();
+    } else if (m == MeasurementType.volume) {
+      return volume();
     } else {
-      return amount();
+      return count();
     }
   }
 
   static Measurement power() {
     return Measurement(
-        tr('power'),
-        [Unit(tr('kilowatt'), 'kw', 1), Unit(tr('horsepower'), 'hp', 1.34102)],
+        tr('Power'),
+        [
+          Unit(tr('Kilowatt'), 'kW', 1),
+          Unit(tr('Watt'), 'W', 1000),
+          Unit(tr('Horsepower'), 'hp', 1.34102)
+        ],
         SettingsController.instance.powerUnit);
   }
 
   static Measurement force() {
-    return Measurement(tr('force'), [Unit(tr('kilonewton'), 'kN', 1)],
+    return Measurement(
+        tr('Force'),
+        [
+          Unit(tr('Kilonewton'), 'kN', 1),
+          Unit(tr('Newton'), 'N', 1000),
+          Unit(tr('Pound-force'), 'lbf', 224.809)
+        ],
         SettingsController.instance.forceUnit);
   }
 
-  static Measurement speed() {
+  static Measurement velocity() {
     return Measurement(
-        tr('speed'),
+        tr('Velocity'),
         [
-          Unit(tr('kilometresPerHour'), 'km/h', 1),
-          Unit(tr('milesPerHour'), 'mph', 0.62137),
-          Unit(tr('knot'), 'kn', 0.53996),
-          Unit(tr('mach'), 'Ma', 0.00082)
+          Unit(tr('Kilometre per Hour'), 'km/h', 1),
+          Unit(tr('Metre per Second'), 'm/s', 0.2777778),
+          Unit(tr('Miles per Hour'), 'mph', 0.62137),
+          Unit(tr('Feet per Second'), 'ft/s', 0.9113444),
+          Unit(tr('Knot'), 'kn', 0.53996),
+          Unit(tr('Mach'), 'Ma', 0.00082)
         ],
-        SettingsController.instance.speedUnit);
+        SettingsController.instance.velocityUnit);
   }
 
-  static Measurement weight() {
+  static Measurement mass() {
     return Measurement(
-        tr('weight'),
-        [Unit(tr('kilogram'), 'kg', 1), Unit(tr('pound'), 'lb', 2.20462)],
-        SettingsController.instance.weightUnit);
+        tr('Mass'),
+        [Unit(tr('Kilogram'), 'kg', 1), Unit(tr('Pound'), 'lb', 2.20462)],
+        SettingsController.instance.massUnit);
   }
 
-  static Measurement time() {
-    return Measurement(tr('time'), [Unit(tr('second'), 's', 1)],
-        SettingsController.instance.timeUnit);
-  }
-
-  static Measurement money() {
+  static Measurement clockTime() {
     return Measurement(
-        tr('money'),
+        tr('Clock Time'),
         [
-          Unit(tr('euro'), '€', 1),
-          Unit(tr('uSDollar'), '\$', 1.09),
-          Unit(tr('poundSterling'), '£', 0.86),
-          Unit(tr('brazilianReal'), 'R\$', 5.4),
-          Unit(tr('japaneseYen'), '¥', 159),
-          Unit(tr('indianRupee'), '₹', 90.5),
-          Unit(tr('australianDollar'), 'A\$', 1.69),
-          Unit(tr('canadianDollar'), 'C\$', 1.47),
-          Unit(tr('chineseYuanRMB'), '¥', 7.94),
-          Unit(tr('southAfricanRand'), 'R', 20.84),
-          Unit(tr('swissFranc'), 'CHF', 0.96),
+          Unit(tr('Second'), 's', 1),
+          Unit(tr('Minute'), 'min', 0.01667),
+          Unit(tr('Hour'), 'h', 0.0002778)
         ],
-        SettingsController.instance.priceUnit);
+        SettingsController.instance.clockTimeUnit);
   }
 
-  static Measurement distance() {
+  static Measurement calendarTime() {
     return Measurement(
-        tr('distance'),
+        tr('Calendar Time'),
         [
-          Unit(tr('metre'), 'm', 1),
-          Unit(tr('foot'), 'ft', 3.28084),
+          Unit(tr('Year'), 'y', 1),
+          Unit(tr('Month'), 'm', 12),
+          Unit(tr('Day'), 'd', 365)
         ],
-        SettingsController.instance.distanceUnit);
+        SettingsController.instance.clockTimeUnit);
   }
 
-  static Measurement amount() {
+  static Measurement currency() {
     return Measurement(
-        tr('amount'),
+        tr('Currency'),
         [
-          Unit('None', '', 1),
+          Unit(tr('Euro'), '€', 1),
+          Unit(tr('US Dollar'), '\$', 1.09),
+          Unit(tr('Pound Sterling'), '£', 0.86),
+          Unit(tr('Brazilian Real'), 'R\$', 5.4),
+          Unit(tr('Japanese Yen'), '¥', 159),
+          Unit(tr('Indian Rupee'), '₹', 90.5),
+          Unit(tr('Australian Dollar'), 'A\$', 1.69),
+          Unit(tr('Canadian Dollar'), 'C\$', 1.47),
+          Unit(tr('Chinese Yuan (RMB)'), '¥', 7.94),
+          Unit(tr('South African Rand'), 'R', 20.84),
+          Unit(tr('Swiss Franc'), 'CHF', 0.96),
         ],
-        SettingsController.instance.amountUnit);
+        SettingsController.instance.currencyUnit);
   }
 
-  static num convert(num value, MeasurementType m){
+  static Measurement dimension() {
+    return Measurement(
+        tr('Dimension'),
+        [
+          Unit(tr('Metre'), 'm', 1),
+          Unit(tr('Foot'), 'ft', 3.28084),
+          Unit(tr('Astronomical Unit'), 'AU', 6.68459e-12),
+          Unit(tr('Light Year'), 'ly', 1.057e-16),
+        ],
+        SettingsController.instance.dimensionUnit);
+  }
+
+  static Measurement count() {
+    return Measurement(
+        tr('Count'),
+        [
+          Unit(tr('None'), '', 1),
+        ],
+        SettingsController.instance.countUnit);
+  }
+
+  static Measurement density() {
+    return Measurement(
+        tr('Density'),
+        [
+          Unit(tr('Per Square Kilometre'), '/km²', 1),
+          Unit(tr('Per Square Mile'), '/mi²', 2.59),
+          Unit(tr('Per Hectare'), '/ha', 0.01),
+        ],
+        SettingsController.instance.densityUnit);
+  }
+
+  static Measurement percentage() {
+    return Measurement(
+        tr('Percentage'),
+        [
+          Unit(tr('Percent'), '%', 1),
+          Unit(tr('Permille'), '‰', 10),
+        ],
+        0);
+  }
+
+  static Measurement temperature() {
+    return Measurement(
+        tr('Temperature'),
+        [
+          Unit(tr('Celsius'), '°C', 1),
+          Unit(tr('Fahrenheit'), '°F', 33.8),
+          Unit(tr('Kelvin'), 'K', 274.15),
+        ],
+        0);
+  }
+
+  static Measurement volume() {
+    return Measurement(
+        tr('Volume'),
+        [
+          Unit(tr('Cubic Metre'), 'm³', 1),
+          Unit(tr('Cubic Foot'), 'ft³', 35.3147),
+          Unit(tr('Gallon'), 'gal', 264.172),
+          Unit(tr('Litre'), 'l', 1000),
+        ],
+        0);
+  }
+
+  static num convert(num value, MeasurementType m) {
     Measurement measurement = _getMeasurement(m);
     Unit selectedUnit = measurement.units[measurement.selectedUnit];
 
     return value * selectedUnit.conversionFactor;
   }
 
-  static num convertBack(num value, MeasurementType m){
+  static num convertBack(num value, MeasurementType m) {
     Measurement measurement = _getMeasurement(m);
     Unit selectedUnit = measurement.units[measurement.selectedUnit];
 
@@ -162,13 +252,16 @@ class Measurements {
     }
 
     return TextSpan(
-      text: nf.format(convertedValue),
-      style: const TextStyle(fontWeight: FontWeight.bold),
       children: [
         TextSpan(
-          text: ' $symbol',
-          style: const TextStyle(fontWeight: FontWeight.normal),
-        )
+          text: nf.format(convertedValue),
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        if (symbol.isNotEmpty)
+          TextSpan(
+            text: ' $symbol',
+            style: const TextStyle(fontWeight: FontWeight.normal),
+          ),
       ],
     );
   }
@@ -176,7 +269,18 @@ class Measurements {
   static String getUnitSymbol(MeasurementType m) {
     Measurement measurement = _getMeasurement(m);
     Unit selectedUnit = measurement.units[measurement.selectedUnit];
-
     return selectedUnit.symbol;
+  }
+
+  static String measurementTypeToString(MeasurementType mt) {
+    Measurement m = _getMeasurement(mt);
+    if (m.name == 'count') return tr('Count (none)');
+    return '${m.name[0].toUpperCase()}${m.name.substring(1)} (${m.units.map((e) => e.symbol).join(', ')})';
+  }
+
+  static String getDefaultUnit(MeasurementType mt) {
+    Measurement m = _getMeasurement(mt);
+    String s = m.units[0].symbol;
+    return s.isNotEmpty ? '($s)' : '';
   }
 }
