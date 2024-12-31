@@ -62,7 +62,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                       Navigator.pushNamed(context, '/statistics');
                     },
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(12, 2, 14, 2),
+                      padding: const EdgeInsets.fromLTRB(12, 2, 15, 2),
                       child: Row(
                         children: [
                           const Icon(
@@ -70,7 +70,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                             color: Colors.white,
                           ),
                           const SizedBox(
-                            width: 10,
+                            width: 8,
                             height: 35,
                           ),
                           Text(

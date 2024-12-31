@@ -51,13 +51,14 @@ class _GameEndedDialogState extends State<GameEndedDialog> {
                       : 'assets/images/game-over.png',
                   height: 200,
                   fit: BoxFit.cover),
-              Text(
+                Text(
                   widget.win
-                      ? tr('youWon').toUpperCase()
-                      : tr('youLost').toUpperCase(),
+                    ? tr('youWon').toUpperCase()
+                    : tr('youLost').toUpperCase(),
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24.0,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24.0,
                   )),
               const SizedBox(height: 10),
               Text('${tr('points')}: ${widget.points}'),
