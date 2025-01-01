@@ -25,12 +25,42 @@
 - Card and card deck editor for creating custom cards and card decks
 - Supports 12 different languages
 
-## How to add or change card decks
+## Run the Code
+The client is implemented in Dart/Flutter. The server (optional) is implemented in Python with WebSockets. Further details are available in the `README` files located in the [`client/`](client) and [`server/`](server) directories.
 
-New card decks can be added, or existing ones can be changed by editing the `client/lib/data` directory.
 
-1. To create a new card deck, first create a list of cards of type `List<GameCard>` with a length of at least 30.
+## Data
+There are 9 card decks: Cars, Airplanes and Rockets are located in [`client/assets/carddecks/`](client/assets/carddecks), and Animals, Dinosaurs, World Football Stars, World Tennis Stars, Extreme Sports and Mega Cities are located in [`server/data/`](server/data). A card deck is stored in a JSON file with the following structure:
 
-2. Then create and add your card deck to the list of card decks in `cardDecks.dart`.
+```json
+{
+  "id": "number",
+  "name": "string",
+  "thumbnailPath": "string",
+  "backgroundPath": "string",
+  "characteristics": [
+    {
+      "measurementType": "string",  // e.g., "mass", "velocity"
+      "isHigherBetter": "boolean",
+      "label": "string"  // e.g., "Weight", "Speed"
+    }
+  ],
+  "cards": [
+    {
+      "id": "number",
+      "name": "string",
+      "subtitle": "string",
+      "imagePath": "string",
+      "imageAttr": "string",
+      "imageLic": "string",
+      "values": ["number"]  // e.g., [1.23, 4.56]
+    }
+  ]
+}
+```
 
-3. Finally, create a new directory (same name as your card deck) in the `client/assets/images/<YourCardDeckName>` directory and add the images of the cards and a background image `background.jpg` to it. Add your new directory to the list of assets in the `client/pubspec.yaml` file.
+To add a new card deck, create a new JSON file in the appropriate directory and add the card deck to the list of card decks in [`client/assets/carddecks/localCardDecks.json`](client/assets/carddecks/localCardDecks.json) or [`server/data/serverCardDecks.json`](server/data/serverCardDecks.json). Alternatively, a card deck can be created in the app using the card deck editor GUI or by importing a JSON file. 
+
+Image paths can be either URLs or local paths. Local images should be placed in [`client/assets/images/<YourCardDeckName>/`](client/assets/images) and the new directory should be added to the list of assets in [`client/pubspec.yaml`](client/pubspec.yaml).
+
+

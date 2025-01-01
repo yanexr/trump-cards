@@ -1,10 +1,21 @@
 # Trump Cards – Server
 
-This document describes the protocol for the Trump Cards game. Each message is a JSON object (UTF-8 encoded) with a `type` field indicating the message type. Below are the message types, their structures, and brief explanations.
+This document describes the (optional) server for the *Trump Cards* game.
 
----
+## Run the Code
+First, make sure you have Python 3 and the `websockets>=14.1` library installed.
+To start the server, run the following command in the `server` directory:
+```bash
+python server.py
+```
+By default, the server will run on `localhost` at port `8000`. In the client, you can change the server address in [`client/lib/game/network.dart`](https://github.com/yanexr/trump-cards/blob/main/client/lib/game/network.dart), e.g., `ws://localhost:8000`.
 
-## 1. Create Game
+
+
+## Network Protocol
+Each message is a JSON object (UTF-8 encoded) with a `type` field indicating the message type. Below are the message types, their structures, and brief explanations.
+
+### 1. Create Game
 **Direction**: Client → Server  
 ```json
 {  
@@ -16,7 +27,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 2. Create Game Success
+### 2. Create Game Success
 **Direction**: Server → Client  
 ```json
 {  
@@ -28,7 +39,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 3. Join Game
+### 3. Join Game
 **Direction**: Client → Server  
 ```json
 {  
@@ -41,7 +52,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 4. Join Game Success
+### 4. Join Game Success
 **Direction**: Server → Client  
 ```json
 {  
@@ -53,7 +64,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 5. New User Joined
+### 5. New User Joined
 **Direction**: Server → Broadcast  
 ```json
 {  
@@ -65,7 +76,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 6. Start Game
+### 6. Start Game
 **Direction**: Client → Server  
 ```json
 {  
@@ -78,7 +89,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 7. Start Game Success
+### 7. Start Game Success
 **Direction**: Server → Client (to all players)
 ```json
 {  
@@ -91,7 +102,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 8. Send Card
+### 8. Send Card
 **Direction**: Client → Server  
 ```json
 {  
@@ -105,7 +116,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 9. Send Card Success
+### 9. Send Card Success
 **Direction**: Server → Broadcast  
 ```json
 {  
@@ -119,7 +130,7 @@ This document describes the protocol for the Trump Cards game. Each message is a
 
 ---
 
-## 10. Error
+### 10. Error
 **Direction**: Server → Client  
 ```json
 {  
