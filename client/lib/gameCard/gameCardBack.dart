@@ -67,7 +67,7 @@ class _GameCardBackState extends State<GameCardBack> {
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: GameCardStyle.style.innerContainerGradient == null
-                  ? Colors.black12
+                  ? Theme.of(context).scaffoldBackgroundColor
                   : null,
               gradient: GameCardStyle.style.innerContainerGradient,
               image: GameCardStyle.style.innerContainerImage,
@@ -96,12 +96,17 @@ class _GameCardBackState extends State<GameCardBack> {
                           )
                         ],
                       ),
-                      child: IconButton(
-                        icon: const Icon(Icons.arrow_back),
-                        color: Colors.white,
-                        onPressed: () {
-                          widget.flipCard();
-                        },
+                      child: Semantics(
+                        button: true,
+                        label: tr('back'),
+                        child: IconButton(
+                          icon: const Icon(Icons.arrow_back),
+                          tooltip: tr('back'),
+                          color: Colors.white,
+                          onPressed: () {
+                            widget.flipCard();
+                          },
+                        ),
                       ),
                     ),
                     const SizedBox(width: 20),
@@ -170,7 +175,7 @@ class _GameCardBackState extends State<GameCardBack> {
                                 children: [
                                   Text('${tr('textUnder')} ',
                                       style: TextStyle(
-                                          fontSize: 11,
+                                          fontSize: 12,
                                           color:
                                               GameCardStyle.style.text?.color)),
                                   MouseRegion(
@@ -183,7 +188,7 @@ class _GameCardBackState extends State<GameCardBack> {
                                           child: Text(
                                             tr('ccbysaLicense'),
                                             style: TextStyle(
-                                              fontSize: 11,
+                                              fontSize: 12,
                                               color: GameCardStyle
                                                   .style.text?.color,
                                               decoration:

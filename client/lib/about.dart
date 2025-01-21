@@ -33,7 +33,7 @@ class About extends StatelessWidget {
                   ),
                 ),
                 const Text(
-                  'v1.3.0',
+                  'v1.3.1',
                   style: TextStyle(
                       fontSize: 12, color: Color.fromARGB(255, 146, 146, 146)),
                 ),

@@ -13,22 +13,27 @@ class ExitButton extends StatelessWidget {
       decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(10)),
-      child: IconButton(
-        style: ButtonStyle(
-          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
+      child: Semantics(
+        button: true,
+        label: tr('exitGame'),
+        child: IconButton(
+          style: ButtonStyle(
+            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
             ),
           ),
+          icon: const Icon(Icons.exit_to_app_rounded),
+          tooltip: tr('exitGame'),
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (_) {
+                  return const ExitDialog();
+                });
+          },
         ),
-        icon: const Icon(Icons.exit_to_app_rounded),
-        onPressed: () {
-          showDialog(
-              context: context,
-              builder: (_) {
-                return const ExitDialog();
-              });
-        },
       ),
     );
   }

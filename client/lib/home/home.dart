@@ -26,7 +26,8 @@ class HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: const MyAppBar(),
+        // ignore: prefer_const_constructors
+        title: MyAppBar(),
       ),
       body: SizedBox(
         width: double.infinity,

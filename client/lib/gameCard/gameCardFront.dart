@@ -303,48 +303,52 @@ class _GameCardFrontState extends State<GameCardFront> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: GestureDetector(
-                  onTap: () {
-                    showDialog(
-                        context: context,
-                        builder: (_) {
-                          return ImageAttributionDialog(
-                            imageAttribution: widget.gameCard.imageAttr,
-                            imageLicenseLink: widget.gameCard.imageLic,
-                          );
-                        });
-                  },
-                  child: AspectRatio(
-                    aspectRatio: 16 / 10,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(
-                          GameCardStyle.style.borderRadius == null
-                              ? 10
-                              : GameCardStyle.style.borderRadius! / 2),
-                      child: ClipPath(
-                        clipper: GameCardStyle.style.isSlanted
-                            ? SlantedClipper()
-                            : null,
-                        child: SizedBox.fromSize(
-                          child: widget.gameCard.imagePath.startsWith('http')
-                              ? Image.network(
-                                  widget.gameCard.imagePath,
-                                  fit: BoxFit.cover,
-                                  errorBuilder: (BuildContext context,
-                                      Object exception,
-                                      StackTrace? stackTrace) {
-                                    return Image.asset(
-                                      'assets/images/placeholder.png',
-                                      fit: BoxFit.cover,
-                                    );
-                                  },
-                                )
-                              : Image.asset(
-                                  'assets/images/${deck.name}/${widget.gameCard.imagePath}',
-                                  fit: BoxFit.cover,
-                                ),
+              Semantics(
+                label: "Show image attribution",
+                button: true,
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      showDialog(
+                          context: context,
+                          builder: (_) {
+                            return ImageAttributionDialog(
+                              imageAttribution: widget.gameCard.imageAttr,
+                              imageLicenseLink: widget.gameCard.imageLic,
+                            );
+                          });
+                    },
+                    child: AspectRatio(
+                      aspectRatio: 16 / 10,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(
+                            GameCardStyle.style.borderRadius == null
+                                ? 10
+                                : GameCardStyle.style.borderRadius! / 2),
+                        child: ClipPath(
+                          clipper: GameCardStyle.style.isSlanted
+                              ? SlantedClipper()
+                              : null,
+                          child: SizedBox.fromSize(
+                            child: widget.gameCard.imagePath.startsWith('http')
+                                ? Image.network(
+                                    widget.gameCard.imagePath,
+                                    fit: BoxFit.cover,
+                                    errorBuilder: (BuildContext context,
+                                        Object exception,
+                                        StackTrace? stackTrace) {
+                                      return Image.asset(
+                                        'assets/images/placeholder.png',
+                                        fit: BoxFit.cover,
+                                      );
+                                    },
+                                  )
+                                : Image.asset(
+                                    'assets/images/${deck.name}/${widget.gameCard.imagePath}',
+                                    fit: BoxFit.cover,
+                                  ),
+                          ),
                         ),
                       ),
                     ),

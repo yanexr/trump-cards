@@ -143,13 +143,6 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
         appBar: AppBar(
           title: Text(tr('Card Deck Library')),
           backgroundColor: Theme.of(context).colorScheme.primary,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.upload_file, color: Colors.white),
-              onPressed: () {},
-            ),
-            const SizedBox(width: 16.0)
-          ],
         ),
         body: const Center(child: CircularProgressIndicator()),
       );
@@ -162,26 +155,7 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
         appBar: AppBar(
           title: Text(tr('Card Deck Library')),
           backgroundColor: Theme.of(context).colorScheme.primary,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.upload_file, color: Colors.white),
-              onPressed: () {},
-            ),
-            const SizedBox(width: 16.0)
-          ],
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-        floatingActionButton: Container(
-            alignment: Alignment.bottomRight,
-            constraints: const BoxConstraints(maxWidth: 800),
-            padding: const EdgeInsets.fromLTRB(0, 0, 40, 10),
-            child: FloatingActionButton(
-              backgroundColor: Theme.of(context).colorScheme.primary,
-              onPressed: () {
-                // Implement add action
-              },
-              child: const Icon(Icons.add, color: Colors.white),
-            )),
         body: Center(
           child: Text(tr('No decks found')),
         ),
@@ -288,10 +262,14 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                 },
               ),
             ],
-            child: FloatingActionButton(
-              backgroundColor: Theme.of(context).colorScheme.primary,
-              onPressed: null, // PopupMenuButton handles the press
-              child: const Icon(Icons.add, color: Colors.white),
+            child: Semantics(
+              button: true,
+              label: 'Add new card deck',
+              child: FloatingActionButton(
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                onPressed: null, // PopupMenuButton handles the press
+                child: const Icon(Icons.add, color: Colors.white),
+              ),
             ),
           )),
       body: SingleChildScrollView(
@@ -355,12 +333,21 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                ClipRRect(
+                                Container(
+                                  decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
-                                  child: SizedBox(
+                                  ),
+                                  child: Material(
+                                  elevation: 1,
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: SizedBox(
                                     width: 128,
                                     height: 128,
                                     child: thumbnail,
+                                    ),
+                                  ),
                                   ),
                                 ),
                                 const SizedBox(width: 20),
@@ -657,15 +644,20 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                           builder: (BuildContext context,
                               MenuController controller, _) {
                             _menuController ??= controller;
-                            return IconButton(
-                              icon: const Icon(Icons.more_vert),
-                              onPressed: () {
-                                if (controller.isOpen) {
-                                  controller.close();
-                                } else {
-                                  controller.open();
-                                }
-                              },
+                            return Semantics(
+                              button: true,
+                              label: 'More options',
+                              child: IconButton(
+                                tooltip: 'More options',
+                                icon: const Icon(Icons.more_vert),
+                                onPressed: () {
+                                  if (controller.isOpen) {
+                                    controller.close();
+                                  } else {
+                                    controller.open();
+                                  }
+                                },
+                              ),
                             );
                           },
                         ),
