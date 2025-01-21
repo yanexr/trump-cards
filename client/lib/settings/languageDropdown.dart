@@ -77,6 +77,10 @@ class LanguageDropdown extends StatelessWidget {
                     value: 'es',
                     child: Text('Spanish'),
                   ),
+                  DropdownMenuItem(
+                    value: 'uk',
+                    child: Text('Ukrainian'),
+                  ),
                 ],
               ),
             ],

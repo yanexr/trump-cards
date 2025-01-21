@@ -30,6 +30,7 @@ void main() async {
           Locale('pt'), // Portuguese
           Locale('ru'), // Russian
           Locale('es'), // Spanish
+          Locale('uk'), // Ukrainian
         ],
         path: 'assets/translations',
         fallbackLocale: const Locale('en'),
