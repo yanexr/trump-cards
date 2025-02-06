@@ -128,12 +128,12 @@ class GameCardDeck {
 
   String toCSV() {
     // header are name, subtitle and characteristics labels
-    String csv = 'Title,Subtitle,';
+    String csv = '"Title","Subtitle",';
     csv +=
-        '${characteristics.map((ch) => '${ch.label} ${Measurements.getDefaultUnit(ch.measurementType)}').join(',')}\n';
+        '${characteristics.map((ch) => '"${ch.label} ${Measurements.getDefaultUnit(ch.measurementType)}"').join(',')}\n';
     // add the cards
     for (var card in cards) {
-      csv += '${card.name},${card.subtitle},';
+      csv += '"${card.name.replaceAll('"', '""')}","${card.subtitle.replaceAll('"', '""')}",';
       csv += '${card.values.join(',')}\n';
     }
     return csv;
