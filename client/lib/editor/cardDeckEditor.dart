@@ -91,7 +91,7 @@ class _CardDeckEditorState extends State<CardDeckEditor> {
       if (backgroundPath.isEmpty) {
         backgroundPath = 'colored.jpg';
       }
-      String thumbnailPath = 'thumbnail.png';
+      String thumbnailPath = 'thumbnail.webp';
 
       // cards
       List<GameCard> cards = [];

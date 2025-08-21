@@ -47,7 +47,7 @@ class _GameEndedDialogState extends State<GameEndedDialog> {
             children: [
               Image.asset(
                   widget.win
-                      ? 'assets/images/trophy.png'
+                      ? 'assets/images/trophy.webp'
                       : 'assets/images/game-over.png',
                   height: 200,
                   fit: BoxFit.cover),

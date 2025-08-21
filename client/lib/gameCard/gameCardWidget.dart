@@ -225,7 +225,7 @@ class GameCardStyle {
     hasShadow: false,
     borderContainerGradient: null,
     borderContainerImage: const DecorationImage(
-      image: AssetImage('assets/images/paper.png'),
+      image: AssetImage('assets/images/paper.webp'),
       fit: BoxFit.contain,
     ),
     innerContainerGradient: const LinearGradient(

@@ -487,7 +487,7 @@
         {
             "id": 29,
             "name": "Challenger 3",
-            "subtitle": "United Kingdom, 2027",
+            "subtitle": "United Kingdom, 2025",
             "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Challenger_3.jpg/1024px-Challenger_3.jpg",
             "imageAttr": "Ministry of Defence, OGL v1.0OGL v1.0, via Wikimedia Commons",
             "imageLic": "",
@@ -712,7 +712,7 @@
             "id": 43,
             "name": "Panzer 68",
             "subtitle": "Switzerland, 1971",
-            "imagePath": "unhttps://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg/1024px-Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpgset",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg/1024px-Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg",
             "imageAttr": "Wyssalex, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [

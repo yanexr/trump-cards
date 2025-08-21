@@ -1,8 +1,8 @@
 {
     "id": 10,
     "name": "Skyscrapers",
-    "thumbnailPath": "skyscrapers/skyscrapers_thumbnail.jpg",
-    "backgroundPath": "skyscrapers/skyscrapers_background.webp",
+    "thumbnailPath": "skyscrapers/skyscrapers_thumbnail.webp",
+    "backgroundPath": "skyscrapers/skyscrapers_background.jpg",
     "characteristics": [
         {
             "measurementType": "dimension",
@@ -425,9 +425,9 @@
             "id": 27,
             "name": "Lotte World Tower",
             "subtitle": "South Korea, Seoul, 2017",
-            "imagePath": "",
-            "imageAttr": "",
-            "imageLic": "",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lotte_World_day_view_5.jpg/1024px-Lotte_World_day_view_5.jpg",
+            "imageAttr": "kallerna, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
                 555.7,
                 123,
@@ -680,8 +680,8 @@
             "id": 44,
             "name": "Steinway Tower",
             "subtitle": "USA, New York, 2021",
-            "imageAttr": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/111_West_57th_Street.jpg/1024px-111_West_57th_Street.jpg",
-            "imagePath": "Kidfly182, CC BY-SA 4.0, via Wikimedia Commons",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/111_West_57th_Street.jpg/1024px-111_West_57th_Street.jpg",
+            "imageAttr": "Kidfly182, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
                 435.3,
