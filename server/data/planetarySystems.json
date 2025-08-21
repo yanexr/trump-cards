@@ -1,0 +1,920 @@
+{
+    "id": 11,
+    "name": "Planetary Systems",
+    "thumbnailPath": "planetarySystems/planetarySystems_thumbnail.webp",
+    "backgroundPath": "planetarySystems/planetarySystems_background.webp",
+    "characteristics": [
+        {
+            "measurementType": "calendarTime",
+            "isHigherBetter": true,
+            "label": "Age"
+        },
+        {
+            "measurementType": "count",
+            "isHigherBetter": true,
+            "label": "Confirmed Planets"
+        },
+        {
+            "measurementType": "mass",
+            "isHigherBetter": true,
+            "label": "Stellar Mass"
+        },
+        {
+            "measurementType": "dimension",
+            "isHigherBetter": true,
+            "label": "Distance"
+        },
+        {
+            "measurementType": "temperature",
+            "isHigherBetter": true,
+            "label": "Temperature"
+        },
+        {
+            "measurementType": "count",
+            "isHigherBetter": false,
+            "label": "Discovery"
+        }
+    ],
+    "cards": [
+        {
+            "id": 1,
+            "name": "Sun system (Solar System)",
+            "subtitle": "- constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Solar_System_graphic_by_NASA.png/747px-Solar_System_graphic_by_NASA.png",
+            "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                4572000000,
+                8,
+                1.0,
+                0.000016,
+                5778,
+                1543
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Proxima Centauri system",
+            "subtitle": "Centaurus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/9/95/New_shot_of_Proxima_Centauri%2C_our_nearest_neighbour.jpg",
+            "imageAttr": "ESA/Hubble, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                4850000000,
+                3,
+                0.1221,
+                4.244,
+                3042,
+                1915
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Barnard's Star system",
+            "subtitle": "Ophiuchus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/4/43/Barnard%27sStarSize_en.jpg",
+            "imageAttr": "Marskell, Poppy, User:Richard-59, CC BY-SA 3.0, via Wikimedia Commons",
+            "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "values": [
+                10000000000,
+                4,
+                0.162,
+                5.96,
+                3195,
+                1916
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Lalande 21185 system",
+            "subtitle": "Ursa Major constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ursa_Major_IAU.svg/1179px-Ursa_Major_IAU.svg.png",
+            "imageAttr": "IAU and Sky & Telescope magazine (Roger Sinnott & Rick Fienberg), CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                8047000000,
+                2,
+                0.39,
+                8.3044,
+                3601,
+                1801
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Lacaille 9352 system",
+            "subtitle": "Piscis Austrinus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Nearby_Stars_%2814ly_Radius%29.svg/1024px-Nearby_Stars_%2814ly_Radius%29.svg.png",
+            "imageAttr": "Inductiveload, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                4570000000,
+                2,
+                0.486,
+                10.721,
+                3688,
+                1754
+            ]
+        },
+        {
+            "id": 6,
+            "name": "YZ Ceti system",
+            "subtitle": "Cetus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/YZ_Ceti.png/1007px-YZ_Ceti.png",
+            "imageAttr": "Calle Cool, CC BY-SA 3.0, via Wikimedia Commons",
+            "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "values": [
+                4000000000,
+                3,
+                0.13,
+                11.74,
+                3056,
+                1957
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Teegarden's Star system",
+            "subtitle": "Aries constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Teegarden%27s_star_proper_motion.gif/1024px-Teegarden%27s_star_proper_motion.gif",
+            "imageAttr": "IndividusObservantis, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                8000000000,
+                3,
+                0.097,
+                12.497,
+                3034,
+                2003
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Gliese 876 system",
+            "subtitle": "Aquarius constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Gliese876Orbits.svg/910px-Gliese876Orbits.svg.png",
+            "imageAttr": "Icalanise, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                4893000000,
+                4,
+                0.334,
+                15.25,
+                3348,
+                1957
+            ]
+        },
+        {
+            "id": 9,
+            "name": "82 G. Eridani system",
+            "subtitle": "Eridanus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                5760000000,
+                3,
+                0.7,
+                19.71,
+                5401,
+                1879
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Gliese 581 system",
+            "subtitle": "Libra constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/5/59/Gliese_581.gif",
+            "imageAttr": "LondonUnderground56, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                4326000000,
+                3,
+                0.311,
+                20.56,
+                3484,
+                1957
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Gliese 667 C system",
+            "subtitle": "Scorpius constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gliese_667.jpg/1280px-Gliese_667.jpg",
+            "imageAttr": "ESO/L. Calçada, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                2000000000,
+                2,
+                0.31,
+                21.0,
+                3700,
+                1908
+            ]
+        },
+        {
+            "id": 12,
+            "name": "HD 219134 system",
+            "subtitle": "Cassiopeia constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/PIA19832-StarHD219134-Location-20150730.jpg/1024px-PIA19832-StarHD219134-Location-20150730.jpg",
+            "imageAttr": "NASA/JPL-Caltech/DSS, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                12660000000,
+                6,
+                0.794,
+                21.0,
+                4699,
+                1924
+            ]
+        },
+        {
+            "id": 13,
+            "name": "61 Virginis system",
+            "subtitle": "Virgo constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/61_Vir_as_seen_with_a_12.5%22_telescope_with_a_field_of_view_of_45.1_arcminutes.jpg/1024px-61_Vir_as_seen_with_a_12.5%22_telescope_with_a_field_of_view_of_45.1_arcminutes.jpg",
+            "imageAttr": "I, Kevin Heider, CC BY-SA 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+            "values": [
+                8960000000,
+                2,
+                0.954,
+                28.0,
+                5531,
+                1725
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Gliese 414 A system",
+            "subtitle": "Ursa Major constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                12400000000,
+                2,
+                0.65,
+                38.76,
+                4120,
+                1957
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Gliese 806 system",
+            "subtitle": "Cygnus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                3000000000,
+                2,
+                0.423,
+                39.3,
+                3586,
+                1957
+            ]
+        },
+        {
+            "id": 16,
+            "name": "TRAPPIST-1 system",
+            "subtitle": "Aquarius constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/PIA21424_-_The_TRAPPIST-1_Habitable_Zone.jpg/1024px-PIA21424_-_The_TRAPPIST-1_Habitable_Zone.jpg",
+            "imageAttr": "NASA/JPL-Caltech, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                7600000000,
+                7,
+                0.089,
+                39.5,
+                2550,
+                1999
+            ]
+        },
+        {
+            "id": 17,
+            "name": "55 Cancri system",
+            "subtitle": "Cancer constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/5/59/Extrasolar_planet_NASA2.jpg",
+            "imageAttr": "NASA, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                7400000000,
+                5,
+                1.026,
+                40.0,
+                5217,
+                1603
+            ]
+        },
+        {
+            "id": 18,
+            "name": "HD 69830 system",
+            "subtitle": "Puppis constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                7446000000,
+                3,
+                0.856,
+                41.0,
+                5385,
+                1924
+            ]
+        },
+        {
+            "id": 19,
+            "name": "HD 40307 system",
+            "subtitle": "Pictor constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/HD40307.svg/878px-HD40307.svg.png",
+            "imageAttr": "Icalanise, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                1198000000,
+                4,
+                0.752,
+                42.0,
+                4977,
+                1924
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Upsilon Andromedae system",
+            "subtitle": "Andromeda constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/0/06/Upsand.jpg",
+            "imageAttr": "Ricnun at the English-language Wikipedia, CC BY-SA 3.0, via Wikimedia Commons",
+            "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "values": [
+                3781000000,
+                3,
+                1.27,
+                44.0,
+                6107,
+                1603
+            ]
+        },
+        {
+            "id": 21,
+            "name": "47 Ursae Majoris system",
+            "subtitle": "Ursa Major constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/47_UMa-starmap.png/1257px-47_UMa-starmap.png",
+            "imageAttr": "Tomruen, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                7434000000,
+                3,
+                1.029,
+                46.0,
+                5892,
+                1725
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Nu2 Lupi system",
+            "subtitle": "Lupus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Lupus_IAU.svg/1085px-Lupus_IAU.svg.png",
+            "imageAttr": "IAU and Sky & Telescope magazine (Roger Sinnott & Rick Fienberg), CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                10360000000,
+                3,
+                0.906,
+                47.0,
+                5664,
+                1603
+            ]
+        },
+        {
+            "id": 23,
+            "name": "LHS 1140 system",
+            "subtitle": "Cetus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Artist%E2%80%99s_impression_of_the_super-Earth_exoplanet_LHS_1140b.jpg/1024px-Artist%E2%80%99s_impression_of_the_super-Earth_exoplanet_LHS_1140b.jpg",
+            "imageAttr": "ESO/spaceengine.org, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                5000000000,
+                2,
+                0.179,
+                48.9,
+                3216,
+                1979
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Mu Arae system",
+            "subtitle": "Ara constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ara_IAU.svg/1110px-Ara_IAU.svg.png",
+            "imageAttr": "IAU and Sky & Telescope magazine (Roger Sinnott & Rick Fienberg), CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                6413000000,
+                4,
+                1.077,
+                51.0,
+                5704,
+                1603
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Pi Mensae system",
+            "subtitle": "Mensa constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                3400000000,
+                3,
+                1.11,
+                59.62,
+                6013,
+                1754
+            ]
+        },
+        {
+            "id": 26,
+            "name": "HD 104067 system",
+            "subtitle": "Corvus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                4800000000,
+                2,
+                0.82,
+                66.3,
+                4942,
+                1924
+            ]
+        },
+        {
+            "id": 27,
+            "name": "HD 142 system",
+            "subtitle": "Phoenix constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                5930000000,
+                3,
+                1.1,
+                67.0,
+                6180,
+                1924
+            ]
+        },
+        {
+            "id": 28,
+            "name": "HD 215152 system",
+            "subtitle": "Aquarius constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                7320000000,
+                4,
+                1.019,
+                70.0,
+                5646,
+                1924
+            ]
+        },
+        {
+            "id": 29,
+            "name": "HD 164922 system",
+            "subtitle": "Hercules constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hercules_HD_164922.png",
+            "imageAttr": "Harlock81, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "values": [
+                13400000000,
+                4,
+                0.874,
+                72.0,
+                5293,
+                1924
+            ]
+        },
+        {
+            "id": 30,
+            "name": "HD 63433 system",
+            "subtitle": "Gemini constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                400000000,
+                3,
+                0.99,
+                73.0,
+                5640,
+                1924
+            ]
+        },
+        {
+            "id": 31,
+            "name": "HIP 57274 system",
+            "subtitle": "Ursa Major constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                7870000000,
+                3,
+                0.73,
+                85.0,
+                4640,
+                1997
+            ]
+        },
+        {
+            "id": 32,
+            "name": "LP 791-18 system",
+            "subtitle": "Crater constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/LP_791-18d.jpg/1024px-LP_791-18d.jpg",
+            "imageAttr": "NASA’s Goddard Space Flight Center/Chris Smith, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                500000000,
+                3,
+                0.139,
+                86.9,
+                2960,
+                1981
+            ]
+        },
+        {
+            "id": 33,
+            "name": "HD 181433 system",
+            "subtitle": "Pavo constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                8974000000,
+                3,
+                0.777,
+                87.0,
+                4962,
+                1924
+            ]
+        },
+        {
+            "id": 34,
+            "name": "HD 82943 system",
+            "subtitle": "Hydra constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                3080000000,
+                3,
+                1.175,
+                90.0,
+                5874,
+                1924
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Kepler-444 system",
+            "subtitle": "Lyra constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/9/91/Adaptive_optics_image_of_the_Kepler-444_system.jpg",
+            "imageAttr": "Zhoujian Zhang et. al., CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                11230000000,
+                5,
+                0.758,
+                117.0,
+                5040,
+                2015
+            ]
+        },
+        {
+            "id": 36,
+            "name": "HD 37124 system",
+            "subtitle": "Taurus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                3327000000,
+                3,
+                0.83,
+                110.0,
+                5606,
+                1924
+            ]
+        },
+        {
+            "id": 37,
+            "name": "HR 8799 system",
+            "subtitle": "Pegasus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/e/e4/HR_8799_%28NIRCam_Image%29_%282025-114%29.png",
+            "imageAttr": "Image: NASA, ESA, CSA, STScI, Laurent Pueyo (STScI), William Balmer (JHU), Marshall Perrin (STScI), Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                64000000,
+                4,
+                1.472,
+                129.0,
+                7429,
+                1908
+            ]
+        },
+        {
+            "id": 38,
+            "name": "HD 27894 system",
+            "subtitle": "Reticulum constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                3900000000,
+                3,
+                0.8,
+                138.0,
+                4875,
+                1924
+            ]
+        },
+        {
+            "id": 39,
+            "name": "HD 93385 system",
+            "subtitle": "Vela constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                4130000000,
+                3,
+                1.07,
+                141.6,
+                5823,
+                1924
+            ]
+        },
+        {
+            "id": 40,
+            "name": "K2-3 system",
+            "subtitle": "Leo constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                1000000000,
+                3,
+                0.601,
+                143.9,
+                3835,
+                2015
+            ]
+        },
+        {
+            "id": 41,
+            "name": "HD 34445 system",
+            "subtitle": "Orion constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/4/4e/HD_34445_planet_system_1_1_1_1.png",
+            "imageAttr": "Merikanto, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                8500000000,
+                1,
+                1.07,
+                152.0,
+                5836,
+                1924
+            ]
+        },
+        {
+            "id": 42,
+            "name": "HD 204313 system",
+            "subtitle": "Capricornus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                3380000000,
+                3,
+                1.045,
+                154.0,
+                5767,
+                1924
+            ]
+        },
+        {
+            "id": 43,
+            "name": "HD 3167 system",
+            "subtitle": "Pisces constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/HD_3167_System.jpg/1280px-HD_3167_System.jpg",
+            "imageAttr": "Martin Vargic / Halcyon Maps, CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                10200000000,
+                4,
+                0.852,
+                154.4,
+                5300,
+                1924
+            ]
+        },
+        {
+            "id": 44,
+            "name": "HD 133131 system",
+            "subtitle": "Libra constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                6000000000,
+                3,
+                0.95,
+                168.0,
+                5799,
+                1924
+            ]
+        },
+        {
+            "id": 45,
+            "name": "K2-136 system",
+            "subtitle": "Taurus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                700000000,
+                3,
+                0.71,
+                173.0,
+                4364,
+                2017
+            ]
+        },
+        {
+            "id": 46,
+            "name": "HIP 14810 system",
+            "subtitle": "Aries constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                5271000000,
+                3,
+                0.989,
+                174.0,
+                5485,
+                1997
+            ]
+        },
+        {
+            "id": 47,
+            "name": "HD 191939 system",
+            "subtitle": "Draco constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/HD191939_location.png/1024px-HD191939_location.png",
+            "imageAttr": "Trurle, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                8700000000,
+                6,
+                0.81,
+                175.0,
+                5348,
+                1924
+            ]
+        },
+        {
+            "id": 48,
+            "name": "HD 125612 system",
+            "subtitle": "Virgo constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/6/60/HD_125612_b.jpg",
+            "imageAttr": "Kirk39, GPL, via Wikimedia Commons",
+            "imageLic": "http://www.gnu.org/licenses/gpl.html",
+            "values": [
+                2150000000,
+                3,
+                1.099,
+                177.0,
+                5897,
+                1924
+            ]
+        },
+        {
+            "id": 49,
+            "name": "HD 184010 system",
+            "subtitle": "Vulpecula constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/7/72/Starmap_with_HD_184010_marker_based_on_the_open-source_Stellarium_engine.png",
+            "imageAttr": "Jake11223344, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                2760000000,
+                3,
+                1.35,
+                200.0,
+                4971,
+                1924
+            ]
+        },
+        {
+            "id": 50,
+            "name": "HD 38677 system",
+            "subtitle": "Orion constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stars_Sky_Banff_%28Unsplash%29.jpg/1024px-Stars_Sky_Banff_%28Unsplash%29.jpg",
+            "imageAttr": "Samson Duborg-Rankin samsonyyc, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                2010000000,
+                4,
+                1.21,
+                202.0,
+                6196,
+                1924
+            ]
+        },
+        {
+            "id": 51,
+            "name": "TOI-178 system",
+            "subtitle": "Sculptor constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Artist_impression_of_the_TOI-178_planetary_system_ESA22423126.jpg/1024px-Artist_impression_of_the_TOI-178_planetary_system_ESA22423126.jpg",
+            "imageAttr": "ESA, CC BY-SA IGO 3.0, CC BY-SA 3.0 IGO, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+            "values": [
+                7100000000,
+                6,
+                0.65,
+                205.16,
+                4316,
+                2020
+            ]
+        },
+        {
+            "id": 52,
+            "name": "HD 108236 system",
+            "subtitle": "Centaurus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/1863_hd_108236.jpg/1024px-1863_hd_108236.jpg",
+            "imageAttr": "NASA/JPL-Caltech, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                5800000000,
+                5,
+                0.97,
+                211.0,
+                5730,
+                1924
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Kepler-37 system",
+            "subtitle": "Lyra constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/A_Moon-size_Line_Up.jpg/1024px-A_Moon-size_Line_Up.jpg",
+            "imageAttr": "NASA/Ames/JPL-Caltech, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                6000000000,
+                3,
+                0.803,
+                215.0,
+                5417,
+                2013
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Kepler-11 system",
+            "subtitle": "Cygnus constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Kepler11.png/1024px-Kepler11.png",
+            "imageAttr": "NASA / Tim Pyle, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                7834000000,
+                6,
+                0.954,
+                2150.0,
+                5681,
+                2011
+            ]
+        },
+        {
+            "id": 55,
+            "name": "Kepler-90 system",
+            "subtitle": "Draco constellation",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kepler-90_system_rightward-PIA22193.jpg",
+            "imageAttr": "NASA/Ames Research Center/Wendy Stenzel, Public domain, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                2000000000,
+                8,
+                1.13,
+                2840.0,
+                5930,
+                2013
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
   "id": 4,
   "name": "Dinosaurs",
-  "thumbnailPath": "dinosaurs/dinosaurs_thumbnail.png",
+  "thumbnailPath": "dinosaurs/dinosaurs_thumbnail.webp",
   "backgroundPath": "dinosaurs/dinosaurs_background.jpg",
   "characteristics": [
     {
@@ -310,9 +310,9 @@
       "id": 31,
       "name": "Oviraptor",
       "subtitle": "About 75 million years ago",
-      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Oviraptor_UDL.png/640px-Oviraptor_UDL.png",
-      "imageAttr": "UnexpectedDinoLesson, CC BY 4.0, via Wikimedia Commons",
-      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Oviraptor_Restoration.png/1024px-Oviraptor_Restoration.png",
+      "imageAttr": "PaleoNeolitic, CC BY 4.0, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by/4.0",
       "values": [1.0, 1.8, 25, 43, 5.0, 4.0]
     },
     {
@@ -337,9 +337,9 @@
       "id": 34,
       "name": "Styracosaurus",
       "subtitle": "About 76 to 75 million years ago",
-      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Styracosaurus_UDL.png/640px-Styracosaurus_UDL.png",
-      "imageAttr": "UnexpectedDinoLesson, CC0, via Wikimedia Commons",
-      "imageLic": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Styracosaurus_Baltow_20051003_1315.jpg/1024px-Styracosaurus_Baltow_20051003_1315.jpg",
+      "imageAttr": "Jakub Hałun, CC BY-SA 3.0, via Wikimedia Commons",
+      "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
       "values": [1.8, 5.5, 2700, 20, 6.5, 7.0]
     },
     {

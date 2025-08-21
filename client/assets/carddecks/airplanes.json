@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "Airplanes",
-  "thumbnailPath": "Airplanes/airplanes_thumbnail.png",
+  "thumbnailPath": "Airplanes/airplanes_thumbnail.webp",
   "backgroundPath": "Airplanes/airplanes_background.jpg",
   "characteristics": [
     {
@@ -776,7 +776,7 @@
       "imagePath": "McDonnell_Douglas_DC-9.jpg",
       "imageAttr": "NASA, Public domain, via Wikimedia Commons",
       "imageLic": "",
-      "values": [897, 28.4, 49.940, 11000, 115]
+      "values": [897, 28.4, 49940, 11000, 115]
     }
   ]
 }

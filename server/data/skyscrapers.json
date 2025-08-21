@@ -1,0 +1,785 @@
+{
+    "id": 10,
+    "name": "Skyscrapers",
+    "thumbnailPath": "skyscrapers/skyscrapers_thumbnail.jpg",
+    "backgroundPath": "skyscrapers/skyscrapers_background.webp",
+    "characteristics": [
+        {
+            "measurementType": "dimension",
+            "isHigherBetter": true,
+            "label": "Height"
+        },
+        {
+            "measurementType": "count",
+            "isHigherBetter": true,
+            "label": "Floors"
+        },
+        {
+            "measurementType": "count",
+            "isHigherBetter": true,
+            "label": "Lifts"
+        },
+        {
+            "measurementType": "currency",
+            "isHigherBetter": false,
+            "label": "Construction Cost"
+        },
+        {
+            "measurementType": "calendarTime",
+            "isHigherBetter": false,
+            "label": "Construction Time"
+        }
+    ],
+    "cards": [
+        {
+            "id": 1,
+            "name": "432 Park Avenue",
+            "subtitle": "USA, New York, 2015",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/432_Park_-_Pencil_Building.jpg/1024px-432_Park_-_Pencil_Building.jpg",
+            "imageAttr": "Eric Kilby, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                425.5,
+                85,
+                12,
+                4,
+                1500000000
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Abraj Al-Bait Tower",
+            "subtitle": "Saudi Arabia, Mecca, 2012",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Final_circulation_of_the_Kaaba_%28completed%29.jpg/1024px-Final_circulation_of_the_Kaaba_%28completed%29.jpg",
+            "imageAttr": "Fadi El Benni of Al Jazeera English, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                601,
+                120,
+                96,
+                8,
+                18500000000
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Al Hamra Tower",
+            "subtitle": "Kuwait, Kuwait City, 2011",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Kuwait_City_Kuwait_Towers_View_to_the_al-Hamra_Tower.jpg/1024px-Kuwait_City_Kuwait_Towers_View_to_the_al-Hamra_Tower.jpg",
+            "imageAttr": "Zairon, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                414,
+                83,
+                43,
+                6,
+                630000000
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Aon Center",
+            "subtitle": "USA, Chicago, 1973",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Aon_Center%2C_Chicago%2C_Illinois%2C_US_%28PPL3-Altered%29_julesvernex2.jpg/1024px-Aon_Center%2C_Chicago%2C_Illinois%2C_US_%28PPL3-Altered%29_julesvernex2.jpg",
+            "imageAttr": "Jules Verne Times Two, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                346.3,
+                83,
+                50,
+                3,
+                770000000
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Bank of America Tower",
+            "subtitle": "USA, New York, 2009",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bank_of_America_Tower_at_One_Bryant_Park%2C_Manhattan.jpg/1024px-Bank_of_America_Tower_at_One_Bryant_Park%2C_Manhattan.jpg",
+            "imageAttr": "Zheng Zhou, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                366,
+                55,
+                52,
+                5,
+                1300000000
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Bank of China Tower",
+            "subtitle": "China, Hong Kong, 1990",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/HSBC_Building_%26_Bank_of_China_Tower_20170808.jpg/1024px-HSBC_Building_%26_Bank_of_China_Tower_20170808.jpg",
+            "imageAttr": "Suicasmo, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                367.4,
+                72,
+                49,
+                5,
+                280000000
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Burj Al Arab",
+            "subtitle": "UAE, Dubai, 1999",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Jumeirah_Beach_-_panoramio_%281%29.jpg/1024px-Jumeirah_Beach_-_panoramio_%281%29.jpg",
+            "imageAttr": "Aidas U., CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                321,
+                56,
+                18,
+                5,
+                1700000000
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Burj Khalifa",
+            "subtitle": "UAE, Dubai, 2010",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Burj_Khalifa_%2816260269606%29.jpg/1024px-Burj_Khalifa_%2816260269606%29.jpg",
+            "imageAttr": "Laika ac, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                828,
+                163,
+                57,
+                6,
+                2000000000
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Cayan Tower",
+            "subtitle": "UAE, Dubai, 2013",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Infinity_Tower_during_construction.png",
+            "imageAttr": "~Pyb, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                306.4,
+                73,
+                8,
+                7,
+                330000000
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Central Park Tower",
+            "subtitle": "USA, New York, 2020",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Central_Park_Tower_February_2023_002.jpg/1024px-Central_Park_Tower_February_2023_002.jpg",
+            "imageAttr": "Kidfly182, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                472.4,
+                98,
+                11,
+                6,
+                3300000000
+            ]
+        },
+        {
+            "id": 11,
+            "name": "China Zun (CITIC Tower)",
+            "subtitle": "China, Beijing, 2018",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/%E4%B8%AD%E5%9B%BD%E5%B0%8A%E5%BB%BA%E7%AD%91%E7%BE%A4.jpg/1024px-%E4%B8%AD%E5%9B%BD%E5%B0%8A%E5%BB%BA%E7%AD%91%E7%BE%A4.jpg",
+            "imageAttr": "維基小霸王, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                528,
+                109,
+                101,
+                7,
+                2800000000
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Chrysler Building",
+            "subtitle": "USA, New York, 1930",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/NYC_Chrysler_Building.JPG/1024px-NYC_Chrysler_Building.JPG",
+            "imageAttr": "Lesekreis, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                319,
+                77,
+                34,
+                2,
+                340000000
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Commerzbank Tower",
+            "subtitle": "Germany, Frankfurt, 1997",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Commerzbank-Hochhaus_2010-09-06_01.jpg/1024px-Commerzbank-Hochhaus_2010-09-06_01.jpg",
+            "imageAttr": "© Commerzbank AG, CC-BY-SA 3.0 (DE), via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+            "values": [
+                259,
+                56,
+                20,
+                3,
+                415000000
+            ]
+        },
+        {
+            "id": 14,
+            "name": "CTF Finance Centre",
+            "subtitle": "China, Guangzhou, 2016",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Huacheng_Square_from_south_side_2.jpg/1024px-Huacheng_Square_from_south_side_2.jpg",
+            "imageAttr": "そらみみ, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                530,
+                111,
+                95,
+                6,
+                1300000000
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Empire State Building",
+            "subtitle": "USA, New York, 1931",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_during_sunset.jpg/1024px-Empire_State_Building_during_sunset.jpg",
+            "imageAttr": "Michael Discenza, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                381,
+                102,
+                73,
+                1.1,
+                635000000
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Eureka Tower",
+            "subtitle": "Australia, Melbourne, 2006",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Melbourne%2C_Australia_-_panoramio_%28127%29.jpg/1024px-Melbourne%2C_Australia_-_panoramio_%28127%29.jpg",
+            "imageAttr": "Michelle Maria, CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                297.3,
+                91,
+                13,
+                4.2,
+                320000000
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Evolution Tower",
+            "subtitle": "Russia, Moscow, 2014",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Evolution_Tower%2C_Moscow_City1.jpg/1024px-Evolution_Tower%2C_Moscow_City1.jpg",
+            "imageAttr": "Юрий Д.К., CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                246,
+                55,
+                17,
+                3,
+                450000000
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Flatiron Building",
+            "subtitle": "USA, New York, 1902",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/5/58/Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg",
+            "imageAttr": "Chicago Daily News photographer, Public Domain",
+            "imageLic": "",
+            "values": [
+                87,
+                22,
+                6,
+                1,
+                45000000
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Gran Torre Santiago",
+            "subtitle": "Chile, Santiago, 2014",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/CostaneraCenter2016.jpg/1024px-CostaneraCenter2016.jpg",
+            "imageAttr": "Bjørn Christian Tørrissen, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                300,
+                64,
+                24,
+                8,
+                900000000
+            ]
+        },
+        {
+            "id": 20,
+            "name": "International Commerce Centre",
+            "subtitle": "Hong Kong, Hong Kong, 2010",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/International_Commerce_Centre_skyscraper%2C_in_West_Kowloon%2C_Hong_Kong_%28Ank_Kumar%29_03.jpg/1024px-International_Commerce_Centre_skyscraper%2C_in_West_Kowloon%2C_Hong_Kong_%28Ank_Kumar%29_03.jpg",
+            "imageAttr": "Ank Kumar, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                484,
+                108,
+                83,
+                8,
+                2200000000
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Jin Mao Tower",
+            "subtitle": "China, Shanghai, 1999",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/0407_Shanghai_20090627.jpg/1024px-0407_Shanghai_20090627.jpg",
+            "imageAttr": "Architect (Jin Mao Tower): Adrian SmithArchitect(SWFC): Kohn Pedersen FoxPhotographer:Jakub Hałun, CC BY-SA 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
+            "values": [
+                420.5,
+                88,
+                61,
+                5,
+                680000000
+            ]
+        },
+        {
+            "id": 22,
+            "name": "John Hancock Center (875 North Michigan Avenue)",
+            "subtitle": "USA, Chicago, 1969",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/John_Hancock_Center%2C_Michigan_Avenue%2C_Streeterville%2C_Chicago%2C_IL_-_54195656631.jpg/1024px-John_Hancock_Center%2C_Michigan_Avenue%2C_Streeterville%2C_Chicago%2C_IL_-_54195656631.jpg",
+            "imageAttr": "w_lemay, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                344,
+                100,
+                40,
+                4,
+                600000000
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Kingdom Centre",
+            "subtitle": "Saudi Arabia, Riyadh, 2002",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/%EC%82%AC%EC%9A%B0%EB%94%94_%EB%A6%AC%EC%95%BC%EB%93%9C%EC%9D%98_%ED%82%B9%EB%8D%A4%EC%84%BC%ED%84%B0_%28Riyard_Kondom_Tower%29_-_panoramio.jpg/1024px-%EC%82%AC%EC%9A%B0%EB%94%94_%EB%A6%AC%EC%95%BC%EB%93%9C%EC%9D%98_%ED%82%B9%EB%8D%A4%EC%84%BC%ED%84%B0_%28Riyard_Kondom_Tower%29_-_panoramio.jpg",
+            "imageAttr": "우한길(HK Woo), CC BY 3.0",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0/",
+            "values": [
+                302.3,
+                41,
+                41,
+                3,
+                530000000
+            ]
+        },
+        {
+            "id": 24,
+            "name": "King Power Mahanakhon",
+            "subtitle": "Thailand, Bangkok, 2016",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mahanakhon_Building_%E0%B8%95%E0%B8%B6%E0%B8%81%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Photographed_by_Trisorn_Triboon.JPG/1024px-Mahanakhon_Building_%E0%B8%95%E0%B8%B6%E0%B8%81%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Photographed_by_Trisorn_Triboon.JPG",
+            "imageAttr": "Tris_T7, CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                314,
+                78,
+                22,
+                5,
+                530000000
+            ]
+        },
+        {
+            "id": 25,
+            "name": "KK100",
+            "subtitle": "China, Shenzhen, 2011",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/KINGKEY_100_%2830%29.jpg/1024px-KINGKEY_100_%2830%29.jpg",
+            "imageAttr": "Dinkun Chen, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                441.8,
+                100,
+                66,
+                4,
+                720000000
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Landmark 81",
+            "subtitle": "Vietnam, Ho Chi Minh City, 2018",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Landmark81_582018_NhonHuynh.jpg/1024px-Landmark81_582018_NhonHuynh.jpg",
+            "imageAttr": "Huỳnh Vĩ Nhơn, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                461.2,
+                81,
+                29,
+                4,
+                1200000000
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Lotte World Tower",
+            "subtitle": "South Korea, Seoul, 2017",
+            "imagePath": "",
+            "imageAttr": "",
+            "imageLic": "",
+            "values": [
+                555.7,
+                123,
+                58,
+                6,
+                2700000000
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Marina Bay Sands",
+            "subtitle": "Singapore, Singapore, 2010",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lotte_World_day_view_5.jpg/1024px-Lotte_World_day_view_5.jpg",
+            "imageAttr": "kallerna, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                207,
+                57,
+                93,
+                5,
+                6000000000
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Met Life Tower",
+            "subtitle": "USA, New York, 1909",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/MetLife_Tower_05.jpg/1024px-MetLife_Tower_05.jpg",
+            "imageAttr": "PortableNYCTours, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                213.4,
+                50,
+                6,
+                3,
+                200000000
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Montparnasse Tower",
+            "subtitle": "France, Paris, 1973",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tour_Montparnasse_from_the_Eiffel_Tower%2C_16_August_2006.jpg/1024px-Tour_Montparnasse_from_the_Eiffel_Tower%2C_16_August_2006.jpg",
+            "imageAttr": "mwanasimba from La Réunion, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                210,
+                59,
+                25,
+                4,
+                400000000
+            ]
+        },
+        {
+            "id": 31,
+            "name": "One Vanderbilt",
+            "subtitle": "USA, New York, 2020",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/One_Vanderbilt_from_north.jpg/1024px-One_Vanderbilt_from_north.jpg",
+            "imageAttr": "Itrytohelp32, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                427,
+                93,
+                42,
+                4,
+                3000000000
+            ]
+        },
+        {
+            "id": 32,
+            "name": "One World Trade Center",
+            "subtitle": "USA, New York, 2014",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/One_World_Trade_Center_2024_053.jpg/1024px-One_World_Trade_Center_2024_053.jpg",
+            "imageAttr": "Kidfly182, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                541.3,
+                94,
+                73,
+                8,
+                3100000000
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Petronas Twin Towers",
+            "subtitle": "Malaysia, Kuala Lumpur, 1996",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/4/41/Twin_Towers%2C_Kuala_Lumpur_City_Centre%2C_Malaysia.jpg",
+            "imageAttr": "Faiz Qamar 1, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                451.9,
+                88,
+                78,
+                3,
+                2200000000
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Ping An Finance Centre",
+            "subtitle": "China, Shenzhen, 2017",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ping_An_Finance_Centre_Shenzhen_city_China_%2836461945211%29.jpg/1024px-Ping_An_Finance_Centre_Shenzhen_city_China_%2836461945211%29.jpg",
+            "imageAttr": "Chris from Shenzhen, China, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                599,
+                115,
+                80,
+                7,
+                1350000000
+            ]
+        },
+        {
+            "id": 35,
+            "name": "PNB 118 (Merdeka 118)",
+            "subtitle": "Malaysia, Kuala Lumpur, 2023",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/The_Merdeka_118_alongside_the_KL_Tower_on_its_right.jpg/1024px-The_Merdeka_118_alongside_the_KL_Tower_on_its_right.jpg",
+            "imageAttr": "Sam Hidayat, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                678.9,
+                118,
+                87,
+                9,
+                1000000000
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Princess Tower",
+            "subtitle": "UAE, Dubai, 2012",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Dubai_Marina_Skyline.jpg/1024px-Dubai_Marina_Skyline.jpg",
+            "imageAttr": "Norlando Pobre, CC BY 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/2.0",
+            "values": [
+                414,
+                101,
+                13,
+                6,
+                170000000
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Rockefeller Plaza",
+            "subtitle": "USA, New York, 1933",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Rockefeller_Center_2024_069.jpg/1280px-Rockefeller_Center_2024_069.jpg",
+            "imageAttr": "Kidfly182, CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
+            "values": [
+                260,
+                70,
+                60,
+                2,
+                450000000
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Rose Tower",
+            "subtitle": "UAE, Dubai, 2007",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Sheikh_Zayed_Road_on_16_June_2007_Pict_2.jpg/960px-Sheikh_Zayed_Road_on_16_June_2007_Pict_2.jpg",
+            "imageAttr": "Imre Solt, CC BY-SA 3.0, via Wikimedia Commons",
+            "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "values": [
+                333,
+                72,
+                8,
+                3,
+                125000000
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Ryugyong Hotel",
+            "subtitle": "North Korea, Pyongyang, 2011",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/North_Korea_-_Ryugyong_hotel_%285015282991%29.jpg/1024px-North_Korea_-_Ryugyong_hotel_%285015282991%29.jpg",
+            "imageAttr": "Roman Harak, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                330,
+                105,
+                16,
+                8,
+                1300000000
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Salesforce Tower",
+            "subtitle": "USA, San Francisco, 2018",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/San_Francisco%2C_California_April_2022_Salesforce_Tower.jpg/1024px-San_Francisco%2C_California_April_2022_Salesforce_Tower.jpg",
+            "imageAttr": "Sharon Hahn Darlin, CC BY 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/2.0",
+            "values": [
+                326,
+                61,
+                36,
+                5,
+                935000000
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Seagram Building",
+            "subtitle": "USA, New York, 1958",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Seagram_Building_%284087425829%29.jpg/1024px-Seagram_Building_%284087425829%29.jpg",
+            "imageAttr": "jphilipg from Montréal, Canada, CC BY 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/2.0",
+            "values": [
+                157,
+                38,
+                18,
+                4,
+                370000000
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Shanghai Tower",
+            "subtitle": "China, Shanghai, 2015",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Shanghai_Tower%2C_Aug_10_2023.jpg/1024px-Shanghai_Tower%2C_Aug_10_2023.jpg",
+            "imageAttr": "A Chinese ID, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                632,
+                128,
+                106,
+                7,
+                2100000000
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Shanghai World Financial Center",
+            "subtitle": "China, Shanghai, 2008",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/20191114_Lujiazui_from_Shanghai_Tower-3.jpg/1024px-20191114_Lujiazui_from_Shanghai_Tower-3.jpg",
+            "imageAttr": "Balon Greyjoy, CC0, via Wikimedia Commons",
+            "imageLic": "",
+            "values": [
+                492,
+                101,
+                91,
+                11,
+                1000000000
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Steinway Tower",
+            "subtitle": "USA, New York, 2021",
+            "imageAttr": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/111_West_57th_Street.jpg/1024px-111_West_57th_Street.jpg",
+            "imagePath": "Kidfly182, CC BY-SA 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "values": [
+                435.3,
+                84,
+                8,
+                7,
+                1800000000
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Taipei 101",
+            "subtitle": "Taiwan, Taipei, 2004",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/101%E5%A4%A7%E6%A8%932008-04-22_-_panoramio.jpg/1024px-101%E5%A4%A7%E6%A8%932008-04-22_-_panoramio.jpg",
+            "imageAttr": "Tianmu peter, CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                508,
+                101,
+                61,
+                6,
+                1800000000
+            ]
+        },
+        {
+            "id": 46,
+            "name": "The Gherkin (30 St Mary Axe)",
+            "subtitle": "UK, London, 2003",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/30_St_Mary_Axe_%E2%80%93_the_Gherkin_%2814582258825%29.jpg/1024px-30_St_Mary_Axe_%E2%80%93_the_Gherkin_%2814582258825%29.jpg",
+            "imageAttr": "Alexander Svensson, CC BY 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/2.0",
+            "values": [
+                180,
+                41,
+                18,
+                2.5,
+                270000000
+            ]
+        },
+        {
+            "id": 47,
+            "name": "The Shard",
+            "subtitle": "UK, London, 2012",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/The_Shard_at_sunset_2017-10-27.jpg/1003px-The_Shard_at_sunset_2017-10-27.jpg",
+            "imageAttr": "© User:Colin / Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "values": [
+                309.6,
+                95,
+                44,
+                3.5,
+                630000000
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Torre de Cristal",
+            "subtitle": "Spain, Madrid, 2008",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/CTBA_%28Madrid%29_39.jpg/1024px-CTBA_%28Madrid%29_39.jpg",
+            "imageAttr": "Luis García, CC BY-SA 3.0 ES, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+            "values": [
+                249,
+                52,
+                27,
+                4,
+                340000000
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Transamerica Pyramid",
+            "subtitle": "USA, San Francisco, 1972",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Transamerica_Pyramid_a_Columbus_Ave_-_San_Francisco_-_panoramio.jpg/1024px-Transamerica_Pyramid_a_Columbus_Ave_-_San_Francisco_-_panoramio.jpg",
+            "imageAttr": "Pavel Špindler, CC BY 3.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/3.0",
+            "values": [
+                260,
+                48,
+                18,
+                3,
+                250000000
+            ]
+        },
+        {
+            "id": 50,
+            "name": "Willis Tower",
+            "subtitle": "USA, Chicago, 1973",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sears_Tower%2C_Wacker_Drive_and_Jackson_Boulevard%2C_Chicago%2C_IL_-_54189881404.jpg/1024px-Sears_Tower%2C_Wacker_Drive_and_Jackson_Boulevard%2C_Chicago%2C_IL_-_54189881404.jpg",
+            "imageAttr": "w_lemay, CC BY-SA 2.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
+            "values": [
+                442.1,
+                108,
+                104,
+                3,
+                950000000
+            ]
+        }
+    ]
+}

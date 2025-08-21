@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "Cars",
-  "thumbnailPath": "Cars/cars_thumbnail.png",
+  "thumbnailPath": "Cars/cars_thumbnail.webp",
   "backgroundPath": "Cars/cars_background.jpg",
   "characteristics": [
     {

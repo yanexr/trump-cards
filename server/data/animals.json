@@ -1,7 +1,7 @@
 {
   "id": 3,
   "name": "Animals",
-  "thumbnailPath": "animals/animals_thumbnail.png",
+  "thumbnailPath": "animals/animals_thumbnail.webp",
   "backgroundPath": "animals/animals_background.jpg",
   "characteristics": [
     {

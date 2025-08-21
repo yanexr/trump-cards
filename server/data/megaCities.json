@@ -1,7 +1,7 @@
 {
   "id": 8,
   "name": "Mega Cities",
-  "thumbnailPath": "megaCities/megaCities_thumbnail.png",
+  "thumbnailPath": "megaCities/megaCities_thumbnail.webp",
   "backgroundPath": "megaCities/megaCities_background.jpg",
   "characteristics": [
     {

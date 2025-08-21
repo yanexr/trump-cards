@@ -1,7 +1,7 @@
 {
   "id": 5,
   "name": "World Football Stars",
-  "thumbnailPath": "worldFootballStars/worldFootballStars_thumbnail.png",
+  "thumbnailPath": "worldFootballStars/worldFootballStars_thumbnail.webp",
   "backgroundPath": "worldFootballStars/worldFootballStars_background.jpg",
   "characteristics": [
     {
@@ -89,9 +89,9 @@
       "id": 7,
       "name": "Kylian Mbappé",
       "subtitle": "1998, Forward",
-      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kylian_Mbapp%C3%A9_2024.jpg/640px-Kylian_Mbapp%C3%A9_2024.jpg",
-      "imageAttr": "Manu Fernandez, CC BY 4.0, via Wikimedia Commons",
-      "imageLic": "https://creativecommons.org/licenses/by/4.0/",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mbapp%C3%A9_25032021.jpg",
+      "imageAttr": "Football.ua, CC BY-SA 3.0 GFDL, via Wikimedia Commons",
+      "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
       "values": [256, 308, 0, 77.0, 2.0]
     },
     {

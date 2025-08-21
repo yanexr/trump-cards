@@ -1,7 +1,7 @@
 {
   "id": 2,
   "name": "Rockets",
-  "thumbnailPath": "Rockets/rockets_thumbnail.png",
+  "thumbnailPath": "Rockets/rockets_thumbnail.webp",
   "backgroundPath": "Rockets/rockets_background.jpg",
   "characteristics": [
     {
