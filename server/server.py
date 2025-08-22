@@ -1,6 +1,6 @@
 import asyncio
-import os
 import json
+import argparse
 import websockets
 
 games = {}
@@ -258,24 +258,30 @@ async def handle_connection(websocket):
 
 
 def process_request(connection, request):
-    """
-    Handle HTTP requests (e.g., health checks). Returns a simple 200 OK for non-WS.
-    """
-    upgrade = request.headers.get("Upgrade", "").lower()
-    if upgrade != "websocket":
+    """Handle HTTP requests (e.g., health checks). Returns a simple 200 OK for non-WS."""
+    upgrade = request.headers.get("Upgrade", "")
+    if str(upgrade).lower() != "websocket":
         body = b"OK"
-        headers = [
+        headers_out = [
             ("Content-Type", "text/plain; charset=utf-8"),
             ("Content-Length", str(len(body))),
         ]
-        return 200, headers, body
+        return 200, headers_out, body
     # For WebSocket upgrades, proceed with the handshake
     return None
 
 
+def _resolve_host_port():
+    """Parse CLI args only; defaults: host=localhost, port=8000."""
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("--host", dest="host", default="localhost")
+    parser.add_argument("--port", dest="port", type=int, default=8000)
+    args, _ = parser.parse_known_args()
+    return args.host, args.port
+
+
 async def main():
-    host = os.environ.get("HOST", "localhost")
-    port = int(os.environ.get("PORT", "8000"))
+    host, port = _resolve_host_port()
 
     async with websockets.serve(
         handle_connection,
@@ -285,7 +291,7 @@ async def main():
         ping_interval=30,
         ping_timeout=30,
     ):
-        print(f"Server started on port {port}...")
+        print(f"Server started on {host}:{port}...")
         await asyncio.Future()  # run forever
 
 
