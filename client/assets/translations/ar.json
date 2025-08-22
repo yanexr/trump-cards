@@ -232,5 +232,24 @@
   "Tallest Building": "أطول مبنى",
   "GDP": "الناتج المحلي الإجمالي",
   "Tourists/Year": "سياح/السنة",
-  "Pop. Growth": "نمو سكاني"
+  "Pop. Growth": "نمو سكاني",
+  "Long Distance": "مسافة طويلة",
+  "High Mass": "كتلة عالية",
+  "Stellar Mass": "كتلة نجمية",
+
+  "Planetary Systems": "أنظمة كوكبية",
+  "Skyscrapers": "ناطحات سحاب",
+  "Tanks": "دبابات",
+
+  "Age": "العمر",
+  "Confirmed Planets": "الكواكب المؤكدة",
+  "Distance": "المسافة",
+  "Discovery": "الاكتشاف",
+  "Floors": "طوابق",
+  "Lifts": "مصاعد",
+  "Construction Time": "زمن البناء",
+  "Construction Cost": "تكلفة البناء",
+  "Armor": "درع",
+  "Firepower": "قوة نيران",
+  "No. built": "المبنية"
 }

@@ -273,6 +273,36 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                       ],
                     ),
                     const Divider(),
+                    // Long Distance
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.longDistance().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.longDistanceUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance
+                                  .updateLongDistanceUnit(value);
+                            });
+                          },
+                          items: Measurements.longDistance()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
                     // Count
                     Row(
                       children: [
@@ -320,6 +350,36 @@ class _UnitsDropdownState extends State<UnitsDropdown> {
                             });
                           },
                           items: Measurements.density()
+                              .units
+                              .asMap()
+                              .entries
+                              .map((entry) {
+                            return DropdownMenuItem(
+                              value: entry.key,
+                              child: Text(entry.value.name),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    // High Mass
+                    Row(
+                      children: [
+                        const SizedBox(width: 20),
+                        Text(Measurements.highMass().name),
+                        const Spacer(),
+                        DropdownButton<int>(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          borderRadius: BorderRadius.circular(10),
+                          value: SettingsController.instance.highMassUnit,
+                          onChanged: (value) {
+                            setState(() {
+                              SettingsController.instance
+                                  .updateHighMassUnit(value);
+                            });
+                          },
+                          items: Measurements.highMass()
                               .units
                               .asMap()
                               .entries

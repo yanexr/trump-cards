@@ -15,13 +15,13 @@
             "label": "Confirmed Planets"
         },
         {
-            "measurementType": "mass",
+            "measurementType": "highMass",
             "isHigherBetter": true,
             "label": "Stellar Mass"
         },
         {
-            "measurementType": "dimension",
-            "isHigherBetter": true,
+            "measurementType": "longDistance",
+            "isHigherBetter": false,
             "label": "Distance"
         },
         {

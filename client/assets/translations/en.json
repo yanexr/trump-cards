@@ -106,6 +106,8 @@
   "Mass": "Mass",
   "Kilogram": "Kilogram",
   "Pound": "Pound",
+  "High Mass": "High Mass",
+  "Stellar Mass": "Stellar Mass",
   "Clock Time": "Clock Time",
   "Second": "Second",
   "Minute": "Minute",
@@ -129,6 +131,7 @@
   "Dimension": "Dimension",
   "Metre": "Metre",
   "Foot": "Foot",
+  "Long Distance": "Long Distance",
   "Astronomical Unit": "Astronomical Unit",
   "Light Year": "Light Year",
   "Count": "Count",
@@ -193,6 +196,9 @@
   "World Tennis Stars": "World Tennis Stars",
   "Extreme Sports": "Extreme Sports",
   "Mega Cities": "Mega Cities",
+  "Planetary Systems": "Planetary Systems",
+  "Skyscrapers": "Skyscrapers",
+  "Tanks": "Tanks",
 
   "Weight": "Weight",
   "Top Speed": "Top speed",
@@ -233,6 +239,17 @@
   "Tallest Building": "Tallest Building",
   "GDP": "GDP",
   "Tourists/Year": "Tourists/Year",
-  "Pop. Growth": "Pop. Growth"
+  "Pop. Growth": "Pop. Growth",
+  "Age": "Age",
+  "Confirmed Planets": "Confirmed Planets",
+  "Distance": "Distance",
+  "Discovery": "Discovery",
+  "Floors": "Floors",
+  "Lifts": "Lifts",
+  "Construction Time": "Construction Time",
+  "Construction Cost": "Construction Cost",
+  "Armor": "Armor",
+  "Firepower": "Firepower",
+  "No. built": "No. built"
 
 }

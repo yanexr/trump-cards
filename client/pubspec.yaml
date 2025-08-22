@@ -45,7 +45,10 @@ flutter:
     - assets/images/Airplanes/
     - assets/images/Rockets/
     - assets/images/animals/
+    - assets/images/planetarySystems/
     - assets/images/dinosaurs/
+    - assets/images/skyscrapers/
+    - assets/images/tanks/
     - assets/images/extremeSports/
     - assets/images/megaCities/
     - assets/images/worldFootballStars/

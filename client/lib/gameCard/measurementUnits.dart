@@ -32,7 +32,9 @@ enum MeasurementType {
   density,
   percentage,
   temperature,
-  volume
+  volume,
+  longDistance,
+  highMass
 }
 
 class Measurements {
@@ -63,6 +65,10 @@ class Measurements {
       return temperature();
     } else if (m == MeasurementType.volume) {
       return volume();
+    } else if (m == MeasurementType.longDistance) {
+      return longDistance();
+    } else if (m == MeasurementType.highMass) {
+      return highMass();
     } else {
       return count();
     }
@@ -107,7 +113,12 @@ class Measurements {
   static Measurement mass() {
     return Measurement(
         tr('Mass'),
-        [Unit(tr('Kilogram'), 'kg', 1), Unit(tr('Pound'), 'lb', 2.20462)],
+        [
+          Unit(tr('Kilogram'), 'kg', 1),
+          Unit(tr('Pound'), 'lb', 2.20462),
+          // 1 kg = 5.02785e-31 solar masses (M☉)
+          Unit(tr('Stellar Mass'), 'M☉', 5.02785e-31),
+        ],
         SettingsController.instance.massUnit);
   }
 
@@ -130,7 +141,7 @@ class Measurements {
           Unit(tr('Month'), 'm', 12),
           Unit(tr('Day'), 'd', 365)
         ],
-        SettingsController.instance.clockTimeUnit);
+  SettingsController.instance.calendarTimeUnit);
   }
 
   static Measurement currency() {
@@ -162,6 +173,19 @@ class Measurements {
           Unit(tr('Light Year'), 'ly', 1.057e-16),
         ],
         SettingsController.instance.dimensionUnit);
+  }
+
+  static Measurement longDistance() {
+    // Same units as Dimension, but default (first) is Light Year, then AU, then m, then ft
+    return Measurement(
+        tr('Long Distance'),
+        [
+          Unit(tr('Light Year'), 'ly', 1.057e-16),
+          Unit(tr('Astronomical Unit'), 'AU', 6.68459e-12),
+          Unit(tr('Metre'), 'm', 1),
+          Unit(tr('Foot'), 'ft', 3.28084),
+        ],
+        SettingsController.instance.longDistanceUnit);
   }
 
   static Measurement count() {
@@ -215,6 +239,18 @@ class Measurements {
           Unit(tr('Litre'), 'l', 1000),
         ],
         0);
+  }
+
+  static Measurement highMass() {
+    // Same units as Mass, but default (first) is Stellar Mass
+    return Measurement(
+        tr('High Mass'),
+        [
+          Unit(tr('Stellar Mass'), 'M☉', 5.02785e-31),
+          Unit(tr('Kilogram'), 'kg', 1),
+          Unit(tr('Pound'), 'lb', 2.20462),
+        ],
+        SettingsController.instance.highMassUnit);
   }
 
   static num convert(num value, MeasurementType m) {

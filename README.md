@@ -16,7 +16,7 @@
 
 ## Features
 
-- 9 different card decks (3 on the client and 6 on the server)
+- 12 different card decks (3 on the client and 9 on the server)
 - Each card shows a number of attributes, a picture and a more detailed description on the back
 - 10 different card design themes to choose from
 - Supports different measurement systems (metric, imperial, ...)
@@ -30,7 +30,7 @@ The client is implemented in Dart/Flutter. The server (optional) is implemented 
 
 
 ## Data
-There are 9 card decks: Cars, Airplanes and Rockets are located in [`client/assets/carddecks/`](client/assets/carddecks), and Animals, Dinosaurs, World Football Stars, World Tennis Stars, Extreme Sports and Mega Cities are located in [`server/data/`](server/data). A card deck is stored in a JSON file with the following structure:
+There are 12 card decks: Cars, Airplanes and Rockets are located in [`client/assets/carddecks/`](client/assets/carddecks), and Animals, Planetary Systems, Dinosaurs, Skyscrapers, Tanks, World Football Stars, World Tennis Stars, Extreme Sports and Mega Cities are located in [`server/data/`](server/data). A card deck is stored in a JSON file with the following structure:
 
 ```json
 {

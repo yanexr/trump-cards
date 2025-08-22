@@ -17,7 +17,7 @@
         {
             "measurementType": "velocity",
             "isHigherBetter": true,
-            "label": "Top Speed"
+            "label": "Speed"
         },
         {
             "measurementType": "count",

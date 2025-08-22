@@ -20,14 +20,14 @@
             "label": "Lifts"
         },
         {
-            "measurementType": "currency",
-            "isHigherBetter": false,
-            "label": "Construction Cost"
-        },
-        {
             "measurementType": "calendarTime",
             "isHigherBetter": false,
             "label": "Construction Time"
+        },
+        {
+            "measurementType": "currency",
+            "isHigherBetter": false,
+            "label": "Construction Cost"
         }
     ],
     "cards": [
@@ -440,9 +440,9 @@
             "id": 28,
             "name": "Marina Bay Sands",
             "subtitle": "Singapore, Singapore, 2010",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lotte_World_day_view_5.jpg/1024px-Lotte_World_day_view_5.jpg",
-            "imageAttr": "kallerna, CC BY-SA 4.0, via Wikimedia Commons",
-            "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Marina_Bay_Sands_%28I%29.jpg/1024px-Marina_Bay_Sands_%28I%29.jpg",
+            "imageAttr": "This Photo was taken by Supanut Arunoprayote.Feel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract., CC BY 4.0, via Wikimedia Commons",
+            "imageLic": "https://creativecommons.org/licenses/by/4.0",
             "values": [
                 207,
                 57,

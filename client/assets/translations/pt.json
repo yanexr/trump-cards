@@ -232,5 +232,25 @@
   "Tallest Building": "Prédio mais alto",
   "GDP": "PIB",
   "Tourists/Year": "Turistas/Ano",
-  "Pop. Growth": "Cresc. Pop."
+  "Pop. Growth": "Cresc. Pop.",
+
+  "Long Distance": "Longa distância",
+  "High Mass": "Massa alta",
+  "Stellar Mass": "Massa estelar",
+
+  "Planetary Systems": "Sistemas planetários",
+  "Skyscrapers": "Arranha-céus",
+  "Tanks": "Tanques",
+
+  "Age": "Idade",
+  "Confirmed Planets": "Planetas confirmados",
+  "Distance": "Distância",
+  "Discovery": "Descoberta",
+  "Floors": "Andares",
+  "Lifts": "Elevadores",
+  "Construction Time": "Tempo de construção",
+  "Construction Cost": "Custo de construção",
+  "Armor": "Blindagem",
+  "Firepower": "Poder de fogo",
+  "No. built": "Construídos"
 }

@@ -92,6 +92,18 @@ class SettingsService {
     return volumeUnit;
   }
 
+  Future<int> loadLongDistanceUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int longDistanceUnit = prefs.getInt('longDistanceUnit') ?? 0;
+    return longDistanceUnit;
+  }
+
+  Future<int> loadHighMassUnit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int highMassUnit = prefs.getInt('highMassUnit') ?? 0;
+    return highMassUnit;
+  }
+
   Future<void> updateThemeMode(ThemeMode theme) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt('themeMode', theme.index);
@@ -165,5 +177,15 @@ class SettingsService {
   Future<void> updateVolumeUnit(int volumeUnit) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt('volumeUnit', volumeUnit);
+  }
+
+  Future<void> updateLongDistanceUnit(int longDistanceUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('longDistanceUnit', longDistanceUnit);
+  }
+
+  Future<void> updateHighMassUnit(int highMassUnit) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('highMassUnit', highMassUnit);
   }
 }

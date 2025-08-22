@@ -23,6 +23,8 @@ class SettingsController with ChangeNotifier {
   late int _percentageUnit = 0;
   late int _temperatureUnit = 0;
   late int _volumeUnit = 0;
+  late int _longDistanceUnit = 0;
+  late int _highMassUnit = 0;
 
   // Allow Widgets to read the user setting.
   ThemeMode get themeMode => _themeMode;
@@ -40,6 +42,8 @@ class SettingsController with ChangeNotifier {
   int get percentageUnit => _percentageUnit;
   int get temperatureUnit => _temperatureUnit;
   int get volumeUnit => _volumeUnit;
+  int get longDistanceUnit => _longDistanceUnit;
+  int get highMassUnit => _highMassUnit;
 
   // Load the user's settings from the SettingsService.
   Future<void> loadSettings() async {
@@ -58,6 +62,8 @@ class SettingsController with ChangeNotifier {
     _percentageUnit = await _settingsService.loadPercentageUnit();
     _temperatureUnit = await _settingsService.loadTemperatureUnit();
     _volumeUnit = await _settingsService.loadVolumeUnit();
+  _longDistanceUnit = await _settingsService.loadLongDistanceUnit();
+  _highMassUnit = await _settingsService.loadHighMassUnit();
 
     notifyListeners();
   }
@@ -180,5 +186,21 @@ class SettingsController with ChangeNotifier {
     _volumeUnit = newVolumeUnit;
     notifyListeners();
     await _settingsService.updateVolumeUnit(newVolumeUnit);
+  }
+
+  Future<void> updateLongDistanceUnit(int? newLongDistanceUnit) async {
+    if (newLongDistanceUnit == null) return;
+    if (newLongDistanceUnit == _longDistanceUnit) return;
+    _longDistanceUnit = newLongDistanceUnit;
+    notifyListeners();
+    await _settingsService.updateLongDistanceUnit(newLongDistanceUnit);
+  }
+
+  Future<void> updateHighMassUnit(int? newHighMassUnit) async {
+    if (newHighMassUnit == null) return;
+    if (newHighMassUnit == _highMassUnit) return;
+    _highMassUnit = newHighMassUnit;
+    notifyListeners();
+    await _settingsService.updateHighMassUnit(newHighMassUnit);
   }
 }
