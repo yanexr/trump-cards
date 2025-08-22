@@ -98400,7 +98400,7 @@ $0(){A.vC(this.a,"/settings",t.X)},
 $S:0}
 A.pY.prototype={
 aa(){var s=new A.anb()
-s.a=A.b3F(A.e8("ws://localhost:8000",0,null),null)
+s.a=A.b3F(A.e8("wss://trump-cards-30349256327.europe-west3.run.app",0,null),null)
 return new A.ZU(s,A.I("connecting",null),A.a([],t.zU))}}
 A.ZU.prototype={
 ar(){var s,r,q,p=this
