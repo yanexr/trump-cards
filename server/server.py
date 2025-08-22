@@ -185,8 +185,19 @@ async def send_card(websocket, message):
         "fromUsername": from_username,
         "toUsername": to_username
     }
-    for _, sock in games[game_code]['users']:
-        await sock.send(json.dumps(broadcast))
+    # Send to everyone; tolerate disconnected sockets
+    stale_indexes = []
+    for idx, (_, sock) in enumerate(games[game_code]['users']):
+        try:
+            await sock.send(json.dumps(broadcast))
+        except Exception:
+            stale_indexes.append(idx)
+    # Clean up any stale sockets
+    for idx in reversed(stale_indexes):
+        try:
+            del games[game_code]['users'][idx]
+        except Exception:
+            pass
 
 
 async def handle_connection(websocket):
@@ -235,25 +246,45 @@ async def handle_connection(websocket):
             }
             await websocket.send(json.dumps(error_resp))
             break
-
         except websockets.exceptions.ConnectionClosedOK:
             remove_user(websocket)
             break
-
         except websockets.exceptions.ConnectionClosedError:
             remove_user(websocket)
             break
-
         except websockets.exceptions.ConnectionClosed:
             remove_user(websocket)
             break
 
 
+def process_request(connection, request):
+    """
+    Handle HTTP requests (e.g., health checks). Returns a simple 200 OK for non-WS.
+    """
+    upgrade = request.headers.get("Upgrade", "").lower()
+    if upgrade != "websocket":
+        body = b"OK"
+        headers = [
+            ("Content-Type", "text/plain; charset=utf-8"),
+            ("Content-Length", str(len(body))),
+        ]
+        return 200, headers, body
+    # For WebSocket upgrades, proceed with the handshake
+    return None
+
+
 async def main():
-    # Use PORT from environment if present, or default to 8000
+    host = os.environ.get("HOST", "localhost")
     port = int(os.environ.get("PORT", "8000"))
 
-    async with websockets.serve(handle_connection, "localhost", port):
+    async with websockets.serve(
+        handle_connection,
+        host,
+        port,
+        process_request=process_request,
+        ping_interval=30,
+        ping_timeout=30,
+    ):
         print(f"Server started on port {port}...")
         await asyncio.Future()  # run forever
 
