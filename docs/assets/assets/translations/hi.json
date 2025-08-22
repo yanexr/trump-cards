@@ -232,5 +232,24 @@
   "Tallest Building": "सबसे ऊँची इमारत",
   "GDP": "जीडीपी",
   "Tourists/Year": "पर्यटक/वर्ष",
-  "Pop. Growth": "जनसंख्या वृद्धि"
+  "Pop. Growth": "जनसंख्या वृद्धि",
+  "Long Distance": "लंबी दूरी",
+  "High Mass": "उच्च द्रव्यमान",
+  "Stellar Mass": "तारकीय द्रव्यमान",
+
+  "Planetary Systems": "ग्रह प्रणाली",
+  "Skyscrapers": "गगनचुंबी इमारतें",
+  "Tanks": "टैंक",
+
+  "Age": "आयु",
+  "Confirmed Planets": "पुष्ट ग्रह",
+  "Distance": "दूरी",
+  "Discovery": "खोज",
+  "Floors": "मंज़िलें",
+  "Lifts": "लिफ्ट",
+  "Construction Time": "निर्माण समय",
+  "Construction Cost": "निर्माण लागत",
+  "Armor": "बख़्तर",
+  "Firepower": "आग शक्ति",
+  "No. built": "निर्मित"
 }

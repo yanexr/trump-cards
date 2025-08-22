@@ -232,5 +232,24 @@
   "Tallest Building": "최고층 건물",
   "GDP": "GDP",
   "Tourists/Year": "연간 관광객 수",
-  "Pop. Growth": "인구 증가율"
+  "Pop. Growth": "인구 증가율",
+  "Long Distance": "장거리",
+  "High Mass": "고질량",
+  "Stellar Mass": "항성질량",
+
+  "Planetary Systems": "행성계",
+  "Skyscrapers": "초고층",
+  "Tanks": "전차",
+
+  "Age": "연령",
+  "Confirmed Planets": "확인된 행성",
+  "Distance": "거리",
+  "Discovery": "발견",
+  "Floors": "층",
+  "Lifts": "엘리베이터",
+  "Construction Time": "건설 기간",
+  "Construction Cost": "건설 비용",
+  "Armor": "장갑",
+  "Firepower": "화력",
+  "No. built": "건조 수"
 }

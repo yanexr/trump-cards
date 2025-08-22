@@ -232,5 +232,24 @@
   "Tallest Building": "Самое высокое здание",
   "GDP": "ВВП",
   "Tourists/Year": "Туристов/год",
-  "Pop. Growth": "Прирост нас."
+  "Pop. Growth": "Прирост нас.",
+  "Long Distance": "Большая дистанция",
+  "High Mass": "Большая масса",
+  "Stellar Mass": "Звёздная масса",
+
+  "Planetary Systems": "Планетные системы",
+  "Skyscrapers": "Небоскрёбы",
+  "Tanks": "Танки",
+
+  "Age": "Возраст",
+  "Confirmed Planets": "Подтверждённые планеты",
+  "Distance": "Расстояние",
+  "Discovery": "Открытие",
+  "Floors": "Этажи",
+  "Lifts": "Лифты",
+  "Construction Time": "Время строительства",
+  "Construction Cost": "Стоимость строительства",
+  "Armor": "Броня",
+  "Firepower": "Огневая мощь",
+  "No. built": "Построено"
 }

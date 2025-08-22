@@ -232,5 +232,24 @@
   "Tallest Building": "最高建筑",
   "GDP": "GDP",
   "Tourists/Year": "年游客量",
-  "Pop. Growth": "人口增长率"
+  "Pop. Growth": "人口增长率",
+  "Long Distance": "远距离",
+  "High Mass": "大质量",
+  "Stellar Mass": "恒星质量",
+
+  "Planetary Systems": "行星系",
+  "Skyscrapers": "摩天大楼",
+  "Tanks": "坦克",
+
+  "Age": "年龄",
+  "Confirmed Planets": "已确认行星",
+  "Distance": "距离",
+  "Discovery": "发现",
+  "Floors": "楼层",
+  "Lifts": "电梯",
+  "Construction Time": "建造时间",
+  "Construction Cost": "建造成本",
+  "Armor": "装甲",
+  "Firepower": "火力",
+  "No. built": "已建数"
 }

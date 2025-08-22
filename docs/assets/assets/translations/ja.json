@@ -232,5 +232,24 @@
   "Tallest Building": "最も高い建物",
   "GDP": "GDP",
   "Tourists/Year": "年間観光客",
-  "Pop. Growth": "人口増加率"
+  "Pop. Growth": "人口増加率",
+  "Long Distance": "長距離",
+  "High Mass": "高質量",
+  "Stellar Mass": "恒星質量",
+
+  "Planetary Systems": "惑星系",
+  "Skyscrapers": "超高層",
+  "Tanks": "戦車",
+
+  "Age": "年齢",
+  "Confirmed Planets": "確認済み惑星",
+  "Distance": "距離",
+  "Discovery": "発見",
+  "Floors": "階",
+  "Lifts": "エレベーター",
+  "Construction Time": "建設期間",
+  "Construction Cost": "建設費",
+  "Armor": "装甲",
+  "Firepower": "火力",
+  "No. built": "建造数"
 }
