@@ -257,20 +257,6 @@ async def handle_connection(websocket):
             break
 
 
-def process_request(connection, request):
-    """Handle HTTP requests (e.g., health checks). Returns a simple 200 OK for non-WS."""
-    upgrade = request.headers.get("Upgrade", "")
-    if str(upgrade).lower() != "websocket":
-        body = b"OK"
-        headers_out = [
-            ("Content-Type", "text/plain; charset=utf-8"),
-            ("Content-Length", str(len(body))),
-        ]
-        return 200, headers_out, body
-    # For WebSocket upgrades, proceed with the handshake
-    return None
-
-
 def _resolve_host_port():
     """Parse CLI args only; defaults: host=localhost, port=8000."""
     parser = argparse.ArgumentParser(add_help=False)
@@ -287,7 +273,6 @@ async def main():
         handle_connection,
         host,
         port,
-        process_request=process_request,
         ping_interval=30,
         ping_timeout=30,
     ):
