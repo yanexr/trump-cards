@@ -29588,7 +29588,7 @@ return new A.f8(A.I("Currency",s),A.a([new A.bn(A.I("Euro",s),"\u20ac",1),new A.
 aN4(){var s=null
 return new A.f8(A.I("Dimension",s),A.a([new A.bn(A.I("Metre",s),"m",1),new A.bn(A.I("Foot",s),"ft",3.28084),new A.bn(A.I("Astronomical Unit",s),"AU",668459e-17),new A.bn(A.I("Light Year",s),"ly",1057e-19)],t.v),$.ci().gF6())},
 aN7(){var s=null
-return new A.f8(A.I("Long Distance",s),A.a([new A.bn(A.I("Light Year",s),"ly",1057e-19),new A.bn(A.I("Astronomical Unit",s),"AU",668459e-17),new A.bn(A.I("Metre",s),"m",1),new A.bn(A.I("Foot",s),"ft",3.28084)],t.v),$.ci().gGd())},
+return new A.f8(A.I("Long Distance",s),A.a([new A.bn(A.I("Light Year",s),"ly",1),new A.bn(A.I("Astronomical Unit",s),"AU",63241.077),new A.bn(A.I("Metre",s),"m",946073e10),new A.bn(A.I("Foot",s),"ft",310391e11)],t.v),$.ci().gGd())},
 am7(){return new A.f8(A.I("Count",null),A.a([new A.bn(A.I("None",null),"",1)],t.v),$.ci().gEY())},
 aN3(){var s=null
 return new A.f8(A.I("Density",s),A.a([new A.bn(A.I("Per Square Kilometre",s),"/km\xb2",1),new A.bn(A.I("Per Square Mile",s),"/mi\xb2",2.59),new A.bn(A.I("Per Hectare",s),"/ha",0.01)],t.v),$.ci().gF4())},
@@ -29598,7 +29598,7 @@ return new A.f8(A.I("Temperature",s),A.a([new A.bn(A.I("Celsius",s),"\xb0C",1),n
 aNd(){var s=null
 return new A.f8(A.I("Volume",s),A.a([new A.bn(A.I("Cubic Metre",s),"m\xb3",1),new A.bn(A.I("Cubic Foot",s),"ft\xb3",35.3147),new A.bn(A.I("Gallon",s),"gal",264.172),new A.bn(A.I("Litre",s),"l",1000)],t.v),0)},
 aN6(){var s=null
-return new A.f8(A.I("High Mass",s),A.a([new A.bn(A.I("Stellar Mass",s),"M\u2609",502785e-36),new A.bn(A.I("Kilogram",s),"kg",1),new A.bn(A.I("Pound",s),"lb",2.20462)],t.v),$.ci().gG0())},
+return new A.f8(A.I("High Mass",s),A.a([new A.bn(A.I("Stellar Mass",s),"M\u2609",1),new A.bn(A.I("Kilogram",s),"kg",198847e25),new A.bn(A.I("Pound",s),"lb",438382e25)],t.v),$.ci().gG0())},
 am8(a,b){var s,r,q=null,p="en_US",o=A.Cz(b),n=o.b[o.c],m=a*n.c,l=n.b
 if(m<0)s=A.vH("0.######",p)
 else if(m<10)s=A.vH("#.##",p)
