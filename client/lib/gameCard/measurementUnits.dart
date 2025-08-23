@@ -176,14 +176,13 @@ class Measurements {
   }
 
   static Measurement longDistance() {
-    // Same units as Dimension, but default (first) is Light Year, then AU, then m, then ft
     return Measurement(
         tr('Long Distance'),
         [
-          Unit(tr('Light Year'), 'ly', 1.057e-16),
-          Unit(tr('Astronomical Unit'), 'AU', 6.68459e-12),
-          Unit(tr('Metre'), 'm', 1),
-          Unit(tr('Foot'), 'ft', 3.28084),
+          Unit(tr('Light Year'), 'ly', 1),
+          Unit(tr('Astronomical Unit'), 'AU', 63241.077),
+          Unit(tr('Metre'), 'm', 9.46073e15),
+          Unit(tr('Foot'), 'ft', 3.10391e16),
         ],
         SettingsController.instance.longDistanceUnit);
   }
@@ -242,13 +241,12 @@ class Measurements {
   }
 
   static Measurement highMass() {
-    // Same units as Mass, but default (first) is Stellar Mass
     return Measurement(
         tr('High Mass'),
         [
-          Unit(tr('Stellar Mass'), 'M☉', 5.02785e-31),
-          Unit(tr('Kilogram'), 'kg', 1),
-          Unit(tr('Pound'), 'lb', 2.20462),
+          Unit(tr('Stellar Mass'), 'M☉', 1),
+          Unit(tr('Kilogram'), 'kg', 1.98847e30),
+          Unit(tr('Pound'), 'lb', 4.38382e30),
         ],
         SettingsController.instance.highMassUnit);
   }
