@@ -14,36 +14,60 @@ import 'package:trump_cards/editor/deleteDialog.dart';
 import 'package:trump_cards/gameCard/cards.dart';
 import 'package:path/path.dart' as p;
 
+MimeType _resolveMimeType(String extension) {
+  switch (extension.toLowerCase()) {
+    case 'json':
+      return MimeType.json;
+    case 'csv':
+      return MimeType.csv;
+    default:
+      return MimeType.other;
+  }
+}
+
 Future<void> saveFileWithPicker({
   required String baseName,
   required Uint8List bytes,
   required String extension,
   required String mimeType,
 }) async {
-  // use file_saver package for web
+  final resolvedMimeType = _resolveMimeType(extension);
+
+  // web: direct browser download
   if (kIsWeb) {
     await FileSaver.instance.saveFile(
       name: baseName,
       bytes: bytes,
       ext: extension,
-      mimeType: extension == 'json' ? MimeType.json : MimeType.csv,
+      mimeType: resolvedMimeType,
+      customMimeType: resolvedMimeType == MimeType.other ? mimeType : null,
     );
     return;
   }
 
-  // use file_picker package for other platforms
-  String? selectedDirectory = await FilePicker.platform.getDirectoryPath();
-  if (selectedDirectory == null) {
-    throw Exception('User canceled directory selection');
+  // mobile/desktop where saveAs is supported: use SAF/native picker to avoid
+  // direct file IO permission issues on Android scoped storage
+  if (defaultTargetPlatform == TargetPlatform.android ||
+      defaultTargetPlatform == TargetPlatform.iOS ||
+      defaultTargetPlatform == TargetPlatform.macOS) {
+    await FileSaver.instance.saveAs(
+      name: baseName,
+      bytes: bytes,
+      ext: extension,
+      mimeType: resolvedMimeType,
+      customMimeType: resolvedMimeType == MimeType.other ? mimeType : null,
+    );
+    return;
   }
 
-  // Compose the final file path
-  final fileName = '$baseName.$extension';
-  final filePath = p.join(selectedDirectory, fileName);
-
-  // Write the file
-  final file = File(filePath);
-  await file.writeAsBytes(bytes);
+  // fallback for unsupported saveAs platforms
+  await FileSaver.instance.saveFile(
+    name: baseName,
+    bytes: bytes,
+    ext: extension,
+    mimeType: resolvedMimeType,
+    customMimeType: resolvedMimeType == MimeType.other ? mimeType : null,
+  );
 }
 
 class Carddecklibrary extends StatefulWidget {
@@ -216,13 +240,29 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                   try {
                     FilePickerResult? result =
                         await FilePicker.platform.pickFiles(
-                      type: FileType.custom,
-                      allowedExtensions: ['json'],
+                      type: FileType.any,
                       withData: true,
                     );
                     if (result != null && result.files.isNotEmpty) {
-                      Uint8List? fileBytes = result.files.first.bytes;
-                      String fileContent = utf8.decode(fileBytes!);
+                      final pickedFile = result.files.first;
+                      final extension =
+                          (pickedFile.extension ?? p.extension(pickedFile.name))
+                              .replaceFirst('.', '')
+                              .toLowerCase();
+                      if (extension != 'json') {
+                        throw Exception(
+                            'Only JSON files are supported for import.');
+                      }
+
+                      Uint8List? fileBytes = pickedFile.bytes;
+                      if (fileBytes == null && pickedFile.path != null) {
+                        fileBytes = await File(pickedFile.path!).readAsBytes();
+                      }
+                      if (fileBytes == null) {
+                        throw Exception('Unable to read the selected file.');
+                      }
+
+                      String fileContent = utf8.decode(fileBytes);
                       GameCardDeck newDeck =
                           GameCardDeck.fromJson(jsonDecode(fileContent));
 
@@ -335,19 +375,19 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Material(
-                                  elevation: 1,
-                                  borderRadius: BorderRadius.circular(8),
-                                  child: ClipRRect(
+                                    elevation: 1,
                                     borderRadius: BorderRadius.circular(8),
-                                    child: SizedBox(
-                                    width: 128,
-                                    height: 128,
-                                    child: thumbnail,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: SizedBox(
+                                        width: 128,
+                                        height: 128,
+                                        child: thumbnail,
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ),
                                 const SizedBox(width: 20),
