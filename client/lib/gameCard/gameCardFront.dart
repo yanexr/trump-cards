@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:trump_cards/gameCard/imageAttributionDialog.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'cardImage.dart';
 import '../gameCard/cards.dart';
 import '../gameCard/measurementUnits.dart';
 import '../app.dart';
@@ -331,23 +332,11 @@ class _GameCardFrontState extends State<GameCardFront> {
                               ? SlantedClipper()
                               : null,
                           child: SizedBox.fromSize(
-                            child: widget.gameCard.imagePath.startsWith('http')
-                                ? Image.network(
-                                    widget.gameCard.imagePath,
-                                    fit: BoxFit.cover,
-                                    errorBuilder: (BuildContext context,
-                                        Object exception,
-                                        StackTrace? stackTrace) {
-                                      return Image.asset(
-                                        'assets/images/placeholder.png',
-                                        fit: BoxFit.cover,
-                                      );
-                                    },
-                                  )
-                                : Image.asset(
-                                    'assets/images/${deck.name}/${widget.gameCard.imagePath}',
-                                    fit: BoxFit.cover,
-                                  ),
+                            child: buildCardImage(
+                              imagePath: widget.gameCard.imagePath,
+                              deckName: deck.name,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),

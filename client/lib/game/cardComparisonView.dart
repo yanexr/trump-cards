@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:trump_cards/app.dart';
+import 'package:trump_cards/gameCard/cardImage.dart';
 import 'package:trump_cards/gameCard/imageAttributionDialog.dart';
 import 'package:trump_cards/gameCard/measurementUnits.dart';
 
@@ -104,17 +105,11 @@ class CardComparisonView extends StatelessWidget {
                             aspectRatio: 16 / 10,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
-                              child: firstCard.imagePath.startsWith('http')
-                                  ? Image.network(firstCard.imagePath,
-                                      fit: BoxFit.cover,
-                                      errorBuilder: (context, _, __) {
-                                      return Image.asset(
-                                          'assets/images/placeholder.png',
-                                          fit: BoxFit.cover);
-                                    })
-                                  : Image.asset(
-                                      'assets/images/${deck.name}/${firstCard.imagePath}',
-                                      fit: BoxFit.cover),
+                              child: buildCardImage(
+                                imagePath: firstCard.imagePath,
+                                deckName: deck.name,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
@@ -140,17 +135,11 @@ class CardComparisonView extends StatelessWidget {
                             aspectRatio: 16 / 10,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
-                              child: secondCard.imagePath.startsWith('http')
-                                  ? Image.network(secondCard.imagePath,
-                                      fit: BoxFit.cover,
-                                      errorBuilder: (context, _, __) {
-                                      return Image.asset(
-                                          'assets/images/placeholder.png',
-                                          fit: BoxFit.cover);
-                                    })
-                                  : Image.asset(
-                                      'assets/images/${deck.name}/${secondCard.imagePath}',
-                                      fit: BoxFit.cover),
+                              child: buildCardImage(
+                                imagePath: secondCard.imagePath,
+                                deckName: deck.name,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),

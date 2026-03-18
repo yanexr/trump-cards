@@ -1,7 +1,12 @@
 import 'dart:convert';
+import 'dart:typed_data';
+
 import 'package:easy_localization/easy_localization.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:image/image.dart' as img;
+import 'package:trump_cards/gameCard/cardImage.dart';
 import 'package:trump_cards/gameCard/measurementUnits.dart';
 
 import '../app.dart';
@@ -19,21 +24,21 @@ class CardEditor extends StatefulWidget {
   static Future<void> deleteCard(int id) async {
     App.selectedCardDeck!.cards.removeWhere((element) => element.id == id);
     if (App.selectedCardDeck!.isUserCreated) {
-      saveGameCardDeck("gameCardDeck${App.selectedCardDeck!.id}",
-          App.selectedCardDeck!);
+      saveGameCardDeck(
+          "gameCardDeck${App.selectedCardDeck!.id}", App.selectedCardDeck!);
     } else {
       var allCards = [...App.selectedCardDeck!.cards]; // Create a copy
-      List<GameCard> userCreatedCards = allCards
-          .where((element) => element.id <= 0)
-          .toList();
-      saveGameCards("gameCards${App.selectedCardDeck!.id}",
-          userCreatedCards);
+      List<GameCard> userCreatedCards =
+          allCards.where((element) => element.id <= 0).toList();
+      saveGameCards("gameCards${App.selectedCardDeck!.id}", userCreatedCards);
     }
   }
 }
 
 class _CardEditorState extends State<CardEditor> {
   final _formKey = GlobalKey<FormState>();
+  static const _maxPickedImageWidth = 512;
+  static const _pickedImageQuality = 70;
 
   String name = '';
   String subtitle = '';
@@ -41,6 +46,7 @@ class _CardEditorState extends State<CardEditor> {
   String imageAttribution = '';
   String imageLicenseLink = '';
   late List<num> valuesInput;
+  late final TextEditingController _imageUrlController;
 
   @override
   void initState() {
@@ -62,6 +68,14 @@ class _CardEditorState extends State<CardEditor> {
         valuesInput[i] = Measurements.convert(card.values[i], mType);
       }
     }
+
+    _imageUrlController = TextEditingController(text: imageUrl);
+  }
+
+  @override
+  void dispose() {
+    _imageUrlController.dispose();
+    super.dispose();
   }
 
   String? numberValidator(String? value) {
@@ -74,6 +88,88 @@ class _CardEditorState extends State<CardEditor> {
     return null;
   }
 
+  img.Image _flattenImage(img.Image image) {
+    final background = img.Image(width: image.width, height: image.height);
+    background.clear(img.ColorRgb8(255, 255, 255));
+    return img.compositeImage(background, image);
+  }
+
+  String _encodePickedImage(Uint8List bytes) {
+    final decodedImage = img.decodeImage(bytes);
+    if (decodedImage == null) {
+      throw const FormatException('Unsupported image file.');
+    }
+
+    final normalizedImage = img.bakeOrientation(decodedImage);
+    final resizedImage = normalizedImage.width > _maxPickedImageWidth
+        ? img.copyResize(normalizedImage, width: _maxPickedImageWidth)
+        : normalizedImage;
+    final outputImage = resizedImage.hasAlpha
+        ? _flattenImage(resizedImage)
+        : resizedImage.convert(numChannels: 3);
+    final encodedImage =
+        img.encodeJpg(outputImage, quality: _pickedImageQuality);
+
+    return 'data:image/jpeg;base64,${base64Encode(encodedImage)}';
+  }
+
+  void _showImageErrorSnackBar() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        backgroundColor: Colors.red,
+        content: Text(
+          'Unable to process the selected image.',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickImage() async {
+    try {
+      final result = await FilePicker.platform.pickFiles(
+        type: FileType.image,
+        withData: true,
+      );
+
+      if (result == null || result.files.isEmpty) {
+        return;
+      }
+
+      final imageBytes = result.files.first.bytes;
+      if (imageBytes == null) {
+        throw const FormatException('Unable to read the selected image.');
+      }
+
+      final dataUrl = _encodePickedImage(imageBytes);
+
+      if (!mounted) {
+        return;
+      }
+
+      setState(() {
+        imageUrl = dataUrl;
+        imageAttribution = '';
+        imageLicenseLink = '';
+        _imageUrlController.text = dataUrl;
+      });
+    } catch (_) {
+      if (!mounted) {
+        return;
+      }
+      _showImageErrorSnackBar();
+    }
+  }
+
+  void _clearImage() {
+    setState(() {
+      imageUrl = '';
+      imageAttribution = '';
+      imageLicenseLink = '';
+      _imageUrlController.clear();
+    });
+  }
+
   Future<void> save() async {
     if (_formKey.currentState!.validate()) {
       // get id
@@ -82,7 +178,11 @@ class _CardEditorState extends State<CardEditor> {
         id = widget.gameCard!.id;
       } else {
         List<int> ids = App.selectedCardDeck!.cards.map((e) => e.id).toList();
-        id = ids.isEmpty ? 0 : ids.reduce((value, element) => value < element ? value : element) - 1;
+        id = ids.isEmpty
+            ? 0
+            : ids.reduce(
+                    (value, element) => value < element ? value : element) -
+                1;
       }
 
       // add an image if none is provided
@@ -92,7 +192,7 @@ class _CardEditorState extends State<CardEditor> {
           imageUrl = wikimediaImage.imageUrl;
           imageAttribution = 'via Wikimedia Commons';
           imageLicenseLink = wikimediaImage.descriptionUrl;
-        } else{
+        } else {
           imageUrl = 'https';
         }
       }
@@ -118,23 +218,27 @@ class _CardEditorState extends State<CardEditor> {
       // add new card to the card deck
       setState(() {
         if (widget.gameCard != null) {
-          App.selectedCardDeck!.cards.removeWhere((element) => element.id == id);
+          App.selectedCardDeck!.cards
+              .removeWhere((element) => element.id == id);
         }
         App.selectedCardDeck!.cards.add(newCard);
       });
 
       // save
       if (App.selectedCardDeck!.isUserCreated) {
-        saveGameCardDeck("gameCardDeck${App.selectedCardDeck!.id}",
-            App.selectedCardDeck!);
+        saveGameCardDeck(
+            "gameCardDeck${App.selectedCardDeck!.id}", App.selectedCardDeck!);
       } else {
         List<GameCard> userCreatedCards = App.selectedCardDeck!.cards
             .where((element) => element.id <= 0)
             .toList();
-        saveGameCards("gameCards${App.selectedCardDeck!.id}",
-            userCreatedCards);
+        saveGameCards("gameCards${App.selectedCardDeck!.id}", userCreatedCards);
       }
-      
+
+      if (!mounted) {
+        return;
+      }
+
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
             backgroundColor: Colors.green,
@@ -179,12 +283,11 @@ class _CardEditorState extends State<CardEditor> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: SizedBox.fromSize(
-                        child: Image.network(imageUrl, fit: BoxFit.cover,
-                            errorBuilder: (BuildContext context,
-                                Object exception, StackTrace? stackTrace) {
-                          return Image.asset('assets/images/placeholder.png',
-                              fit: BoxFit.cover);
-                        }),
+                        child: buildCardImage(
+                          imagePath: imageUrl,
+                          deckName: deck.name,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   )),
@@ -236,18 +339,38 @@ class _CardEditorState extends State<CardEditor> {
                                 },
                               ),
                               TextFormField(
-                                initialValue: imageUrl,
+                                controller: _imageUrlController,
                                 validator: (value) {
                                   if (value == null || value.isEmpty) {
                                     return null;
                                   }
-                                  if (!value.startsWith('http')) {
+                                  if (!value.startsWith('http') &&
+                                      !value.startsWith('data:')) {
                                     return tr('urlIsNotValid');
                                   }
                                   return null;
                                 },
+                                keyboardType: TextInputType.url,
                                 decoration: InputDecoration(
                                   labelText: tr('imageUrlOptional'),
+                                  suffixIcon: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      if (imageUrl.isNotEmpty)
+                                        IconButton(
+                                          tooltip: 'Clear image',
+                                          onPressed: _clearImage,
+                                          icon: const Icon(Icons.clear),
+                                        ),
+                                      IconButton(
+                                        tooltip: 'Choose image',
+                                        onPressed: _pickImage,
+                                        icon: const Icon(
+                                          Icons.upload_file_rounded,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 onChanged: (value) {
                                   setState(() {
@@ -325,7 +448,7 @@ class _CardEditorState extends State<CardEditor> {
                       ],
                     ),
                   )),
-                  const SizedBox(height: 50),
+              const SizedBox(height: 50),
             ],
           ),
         ))));

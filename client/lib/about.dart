@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'app.dart';
+import 'gameCard/cardImage.dart';
 
 class About extends StatelessWidget {
   const About({
@@ -33,7 +34,7 @@ class About extends StatelessWidget {
                   ),
                 ),
                 const Text(
-                  'v1.4.1',
+                  'v1.4.2',
                   style: TextStyle(
                       fontSize: 12, color: Color.fromARGB(255, 146, 146, 146)),
                 ),
@@ -182,22 +183,13 @@ class About extends StatelessWidget {
                     ),
                     child: Column(children: [
                       ListTile(
-                        leading: image.startsWith('http')
-                            ? Image.network(image,
-                                alignment: Alignment.centerRight,
-                                width: 100, errorBuilder: (BuildContext context,
-                                    Object exception, StackTrace? stackTrace) {
-                                return Image.asset(
-                                    'assets/images/placeholder.png',
-                                    fit: BoxFit.cover,
-                                    height: 50,
-                                    width: 50);
-                              })
-                            : Image.asset(
-                                'assets/images/${App.selectedCardDeck!.name}/$image',
-                                width: 100,
-                                alignment: Alignment.centerRight,
-                              ),
+                        leading: buildCardImage(
+                          imagePath: image,
+                          deckName: App.selectedCardDeck!.name,
+                          width: 100,
+                          fit: BoxFit.cover,
+                          alignment: Alignment.centerRight,
+                        ),
                         title: Text(attribution),
                         subtitle: license != ''
                             ? MouseRegion(

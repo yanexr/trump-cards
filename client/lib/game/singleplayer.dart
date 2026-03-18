@@ -4,6 +4,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:trump_cards/game/cardComparisonView.dart';
+import 'package:trump_cards/gameCard/cardImage.dart';
 import 'package:trump_cards/gameCard/animatedCardStack.dart';
 import 'package:trump_cards/gameCard/measurementUnits.dart';
 import 'gameEndedDialog.dart';
@@ -370,33 +371,14 @@ class _SingleplayerState extends State<Singleplayer>
                                             borderRadius:
                                                 BorderRadius.circular(180),
                                             child: SizedBox.fromSize(
-                                              child: !stackComputer[0]
-                                                      .imagePath
-                                                      .startsWith('http')
-                                                  ? Image.asset(
-                                                      'assets/images/${deck.name}/${stackComputer[0].imagePath}',
-                                                      fit: BoxFit.cover,
-                                                      height: 50,
-                                                      width: 50,
-                                                    )
-                                                  : Image.network(
-                                                      stackComputer[0]
-                                                          .imagePath,
-                                                      fit: BoxFit.cover,
-                                                      height: 50,
-                                                      width: 50,
-                                                      errorBuilder:
-                                                          (BuildContext context,
-                                                              Object exception,
-                                                              StackTrace?
-                                                                  stackTrace) {
-                                                        return Image.asset(
-                                                            'assets/images/placeholder.png',
-                                                            fit: BoxFit.cover,
-                                                            height: 50,
-                                                            width: 50);
-                                                      },
-                                                    ),
+                                              child: buildCardImage(
+                                                imagePath:
+                                                    stackComputer[0].imagePath,
+                                                deckName: deck.name,
+                                                fit: BoxFit.cover,
+                                                height: 50,
+                                                width: 50,
+                                              ),
                                             ),
                                           ),
                                         ),

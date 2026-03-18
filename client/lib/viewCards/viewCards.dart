@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:trump_cards/editor/deleteDialog.dart';
+import 'package:trump_cards/gameCard/cardImage.dart';
 
 import '../editor/cardEditor.dart';
 import '../app.dart';
@@ -283,30 +284,14 @@ class _ViewCards extends State<ViewCards> {
                               leading: ClipRRect(
                                 borderRadius: BorderRadius.circular(8),
                                 child: SizedBox.fromSize(
-                                    child: App.selectedCardDeck!.cards[index]
-                                            .imagePath
-                                            .startsWith('http')
-                                        ? Image.network(
-                                            App.selectedCardDeck!.cards[index]
-                                                .imagePath,
-                                            fit: BoxFit.cover,
-                                            height: 72,
-                                            width: 72, errorBuilder:
-                                                (BuildContext context,
-                                                    Object exception,
-                                                    StackTrace? stackTrace) {
-                                            return Image.asset(
-                                                'assets/images/placeholder.png',
-                                                fit: BoxFit.cover,
-                                                height: 72,
-                                                width: 72);
-                                          })
-                                        : Image.asset(
-                                            'assets/images/${App.selectedCardDeck!.name}/${App.selectedCardDeck!.cards[index].imagePath}',
-                                            fit: BoxFit.cover,
-                                            height: 72,
-                                            width: 72,
-                                          )),
+                                    child: buildCardImage(
+                                  imagePath: App
+                                      .selectedCardDeck!.cards[index].imagePath,
+                                  deckName: App.selectedCardDeck!.name,
+                                  fit: BoxFit.cover,
+                                  height: 72,
+                                  width: 72,
+                                )),
                               ),
                               onTap: () {
                                 Navigator.push(
