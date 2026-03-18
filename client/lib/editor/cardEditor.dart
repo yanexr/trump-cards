@@ -353,7 +353,7 @@ Future<WikimediaImage?> getWikimediaImage(String searchQuery) async {
     return null;
   }
   String imageUrl = data['pages'][0]['thumbnail']['url'] ?? '';
-  imageUrl = imageUrl.replaceAll('60px', '640px');
+  imageUrl = imageUrl.replaceAll('60px', '960px');
   String key = data['pages'][0]['key'] ?? '';
   String descriptionUrl = 'https://commons.wikimedia.org/wiki/$key';
   return WikimediaImage(imageUrl, descriptionUrl);

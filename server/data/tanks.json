@@ -40,7 +40,7 @@
             "id": 1,
             "name": "Mark I Tank",
             "subtitle": "United Kingdom, 1916",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/British_Mark_I_male_tank_Somme_25_September_1916.jpg/1024px-British_Mark_I_male_tank_Somme_25_September_1916.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/British_Mark_I_male_tank_Somme_25_September_1916.jpg/960px-British_Mark_I_male_tank_Somme_25_September_1916.jpg",
             "imageAttr": "Ernest Brooks, Public domain, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -56,7 +56,7 @@
             "id": 2,
             "name": "Renault FT",
             "subtitle": "France, 1917",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Belgrade_Military_Museum_-_Renault_FT-17.JPG/1024px-Belgrade_Military_Museum_-_Renault_FT-17.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Belgrade_Military_Museum_-_Renault_FT-17.JPG/960px-Belgrade_Military_Museum_-_Renault_FT-17.JPG",
             "imageAttr": "Pudelek (Marcin Szala), CC BY-SA 3.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
             "values": [
@@ -72,7 +72,7 @@
             "id": 3,
             "name": "M4 Sherman",
             "subtitle": "United States, 1942",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/M4_Sherman_Utah_Beach.jpg/1024px-M4_Sherman_Utah_Beach.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/M4_Sherman_Utah_Beach.jpg/960px-M4_Sherman_Utah_Beach.jpg",
             "imageAttr": "Jebulon, CC0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -120,7 +120,7 @@
             "id": 6,
             "name": "Panther",
             "subtitle": "Germany, 1943",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Panther_D_tank%2C_Wilhelminapark%2C_Breda%2C_pic_2.JPG/1024px-Panther_D_tank%2C_Wilhelminapark%2C_Breda%2C_pic_2.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Panther_D_tank%2C_Wilhelminapark%2C_Breda%2C_pic_2.JPG/960px-Panther_D_tank%2C_Wilhelminapark%2C_Breda%2C_pic_2.JPG",
             "imageAttr": "Alf van Beem, CC0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -136,7 +136,7 @@
             "id": 7,
             "name": "Panzer IV",
             "subtitle": "Germany, 1939",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Panzer_IV_Ausf_G_Munster.jpg/1024px-Panzer_IV_Ausf_G_Munster.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Panzer_IV_Ausf_G_Munster.jpg/960px-Panzer_IV_Ausf_G_Munster.jpg",
             "imageAttr": "Veppar, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -184,7 +184,7 @@
             "id": 10,
             "name": "T-34",
             "subtitle": "Soviet Union, 1940",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/T-34-85_in_the_Kubinka_Tank_Museum_outside.JPG/1024px-T-34-85_in_the_Kubinka_Tank_Museum_outside.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/T-34-85_in_the_Kubinka_Tank_Museum_outside.JPG/960px-T-34-85_in_the_Kubinka_Tank_Museum_outside.JPG",
             "imageAttr": "Alf van Beem, Public domain, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -200,7 +200,7 @@
             "id": 11,
             "name": "KV-1",
             "subtitle": "Soviet Union, 1939",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/KV-1_tank_%28L-11%29.png/1024px-KV-1_tank_%28L-11%29.png",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/KV-1_tank_%28L-11%29.png/960px-KV-1_tank_%28L-11%29.png",
             "imageAttr": "See page for author, CC0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -216,7 +216,7 @@
             "id": 12,
             "name": "Centurion",
             "subtitle": "United Kingdom, 1945",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Centurion_cfb_borden_1.JPG/1024px-Centurion_cfb_borden_1.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Centurion_cfb_borden_1.JPG/960px-Centurion_cfb_borden_1.JPG",
             "imageAttr": "picture I (Balcer) made myself (in summer, 2005)",
             "imageLic": "https://creativecommons.org/licenses/by-sa/3.0/",
             "values": [
@@ -232,7 +232,7 @@
             "id": 13,
             "name": "Conqueror",
             "subtitle": "United Kingdom, 1955",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/British_Army_of_the_Rhine_Conqueror_Tank_in_1962.jpg/1024px-British_Army_of_the_Rhine_Conqueror_Tank_in_1962.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/British_Army_of_the_Rhine_Conqueror_Tank_in_1962.jpg/960px-British_Army_of_the_Rhine_Conqueror_Tank_in_1962.jpg",
             "imageAttr": "Thomas, J.M.A., CC0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -264,7 +264,7 @@
             "id": 15,
             "name": "M48 Patton",
             "subtitle": "United States, 1952",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/M48_Patton_Tank_at_Fort_Sam_Houston_Museum_1.jpg/1024px-M48_Patton_Tank_at_Fort_Sam_Houston_Museum_1.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/M48_Patton_Tank_at_Fort_Sam_Houston_Museum_1.jpg/960px-M48_Patton_Tank_at_Fort_Sam_Houston_Museum_1.jpg",
             "imageAttr": "Articseahorse, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -280,7 +280,7 @@
             "id": 16,
             "name": "M60 Patton",
             "subtitle": "United States, 1960",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/M60_Patton_%27Patton_Tank%27_P5250358.JPG/1024px-M60_Patton_%27Patton_Tank%27_P5250358.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/M60_Patton_%27Patton_Tank%27_P5250358.JPG/960px-M60_Patton_%27Patton_Tank%27_P5250358.JPG",
             "imageAttr": "Chris Light, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -296,7 +296,7 @@
             "id": 17,
             "name": "Leopard 1",
             "subtitle": "West Germany, 1965",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Leopard_1_battle_tank_%28Athens%29_on_March_25%2C_2024.jpg/1024px-Leopard_1_battle_tank_%28Athens%29_on_March_25%2C_2024.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Leopard_1_battle_tank_%28Athens%29_on_March_25%2C_2024.jpg/960px-Leopard_1_battle_tank_%28Athens%29_on_March_25%2C_2024.jpg",
             "imageAttr": "George E. Koronaios, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -312,7 +312,7 @@
             "id": 18,
             "name": "Leopard 2",
             "subtitle": "Germany, 1979",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Leopard_2_A5_der_Bundeswehr.jpg/1024px-Leopard_2_A5_der_Bundeswehr.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Leopard_2_A5_der_Bundeswehr.jpg/960px-Leopard_2_A5_der_Bundeswehr.jpg",
             "imageAttr": "Bundeswehr-Fotos, CC BY 2.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/2.0",
             "values": [
@@ -328,7 +328,7 @@
             "id": 19,
             "name": "AMX-30",
             "subtitle": "France, 1966",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AMX-30_img_2330.jpg/1024px-AMX-30_img_2330.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AMX-30_img_2330.jpg/960px-AMX-30_img_2330.jpg",
             "imageAttr": "Rama, CC BY-SA 2.0 FR, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
             "values": [
@@ -344,7 +344,7 @@
             "id": 20,
             "name": "Leclerc",
             "subtitle": "France, 1992",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Leclerc-openphotonet_PICT6015.JPG/1024px-Leclerc-openphotonet_PICT6015.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Leclerc-openphotonet_PICT6015.JPG/960px-Leclerc-openphotonet_PICT6015.JPG",
             "imageAttr": "Daniel Steger (Lausanne,Switzerland), CC BY-SA 2.5, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/2.5",
             "values": [
@@ -360,7 +360,7 @@
             "id": 21,
             "name": "Type 10",
             "subtitle": "Japan, 2012",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Type10MBT.jpg/1024px-Type10MBT.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Type10MBT.jpg/960px-Type10MBT.jpg",
             "imageAttr": "T.Goto, Public domain, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -376,7 +376,7 @@
             "id": 22,
             "name": "Type 90",
             "subtitle": "Japan, 1990",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/%EF%BC%99%EF%BC%90%E5%BC%8F%E6%88%A6%E8%BB%8A_%281%29_%28cropped%29.jpg/1024px-%EF%BC%99%EF%BC%90%E5%BC%8F%E6%88%A6%E8%BB%8A_%281%29_%28cropped%29.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/%EF%BC%99%EF%BC%90%E5%BC%8F%E6%88%A6%E8%BB%8A_%281%29_%28cropped%29.jpg/960px-%EF%BC%99%EF%BC%90%E5%BC%8F%E6%88%A6%E8%BB%8A_%281%29_%28cropped%29.jpg",
             "imageAttr": "Rikujojieitai Boueisho （陸上自衛隊 / Japan Ground Self-Defense Force）, CC BY 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/4.0",
             "values": [
@@ -392,7 +392,7 @@
             "id": 23,
             "name": "Type 96",
             "subtitle": "China, 1997",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/TankBiathlon2017Individual-02.jpg/1024px-TankBiathlon2017Individual-02.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/TankBiathlon2017Individual-02.jpg/960px-TankBiathlon2017Individual-02.jpg",
             "imageAttr": "Vitaly V. Kuzmin, CC BY-SA 3.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
             "values": [
@@ -408,7 +408,7 @@
             "id": 24,
             "name": "K1 88-Tank",
             "subtitle": "South Korea, 1987",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Korean_K1_Tank.JPEG/1024px-Korean_K1_Tank.JPEG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Korean_K1_Tank.JPEG/960px-Korean_K1_Tank.JPEG",
             "imageAttr": "SGT CHRISTOPHER KAUFMANN, USA, Public domain, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -424,7 +424,7 @@
             "id": 25,
             "name": "K2 Black Panther",
             "subtitle": "South Korea, 2014",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Polish_army_K2_Black_Panther_MBT_2.webp/1000px-Polish_army_K2_Black_Panther_MBT_2.webp.png",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Polish_army_K2_Black_Panther_MBT_2.webp/960px-Polish_army_K2_Black_Panther_MBT_2.webp.png",
             "imageAttr": "Photo by Staff Sgt. Matthew Foster, Public domain, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -440,7 +440,7 @@
             "id": 26,
             "name": "M1 Abrams",
             "subtitle": "United States, 1980",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/M1A1_Abrams_Tank.jpg/1024px-M1A1_Abrams_Tank.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/M1A1_Abrams_Tank.jpg/960px-M1A1_Abrams_Tank.jpg",
             "imageAttr": "mark6mauno, CC BY 2.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/2.0",
             "values": [
@@ -456,7 +456,7 @@
             "id": 27,
             "name": "Challenger 1",
             "subtitle": "United Kingdom, 1983",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Challenger_%2853949400693%29.jpg/1024px-Challenger_%2853949400693%29.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Challenger_%2853949400693%29.jpg/960px-Challenger_%2853949400693%29.jpg",
             "imageAttr": "Airwolfhound from Hertfordshire, UK, CC BY-SA 2.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
             "values": [
@@ -472,7 +472,7 @@
             "id": 28,
             "name": "Challenger 2",
             "subtitle": "United Kingdom, 1998",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Challenger_2_Main_Battle_Tank_patrolling_outside_Basra%2C_Iraq_MOD_45148325.jpg/1024px-Challenger_2_Main_Battle_Tank_patrolling_outside_Basra%2C_Iraq_MOD_45148325.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Challenger_2_Main_Battle_Tank_patrolling_outside_Basra%2C_Iraq_MOD_45148325.jpg/960px-Challenger_2_Main_Battle_Tank_patrolling_outside_Basra%2C_Iraq_MOD_45148325.jpg",
             "imageAttr": "Photo: Graeme Main/MOD, OGL v1.0OGL v1.0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -488,7 +488,7 @@
             "id": 29,
             "name": "Challenger 3",
             "subtitle": "United Kingdom, 2025",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Challenger_3.jpg/1024px-Challenger_3.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Challenger_3.jpg/960px-Challenger_3.jpg",
             "imageAttr": "Ministry of Defence, OGL v1.0OGL v1.0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -504,7 +504,7 @@
             "id": 30,
             "name": "Merkava",
             "subtitle": "Israel, 1979",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Flickr_-_Israel_Defense_Forces_-_188th_Brigade_Training_Day%2C_March_2008-cropped.jpg/1024px-Flickr_-_Israel_Defense_Forces_-_188th_Brigade_Training_Day%2C_March_2008-cropped.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Flickr_-_Israel_Defense_Forces_-_188th_Brigade_Training_Day%2C_March_2008-cropped.jpg/960px-Flickr_-_Israel_Defense_Forces_-_188th_Brigade_Training_Day%2C_March_2008-cropped.jpg",
             "imageAttr": "Flickr_-_Israel_Defense_Forces_-_188th_Brigade_Training_Day,_March_2008.jpg: Israel  Defense Forces from Israelderivative work: MathKnight •  talk, CC BY 2.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/2.0",
             "values": [
@@ -520,7 +520,7 @@
             "id": 31,
             "name": "Al-Khalid",
             "subtitle": "Pakistan, 2001",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Bangladesh_Army_MBT-2000._%2831624335826%29.jpg/1024px-Bangladesh_Army_MBT-2000._%2831624335826%29.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Bangladesh_Army_MBT-2000._%2831624335826%29.jpg/960px-Bangladesh_Army_MBT-2000._%2831624335826%29.jpg",
             "imageAttr": "Shadman Samee from Dhaka, Bangladesh, CC BY-SA 2.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/2.0",
             "values": [
@@ -568,7 +568,7 @@
             "id": 34,
             "name": "Arjun",
             "subtitle": "India, 2004",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Arjun_MBT_bump_track_test.JPG/1024px-Arjun_MBT_bump_track_test.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Arjun_MBT_bump_track_test.JPG/960px-Arjun_MBT_bump_track_test.JPG",
             "imageAttr": "Ajai Shukla, CC BY 2.5 IN, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/2.5/in/deed.en",
             "values": [
@@ -584,7 +584,7 @@
             "id": 51,
             "name": "T-62",
             "subtitle": "Soviet Union, 1961",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Israeli_Tiran-6_Tank_%28Upgraded_Captured_Soviet_T-62%29_in_1987.jpg/1024px-Israeli_Tiran-6_Tank_%28Upgraded_Captured_Soviet_T-62%29_in_1987.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Israeli_Tiran-6_Tank_%28Upgraded_Captured_Soviet_T-62%29_in_1987.jpg/960px-Israeli_Tiran-6_Tank_%28Upgraded_Captured_Soviet_T-62%29_in_1987.jpg",
             "imageAttr": "Photographer: Israel Press and Photo Agency (I.P.P.A.) / Dan Hadani collection, National Library of Israel / CC BY 4.0, CC BY 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/4.0",
             "values": [
@@ -600,7 +600,7 @@
             "id": 52,
             "name": "T-72",
             "subtitle": "Soviet Union, 1973",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Slovak_T-72M1.webp/1000px-Slovak_T-72M1.webp.png",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Slovak_T-72M1.webp/960px-Slovak_T-72M1.webp.png",
             "imageAttr": "Staff Sgt. Micah VanDykeSgt. Justin Geiger, CC0, via Wikimedia Commons",
             "imageLic": "",
             "values": [
@@ -616,7 +616,7 @@
             "id": 37,
             "name": "Chonma-ho",
             "subtitle": "North Korea, 1981",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/T62.jpg/1024px-T62.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/T62.jpg/960px-T62.jpg",
             "imageAttr": "--Gutsul 06:43, 5 October 2006 (UTC), CC BY-SA 3.0, via Wikimedia Commons",
             "imageLic": "http://creativecommons.org/licenses/by-sa/3.0/",
             "values": [
@@ -648,7 +648,7 @@
             "id": 39,
             "name": "Strv 103",
             "subtitle": "Sweden, 1967",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Stridsvagn_103_Revinge_2013-1.jpg/1024px-Stridsvagn_103_Revinge_2013-1.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Stridsvagn_103_Revinge_2013-1.jpg/960px-Stridsvagn_103_Revinge_2013-1.jpg",
             "imageAttr": "Jorchr, CC BY-SA 3.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/3.0",
             "values": [
@@ -664,7 +664,7 @@
             "id": 40,
             "name": "Oplot-M",
             "subtitle": "Ukraine, 2009",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/BM_Oplot%2C_Kyiv_2018%2C_01.jpg/1024px-BM_Oplot%2C_Kyiv_2018%2C_01.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/BM_Oplot%2C_Kyiv_2018%2C_01.jpg/960px-BM_Oplot%2C_Kyiv_2018%2C_01.jpg",
             "imageAttr": "VoidWanderer, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -680,7 +680,7 @@
             "id": 41,
             "name": "Type 99",
             "subtitle": "China, 2001",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/ZTZ-99A_tank_front_right_20170902.jpg/1024px-ZTZ-99A_tank_front_right_20170902.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/ZTZ-99A_tank_front_right_20170902.jpg/960px-ZTZ-99A_tank_front_right_20170902.jpg",
             "imageAttr": "Tyg728, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -696,7 +696,7 @@
             "id": 42,
             "name": "Type 59",
             "subtitle": "China, 1959",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bovington_modified_type_59_2014.JPG/1024px-Bovington_modified_type_59_2014.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bovington_modified_type_59_2014.JPG/960px-Bovington_modified_type_59_2014.JPG",
             "imageAttr": "Geni, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -712,7 +712,7 @@
             "id": 43,
             "name": "Panzer 68",
             "subtitle": "Switzerland, 1971",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg/1024px-Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg/960px-Pz_68_Kwst%2C_4._Serie%2C_auf_dem_Waffenplatz_Hinterrhein_im_Jahr_1993.jpg",
             "imageAttr": "Wyssalex, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -728,7 +728,7 @@
             "id": 44,
             "name": "Panzer III",
             "subtitle": "Germany, 1939",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Panzer_III_tankfest_2023B.JPG/1024px-Panzer_III_tankfest_2023B.JPG",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Panzer_III_tankfest_2023B.JPG/960px-Panzer_III_tankfest_2023B.JPG",
             "imageAttr": "Geni, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -744,7 +744,7 @@
             "id": 45,
             "name": "C1 Ariete",
             "subtitle": "Italy, 1995",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Italian_Army_-_4th_Tank_Regiment_-_Ariete_tanks_during_an_exercise_at_Capo_Teulada_October_2022.jpg/1024px-Italian_Army_-_4th_Tank_Regiment_-_Ariete_tanks_during_an_exercise_at_Capo_Teulada_October_2022.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Italian_Army_-_4th_Tank_Regiment_-_Ariete_tanks_during_an_exercise_at_Capo_Teulada_October_2022.jpg/960px-Italian_Army_-_4th_Tank_Regiment_-_Ariete_tanks_during_an_exercise_at_Capo_Teulada_October_2022.jpg",
             "imageAttr": "www.esercito.difesa.it, CC BY 2.5, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/2.5",
             "values": [
@@ -760,7 +760,7 @@
             "id": 46,
             "name": "Panther KF51",
             "subtitle": "Germany, 2022",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Rheinmetall_kf51_dynamisch_hohe_aufloesung_R6MJ1833.jpg/1024px-Rheinmetall_kf51_dynamisch_hohe_aufloesung_R6MJ1833.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Rheinmetall_kf51_dynamisch_hohe_aufloesung_R6MJ1833.jpg/960px-Rheinmetall_kf51_dynamisch_hohe_aufloesung_R6MJ1833.jpg",
             "imageAttr": "Rheinmetall Defence, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
@@ -776,7 +776,7 @@
             "id": 47,
             "name": "T-14 Armata",
             "subtitle": "Russia, 2015",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/T-14_Armata_%2827053434067%29.jpg/1024px-T-14_Armata_%2827053434067%29.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/T-14_Armata_%2827053434067%29.jpg/960px-T-14_Armata_%2827053434067%29.jpg",
             "imageAttr": "Dmitriy Fomin from Moscow, Russia, CC BY 2.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by/2.0",
             "values": [
@@ -792,7 +792,7 @@
             "id": 48,
             "name": "Leclerc XLR",
             "subtitle": "France, 2022",
-            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Leclerc_XLR_expos%C3%A9_%C3%A0_l%27Eurosatory_de_2022.jpg/1024px-Leclerc_XLR_expos%C3%A9_%C3%A0_l%27Eurosatory_de_2022.jpg",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Leclerc_XLR_expos%C3%A9_%C3%A0_l%27Eurosatory_de_2022.jpg/960px-Leclerc_XLR_expos%C3%A9_%C3%A0_l%27Eurosatory_de_2022.jpg",
             "imageAttr": "Robinsauveur, CC BY-SA 4.0, via Wikimedia Commons",
             "imageLic": "https://creativecommons.org/licenses/by-sa/4.0",
             "values": [
