@@ -29,6 +29,7 @@ Widget buildCardImage({
   if (isRemoteImagePath(imagePath)) {
     return Image.network(
       imagePath,
+      headers: const {'User-Agent': 'TrumpCardsApp/1.4 (https://github.com/yanexr/trump-cards)'},
       fit: fit,
       width: width,
       height: height,
