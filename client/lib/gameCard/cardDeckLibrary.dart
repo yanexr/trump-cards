@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trump_cards/app.dart';
 import 'package:trump_cards/editor/cardDeckEditor.dart';
 import 'package:trump_cards/editor/deleteDialog.dart';
+import 'package:trump_cards/gameCard/cardImage.dart';
 import 'package:trump_cards/gameCard/cards.dart';
 import 'package:path/path.dart' as p;
 
@@ -324,12 +325,9 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                   final isNetworkImage = deck.thumbnailPath.startsWith('http');
                   Widget thumbnail;
                   if (isNetworkImage) {
-                    thumbnail = Image.network(
-                      deck.thumbnailPath,
-                      fit: BoxFit.cover,
-                      height: 128,
-                      width: 128,
-                      errorBuilder: (context, error, stackTrace) {
+                    thumbnail = buildRemoteImage(
+                      imagePath: deck.thumbnailPath,
+                      placeholderBuilder: () {
                         return Image.asset(
                           'assets/images/placeholder.png',
                           fit: BoxFit.cover,
@@ -337,6 +335,9 @@ class _CarddecklibraryState extends State<Carddecklibrary> {
                           width: 128,
                         );
                       },
+                      fit: BoxFit.cover,
+                      height: 128,
+                      width: 128,
                     );
                   } else {
                     thumbnail = Image.asset(
